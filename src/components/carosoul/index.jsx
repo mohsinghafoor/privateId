@@ -87,7 +87,7 @@ export default function Carosoul() {
   const classes = useStyles();
   return (
     <Carousel
-      autoPlay={false}
+      autoPlay={true}
       afterChange={onChange}
       indicatorIconButtonProps={{
         style: {
