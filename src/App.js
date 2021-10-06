@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Order from "./components/order";
+import Fast from "./components/fast";
+import Easy from "./components/easy";
+import Exempt from "./components/exempt";
+import Carosoul from "./components/carosoul";
+import FacialRecognition from "./components/facialrecognition";
+import VoiceAuthentication from "./components/voiceauthentication";
+import Protects from "./components/protect";
+import Engineered from "./components/engineered";
+import LetsTalk from "./components/letstalk";
+import Decenterlized from "./components/decenterlized";
+import Footer from "./components/footer";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Decenterlized />
+      <Order />
+      <Fast />
+      <Easy />
+      <Exempt />
+      <Carosoul />
+      <FacialRecognition />
+      <VoiceAuthentication />
+      <Protects />
+      <Engineered />
+      <LetsTalk />
+      <Footer />
     </div>
   );
 }
