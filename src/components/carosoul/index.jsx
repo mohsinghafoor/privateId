@@ -11,7 +11,6 @@ function onChange(a, b, c) {
 const useStyles = makeStyles((theme) => ({
   main: {
     background: "#353535",
-    height: 500,
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -50,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
   upprquote: {
     position: "absolute",
     marginTop: "-25rem",
-    marginLeft: "70rem",
+    marginLeft: "65rem",
     width: 71,
     height: 287,
     fontFamily: "Axiforma",
@@ -67,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
   lwrquote: {
     position: "absolute",
     marginTop: "20rem",
-    marginLeft: "-75rem",
+    marginLeft: "-67rem",
     width: 71,
     height: 287,
     fontFamily: "Axiforma",

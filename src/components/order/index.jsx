@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
   },
   main: {
-    maxWidth: 1380,
+    maxWidth: 1280,
   },
   img: {
     width: 486,
@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
   },
   sqr: {
     position: "absolute",
-    marginLeft: "16rem",
+    marginLeft: "14.2rem",
     marginTop: "-25rem",
     width: 174,
     height: 179,

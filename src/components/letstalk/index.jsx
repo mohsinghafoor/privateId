@@ -15,10 +15,10 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: "100% 100%",
   },
   main: {
-    maxWidth: 1380,
+    maxWidth: 1280,
   },
   textbox: {
-    marginTop: "-8rem",
+    marginTop: "-15rem",
   },
   heading: {
     width: 201,
@@ -47,7 +47,8 @@ const useStyles = makeStyles((theme) => ({
   img: {
     width: 208,
     height: 184,
-    marginTop: "-3rem",
+    marginTop: "-10rem",
+    marginRight: -50,
   },
   form: {
     display: "flex",
@@ -58,8 +59,7 @@ const useStyles = makeStyles((theme) => ({
     height: 388.59,
     background: "#FFFFFF",
     borderRadius: 14,
-    marginLeft: 30,
-    marginTop: "10rem",
+    marginTop: "3rem",
   },
   inputbox: {
     height: 60,
@@ -110,7 +110,7 @@ export default function LetsTalk() {
       <Grid container className={classes.main}>
         <Grid
           item
-          lg={5}
+          lg={6}
           style={{
             display: "flex",
             justifyContent: "flex-end",
@@ -128,7 +128,7 @@ export default function LetsTalk() {
           lg={5}
           style={{
             display: "flex",
-            alignItems: "center",
+            alignItems: "flex-start",
             justifyContent: "center",
           }}
         >

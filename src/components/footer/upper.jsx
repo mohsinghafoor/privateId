@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Box, Grid } from "@material-ui/core";
+import { Box, Grid, Container } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -60,10 +60,13 @@ const useStyles = makeStyles((theme) => ({
     fontStyle: "normal",
     fontWeight: 300,
     fontSize: 14,
-    lineHeight: "131.5%",
+    lineHeight: "20px",
     /* or 18px */
 
     color: "#FFFFFF",
+  },
+  container: {
+    padding: 60,
   },
 }));
 
@@ -72,90 +75,92 @@ export default function FooterFields() {
 
   return (
     <div className={classes.root}>
-      <Grid container className={classes.main}>
-        <Grid item md={4}>
-          <Box className={classes.parent}>
-            <Box className={classes.title}>COMPANY</Box>
-            <Box ml={5}>
-              <Box className={classes.dflex} mt={3}>
-                <Box className={classes.bulletPoint} />
-                <Box className={classes.service} ml={1}>
-                  About Us
+      <Container className={classes.container}>
+        <Grid container className={classes.main}>
+          <Grid item md={4}>
+            <Box className={classes.parent}>
+              <Box className={classes.title}>COMPANY</Box>
+              <Box ml={5}>
+                <Box className={classes.dflex} mt={3}>
+                  <Box className={classes.bulletPoint} />
+                  <Box className={classes.service} ml={1}>
+                    About Us
+                  </Box>
                 </Box>
-              </Box>
-              <Box className={classes.dflex} mt={3}>
-                <Box className={classes.bulletPoint}></Box>
-                <Box className={classes.service} ml={1}>
-                  Privacy Policy
+                <Box className={classes.dflex} mt={3}>
+                  <Box className={classes.bulletPoint}></Box>
+                  <Box className={classes.service} ml={1}>
+                    Privacy Policy
+                  </Box>
                 </Box>
-              </Box>
-              <Box className={classes.dflex} mt={3}>
-                <Box className={classes.bulletPoint}></Box>
-                <Box className={classes.service} ml={1}>
-                  Terms of Use
+                <Box className={classes.dflex} mt={3}>
+                  <Box className={classes.bulletPoint}></Box>
+                  <Box className={classes.service} ml={1}>
+                    Terms of Use
+                  </Box>
                 </Box>
-              </Box>
-              <Box className={classes.dflex} mt={3}>
-                <Box className={classes.bulletPoint}></Box>
-                <Box className={classes.service} ml={1}>
-                  Intellectual Property
+                <Box className={classes.dflex} mt={3}>
+                  <Box className={classes.bulletPoint}></Box>
+                  <Box className={classes.service} ml={1}>
+                    Intellectual Property
+                  </Box>
                 </Box>
-              </Box>
-              <Box className={classes.dflex} mt={3}>
-                <Box className={classes.bulletPoint}></Box>
-                <Box className={classes.service} ml={1}>
-                  sales@private.id
+                <Box className={classes.dflex} mt={3}>
+                  <Box className={classes.bulletPoint}></Box>
+                  <Box className={classes.service} ml={1}>
+                    sales@private.id
+                  </Box>
                 </Box>
               </Box>
             </Box>
-          </Box>
-        </Grid>
+          </Grid>
 
-        <Grid item md={4}>
-          <Box className={classes.parent}>
-            <Box className={classes.title}>SUPPORT</Box>
-            <Box ml={6}>
-              <Box className={classes.dflex} mt={3}>
-                <Box className={classes.bulletPoint} />
-                <Box className={classes.service} ml={1}>
-                  API Docs
+          <Grid item md={4}>
+            <Box className={classes.parent}>
+              <Box className={classes.title}>SUPPORT</Box>
+              <Box ml={6}>
+                <Box className={classes.dflex} mt={3}>
+                  <Box className={classes.bulletPoint} />
+                  <Box className={classes.service} ml={1}>
+                    API Docs
+                  </Box>
                 </Box>
-              </Box>
-              <Box className={classes.dflex} mt={3}>
-                <Box className={classes.bulletPoint}></Box>
-                <Box className={classes.service} ml={1}>
-                  Issue Tracker
+                <Box className={classes.dflex} mt={3}>
+                  <Box className={classes.bulletPoint}></Box>
+                  <Box className={classes.service} ml={1}>
+                    Issue Tracker
+                  </Box>
                 </Box>
-              </Box>
-              <Box className={classes.dflex} mt={3}>
-                <Box className={classes.bulletPoint}></Box>
-                <Box className={classes.service} ml={1}>
-                  Stack Overflow
+                <Box className={classes.dflex} mt={3}>
+                  <Box className={classes.bulletPoint}></Box>
+                  <Box className={classes.service} ml={1}>
+                    Stack Overflow
+                  </Box>
                 </Box>
-              </Box>
-              <Box className={classes.dflex} mt={3}>
-                <Box className={classes.bulletPoint}></Box>
-                <Box className={classes.service} ml={1}>
-                  support@private.id
+                <Box className={classes.dflex} mt={3}>
+                  <Box className={classes.bulletPoint}></Box>
+                  <Box className={classes.service} ml={1}>
+                    support@private.id
+                  </Box>
                 </Box>
               </Box>
             </Box>
-          </Box>
-        </Grid>
+          </Grid>
 
-        <Grid item md={4}>
-          <Box className={classes.parent}>
-            <Box className={classes.title}>SMALL PRINT</Box>
-            <Box mt={1} ml={3} className={classes.text}>
-              © 2021 Private Identity LLC All Rights Reserved. Private ID and
-              Private Identity are registered trademarks of Private Identity.
-              All other trademarks, service marks, trade names, trade dress,
-              product names and logos are the property of their respective
-              owners.
+          <Grid item md={4}>
+            <Box className={classes.parent}>
+              <Box className={classes.title}>SMALL PRINT</Box>
+              <Box mt={2} ml={3} className={classes.text}>
+                © 2021 Private Identity LLC All Rights Reserved. Private ID and
+                Private Identity are registered trademarks of Private Identity.
+                All other trademarks, service marks, trade names, trade dress,
+                product names and logos are the property of their respective
+                owners.
+              </Box>
             </Box>
-          </Box>
+          </Grid>
         </Grid>
-      </Grid>
+      </Container>
     </div>
   );
 }

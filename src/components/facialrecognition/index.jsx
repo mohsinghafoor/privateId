@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    maxWidth: 1380,
+    maxWidth: 1280,
   },
   circle: {
     width: 427,

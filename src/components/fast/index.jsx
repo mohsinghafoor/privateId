@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     height: "100vh",
   },
   main: {
-    maxWidth: 1380,
+    maxWidth: 1280,
   },
   heading: {
     width: 602,
@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
   },
   text: {
-    width: 615,
+    width: 605,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
@@ -52,7 +52,7 @@ export default function Fast() {
       <Grid container className={classes.main}>
         <Grid
           item
-          lg={6}
+          lg={7}
           style={{
             display: "flex",
             flexDirection: "column",
@@ -80,7 +80,7 @@ export default function Fast() {
         </Grid>
         <Grid
           item
-          lg={6}
+          lg={5}
           style={{
             display: "flex",
             justifyContent: "center",

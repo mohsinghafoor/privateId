@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     height: "100vh",
   },
   main: {
-    maxWidth: 1380,
+    maxWidth: 1280,
   },
   img: {
     width: 989,

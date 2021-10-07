@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
   main: {
     display: "flex",
     alignItems: "center",
-    maxWidth: 1380,
+    maxWidth: 1280,
   },
   img: {
     width: 464,
@@ -116,7 +116,10 @@ export default function VoiceAuthentication() {
         <Grid
           item
           lg={7}
-          style={{ display: "flex", justifyContent: "flex-start" }}
+          style={{
+            display: "flex",
+            justifyContent: "flex-start",
+          }}
         >
           <img src={img} className={classes.img} alt="voice image" />
         </Grid>

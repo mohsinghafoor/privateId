@@ -13,6 +13,7 @@ import LetsTalk from "./components/letstalk";
 import Decenterlized from "./components/decenterlized";
 import Footer from "./components/footer";
 import FooterFields from "./components/footer/upper";
+import Face from "./components/face";
 
 function App() {
   return (
@@ -25,10 +26,24 @@ function App() {
       <Carosoul />
       <FacialRecognition />
       <VoiceAuthentication />
+      <Face />
       <Protects />
       <Engineered />
       <LetsTalk />
       <Footer />
+      {/* <Decenterlized />
+      <Order />
+      <Fast />
+      <Easy />
+      <Exempt />
+      <Carosoul />
+      <FacialRecognition />
+      <VoiceAuthentication />
+      <Face />
+      <Protects />
+      <Engineered />
+      <LetsTalk />
+      <Footer /> */}
     </div>
   );
 }

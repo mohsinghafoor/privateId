@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
   },
   main: {
     flexGrow: 1,
-    maxWidth: 1380,
+    maxWidth: 1280,
     height: 600,
   },
   box: {
@@ -69,7 +69,7 @@ export default function Protects() {
       <Grid container className={classes.main}>
         <Grid
           item
-          lg={6}
+          lg={7}
           style={{
             display: "flex",
             flexDirection: "column",

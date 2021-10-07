@@ -13,11 +13,11 @@ const useStyles = makeStyles((theme) => ({
   },
   main: {
     flexGrow: 1,
-    maxWidth: 1380,
+    maxWidth: 1280,
   },
   img: {
-    width: 811,
-    height: 546,
+    width: 711,
+    height: 500,
   },
   heading: {
     width: 445,
@@ -50,7 +50,15 @@ export default function Engineered() {
   return (
     <div className={classes.root}>
       <Grid container className={classes.main}>
-        <Grid item lg={8}>
+        <Grid
+          item
+          lg={7}
+          style={{
+            display: "flex",
+            alignItems: "flex-start",
+            flexDirection: "column",
+          }}
+        >
           <img src={img} className={classes.img} alt="" />
         </Grid>
         <Grid
@@ -60,6 +68,7 @@ export default function Engineered() {
             display: "flex",
             justifyContent: "center",
             flexDirection: "column",
+            alignItems: "flex-start",
           }}
         >
           <Box className={classes.heading}>ENGINEERED BY PRIVATE IDENTITY®</Box>

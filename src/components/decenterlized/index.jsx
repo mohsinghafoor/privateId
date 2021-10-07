@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    maxWidth: 1380,
+    maxWidth: 1280,
   },
   text: {
     width: 505,
@@ -67,8 +67,8 @@ const useStyles = makeStyles((theme) => ({
   },
   logo: {
     position: "absolute",
-    marginTop: "-18rem",
-    marginLeft: "-34rem",
+    marginTop: "-16rem",
+    marginLeft: "-30rem",
   },
 }));
 

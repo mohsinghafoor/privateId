@@ -10,10 +10,10 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     background: "#777777",
-    height: 100,
+    paddingTop: 30,
   },
   main: {
-    maxWidth: "1380",
+    maxWidth: 1280,
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
