@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    height: "100vh",
+    height: "100%",
     backgroundSize: "100% 100%",
     marginTop: -22,
   },
@@ -100,8 +100,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFFFFF",
   },
   img: {
-    width: 437,
-    height: 526,
+    height: 606,
   },
   blackline: {
     position: "absolute",
@@ -110,7 +109,7 @@ const useStyles = makeStyles((theme) => ({
     background: "#000000",
     borderRadius: 204,
     marginLeft: "-37rem",
-    marginTop: "5rem",
+    marginTop: "10rem",
     display: "flex",
     justifyContent: "flex-end",
     alignItems: "center",
@@ -144,7 +143,7 @@ export default function Face() {
         </Box>
         <Grid
           item
-          md={4}
+          md={6}
           style={{
             display: "flex",
             justifyContent: "flex-end",
@@ -210,7 +209,7 @@ export default function Face() {
 
         <Grid
           item
-          md={8}
+          md={6}
           style={{
             display: "flex",
             justifyContent: "flex-end",

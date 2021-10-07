@@ -14,6 +14,8 @@ import Decenterlized from "./components/decenterlized";
 import Footer from "./components/footer";
 import FooterFields from "./components/footer/upper";
 import Face from "./components/face";
+import Table1 from "./components/tables/table1";
+import Table2 from "./components/tables/table2";
 
 function App() {
   return (
@@ -31,19 +33,6 @@ function App() {
       <Engineered />
       <LetsTalk />
       <Footer />
-      {/* <Decenterlized />
-      <Order />
-      <Fast />
-      <Easy />
-      <Exempt />
-      <Carosoul />
-      <FacialRecognition />
-      <VoiceAuthentication />
-      <Face />
-      <Protects />
-      <Engineered />
-      <LetsTalk />
-      <Footer /> */}
     </div>
   );
 }

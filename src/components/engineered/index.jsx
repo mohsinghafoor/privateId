@@ -9,15 +9,14 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center",
     background: "#161616",
-    height: "100vh",
+    height: "100%",
   },
   main: {
     flexGrow: 1,
     maxWidth: 1280,
   },
   img: {
-    width: 711,
-    height: 500,
+    height: 600,
   },
   heading: {
     width: 445,
@@ -52,7 +51,7 @@ export default function Engineered() {
       <Grid container className={classes.main}>
         <Grid
           item
-          lg={7}
+          lg={6}
           style={{
             display: "flex",
             alignItems: "flex-start",
@@ -63,21 +62,26 @@ export default function Engineered() {
         </Grid>
         <Grid
           item
-          lg={2}
+          lg={6}
           style={{
             display: "flex",
             justifyContent: "center",
             flexDirection: "column",
-            alignItems: "flex-start",
+            alignItems: "flex-end",
           }}
         >
-          <Box className={classes.heading}>ENGINEERED BY PRIVATE IDENTITY®</Box>
-          <Box className={classes.text}>
-            Private Identity LLC is a Washington DC-based software company. Our
-            small team of top computer scientists, cryptologists and ML
-            engineers converged on a solution to fully homomorphic encryption in
-            early 2018 and was granted patents in 2019 and 2020. The societal
-            good achieved with homomorphic encryption is full privacy.
+          <Box>
+            <Box className={classes.heading}>
+              ENGINEERED BY PRIVATE IDENTITY®
+            </Box>
+            <Box className={classes.text}>
+              Private Identity LLC is a Washington DC-based software company.
+              Our small team of top computer scientists, cryptologists and ML
+              engineers converged on a solution to fully homomorphic encryption
+              in early 2018 and was granted patents in 2019 and 2020. The
+              societal good achieved with homomorphic encryption is full
+              privacy.
+            </Box>
           </Box>
         </Grid>
       </Grid>

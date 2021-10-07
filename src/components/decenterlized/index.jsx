@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    height: "100vh",
+    height: "100%",
     backgroundSize: "100% 100%",
   },
   main: {
@@ -24,6 +24,7 @@ const useStyles = makeStyles((theme) => ({
   text: {
     width: 505,
     height: 138,
+    marginTop: -90,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
@@ -62,13 +63,12 @@ const useStyles = makeStyles((theme) => ({
     marginTop: -5,
   },
   img: {
-    width: 557,
-    height: 558,
+    height: 600,
   },
   logo: {
     position: "absolute",
-    marginTop: "-16rem",
-    marginLeft: "-30rem",
+    marginTop: "-17rem",
+    marginLeft: "-29rem",
   },
 }));
 

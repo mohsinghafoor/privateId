@@ -6,7 +6,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     background:
       "radial-gradient(71.13% 327.64% at -2.5% 28.87%, #404040 16.46%, #252525 100%)",
-    height: "100vh",
+    height: "100%",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -52,9 +52,8 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
   },
   img: {
-    width: 544,
-    height: 517,
-    marginLeft: -30,
+    height: 610,
+    marginLeft: -50,
   },
 }));
 
@@ -66,7 +65,7 @@ export default function Exempt() {
       <Grid container className={classes.main}>
         <Grid
           item
-          lg={7}
+          lg={6}
           style={{
             display: "flex",
             alignItems: "flex-end",
@@ -88,7 +87,7 @@ export default function Exempt() {
             </Box>
           </Box>
         </Grid>
-        <Grid item lg={4}>
+        <Grid item lg={6}>
           <img src={img} alt="" className={classes.img} />
         </Grid>
       </Grid>

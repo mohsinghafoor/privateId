@@ -10,21 +10,23 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     background:
       "radial-gradient(64.32% 318.09% at 81.51% 11.17%, #000000 0%, #474747 100%)",
-    height: "100vh",
+    height: "100%",
+    [theme.breakpoints.up("lg")]: {
+      height: 604,
+    },
     width: "100%",
   },
   main: {
     maxWidth: 1280,
   },
   img: {
-    width: 486,
-    height: 522,
+    height: 620,
     filter: "drop-shadow(22px -15px 21px rgba(0, 0, 0, 0.25))",
   },
   sqr: {
     position: "absolute",
     marginLeft: "14.2rem",
-    marginTop: "-25rem",
+    marginTop: "-29rem",
     width: 174,
     height: 179,
     border: "3px solid rgba(248, 248, 248, 0.6)",

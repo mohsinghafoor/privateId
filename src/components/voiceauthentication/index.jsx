@@ -11,7 +11,10 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    height: "100vh",
+    height: "100%",
+    [theme.breakpoints.up("lg")]: {
+      height: 630,
+    },
     backgroundSize: "100% 100%",
   },
   main: {
@@ -20,8 +23,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 1280,
   },
   img: {
-    width: 464,
-    height: 560,
+    height: 585,
   },
   cardbox: {
     position: "absolute",

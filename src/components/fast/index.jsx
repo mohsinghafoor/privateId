@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    height: "100vh",
+    height: "100%",
   },
   main: {
     maxWidth: 1280,
@@ -38,8 +38,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFFFFF",
   },
   img: {
-    width: 464,
-    height: 538,
+    height: 639,
     filter: " drop-shadow(17px 4px 11px rgba(0, 0, 0, 0.2))",
   },
 }));
@@ -52,7 +51,7 @@ export default function Fast() {
       <Grid container className={classes.main}>
         <Grid
           item
-          lg={7}
+          lg={6}
           style={{
             display: "flex",
             flexDirection: "column",
@@ -80,7 +79,7 @@ export default function Fast() {
         </Grid>
         <Grid
           item
-          lg={5}
+          lg={6}
           style={{
             display: "flex",
             justifyContent: "center",
