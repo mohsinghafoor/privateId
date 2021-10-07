@@ -12,6 +12,8 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    height: "100vh",
+    backgroundSize: "100% 100%",
   },
   main: {
     display: "flex",
@@ -65,8 +67,8 @@ const useStyles = makeStyles((theme) => ({
   },
   logo: {
     position: "absolute",
-    marginTop: "-15rem",
-    marginLeft: "-35rem",
+    marginTop: "-18rem",
+    marginLeft: "-34rem",
   },
 }));
 

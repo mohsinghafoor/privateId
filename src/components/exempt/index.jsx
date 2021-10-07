@@ -6,6 +6,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     background:
       "radial-gradient(71.13% 327.64% at -2.5% 28.87%, #404040 16.46%, #252525 100%)",
+    height: "100vh",
   },
   heading: {
     maxWidth: 625,

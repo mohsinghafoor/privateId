@@ -11,6 +11,8 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    height: "100vh",
+    backgroundSize: "100% 100%",
   },
   main: {
     maxWidth: 1380,

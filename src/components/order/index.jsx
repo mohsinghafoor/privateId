@@ -10,6 +10,8 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     background:
       "radial-gradient(64.32% 318.09% at 81.51% 11.17%, #000000 0%, #474747 100%)",
+    height: "100vh",
+    width: "100%",
   },
   main: {
     maxWidth: 1380,

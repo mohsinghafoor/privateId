@@ -1,6 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Box } from "@material-ui/core";
+import FooterFields from "./upper";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -37,16 +38,19 @@ export default function Footer() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <Box className={classes.main}>
-        <Box className={classes.text}>
-          © 2021 Private Identity LLC All Rights Reserved. Private ID and
-          Private Identity are registered trademarks of Private Identity LLC.
-          All other trademarks, service marks, trade names, trade dress, product
-          names and logos appearing on this site are the property of their
-          respective owners.
+    <div>
+      <FooterFields />
+      <div className={classes.root}>
+        <Box className={classes.main}>
+          <Box className={classes.text}>
+            © 2021 Private Identity LLC All Rights Reserved. Private ID and
+            Private Identity are registered trademarks of Private Identity LLC.
+            All other trademarks, service marks, trade names, trade dress,
+            product names and logos appearing on this site are the property of
+            their respective owners.
+          </Box>
         </Box>
-      </Box>
+      </div>
     </div>
   );
 }

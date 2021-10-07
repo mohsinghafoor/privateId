@@ -12,6 +12,7 @@ import Engineered from "./components/engineered";
 import LetsTalk from "./components/letstalk";
 import Decenterlized from "./components/decenterlized";
 import Footer from "./components/footer";
+import FooterFields from "./components/footer/upper";
 
 function App() {
   return (

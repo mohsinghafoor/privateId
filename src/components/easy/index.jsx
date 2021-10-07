@@ -10,6 +10,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    height: "100vh",
   },
   main: {
     maxWidth: 1380,
@@ -73,16 +74,17 @@ export default function Easy() {
   return (
     <div className={classes.root}>
       <Grid container className={classes.main}>
-        <Grid item lg={8}>
+        <Grid item lg={7}>
           <img src={img} alt="Man using laptop" className={classes.img} />
         </Grid>
         <Grid
           item
-          lg={3}
+          lg={4}
           style={{
             display: "flex",
             justifyContent: "center",
             flexDirection: "column",
+            alignItems: "flex-start",
           }}
         >
           <Box className={classes.heading}>Easy to Integrate</Box>

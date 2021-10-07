@@ -11,11 +11,13 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    height: "100vh",
+    backgroundSize: "100% 100%",
   },
   main: {
     display: "flex",
     alignItems: "center",
-    maxWidth: 1280,
+    maxWidth: 1380,
   },
   img: {
     width: 464,
