@@ -36,21 +36,29 @@ function createData(tier, description, request) {
 }
 
 const rows = [
-  createData(1, "Up to 1M Requests / Month", 6.0),
-  createData(2, "1M to 10M Requests / Month", 9.0),
+  createData(1, "Up to 1M Requests / Month", "$0.00100"),
+  createData(2, "1M to 10M Requests / Month", "$0.00080"),
+  createData(3, "10M to 100M Requests / Month", "$0.00060"),
+  createData(4, "Greater than 100M Requests / Month", "$0.00040"),
+  createData(5, "Metadata Storage /  Month", "$0.00010"),
 ];
 
 const useStyles = makeStyles({
+  root: {
+    marginRight: 20,
+  },
   table: {
     width: 432,
+    background: "white",
   },
   headingbox: {
     width: 432,
-    height: 37,
+    height: 47,
     background: "#000000",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    marginBottom: 5,
   },
   heading: {
     width: 165,
@@ -69,11 +77,11 @@ const useStyles = makeStyles({
   },
 });
 
-export default function Table2() {
+export default function Table1() {
   const classes = useStyles();
 
   return (
-    <div>
+    <div className={classes.root}>
       <Box className={classes.headingbox}>
         <Box className={classes.heading}>FACE AND VOICE AUTH</Box>
       </Box>

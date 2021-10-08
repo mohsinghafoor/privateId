@@ -19,16 +19,42 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     maxWidth: 1280,
+    background:
+      "linear-gradient(90.85deg, rgba(0, 0, 0, 0.820236) 48.39%, rgba(0, 0, 0, 0) 84.47%)",
+  },
+  mainheading: {
+    width: 441,
+    height: 39,
+    fontFamily: "Axiforma",
+    fontStyle: "normal",
+    fontWeight: 300,
+    fontSize: 30,
+    lineHeight: "131.5%",
+    /* or 39px */
+    textTransform: "uppercase",
+
+    color: "#FFFFFF",
+  },
+  headingbox: {
+    width: 560,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  cardbox: {
+    display: "flex",
+    justifyContent: "space-between",
+    width: 660,
+    marginTop: 20,
+    marginLeft: 80,
   },
   sqr: {
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-    width: 230,
-    height: 219,
-    background: "#545454",
-    border: "6px solid #B4B4B4",
-    boxSizing: "border-box",
+    width: 209,
+    height: 190,
+    background: "#434242",
   },
   badge: {
     width: 69,
@@ -42,7 +68,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 10,
     fontFamily: "Axiforma",
     fontStyle: "normal",
-    fontWeight: 300,
+    fontWeight: 800,
     fontSize: 14,
     lineHeight: "131.5%",
     /* or 18px */
@@ -70,22 +96,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     color: "#FFFFFF",
   },
-  parentbox: {
-    position: "absolute",
-  },
-  uppercardbox: {
-    display: "flex",
-    justifyContent: "space-between",
-    width: 475,
-    marginLeft: 80,
-  },
-  lowercardbox: {
-    display: "flex",
-    justifyContent: "space-between",
-    width: 720,
-    marginTop: 20,
-    marginLeft: 80,
-  },
+
   subheading: {
     maxWidth: 174,
     marginTop: -10,
@@ -138,70 +149,82 @@ export default function Face() {
   return (
     <div className={classes.root}>
       <Grid container className={classes.main}>
-        <Box className={classes.blackline}>
-          <Box className={classes.linetext}>Face Security Solutions</Box>
-        </Box>
         <Grid
           item
           md={6}
           style={{
             display: "flex",
-            justifyContent: "flex-end",
+            justifyContent: "center",
             flexDirection: "column",
           }}
         >
-          <Box className={classes.parentbox}>
-            <Box className={classes.uppercardbox}>
-              <Box className={classes.sqr}>
-                <img src={badge} className={classes.badge} alt="" />
-                <Box className={classes.heading}>1:N FACE RECOGNITION</Box>
-                <Box className={classes.line} />
-                <Box className={classes.text}>
-                  Identify, 1:1 verify and authenticate using face recognition
-                  with face mask in 300ms without PII.
-                </Box>
-              </Box>
-              <Box className={classes.sqr}>
-                <img src={badge} className={classes.badge} alt="" />
-                <Box className={classes.heading}>ACCOUNT RECOVERY</Box>
-                <Box className={classes.line} />
-                <Box className={classes.text}>
-                  Protect an unlimited number of user accounts and eliminate
-                  password resets with automated biometric account recovery.
-                </Box>
+          <Box className={classes.headingbox}>
+            <Box className={classes.mainheading}>Face Security Solutions</Box>
+          </Box>
+          <Box className={classes.cardbox}>
+            <Box className={classes.sqr}>
+              <img src={badge} className={classes.badge} alt="" />
+              <Box className={classes.heading}>1:N FACE RECOGNITION</Box>
+              <Box className={classes.line} />
+              <Box className={classes.text}>
+                Identify, 1:1 verify and authenticate using face recognition
+                with face mask in 300ms without PII.
               </Box>
             </Box>
-            <Box className={classes.lowercardbox}>
-              <Box className={classes.sqr}>
-                <img src={badge} className={classes.badge} alt="" />
-                <Box className={classes.heading}>FACE CAPTCHA</Box>
-                <Box className={classes.line} />
-                <Box className={classes.text}>
-                  Determines if a live human face is in front of the camera in
-                  10ms. Run instantly on any browser with no installation.
-                </Box>
+            <Box className={classes.sqr}>
+              <img src={badge} className={classes.badge} alt="" />
+              <Box className={classes.heading}>ACCOUNT RECOVERY</Box>
+              <Box className={classes.line} />
+              <Box className={classes.text}>
+                Protect an unlimited number of user accounts and eliminate
+                password resets with automated biometric account recovery.
               </Box>
-              <Box className={classes.sqr}>
-                <img src={badge} className={classes.badge} alt="" />
-                <Box className={classes.heading}>VERIFIED IDENTITY</Box>
-                <Box className={classes.subheading}>
-                  for Identity Providers (IdPs)
-                </Box>
-                <Box className={classes.line} />
-                <Box className={classes.text}>
-                  Compare two or more face images (with or without a mask) with
-                  passive liveness in 100ms without PII. Built for identity
-                  providers.
-                </Box>
+            </Box>
+            <Box className={classes.sqr}>
+              <img src={badge} className={classes.badge} alt="" />
+              <Box className={classes.heading}>ACCOUNT RECOVERY</Box>
+              <Box className={classes.line} />
+              <Box className={classes.text}>
+                Protect an unlimited number of user accounts and eliminate
+                password resets with automated biometric account recovery.
               </Box>
-              <Box className={classes.sqr}>
-                <img src={badge} className={classes.badge} alt="" />
-                <Box className={classes.heading}>CONTINUOUS UNLOCK</Box>
-                <Box className={classes.line} />
-                <Box className={classes.text}>
-                  Instantly open a caller’s unified Customer Profile using 1:n
-                  speaker recognition with one second of the caller’s voice.
-                </Box>
+            </Box>
+          </Box>
+          <Box className={classes.cardbox}>
+            <Box className={classes.sqr}>
+              <img src={badge} className={classes.badge} alt="" />
+              <Box className={classes.heading}>FACE CAPTCHA</Box>
+              <Box className={classes.line} />
+              <Box className={classes.text}>
+                Determines if a live human face is in front of the camera in
+                10ms. Run instantly on any browser with no installation.
+              </Box>
+            </Box>
+            <Box className={classes.sqr}>
+              <img src={badge} className={classes.badge} alt="" />
+              <Box
+                className={classes.heading}
+                style={{ maxWidth: 167, height: 30 }}
+              >
+                VERIFIED IDENTITY
+              </Box>
+              <Box className={classes.subheading}>
+                for Identity Providers (IdPs)
+              </Box>
+              <Box className={classes.line} />
+              <Box className={classes.text}>
+                Compare two or more face images (with or without a mask) with
+                passive liveness in 100ms without PII. Built for identity
+                providers.
+              </Box>
+            </Box>
+            <Box className={classes.sqr}>
+              <img src={badge} className={classes.badge} alt="" />
+              <Box className={classes.heading}>CONTINUOUS UNLOCK</Box>
+              <Box className={classes.line} />
+              <Box className={classes.text}>
+                Instantly open a caller’s unified Customer Profile using 1:n
+                speaker recognition with one second of the caller’s voice.
               </Box>
             </Box>
           </Box>

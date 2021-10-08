@@ -32,22 +32,27 @@ const StyledTableRow = withStyles((theme) => ({
 }))(TableRow);
 
 function createData(description, request) {
-  return { tier, description, request };
+  return { description, request };
 }
 
-const rows = [createData("Remote Onboarding / KYC", 6.0)];
+const rows = [
+  createData("Enhanced Customer Profile Merge", "$0.25000"),
+  createData("Augmented Customer Profile Merge", "$0.45000"),
+];
 
 const useStyles = makeStyles({
   table: {
     width: 432,
+    background: "white",
   },
   headingbox: {
     width: 432,
-    height: 37,
+    height: 47,
     background: "#000000",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    marginBottom: 5,
   },
   heading: {
     width: 165,
@@ -72,16 +77,9 @@ export default function Table3() {
   return (
     <div>
       <Box className={classes.headingbox}>
-        <Box className={classes.heading}>FACE AND VOICE AUTH</Box>
+        <Box className={classes.heading}>VOICEMERGE</Box>
       </Box>
       <Table className={classes.table} aria-label="customized table">
-        <TableHead>
-          <TableRow className={classes.row}>
-            <StyledTableCell>Tier</StyledTableCell>
-            <StyledTableCell align="left">Description</StyledTableCell>
-            <StyledTableCell align="left">Request</StyledTableCell>
-          </TableRow>
-        </TableHead>
         <TableBody>
           {rows.map((row) => (
             <StyledTableRow key={row.name} className={classes.row}>

@@ -31,32 +31,31 @@ const StyledTableRow = withStyles((theme) => ({
   },
 }))(TableRow);
 
-function createData(tier, description, request) {
-  return { tier, description, request };
+function createData(description, request) {
+  return { description, request };
 }
 
-const rows = [
-  createData(1, "Up to 1M Requests / Month", 6.0),
-  createData(2, "1M to 10M Requests / Month", 9.0),
-  createData(3, "10M to 100M Requests / Month", 16.0),
-  createData(4, "Greater than 100M Requests / Month", 3.7),
-  createData(5, "Metadata Storage /  Month", 16.0),
-];
+const rows = [createData("Remote Onboarding / KYC", "$0.15000")];
 
 const useStyles = makeStyles({
+  root: {
+    marginBottom: 15,
+  },
   table: {
     width: 432,
+    background: "white",
   },
   headingbox: {
     width: 432,
-    height: 37,
+    height: 47,
     background: "#000000",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    marginBottom: 5,
   },
   heading: {
-    width: 165,
+    width: 300,
     height: 14,
     fontFamily: "Axiforma",
     fontStyle: "normal",
@@ -72,22 +71,15 @@ const useStyles = makeStyles({
   },
 });
 
-export default function Table1() {
+export default function Table2() {
   const classes = useStyles();
 
   return (
-    <div>
+    <div className={classes.root}>
       <Box className={classes.headingbox}>
-        <Box className={classes.heading}>FACE AND VOICE AUTH</Box>
+        <Box className={classes.heading}>Remote Onboarding / KYC / AML</Box>
       </Box>
       <Table className={classes.table} aria-label="customized table">
-        <TableHead>
-          <TableRow className={classes.row}>
-            <StyledTableCell>Tier</StyledTableCell>
-            <StyledTableCell align="left">Description</StyledTableCell>
-            <StyledTableCell align="left">Request</StyledTableCell>
-          </TableRow>
-        </TableHead>
         <TableBody>
           {rows.map((row) => (
             <StyledTableRow key={row.name} className={classes.row}>

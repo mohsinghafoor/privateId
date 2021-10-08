@@ -23,13 +23,30 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 1280,
   },
   img: {
-    height: 585,
+    height: 630,
   },
-  cardbox: {
-    position: "absolute",
+  mainheading: {
+    width: 650,
+    height: 41,
+    fontFamily: "Axiforma",
+    fontStyle: "normal",
+    fontWeight: 300,
+    fontSize: 30,
+    lineHeight: "131.5%",
+    /* or 39px */
+
+    color: "#FFFFFF",
+  },
+  uppercardbox: {
     display: "flex",
     justifyContent: "space-between",
-    width: 480,
+    width: 720,
+    marginTop: 20,
+  },
+  lowercardbox: {
+    display: "flex",
+    justifyContent: "space-between",
+    width: 475,
     marginTop: 20,
   },
   sqr: {
@@ -40,9 +57,7 @@ const useStyles = makeStyles((theme) => ({
     width: 230,
     height: 219,
 
-    background: "#545454",
-    border: "6px solid #B4B4B4",
-    boxSizing: "border-box",
+    background: "#434242",
   },
   badge: {
     width: 69,
@@ -68,7 +83,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 10,
     marginLeft: 10,
     background: "#C4C4C4",
-    marginBottom: 20,
+    marginBottom: 10,
   },
   text: {
     maxWidth: 174,
@@ -83,29 +98,10 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     color: "#FFFFFF",
   },
-  blackline: {
-    position: "absolute",
-    width: 1000,
-    height: 145,
-    marginTop: "21rem",
-    marginLeft: "15rem",
-    background: "#000000",
-    borderRadius: 204,
-    display: "flex",
-    alignItems: "center",
-  },
-  linetext: {
-    width: 352,
-    height: 117,
-    fontFamily: "Axiforma",
-    fontStyle: "normal",
-    fontWeight: 300,
-    fontSize: 30,
-    lineHeight: "131.5%",
-    /* or 39px */
-    marginLeft: 40,
-    marginTop: 30,
-    color: "#FFFFFF",
+  span: {
+    fontSize: 14,
+    fontWeight: "bold",
+    marginLeft: 3,
   },
 }));
 
@@ -117,7 +113,7 @@ export default function VoiceAuthentication() {
       <Grid container className={classes.main}>
         <Grid
           item
-          lg={7}
+          lg={5}
           style={{
             display: "flex",
             justifyContent: "flex-start",
@@ -125,17 +121,25 @@ export default function VoiceAuthentication() {
         >
           <img src={img} className={classes.img} alt="voice image" />
         </Grid>
-        <Box className={classes.blackline}>
-          <Box className={classes.linetext}>
-            VOICE SOLUTIONS FOR AMAZON CONNECT®
+        <Grid
+          item
+          lg={6}
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            flexDirection: "column",
+            alignItems: "flex-end",
+          }}
+        >
+          <Box className={classes.mainheading}>
+            VOICE SOLUTIONS FOR AMAZON CONNECT
           </Box>
-        </Box>
-        <Grid item lg={5}>
-          <Box className={classes.cardbox} style={{ marginTop: -230 }}>
+          <Box className={classes.uppercardbox}>
             <Box className={classes.sqr}>
               <img src={badge} className={classes.badge} alt="" />
               <Box className={classes.heading}>
-                Voice Auth  for Amazon Connect®
+                Voice <span className={classes.span}>Auth</span> <br /> for
+                Amazon Connect®
               </Box>
               <Box className={classes.line} />
               <Box className={classes.text}>
@@ -146,20 +150,34 @@ export default function VoiceAuthentication() {
             <Box className={classes.sqr}>
               <img src={badge} className={classes.badge} alt="" />
               <Box className={classes.heading}>
-                Voice Pop  for Amazon Connect®
+                Voice <span className={classes.span}>Pop</span> <br /> for
+                Amazon Connect®
               </Box>
               <Box className={classes.line} />
               <Box className={classes.text}>
                 Instantly open a caller’s unified Customer Profile using 1:n
                 speaker recognition with one second of the caller’s voice.
+              </Box>
+            </Box>
+            <Box className={classes.sqr}>
+              <img src={badge} className={classes.badge} alt="" />
+              <Box className={classes.heading}>
+                PHONE <br />
+                <span style={{ fontWeight: "bold" }}>UNLOCK</span>
+              </Box>
+              <Box className={classes.line} />
+              <Box className={classes.text}>
+                Unlock devices and provide MFA for an unlimited number of user
+                accounts.
               </Box>
             </Box>
           </Box>
-          <Box className={classes.cardbox}>
+          <Box className={classes.lowercardbox}>
             <Box className={classes.sqr}>
               <img src={badge} className={classes.badge} alt="" />
               <Box className={classes.heading}>
-                Voice Pop  for Amazon Connect®
+                Enhanced <span className={classes.span}>Merge</span> <br /> for
+                Amazon Connect®
               </Box>
               <Box className={classes.line} />
               <Box className={classes.text}>
@@ -170,12 +188,13 @@ export default function VoiceAuthentication() {
             <Box className={classes.sqr}>
               <img src={badge} className={classes.badge} alt="" />
               <Box className={classes.heading}>
-                Voice Pop  for Amazon Connect®
+                Augmented <span className={classes.span}>Merge</span> <br /> for
+                Amazon Connect®
               </Box>
               <Box className={classes.line} />
               <Box className={classes.text}>
-                Instantly open a caller’s unified Customer Profile using 1:n
-                speaker recognition with one second of the caller’s voice.
+                Enhanced Merge, plus appends additional profile information for
+                greater personalization, fraud avoidance and targeted marketing.
               </Box>
             </Box>
           </Box>

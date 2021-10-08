@@ -10,9 +10,14 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center",
     height: "100%",
+    [theme.breakpoints.up("lg")]: {
+      height: 600,
+    },
   },
   main: {
     maxWidth: 1280,
+    display: "flex",
+    justifyContent: "center",
   },
   heading: {
     width: 602,
@@ -38,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFFFFF",
   },
   img: {
-    height: 639,
+    height: 633,
     filter: " drop-shadow(17px 4px 11px rgba(0, 0, 0, 0.2))",
   },
 }));
@@ -51,7 +56,7 @@ export default function Fast() {
       <Grid container className={classes.main}>
         <Grid
           item
-          lg={6}
+          lg={7}
           style={{
             display: "flex",
             flexDirection: "column",
@@ -79,10 +84,10 @@ export default function Fast() {
         </Grid>
         <Grid
           item
-          lg={6}
+          lg={5}
           style={{
             display: "flex",
-            justifyContent: "center",
+            justifyContent: "flex-end",
             alignItems: "flex-end",
           }}
         >

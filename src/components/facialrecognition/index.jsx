@@ -20,6 +20,8 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     maxWidth: 1280,
+    background:
+      "linear-gradient(89.45deg, rgba(0, 0, 0, 0) 23.65%, rgba(0, 0, 0, 0.9) 52.99%)",
   },
   circle: {
     width: 427,
@@ -36,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
   cardbox: {
     display: "flex",
     justifyContent: "space-between",
-    width: 680,
+    width: 440,
     marginTop: 10,
   },
   sqr: {
@@ -44,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
     height: 58,
     background: "#434242",
     display: "flex",
-    justifyContent: "center",
+    // justifyContent: "center",
     alignItems: "center",
   },
   text: {
@@ -55,6 +57,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 300,
     fontSize: 14,
     lineHeight: "131.5%",
+    marginLeft: 20,
     /* or 18px */
     textAlign: "left",
     color: "#FFFFFF",
@@ -81,7 +84,7 @@ export default function FacialRecognition() {
         </Grid>
         <Grid
           item
-          lg={6}
+          lg={4}
           style={{ display: "flex", justifyContent: "flex-start" }}
         >
           <Box>
@@ -93,9 +96,6 @@ export default function FacialRecognition() {
                 <Box className={classes.text}>
                   Fully Homomorphic Encryption (FHE)
                 </Box>
-              </Box>
-              <Box className={classes.sqr}>
-                <Box className={classes.text}>Scales Globally</Box>
               </Box>
             </Box>
 
@@ -110,9 +110,6 @@ export default function FacialRecognition() {
                   Privacy Preserving Machine Learning
                 </Box>
               </Box>
-              <Box className={classes.sqr}>
-                <Box className={classes.text}>Developer Support</Box>
-              </Box>
             </Box>
 
             <Box className={classes.cardbox}>
@@ -124,9 +121,6 @@ export default function FacialRecognition() {
                   IEEE 2410 Standard for Biometric Privacy
                 </Box>
               </Box>
-              <Box className={classes.sqr}>
-                <Box className={classes.text}>Touchless UX</Box>
-              </Box>
             </Box>
 
             <Box className={classes.cardbox}>
@@ -136,9 +130,6 @@ export default function FacialRecognition() {
               <Box className={classes.sqr}>
                 <Box className={classes.text}>WebAssembly / C++</Box>
               </Box>
-              <Box className={classes.sqr}>
-                <Box className={classes.text}>Touchless UI</Box>
-              </Box>
             </Box>
 
             <Box className={classes.cardbox}>
@@ -147,9 +138,6 @@ export default function FacialRecognition() {
               </Box>
               <Box className={classes.sqr}>
                 <Box className={classes.text}>UNLIMITED User Base</Box>
-              </Box>
-              <Box className={classes.sqr}>
-                <Box className={classes.text}>Online & Offline</Box>
               </Box>
             </Box>
           </Box>

@@ -10,9 +10,14 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    [theme.breakpoints.up("lg")]: {
+      height: 600,
+    },
   },
   main: {
     maxWidth: 1280,
+    display: "flex",
+    justifyContent: "center",
   },
   heading: {
     maxWidth: 625,
@@ -52,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
   },
   img: {
-    height: 610,
+    height: 600,
     marginLeft: -50,
   },
 }));
@@ -65,7 +70,7 @@ export default function Exempt() {
       <Grid container className={classes.main}>
         <Grid
           item
-          lg={6}
+          lg={7}
           style={{
             display: "flex",
             alignItems: "flex-end",
@@ -87,7 +92,11 @@ export default function Exempt() {
             </Box>
           </Box>
         </Grid>
-        <Grid item lg={6}>
+        <Grid
+          item
+          lg={5}
+          style={{ display: "flex", justifyContent: "flex-end" }}
+        >
           <img src={img} alt="" className={classes.img} />
         </Grid>
       </Grid>

@@ -14,8 +14,9 @@ import Decenterlized from "./components/decenterlized";
 import Footer from "./components/footer";
 import FooterFields from "./components/footer/upper";
 import Face from "./components/face";
-import Table1 from "./components/tables/table1";
-import Table2 from "./components/tables/table2";
+import Table1 from "./components/consumption/table1";
+import Table2 from "./components/consumption/table2";
+import Consumption from "./components/consumption";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
       <Face />
       <Protects />
       <Engineered />
+      <Consumption />
       <LetsTalk />
       <Footer />
     </div>
