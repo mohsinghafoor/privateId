@@ -16,6 +16,8 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     maxWidth: 1280,
     height: 600,
+    background:
+      "linear-gradient(89.59deg, #000000 6.3%, rgba(0, 0, 0, 0) 79.12%)",
   },
   box: {
     width: 570,

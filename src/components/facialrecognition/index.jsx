@@ -20,8 +20,8 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     maxWidth: 1280,
-    background:
-      "linear-gradient(89.45deg, rgba(0, 0, 0, 0) 23.65%, rgba(0, 0, 0, 0.9) 52.99%)",
+    // background:
+    //   "linear-gradient(89.45deg, rgba(0, 0, 0, 0) 23.65%, rgba(0, 0, 0, 0.9) 52.99%)",
   },
   circle: {
     width: 427,
@@ -32,7 +32,6 @@ const useStyles = makeStyles((theme) => ({
   },
   img: {
     position: "absolute",
-    width: 250,
     height: 453,
   },
   cardbox: {
@@ -72,7 +71,7 @@ export default function FacialRecognition() {
       <Grid container className={classes.main}>
         <Grid
           item
-          lg={4}
+          lg={6}
           style={{
             display: "flex",
             justifyContent: "center",
@@ -84,7 +83,7 @@ export default function FacialRecognition() {
         </Grid>
         <Grid
           item
-          lg={4}
+          lg={5}
           style={{ display: "flex", justifyContent: "flex-start" }}
         >
           <Box>

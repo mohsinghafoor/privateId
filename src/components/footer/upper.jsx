@@ -9,7 +9,8 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    minHeight: 300,
+    // height: 260,
+    // minHeight: 300,
   },
   main: {
     maxWidth: 1380,
@@ -59,8 +60,8 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 14,
-    lineHeight: "20px",
+    fontSize: 10,
+    lineHeight: "18px",
     /* or 18px */
 
     color: "#FFFFFF",
@@ -81,31 +82,31 @@ export default function FooterFields() {
             <Box className={classes.parent}>
               <Box className={classes.title}>COMPANY</Box>
               <Box ml={5}>
-                <Box className={classes.dflex} mt={3}>
+                <Box className={classes.dflex} mt={2}>
                   <Box className={classes.bulletPoint} />
                   <Box className={classes.service} ml={1}>
                     About Us
                   </Box>
                 </Box>
-                <Box className={classes.dflex} mt={3}>
+                <Box className={classes.dflex} mt={2}>
                   <Box className={classes.bulletPoint}></Box>
                   <Box className={classes.service} ml={1}>
                     Privacy Policy
                   </Box>
                 </Box>
-                <Box className={classes.dflex} mt={3}>
+                <Box className={classes.dflex} mt={2}>
                   <Box className={classes.bulletPoint}></Box>
                   <Box className={classes.service} ml={1}>
                     Terms of Use
                   </Box>
                 </Box>
-                <Box className={classes.dflex} mt={3}>
+                <Box className={classes.dflex} mt={2}>
                   <Box className={classes.bulletPoint}></Box>
                   <Box className={classes.service} ml={1}>
                     Intellectual Property
                   </Box>
                 </Box>
-                <Box className={classes.dflex} mt={3}>
+                <Box className={classes.dflex} mt={2}>
                   <Box className={classes.bulletPoint}></Box>
                   <Box className={classes.service} ml={1}>
                     sales@private.id
@@ -119,25 +120,25 @@ export default function FooterFields() {
             <Box className={classes.parent}>
               <Box className={classes.title}>SUPPORT</Box>
               <Box ml={6}>
-                <Box className={classes.dflex} mt={3}>
+                <Box className={classes.dflex} mt={2}>
                   <Box className={classes.bulletPoint} />
                   <Box className={classes.service} ml={1}>
                     API Docs
                   </Box>
                 </Box>
-                <Box className={classes.dflex} mt={3}>
+                <Box className={classes.dflex} mt={2}>
                   <Box className={classes.bulletPoint}></Box>
                   <Box className={classes.service} ml={1}>
                     Issue Tracker
                   </Box>
                 </Box>
-                <Box className={classes.dflex} mt={3}>
+                <Box className={classes.dflex} mt={2}>
                   <Box className={classes.bulletPoint}></Box>
                   <Box className={classes.service} ml={1}>
                     Stack Overflow
                   </Box>
                 </Box>
-                <Box className={classes.dflex} mt={3}>
+                <Box className={classes.dflex} mt={2}>
                   <Box className={classes.bulletPoint}></Box>
                   <Box className={classes.service} ml={1}>
                     support@private.id
@@ -150,7 +151,7 @@ export default function FooterFields() {
           <Grid item md={4}>
             <Box className={classes.parent}>
               <Box className={classes.title}>SMALL PRINT</Box>
-              <Box mt={2} ml={3} className={classes.text}>
+              <Box mt={2} ml={1} className={classes.text}>
                 © 2021 Private Identity LLC All Rights Reserved. Private ID and
                 Private Identity are registered trademarks of Private Identity.
                 All other trademarks, service marks, trade names, trade dress,

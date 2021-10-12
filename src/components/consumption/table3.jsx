@@ -10,15 +10,11 @@ import { Box } from "@material-ui/core";
 import Paper from "@material-ui/core/Paper";
 
 const StyledTableCell = withStyles((theme) => ({
-  head: {
-    backgroundColor: "#FFFFFF",
-    color: "black",
-    fontSize: 14,
-    fontFamily: "Axiforma",
-    fontWeight: 300,
-  },
   body: {
-    fontSize: 14,
+    fontSize: 12,
+    fontWeight: 600,
+    fontFamily: "Axiforma",
+    width: 270,
   },
 }))(TableCell);
 
@@ -36,30 +32,45 @@ function createData(description, request) {
 }
 
 const rows = [
-  createData("Enhanced Customer Profile Merge", "$0.25000"),
-  createData("Augmented Customer Profile Merge", "$0.45000"),
+  createData("Enhanced Amazon Connect® Customer Profile Merge", "$0.25000"),
+  createData("Augmented Amazon Connect® Customer Profile Merge", "$0.45000"),
 ];
 
 const useStyles = makeStyles({
+  root: {
+    marginBottom: 5,
+  },
   table: {
-    width: 432,
+    width: 548,
     background: "white",
   },
   headingbox: {
-    width: 432,
+    width: 548,
     height: 47,
     background: "#000000",
     display: "flex",
-    justifyContent: "center",
+    justifyContent: "space-between",
     alignItems: "center",
     marginBottom: 5,
   },
   heading: {
-    width: 165,
+    width: 260,
     height: 14,
     fontFamily: "Axiforma",
     fontStyle: "normal",
-    fontWeight: 300,
+    fontWeight: 800,
+    fontSize: 14,
+    lineHeight: "131.5%",
+    /* or 18px */
+
+    color: "#FFFFFF",
+  },
+  rate: {
+    width: 280,
+    height: 14,
+    fontFamily: "Axiforma",
+    fontStyle: "normal",
+    fontWeight: 800,
     fontSize: 14,
     lineHeight: "131.5%",
     /* or 18px */
@@ -69,6 +80,9 @@ const useStyles = makeStyles({
   row: {
     height: 37,
   },
+  request: {
+    paddingLeft: 60,
+  },
 });
 
 export default function Table3() {
@@ -77,17 +91,17 @@ export default function Table3() {
   return (
     <div>
       <Box className={classes.headingbox}>
-        <Box className={classes.heading}>VOICEMERGE</Box>
+        <Box className={classes.heading}>AUTH FOR AMAZON CONNECT®</Box>
+        <Box className={classes.rate}>$US</Box>
       </Box>
       <Table className={classes.table} aria-label="customized table">
         <TableBody>
           {rows.map((row) => (
             <StyledTableRow key={row.name} className={classes.row}>
-              <StyledTableCell component="th" scope="row">
-                {row.tier}
-              </StyledTableCell>
               <StyledTableCell align="left">{row.description}</StyledTableCell>
-              <StyledTableCell align="left">{row.request}</StyledTableCell>
+              <StyledTableCell align="center" className={classes.request}>
+                {row.request}
+              </StyledTableCell>
             </StyledTableRow>
           ))}
         </TableBody>

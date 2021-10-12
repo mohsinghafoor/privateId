@@ -25,10 +25,10 @@ const useStyles = makeStyles((theme) => ({
   },
   sqr: {
     position: "absolute",
-    marginLeft: "14.2rem",
-    marginTop: "-29rem",
-    width: 174,
-    height: 179,
+    marginLeft: "12.5rem",
+    marginTop: "9rem",
+    width: 175,
+    height: 189,
     border: "3px solid rgba(248, 248, 248, 0.6)",
     boxSizing: "border-box",
     [theme.breakpoints.only("md")]: {
@@ -73,14 +73,21 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFFFFF",
   },
   input: {
-    width: 252,
+    width: 365,
     height: 30,
     background: "none",
     border: 0,
     borderBottom: "2px solid white",
     color: "white",
     outline: 0,
-    fontSize: 15,
+    fontFamily: "Axiforma",
+    fontStyle: "normal",
+    fontWeight: 300,
+    fontSize: 14,
+    lineHeight: "138.5%",
+    /* identical to box height, or 19px */
+
+    color: "#999999",
   },
   btn: {
     width: 120,
@@ -96,7 +103,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFFFFF",
   },
   btmtext: {
-    width: 481,
+    width: 377,
     height: 53,
     fontFamily: "Axiforma",
     fontStyle: "normal",
@@ -107,6 +114,12 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     color: "#FFFFFF",
   },
+  span: {
+    textDecoration: "underline",
+    color: "white",
+    marginLeft: 5,
+    marginRight: 5,
+  },
 }));
 
 export default function Order() {
@@ -115,7 +128,15 @@ export default function Order() {
   return (
     <div className={classes.root}>
       <Grid container className={classes.main}>
-        <Grid item lg={6}>
+        <Grid
+          item
+          lg={6}
+          style={{
+            display: "flex",
+
+            justifyContent: "flex-start",
+          }}
+        >
           <img src={img} alt="Girl Picture" className={classes.img} />
           <Box className={classes.sqr} />
         </Grid>
@@ -135,8 +156,12 @@ export default function Order() {
             first-come, first-served basis.
           </Box>
           <form className={classes.mailbox}>
-            <Box className={classes.label}>Enter Email:</Box>
-            <input type="text" className={classes.input} placeholder="email" />
+            {/* <Box className={classes.label}>Enter Email:</Box> */}
+            <input
+              type="text"
+              className={classes.input}
+              placeholder="Enter Email"
+            />
             {/* <TextField
               className={classes.email}
               InputProps={{
@@ -147,7 +172,14 @@ export default function Order() {
           </form>
           <Box className={classes.btmtext}>
             By pressing Join, I agree to receive communications from Private
-            Identity and to the Privacy Policy and Terms of Service.
+            Identity and to the
+            <a href="#" className={classes.span}>
+              Privacy Policy
+            </a>
+            and
+            <a href="#" className={classes.span}>
+              Terms of Service.
+            </a>
           </Box>
         </Grid>
       </Grid>

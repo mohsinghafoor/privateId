@@ -18,10 +18,11 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 1280,
     display: "flex",
     justifyContent: "center",
+    alignItems: "center",
   },
   heading: {
-    maxWidth: 625,
-    height: 102,
+    maxWidth: 525,
+    height: 122,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
@@ -33,8 +34,8 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
   },
   text: {
-    maxWidth: 625,
-    height: 77,
+    width: 625,
+    height: 117,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
@@ -45,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
   },
   privacy: {
-    maxWidth: 625,
+    maxWidth: 555,
     height: 44,
     fontFamily: "Axiforma",
     fontStyle: "normal",
@@ -70,7 +71,7 @@ export default function Exempt() {
       <Grid container className={classes.main}>
         <Grid
           item
-          lg={7}
+          lg={6}
           style={{
             display: "flex",
             alignItems: "flex-end",
@@ -95,7 +96,11 @@ export default function Exempt() {
         <Grid
           item
           lg={5}
-          style={{ display: "flex", justifyContent: "flex-end" }}
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "flex-end",
+          }}
         >
           <img src={img} alt="" className={classes.img} />
         </Grid>

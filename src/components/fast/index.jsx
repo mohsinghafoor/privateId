@@ -19,9 +19,12 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
   },
+  headingbox: {
+    width: 605,
+  },
   heading: {
-    width: 602,
-    height: 115,
+    width: 572,
+    height: 125,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
@@ -64,13 +67,15 @@ export default function Fast() {
             justifyContent: "center",
           }}
         >
-          <Box className={classes.heading}>
-            Fast, Accurate & Private Face + Voice Recognition
+          <Box className={classes.headingbox}>
+            <Box className={classes.heading}>
+              Fast, Accurate & Private Face + Voice Recognition
+            </Box>
           </Box>
-          <Box className={classes.text} style={{ height: 35 }}>
-            Unlimited user base
+          <Box className={classes.text} style={{ height: 45 }}>
+            Supports an unlimited number of user accounts
           </Box>
-          <Box className={classes.text} style={{ height: 75 }}>
+          <Box className={classes.text} style={{ height: 95 }}>
             Face recognition maintains full accuracy with makeup, scars, facial
             hair, eyeglasses, sunglasses, face mask, image distortions and
             rotations, and variable hue, saturation and light (HSL).

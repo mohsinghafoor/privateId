@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    background: "#161616",
+    background: "#353535",
     height: "100%",
     [theme.breakpoints.up("lg")]: {},
   },
@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFFFFF",
   },
   text: {
-    width: 410,
+    width: 513,
     height: 80,
     fontFamily: "Axiforma",
     fontStyle: " normal",
@@ -63,7 +63,7 @@ export default function Engineered() {
         </Grid>
         <Grid
           item
-          lg={6}
+          lg={5}
           style={{
             display: "flex",
             justifyContent: "center",

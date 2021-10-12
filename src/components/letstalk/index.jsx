@@ -10,6 +10,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundImage: `url(${background})`,
     display: "flex",
     justifyContent: "center",
+    flexDirection: "column",
     alignItems: "center",
     height: "100%",
     [theme.breakpoints.up("lg")]: {
@@ -21,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 1280,
   },
   textbox: {
-    marginTop: "-15rem",
+    // marginTop: "-15rem",
   },
   heading: {
     width: 201,
@@ -48,10 +49,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFFFFF",
   },
   img: {
-    width: 208,
     height: 184,
-    marginTop: "-10rem",
-    marginRight: -50,
   },
   form: {
     display: "flex",
@@ -62,7 +60,8 @@ const useStyles = makeStyles((theme) => ({
     height: 388.59,
     background: "#FFFFFF",
     borderRadius: 14,
-    marginTop: "3rem",
+    marginLeft: "1rem",
+    // marginTop: "3rem",
   },
   inputbox: {
     height: 60,
@@ -110,6 +109,10 @@ export default function LetsTalk() {
 
   return (
     <div className={classes.root}>
+      <Box className={classes.textbox}>
+        <Box className={classes.heading}>Let's Talk</Box>
+        <Box className={classes.text}>Start a conversation.</Box>
+      </Box>
       <Grid container className={classes.main}>
         <Grid
           item
@@ -117,13 +120,9 @@ export default function LetsTalk() {
           style={{
             display: "flex",
             justifyContent: "flex-end",
-            alignItems: "center",
+            alignItems: "flex-start",
           }}
         >
-          <Box className={classes.textbox}>
-            <Box className={classes.heading}>Let's Talk</Box>
-            <Box className={classes.text}>Start a conversation.</Box>
-          </Box>
           <img src={img} className={classes.img} alt="" />
         </Grid>
         <Grid
@@ -132,29 +131,25 @@ export default function LetsTalk() {
           style={{
             display: "flex",
             alignItems: "flex-start",
-            justifyContent: "center",
+            justifyContent: "flex-start",
           }}
         >
           <form className={classes.form}>
             <Box className={classes.inputbox}>
-              <input
-                type="text"
-                className={classes.input}
-                placeholder="Name*"
-              />
+              <input type="text" className={classes.input} placeholder="Name" />
             </Box>
             <Box className={classes.inputbox}>
               <input
                 type="email"
                 className={classes.input}
-                placeholder="Email*"
+                placeholder="Email"
               />
             </Box>
             <Box className={classes.inputbox}>
               <input
                 type="text"
                 className={classes.input}
-                placeholder="Mobile Number*"
+                placeholder="Mobile Number"
               />
             </Box>
             <Box>

@@ -20,6 +20,8 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     maxWidth: 1280,
+    background:
+      "linear-gradient(90.51deg, #181818 17.05%, rgba(0, 0, 0, 0) 89.3%)",
   },
   text: {
     width: 505,
@@ -67,7 +69,7 @@ const useStyles = makeStyles((theme) => ({
   },
   logo: {
     position: "absolute",
-    marginTop: "-17rem",
+    marginTop: "-15rem",
     marginLeft: "-29rem",
   },
 }));
@@ -81,27 +83,30 @@ export default function Decenterlized() {
         <img src={logo} className={classes.logo} alt="" />
         <Grid
           item
-          lg={5}
+          lg={6}
           style={{
             display: "flex",
-            justifyContent: "center",
+            justifyContent: "flex-end",
             flexDirection: "column",
-            // alignItems: "center",
+            alignItems: "flex-end",
           }}
         >
-          <Box className={classes.text}>
-            Decentralized biometrics for a secure, private and delightful
-            customer experience
+          <Box style={{ display: "flex", flexDirection: "column" }}>
+            <Box className={classes.text}>
+              Decentralized biometrics for a secure, private and delightful
+              customer experience
+            </Box>
+            <IconButton className={classes.iconbtn}>
+              <PlayCircleFilledIcon className={classes.playbtn} /> Watch Video
+            </IconButton>
           </Box>
-          <IconButton className={classes.iconbtn}>
-            <PlayCircleFilledIcon className={classes.playbtn} /> Watch Video
-          </IconButton>
         </Grid>
         <Grid
           item
-          lg={5}
+          lg={6}
           style={{
             display: "flex",
+            alignItems: "flex-start",
             justifyContent: "flex-start",
             flexDirection: "column",
             // alignItems: "center",

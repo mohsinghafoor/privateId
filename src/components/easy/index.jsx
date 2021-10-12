@@ -2,26 +2,26 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Box, Grid, IconButton } from "@material-ui/core";
 import img from "../../assets/watch.png";
+import docimg from "../../assets/docimg.png";
 import PlayCircleFilledIcon from "@material-ui/icons/PlayCircleFilled";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    background: "#000000",
+    background: "#080809",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    height: "100%",
+    height: 600,
   },
   main: {
     maxWidth: 1280,
   },
   img: {
-    width: 989,
-    height: 557,
+    height: 600,
   },
   heading: {
     maxWidth: 475,
-    height: 53,
+    height: 73,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
@@ -32,8 +32,8 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
   },
   text: {
-    width: 475,
-    height: 70,
+    width: 405,
+    height: 80,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
@@ -42,6 +42,11 @@ const useStyles = makeStyles((theme) => ({
     /* or 22px */
     color: "#FFFFFF",
     textAlign: "left",
+  },
+  btnbox: {
+    width: 470,
+    display: "flex",
+    justifyContent: "space-between",
   },
   iconbtn: {
     width: 225,
@@ -66,6 +71,10 @@ const useStyles = makeStyles((theme) => ({
     marginRight: 5,
     marginTop: -5,
   },
+  docimg: {
+    marginRight: 10,
+    marginTop: -5,
+  },
 }));
 
 export default function Easy() {
@@ -74,12 +83,20 @@ export default function Easy() {
   return (
     <div className={classes.root}>
       <Grid container className={classes.main}>
-        <Grid item lg={7}>
+        <Grid
+          item
+          lg={7}
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
           <img src={img} alt="Man using laptop" className={classes.img} />
         </Grid>
         <Grid
           item
-          lg={4}
+          lg={5}
           style={{
             display: "flex",
             justifyContent: "center",
@@ -92,9 +109,14 @@ export default function Easy() {
             Includes everything you need to get started. First 5,000 requests
             are free.
           </Box>
-          <IconButton className={classes.iconbtn}>
-            <PlayCircleFilledIcon className={classes.playbtn} /> Watch Video
-          </IconButton>
+          <Box className={classes.btnbox}>
+            <IconButton className={classes.iconbtn}>
+              <PlayCircleFilledIcon className={classes.playbtn} /> Watch Video
+            </IconButton>
+            <IconButton className={classes.iconbtn}>
+              <img src={docimg} className={classes.docimg} alt="" /> Watch Video
+            </IconButton>
+          </Box>
         </Grid>
       </Grid>
     </div>

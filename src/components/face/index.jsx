@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
       "linear-gradient(90.85deg, rgba(0, 0, 0, 0.820236) 48.39%, rgba(0, 0, 0, 0) 84.47%)",
   },
   mainheading: {
-    width: 441,
+    width: 461,
     height: 39,
     fontFamily: "Axiforma",
     fontStyle: "normal",
@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFFFFF",
   },
   headingbox: {
-    width: 560,
+    width: 600,
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -45,6 +45,13 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "space-between",
     width: 660,
+    marginTop: 20,
+    marginLeft: 80,
+  },
+  cardbox1: {
+    display: "flex",
+    justifyContent: "space-between",
+    width: 435,
     marginTop: 20,
     marginLeft: 80,
   },
@@ -61,6 +68,7 @@ const useStyles = makeStyles((theme) => ({
     height: 32,
     marginLeft: 5,
     marginTop: 10,
+    marginBottom: 5,
   },
   heading: {
     maxWidth: 100,
@@ -159,7 +167,7 @@ export default function Face() {
           }}
         >
           <Box className={classes.headingbox}>
-            <Box className={classes.mainheading}>Face Security Solutions</Box>
+            <Box className={classes.mainheading}>AUTHENTICATION SOLUTIONS</Box>
           </Box>
           <Box className={classes.cardbox}>
             <Box className={classes.sqr}>
@@ -190,7 +198,7 @@ export default function Face() {
               </Box>
             </Box>
           </Box>
-          <Box className={classes.cardbox}>
+          <Box className={classes.cardbox1}>
             <Box className={classes.sqr}>
               <img src={badge} className={classes.badge} alt="" />
               <Box className={classes.heading}>FACE CAPTCHA</Box>
@@ -216,15 +224,6 @@ export default function Face() {
                 Compare two or more face images (with or without a mask) with
                 passive liveness in 100ms without PII. Built for identity
                 providers.
-              </Box>
-            </Box>
-            <Box className={classes.sqr}>
-              <img src={badge} className={classes.badge} alt="" />
-              <Box className={classes.heading}>CONTINUOUS UNLOCK</Box>
-              <Box className={classes.line} />
-              <Box className={classes.text}>
-                Instantly open a caller’s unified Customer Profile using 1:n
-                speaker recognition with one second of the caller’s voice.
               </Box>
             </Box>
           </Box>

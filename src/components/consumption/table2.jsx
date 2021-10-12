@@ -12,20 +12,23 @@ import Paper from "@material-ui/core/Paper";
 const StyledTableCell = withStyles((theme) => ({
   head: {
     backgroundColor: "#FFFFFF",
-    color: "black",
-    fontSize: 14,
+    // color: "black",
+    fontSize: 12,
     fontFamily: "Axiforma",
-    fontWeight: 300,
+    fontWeight: 600,
+    backgroundColor: theme.palette.action.hover,
   },
   body: {
-    fontSize: 14,
+    fontSize: 12,
+    fontFamily: "Axiforma",
+    fontWeight: 600,
   },
 }))(TableCell);
 
 const StyledTableRow = withStyles((theme) => ({
   root: {
     height: 37,
-    "&:nth-of-type(odd)": {
+    "&:nth-of-type(even)": {
       backgroundColor: theme.palette.action.hover,
     },
   },
@@ -35,31 +38,46 @@ function createData(description, request) {
   return { description, request };
 }
 
-const rows = [createData("Remote Onboarding / KYC", "$0.15000")];
+const rows = [
+  createData("Metadata Storage / Month", "$0.00100"),
+  createData("Remote Onboarding / KYC", "$0.00080"),
+];
 
 const useStyles = makeStyles({
   root: {
-    marginBottom: 15,
+    marginBottom: 5,
   },
   table: {
-    width: 432,
+    width: 548,
     background: "white",
   },
   headingbox: {
-    width: 432,
+    width: 548,
     height: 47,
     background: "#000000",
     display: "flex",
-    justifyContent: "center",
+    justifyContent: "space-between",
     alignItems: "center",
     marginBottom: 5,
   },
   heading: {
-    width: 300,
+    width: 260,
     height: 14,
     fontFamily: "Axiforma",
     fontStyle: "normal",
-    fontWeight: 300,
+    fontWeight: 800,
+    fontSize: 14,
+    lineHeight: "131.5%",
+    /* or 18px */
+
+    color: "#FFFFFF",
+  },
+  rate: {
+    width: 280,
+    height: 14,
+    fontFamily: "Axiforma",
+    fontStyle: "normal",
+    fontWeight: 800,
     fontSize: 14,
     lineHeight: "131.5%",
     /* or 18px */
@@ -77,15 +95,19 @@ export default function Table2() {
   return (
     <div className={classes.root}>
       <Box className={classes.headingbox}>
-        <Box className={classes.heading}>Remote Onboarding / KYC / AML</Box>
+        <Box className={classes.heading}>FACE & VOICE AUTHENTICATION </Box>
+        <Box className={classes.rate}>$US</Box>
       </Box>
       <Table className={classes.table} aria-label="customized table">
+        <TableHead>
+          <TableRow className={classes.row}>
+            <StyledTableCell align="left">Request (Each)</StyledTableCell>
+            <StyledTableCell align="left">Request</StyledTableCell>
+          </TableRow>
+        </TableHead>
         <TableBody>
           {rows.map((row) => (
             <StyledTableRow key={row.name} className={classes.row}>
-              <StyledTableCell component="th" scope="row">
-                {row.tier}
-              </StyledTableCell>
               <StyledTableCell align="left">{row.description}</StyledTableCell>
               <StyledTableCell align="left">{row.request}</StyledTableCell>
             </StyledTableRow>

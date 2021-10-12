@@ -4,7 +4,7 @@ import { Grid, Box, IconButton } from "@material-ui/core";
 import Table1 from "./table1";
 import Table2 from "./table2";
 import Table3 from "./table3";
-import img from "../../assets/conimg.png";
+import img from "../../assets/tableimg.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -37,13 +37,13 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFFFFF",
   },
   img: {
-    height: 600,
+    // height: 319,
   },
   btnbox: {
     width: 432,
     display: "flex",
     justifyContent: "flex-end",
-    marginTop: 50,
+    marginTop: 20,
   },
   btn: {
     width: 173,
@@ -67,25 +67,31 @@ export default function Consumption() {
   return (
     <div className={classes.root}>
       <Grid container className={classes.main}>
-        <Grid item md={9} style={{ display: "flex", flexDirection: "column" }}>
-          <Box className={classes.heading}>Consumption Payments</Box>
-          <Box style={{ display: "flex", justifyContent: "flex-end" }}>
-            <Table1 />
-            <Box>
-              <Table2 />
-              <Table3 />
-              <Box className={classes.btnbox}>
-                <IconButton className={classes.btn}>
-                  Click here for details.
-                </IconButton>
-              </Box>
-            </Box>
+        <Grid
+          item
+          md={6}
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "flex-end",
+          }}
+        >
+          <Table2 />
+          <Table3 />
+          <Box className={classes.btnbox}>
+            <IconButton className={classes.btn}>
+              Click here for details.
+            </IconButton>
           </Box>
         </Grid>
         <Grid
           item
-          md={3}
-          style={{ display: "flex", justifyContent: "flex-end" }}
+          md={6}
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "flex-end",
+          }}
         >
           <img src={img} className={classes.img} alt="" />
         </Grid>

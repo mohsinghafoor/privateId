@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 1280,
   },
   img: {
-    height: 630,
+    height: 586,
   },
   mainheading: {
     width: 650,
@@ -63,6 +63,7 @@ const useStyles = makeStyles((theme) => ({
     width: 69,
     height: 32,
     marginLeft: 10,
+    marginBottom: 5,
   },
   heading: {
     maxWidth: 180,
@@ -113,7 +114,7 @@ export default function VoiceAuthentication() {
       <Grid container className={classes.main}>
         <Grid
           item
-          lg={5}
+          lg={6}
           style={{
             display: "flex",
             justifyContent: "flex-start",
@@ -123,7 +124,7 @@ export default function VoiceAuthentication() {
         </Grid>
         <Grid
           item
-          lg={6}
+          lg={5}
           style={{
             display: "flex",
             justifyContent: "center",
@@ -181,8 +182,8 @@ export default function VoiceAuthentication() {
               </Box>
               <Box className={classes.line} />
               <Box className={classes.text}>
-                Instantly open a caller’s unified Customer Profile using 1:n
-                speaker recognition with one second of the caller’s voice.
+                Automatically find and intelligently merge duplicate Customer
+                Profiles using 1:n speaker recognition with 3rd party data.
               </Box>
             </Box>
             <Box className={classes.sqr}>
