@@ -1,6 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Box, Grid } from "@material-ui/core";
+import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import img from "../../assets/fastimg.png";
 
 const useStyles = makeStyles((theme) => ({
@@ -19,12 +20,14 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
   },
-  headingbox: {
-    width: 605,
+  rightbox: {
+    [theme.breakpoints.down("sm")]: {
+      marginBottom: 30,
+    },
   },
   heading: {
-    width: 572,
-    height: 125,
+    width: 602,
+    height: 75,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
@@ -33,9 +36,28 @@ const useStyles = makeStyles((theme) => ({
     /* or 48px */
     color: "#FFFFFF",
     textAlign: "left",
+    [theme.breakpoints.only("md")]: {
+      width: 372,
+      height: 115,
+    },
+    [theme.breakpoints.only("sm")]: {
+      width: 372,
+      height: 49,
+      fontSize: 24,
+    },
+    [theme.breakpoints.only("xs")]: {
+      width: 330,
+      height: 49,
+      fontSize: 22,
+    },
+  },
+  itembox: {
+    display: "flex",
+    alignItems: "center",
+    height: 35,
   },
   text: {
-    width: 605,
+    width: 400,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
@@ -44,10 +66,45 @@ const useStyles = makeStyles((theme) => ({
     /* or 22px */
     textAlign: "left",
     color: "#FFFFFF",
+    [theme.breakpoints.only("xs")]: {
+      width: 330,
+
+      fontSize: 16,
+    },
   },
   img: {
     height: 633,
     filter: " drop-shadow(17px 4px 11px rgba(0, 0, 0, 0.2))",
+    [theme.breakpoints.only("md")]: {
+      width: 394,
+      height: 457,
+      marginBottom: -12,
+    },
+    [theme.breakpoints.only("xs")]: {
+      width: 330,
+      marginBottom: 20,
+      height: 400,
+    },
+  },
+  icon: {
+    color: "#FFFFFF",
+    marginRight: 5,
+    [theme.breakpoints.only("xs")]: {
+      width: 25,
+      height: 25,
+    },
+  },
+  leftgrid: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "flex-end",
+  },
+  rightgrid: {
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
+    alignItems: "flex-start",
   },
 }));
 
@@ -59,44 +116,45 @@ export default function Fast() {
       <Grid container className={classes.main}>
         <Grid
           item
-          lg={7}
+          md={6}
+          className={classes.leftgrid}
           style={{
             display: "flex",
             flexDirection: "column",
-            alignItems: "flex-end",
-            justifyContent: "center",
-          }}
-        >
-          <Box className={classes.headingbox}>
-            <Box className={classes.heading}>
-              Fast, Accurate & Private Face + Voice Recognition
-            </Box>
-          </Box>
-          <Box className={classes.text} style={{ height: 45 }}>
-            Supports an unlimited number of user accounts
-          </Box>
-          <Box className={classes.text} style={{ height: 95 }}>
-            Face recognition maintains full accuracy with makeup, scars, facial
-            hair, eyeglasses, sunglasses, face mask, image distortions and
-            rotations, and variable hue, saturation and light (HSL).
-          </Box>
-          <Box className={classes.text} style={{ height: 80 }}>
-            Voice recognition maintains full accuracy across background noise,
-            signal variations (8-48kHz), variable microphones and
-            noise-cancelling algorithms, and variable physiological conditions
-            including lack of sleep, smoking and alcohol.
-          </Box>
-        </Grid>
-        <Grid
-          item
-          lg={5}
-          style={{
-            display: "flex",
+            alignItems: "center",
             justifyContent: "flex-end",
-            alignItems: "flex-end",
           }}
         >
           <img src={img} alt="Girl with mask on" className={classes.img} />
+        </Grid>
+        <Grid item md={6} className={classes.rightgrid}>
+          <Box className={classes.rightbox}>
+            <Box className={classes.heading}>Face + Voice Recognition</Box>
+            <Box className={classes.itembox}>
+              <ArrowForwardIcon className={classes.icon} />
+              <Box className={classes.text}>
+                Local, Cloud and Continuous Auth
+              </Box>
+            </Box>
+            <Box className={classes.itembox}>
+              <ArrowForwardIcon className={classes.icon} />
+              <Box className={classes.text}>Touchless + Facemask</Box>
+            </Box>
+            <Box className={classes.itembox}>
+              <ArrowForwardIcon className={classes.icon} />
+              <Box className={classes.text}> Extreme Accuracy</Box>
+            </Box>
+            <Box className={classes.itembox}>
+              <ArrowForwardIcon className={classes.icon} />
+              <Box className={classes.text}>Guaranteed User Privacy</Box>
+            </Box>
+            <Box className={classes.itembox}>
+              <ArrowForwardIcon className={classes.icon} />
+              <Box className={classes.text}>
+                Runs on Browsers, Phones and Clouds
+              </Box>
+            </Box>
+          </Box>
         </Grid>
       </Grid>
     </div>

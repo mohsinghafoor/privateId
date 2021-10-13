@@ -18,6 +18,18 @@ const useStyles = makeStyles((theme) => ({
   },
   img: {
     height: 600,
+    [theme.breakpoints.only("md")]: {
+      width: 650,
+      height: 460,
+    },
+    [theme.breakpoints.only("sm")]: {
+      width: 605,
+      height: 400,
+    },
+    [theme.breakpoints.only("xs")]: {
+      width: 330,
+      height: 205,
+    },
   },
   heading: {
     maxWidth: 475,
@@ -30,6 +42,20 @@ const useStyles = makeStyles((theme) => ({
     /* or 48px */
     color: "#FFFFFF",
     textAlign: "left",
+    [theme.breakpoints.only("sm")]: {
+      width: 409,
+      height: 45,
+      fontSize: 24,
+      marginLeft: 20,
+      marginTop: 30,
+    },
+    [theme.breakpoints.only("xs")]: {
+      width: 330,
+      height: 35,
+      fontSize: 20,
+      marginTop: 30,
+      marginLeft: 20,
+    },
   },
   text: {
     width: 405,
@@ -42,11 +68,32 @@ const useStyles = makeStyles((theme) => ({
     /* or 22px */
     color: "#FFFFFF",
     textAlign: "left",
+    [theme.breakpoints.only("sm")]: {
+      width: 553,
+      height: 53,
+      fontSize: 16,
+      lineHeight: "24px",
+      marginLeft: 20,
+    },
+    [theme.breakpoints.only("xs")]: {
+      width: 330,
+      height: 45,
+      fontSize: 13,
+      marginLeft: 20,
+    },
   },
   btnbox: {
     width: 470,
     display: "flex",
     justifyContent: "space-between",
+    [theme.breakpoints.only("sm")]: {
+      width: 350,
+      marginLeft: 20,
+    },
+    [theme.breakpoints.only("xs")]: {
+      width: 320,
+      marginLeft: 20,
+    },
   },
   iconbtn: {
     width: 225,
@@ -60,6 +107,16 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "120%",
     /* or 26px */
     color: "#FFFFFF",
+    [theme.breakpoints.only("sm")]: {
+      width: 168,
+      height: 43,
+      fontSize: 16,
+    },
+    [theme.breakpoints.only("xs")]: {
+      width: 148,
+      height: 40,
+      fontSize: 12,
+    },
     "&:hover": {
       background: "#383838",
     },
@@ -70,10 +127,26 @@ const useStyles = makeStyles((theme) => ({
     color: "#C4C4C4",
     marginRight: 5,
     marginTop: -5,
+    [theme.breakpoints.only("sm")]: {
+      width: 30,
+      height: 30,
+    },
+    [theme.breakpoints.only("xs")]: {
+      width: 27,
+      height: 27,
+    },
   },
   docimg: {
     marginRight: 10,
     marginTop: -5,
+    [theme.breakpoints.only("sm")]: {
+      width: 20,
+      height: 25,
+    },
+    [theme.breakpoints.only("xs")]: {
+      width: 20,
+      height: 25,
+    },
   },
 }));
 
@@ -86,6 +159,7 @@ export default function Easy() {
         <Grid
           item
           lg={7}
+          md={6}
           style={{
             display: "flex",
             alignItems: "center",
@@ -97,6 +171,7 @@ export default function Easy() {
         <Grid
           item
           lg={5}
+          md={6}
           style={{
             display: "flex",
             justifyContent: "center",

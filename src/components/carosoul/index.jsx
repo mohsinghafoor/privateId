@@ -33,6 +33,20 @@ const useStyles = makeStyles((theme) => ({
     /* or 35 */
     textAlign: "left",
     color: "#D3D3D3",
+    [theme.breakpoints.only("md")]: {
+      maxWidth: 782,
+      height: 186,
+    },
+    [theme.breakpoints.only("sm")]: {
+      maxWidth: 548,
+      height: 146,
+      fontSize: 16,
+    },
+    [theme.breakpoints.only("xs")]: {
+      maxWidth: 330,
+      height: 136,
+      fontSize: 12,
+    },
   },
   author: {
     width: 350,
@@ -45,6 +59,65 @@ const useStyles = makeStyles((theme) => ({
     /* or 29px */
     textAlign: "left",
     color: "#DADADA",
+    [theme.breakpoints.only("md")]: {
+      maxWidth: 565,
+      height: 73,
+    },
+    [theme.breakpoints.only("sm")]: {
+      maxWidth: 523,
+      height: 73,
+      fontSize: 16,
+    },
+    [theme.breakpoints.only("xs")]: {
+      maxWidth: 230,
+      height: 66,
+      fontSize: 12,
+    },
+  },
+
+  author1: {
+    width: 200,
+    height: 33,
+    fontFamily: "Axiforma",
+    fontStyle: "normal",
+    fontWeight: 300,
+    fontSize: 18,
+    lineHeight: "159.5%",
+    /* or 29px */
+    textAlign: "left",
+    color: "#DADADA",
+    [theme.breakpoints.only("sm")]: {
+      maxWidth: 180,
+      height: 30,
+      fontSize: 16,
+    },
+    [theme.breakpoints.only("xs")]: {
+      maxWidth: 160,
+      height: 20,
+      fontSize: 12,
+    },
+  },
+  designation: {
+    width: 200,
+    height: 33,
+    fontFamily: "Axiforma",
+    fontStyle: "normal",
+    fontWeight: 300,
+    fontSize: 18,
+    lineHeight: "159.5%",
+    /* or 29px */
+    textAlign: "left",
+    color: "#DADADA",
+    [theme.breakpoints.only("sm")]: {
+      maxWidth: 180,
+      height: 30,
+      fontSize: 16,
+    },
+    [theme.breakpoints.only("xs")]: {
+      maxWidth: 160,
+      height: 20,
+      fontSize: 12,
+    },
   },
   upprquote: {
     position: "absolute",
@@ -55,13 +128,26 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 180,
     lineHeight: "159.5%",
     /* or 287px */
-
     letterSpacing: "-0.085em",
-
     color: "#E4E4E4",
+    [theme.breakpoints.only("md")]: {
+      marginTop: "-25rem",
+      marginLeft: "55rem",
+      width: 51,
+    },
+    [theme.breakpoints.only("sm")]: {
+      marginTop: "-20rem",
+      marginLeft: "40rem",
+      width: 41,
+    },
+    [theme.breakpoints.only("xs")]: {
+      marginTop: "-15rem",
+      marginLeft: "20rem",
+      fontSize: 90,
+      width: 31,
+    },
   },
   lwrquote: {
     position: "absolute",
@@ -72,7 +158,6 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 180,
     lineHeight: "159.5%",
     /* or 287px */
 
@@ -80,6 +165,22 @@ const useStyles = makeStyles((theme) => ({
 
     color: "#E4E4E4",
     transform: "rotate(180deg)",
+    [theme.breakpoints.only("md")]: {
+      marginTop: "20rem",
+      marginLeft: "-55rem",
+      width: 51,
+    },
+    [theme.breakpoints.only("sm")]: {
+      marginTop: "15rem",
+      marginLeft: "-40rem",
+      width: 41,
+    },
+    [theme.breakpoints.only("xs")]: {
+      marginTop: "11rem",
+      marginLeft: "-20rem",
+
+      width: 31,
+    },
   },
 }));
 
@@ -121,17 +222,13 @@ export default function Carosoul() {
         <FormatQuoteIcon className={classes.upprquote} />
         <Box className={classes.dflex}>
           <Box className={classes.text}>
-            “Private ID is the best-in-class biometric authentication
-            technology. It is pioneering in that it preserves user privacy and
-            is an efficient implementation of homomorphic encryption. The
-            solution is rooted in sound science. I highly recommend using this
-            groundbreaking secure and privacy preserving biometric
-            authentication.”
+            PLLAY and Private Identity provide players with continuous,
+            frictionless high-security authentication with the right technology
+            right now. There is no other authentication experience like this
+            with no UI and no learning curve. Fantastic.
           </Box>
-          <Box className={classes.author}>
-            Dr. Tyrone Grandison, CTO, MStreetX Former Deputy CDO, US Department
-            of Commerce.
-          </Box>
+          <Box className={classes.author1}>Shawn Gunn, CEO</Box>
+          <Box className={classes.designation}> PLLAY Labs</Box>
         </Box>
         <FormatQuoteIcon className={classes.lwrquote} />
       </div>
@@ -139,71 +236,13 @@ export default function Carosoul() {
         <FormatQuoteIcon className={classes.upprquote} />
         <Box className={classes.dflex}>
           <Box className={classes.text}>
-            “Private ID is the best-in-class biometric authentication
-            technology. It is pioneering in that it preserves user privacy and
-            is an efficient implementation of homomorphic encryption. The
-            solution is rooted in sound science. I highly recommend using this
-            groundbreaking secure and privacy preserving biometric
-            authentication.”
+            “We are excited to work with Private Identity to provide private
+            face and voice recognition for our clients. Their team is a pleasure
+            to work with, our customers appreciate their advanced technology,
+            and their solutions integrate easily in our architecture.”
           </Box>
-          <Box className={classes.author}>
-            Dr. Tyrone Grandison, CTO, MStreetX Former Deputy CDO, US Department
-            of Commerce.
-          </Box>
-        </Box>
-        <FormatQuoteIcon className={classes.lwrquote} />
-      </div>
-      <div className={classes.main}>
-        <FormatQuoteIcon className={classes.upprquote} />
-        <Box className={classes.dflex}>
-          <Box className={classes.text}>
-            “Private ID is the best-in-class biometric authentication
-            technology. It is pioneering in that it preserves user privacy and
-            is an efficient implementation of homomorphic encryption. The
-            solution is rooted in sound science. I highly recommend using this
-            groundbreaking secure and privacy preserving biometric
-            authentication.”
-          </Box>
-          <Box className={classes.author}>
-            Dr. Tyrone Grandison, CTO, MStreetX Former Deputy CDO, US Department
-            of Commerce.
-          </Box>
-        </Box>
-        <FormatQuoteIcon className={classes.lwrquote} />
-      </div>
-      <div className={classes.main}>
-        <FormatQuoteIcon className={classes.upprquote} />
-        <Box className={classes.dflex}>
-          <Box className={classes.text}>
-            “Private ID is the best-in-class biometric authentication
-            technology. It is pioneering in that it preserves user privacy and
-            is an efficient implementation of homomorphic encryption. The
-            solution is rooted in sound science. I highly recommend using this
-            groundbreaking secure and privacy preserving biometric
-            authentication.”
-          </Box>
-          <Box className={classes.author}>
-            Dr. Tyrone Grandison, CTO, MStreetX Former Deputy CDO, US Department
-            of Commerce.
-          </Box>
-        </Box>
-        <FormatQuoteIcon className={classes.lwrquote} />
-      </div>
-      <div className={classes.main}>
-        <FormatQuoteIcon className={classes.upprquote} />
-        <Box className={classes.dflex}>
-          <Box className={classes.text}>
-            “Private ID is the best-in-class biometric authentication
-            technology. It is pioneering in that it preserves user privacy and
-            is an efficient implementation of homomorphic encryption. The
-            solution is rooted in sound science. I highly recommend using this
-            groundbreaking secure and privacy preserving biometric
-            authentication.”
-          </Box>
-          <Box className={classes.author}>
-            Dr. Tyrone Grandison, CTO, MStreetX Former Deputy CDO, US Department
-            of Commerce.
-          </Box>
+          <Box className={classes.author1}>Dave Coxe,CEO </Box>
+          <Box className={classes.designation}>ID DataWeb</Box>
         </Box>
         <FormatQuoteIcon className={classes.lwrquote} />
       </div>

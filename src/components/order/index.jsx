@@ -1,188 +1,22 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Grid, Box, TextField, Button } from "@material-ui/core";
-import img from "../../assets/girl.png";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
+import { useTheme } from "@material-ui/core/styles";
+import OrderTab from "./tab";
+import OrderWeb from "./web";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    background:
-      "radial-gradient(64.32% 318.09% at 81.51% 11.17%, #000000 0%, #474747 100%)",
-    height: "100%",
-    [theme.breakpoints.up("lg")]: {
-      height: 604,
-    },
-    width: "100%",
-  },
-  main: {
-    maxWidth: 1280,
-  },
-  img: {
-    height: 620,
-    filter: "drop-shadow(22px -15px 21px rgba(0, 0, 0, 0.25))",
-  },
-  sqr: {
-    position: "absolute",
-    marginLeft: "12.5rem",
-    marginTop: "9rem",
-    width: 175,
-    height: 189,
-    border: "3px solid rgba(248, 248, 248, 0.6)",
-    boxSizing: "border-box",
-    [theme.breakpoints.only("md")]: {
-      marginLeft: "10.3rem",
-    },
-  },
-  heading: {
-    width: 260,
-    height: 60,
-    fontFamily: "Axiforma",
-    fontStyle: "normal",
-    fontWeight: 300,
-    fontSize: 30,
-    lineHeight: "47px",
-    color: "#FFFFFF",
-  },
-  text: {
-    width: 497,
-    height: 120,
-    fontFamily: "Axiforma",
-    fontStyle: "normal",
-    fontWeight: 300,
-    fontSize: 18,
-    lineHeight: "25px",
-    textAlign: "left",
-    color: "#FFFFFF",
-  },
-  mailbox: {
-    display: "flex",
-    justifyContent: "space-between",
-    maxWidth: 500,
-    marginBottom: 30,
-  },
-  label: {
-    width: 113,
-    marginTop: 10,
-    fontFamily: "Axiforma",
-    fontStyle: "normal",
-    fontWeight: 300,
-    fontSize: 18,
-    lineHeight: "25px",
-    color: "#FFFFFF",
-  },
-  input: {
-    width: 365,
-    height: 30,
-    background: "none",
-    border: 0,
-    borderBottom: "2px solid white",
-    color: "white",
-    outline: 0,
-    fontFamily: "Axiforma",
-    fontStyle: "normal",
-    fontWeight: 300,
-    fontSize: 14,
-    lineHeight: "138.5%",
-    /* identical to box height, or 19px */
-
-    color: "#999999",
-  },
-  btn: {
-    width: 120,
-    height: 30,
-    background: "#383838",
-    fontFamily: "Axiforma",
-    fontStyle: "normal",
-    fontWeight: 300,
-    fontSize: 10,
-    lineHeight: "120%",
-    /* or 14px */
-    borderRadius: 0,
-    color: "#FFFFFF",
-  },
-  btmtext: {
-    width: 377,
-    height: 53,
-    fontFamily: "Axiforma",
-    fontStyle: "normal",
-    fontWeight: 300,
-    fontSize: 12,
-    lineHeight: "138.5%",
-    /* or 17px */
-    textAlign: "left",
-    color: "#FFFFFF",
-  },
-  span: {
-    textDecoration: "underline",
-    color: "white",
-    marginLeft: 5,
-    marginRight: 5,
+    flexGrow: 1,
   },
 }));
 
 export default function Order() {
   const classes = useStyles();
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
-    <div className={classes.root}>
-      <Grid container className={classes.main}>
-        <Grid
-          item
-          lg={6}
-          style={{
-            display: "flex",
-
-            justifyContent: "flex-start",
-          }}
-        >
-          <img src={img} alt="Girl Picture" className={classes.img} />
-          <Box className={classes.sqr} />
-        </Grid>
-        <Grid
-          item
-          lg={6}
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-          }}
-        >
-          <Box className={classes.heading}>Order Private ID ®</Box>
-          <Box className={classes.text}>
-            Private ID® is currently available to a limited number of
-            organizations per geographic area. Orders will be fulfilled on a
-            first-come, first-served basis.
-          </Box>
-          <form className={classes.mailbox}>
-            {/* <Box className={classes.label}>Enter Email:</Box> */}
-            <input
-              type="text"
-              className={classes.input}
-              placeholder="Enter Email"
-            />
-            {/* <TextField
-              className={classes.email}
-              InputProps={{
-                className: classes.input,
-              }}
-            /> */}
-            <Button className={classes.btn}>Join the Waitlist</Button>
-          </form>
-          <Box className={classes.btmtext}>
-            By pressing Join, I agree to receive communications from Private
-            Identity and to the
-            <a href="#" className={classes.span}>
-              Privacy Policy
-            </a>
-            and
-            <a href="#" className={classes.span}>
-              Terms of Service.
-            </a>
-          </Box>
-        </Grid>
-      </Grid>
-    </div>
+    <div className={classes.root}>{isMobile ? <OrderTab /> : <OrderWeb />}</div>
   );
 }
