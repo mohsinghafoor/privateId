@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
     height: 620,
     filter: "drop-shadow(22px -15px 21px rgba(0, 0, 0, 0.25))",
     [theme.breakpoints.down("xs")]: {
-      width: 340,
+      width: 290,
       height: 374,
       marginBottom: -4,
       marginLeft: 20,
@@ -31,22 +31,22 @@ const useStyles = makeStyles((theme) => ({
   },
   sqr: {
     position: "absolute",
-    marginLeft: "12.5rem",
-    marginTop: "-30rem",
+    marginLeft: "13rem",
+    marginTop: "-35rem",
     width: 175,
     height: 189,
     border: "3px solid rgba(248, 248, 248, 0.25)",
     boxSizing: "border-box",
     [theme.breakpoints.down("xs")]: {
-      marginLeft: "7.3rem",
-      marginTop: "-20rem",
+      marginLeft: "7.2rem",
+      marginTop: "-22.5rem",
       width: 135,
       height: 149,
     },
   },
   heading: {
     width: 237,
-    height: 80,
+    height: 70,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
@@ -54,11 +54,12 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: "underline",
     lineHeight: "37px",
     color: "#FFFFFF",
+    marginTop: 30,
     [theme.breakpoints.down("xs")]: {
       width: 187,
       height: 50,
       fontSize: 20,
-      marginTop: 10,
+      marginTop: 30,
     },
   },
   text: {
@@ -110,8 +111,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   btn: {
-    width: 153,
-    height: 35,
+    width: 143,
+    height: 34,
     background: "#383838",
     fontFamily: "Axiforma",
     fontStyle: "normal",
@@ -120,6 +121,7 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "120%",
     /* or 14px */
     borderRadius: 0,
+    textTransform: "capitalize",
     color: "#FFFFFF",
     [theme.breakpoints.down("xs")]: {
       maxWidth: 80,
@@ -138,6 +140,7 @@ const useStyles = makeStyles((theme) => ({
     /* or 17px */
     textAlign: "left",
     color: "#FFFFFF",
+    marginBottom: 30,
     [theme.breakpoints.down("xs")]: {
       maxWidth: 330,
       fontSize: 12,

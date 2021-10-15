@@ -12,6 +12,8 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center",
     height: "100%",
+    background:
+      " gradient(85.54deg, rgba(0, 0, 0, 0) -8.44%, rgba(44, 44, 44, 0.9) 38.88%)",
     [theme.breakpoints.up("lg")]: {
       height: 630,
     },
@@ -151,25 +153,25 @@ export default function VoiceAuthentication() {
             <Box className={classes.sqr}>
               <img src={badge} className={classes.badge} alt="" />
               <Box className={classes.heading}>
-                Voice <span className={classes.span}>Pop</span> <br /> for
+                Voice <span className={classes.span}>Search</span> <br /> for
+                Amazon Connect®
+              </Box>
+              <Box className={classes.line} />
+              <Box className={classes.text}>
+                Search and review an unlimited number of Recorded Calls using
+                1:n speaker identification.
+              </Box>
+            </Box>
+            <Box className={classes.sqr}>
+              <img src={badge} className={classes.badge} alt="" />
+              <Box className={classes.heading}>
+                Voice <span className={classes.span}>POP</span> <br /> for
                 Amazon Connect®
               </Box>
               <Box className={classes.line} />
               <Box className={classes.text}>
                 Instantly open a caller’s unified Customer Profile using 1:n
                 speaker recognition with one second of the caller’s voice.
-              </Box>
-            </Box>
-            <Box className={classes.sqr}>
-              <img src={badge} className={classes.badge} alt="" />
-              <Box className={classes.heading}>
-                PHONE <br />
-                <span style={{ fontWeight: "bold" }}>UNLOCK</span>
-              </Box>
-              <Box className={classes.line} />
-              <Box className={classes.text}>
-                Unlock devices and provide MFA for an unlimited number of user
-                accounts.
               </Box>
             </Box>
           </Box>

@@ -12,7 +12,10 @@ const useStyles = makeStyles((theme) => ({
       "radial-gradient(55.01% 307.1% at 88.52% 16.49%, #545454 0%, #292929 80.76%)",
     height: "100%",
     [theme.breakpoints.up("lg")]: {
-      height: 604,
+      height: 555,
+    },
+    [theme.breakpoints.only("md")]: {
+      height: 555,
     },
     width: "100%",
   },
@@ -23,29 +26,33 @@ const useStyles = makeStyles((theme) => ({
     // alignItems: "center",
   },
   img: {
-    height: 616,
+    height: 521,
     // marginLeft: 50,
+    [theme.breakpoints.up("lg")]: {
+      marginBottom: -34,
+    },
     filter: "drop-shadow(22px -15px 21px rgba(0, 0, 0, 0.25))",
     // width: 552,
     [theme.breakpoints.only("md")]: {
       marginLeft: "0rem",
-      width: 433,
+      width: 353,
       height: 474,
-      marginBottom: -4,
+      marginBottom: -80,
     },
   },
   sqr: {
     position: "absolute",
-
-    marginTop: "9rem",
-    width: 175,
-    height: 189,
+    marginTop: "4rem",
+    marginLeft: 15,
+    width: 135,
+    height: 161,
     border: "3px solid rgba(248, 248, 248, 0.25)",
     boxSizing: "border-box",
     [theme.breakpoints.only("md")]: {
-      marginTop: "5rem",
-      width: 165,
-      height: 179,
+      marginTop: "3.5rem",
+      width: 145,
+      height: 149,
+      marginRight: "6rem",
     },
   },
   heading: {
@@ -114,9 +121,10 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "120%",
     /* or 14px */
     borderRadius: 0,
+    marginLeft: 10,
     color: "#FFFFFF",
     [theme.breakpoints.only("md")]: {
-      width: 107,
+      width: 137,
       height: 25,
       fontSize: 12,
     },
@@ -145,6 +153,9 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     // flexDirection: "column",
     // alignItems: "center",
+    [theme.breakpoints.only("md")]: {
+      justifyContent: "flex-end",
+    },
   },
   leftgrid: {
     display: "flex",
@@ -190,7 +201,7 @@ export default function OrderWeb() {
             </Box>
           </Box>
         </Grid>
-        <Grid item lg={6} md={4} className={classes.rightgrid}>
+        <Grid item lg={5} md={5} className={classes.rightgrid}>
           <img src={img} alt="Girl Picture" className={classes.img} />
           <Box className={classes.sqr} />
         </Grid>

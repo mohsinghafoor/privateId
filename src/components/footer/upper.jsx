@@ -9,11 +9,12 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    // height: 260,
+    height: "100%",
+
     // minHeight: 300,
   },
   main: {
-    maxWidth: 1380,
+    maxWidth: 1280,
   },
   parent: {
     display: "flex",
@@ -55,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
   },
   text: {
     maxWidth: 314,
-    height: 162,
+    height: 72,
     textAlign: "left",
     fontFamily: "Axiforma",
     fontStyle: "normal",
@@ -67,7 +68,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFFFFF",
   },
   container: {
-    padding: 60,
+    padding: "40px 100px",
   },
 }));
 

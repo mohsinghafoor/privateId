@@ -25,22 +25,30 @@ const useStyles = makeStyles((theme) => ({
       "linear-gradient(180.17deg, #181818 -5.4%, rgba(0, 0, 0, 0) 89.76%)",
   },
   text: {
-    maxWidth: 700,
-    height: 118,
+    maxWidth: 550,
+    height: 78,
     marginTop: 40,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 30,
+    fontSize: 22,
     lineHeight: "120%",
     /* or 36px */
     textAlign: "left",
     color: "#D1D1D1",
-    marginLeft: 40,
+
     [theme.breakpoints.down("xs")]: {
-      fontSize: 20,
-      marginLeft: 20,
+      fontSize: 18,
+      maxWidth: 340,
       height: 90,
+    },
+  },
+  btnbox: {
+    width: 590,
+    display: "flex",
+    justifyContent: "flex-start",
+    [theme.breakpoints.down("xs")]: {
+      width: 374,
     },
   },
   iconbtn: {
@@ -52,16 +60,16 @@ const useStyles = makeStyles((theme) => ({
     fontStyle: "normal",
     fontWeight: 300,
     fontSize: 22,
-    marginLeft: 40,
+    marginLeft: 20,
     lineHeight: "120%",
     /* or 26px */
     color: "#FFFFFF",
     marginBottom: 30,
+
     [theme.breakpoints.down("xs")]: {
-      fontSize: 18,
-      width: 180,
-      height: 50,
-      marginLeft: 20,
+      fontSize: 16,
+      width: 160,
+      height: 45,
     },
     "&:hover": {
       background: "#383838",
@@ -74,23 +82,28 @@ const useStyles = makeStyles((theme) => ({
     marginRight: 5,
     marginTop: -5,
     [theme.breakpoints.down("xs")]: {
-      width: 30,
-      height: 30,
+      width: 28,
+      height: 28,
     },
   },
   textbox: {
     display: "flex",
     flexDirection: "column",
-    justifyContent: "flex-start",
+    justifyContent: "center",
+    alignItems: "center",
     background: "#2A2A2A",
     width: "100%",
   },
   img: {
-    [theme.breakpoints.down("xs")]: { height: 350, width: 330 },
+    [theme.breakpoints.down("xs")]: {
+      height: 350,
+      width: 330,
+    },
   },
   logo: {
     // position: "absolute",
     marginTop: "1rem",
+    height: 43,
     // marginLeft: "-29rem",
   },
 }));
@@ -108,9 +121,11 @@ export default function DecenterlizedPad() {
             Decentralized biometrics for a secure, private and delightful
             customer experience
           </Box>
-          <IconButton className={classes.iconbtn}>
-            <PlayCircleFilledIcon className={classes.playbtn} /> Watch Video
-          </IconButton>
+          <Box className={classes.btnbox}>
+            <IconButton className={classes.iconbtn}>
+              <PlayCircleFilledIcon className={classes.playbtn} /> Watch Video
+            </IconButton>
+          </Box>
         </Box>
       </div>
     </div>

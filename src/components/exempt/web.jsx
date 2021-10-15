@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     [theme.breakpoints.only("md")]: {
       width: 529,
-      height: 102,
+      height: 122,
     },
   },
   text: {
@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     [theme.breakpoints.only("md")]: {
       width: 487,
-      height: 98,
+      height: 108,
     },
   },
   privacy: {
@@ -72,9 +72,8 @@ const useStyles = makeStyles((theme) => ({
   img: {
     height: 600,
     [theme.breakpoints.only("md")]: {
-      width: 460,
-      height: 497,
-      marginLeft: 0,
+      width: 490,
+      height: 481,
     },
   },
 }));
@@ -87,11 +86,11 @@ export default function ExemptWeb() {
       <Grid container className={classes.main}>
         <Grid
           item
-          lg={6}
-          md={6}
+          lg={7}
+          md={7}
           style={{
             display: "flex",
-            alignItems: "flex-end",
+            alignItems: "center",
             justifyContent: "center",
             flexDirection: "column",
           }}
@@ -112,8 +111,8 @@ export default function ExemptWeb() {
         </Grid>
         <Grid
           item
-          lg={6}
-          md={6}
+          lg={5}
+          md={5}
           style={{
             display: "flex",
             justifyContent: "flex-end",

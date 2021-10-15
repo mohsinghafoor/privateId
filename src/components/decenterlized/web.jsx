@@ -13,15 +13,23 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center",
     height: "100%",
+
     backgroundSize: "100% 100%",
   },
+  gradiant: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    width: "100%",
+    background:
+      "linear-gradient(90.51deg, #181818 17.05%, rgba(0, 0, 0, 0) 89.3%)",
+  },
+
   main: {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     maxWidth: 1280,
-    background:
-      "linear-gradient(90.51deg, #181818 17.05%, rgba(0, 0, 0, 0) 89.3%)",
   },
   text: {
     width: 505,
@@ -75,11 +83,12 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
-    alignItems: "center",
+    alignItems: "flex-end",
   },
   img: {
-    height: 600,
+    height: 515,
     // width: 552,
+
     [theme.breakpoints.only("md")]: {
       marginLeft: "-10rem",
       width: 555,
@@ -87,10 +96,11 @@ const useStyles = makeStyles((theme) => ({
   },
   logo: {
     position: "absolute",
-    marginTop: "-15rem",
-    marginLeft: "-29rem",
+    marginTop: "-14rem",
+    marginLeft: "-28.8rem",
     [theme.breakpoints.only("md")]: {
-      marginLeft: "-22rem",
+      marginLeft: "-19.5rem",
+      marginTop: "-12rem",
     },
   },
 }));
@@ -100,23 +110,25 @@ export default function DecenterlizedWeb() {
 
   return (
     <div className={classes.root}>
-      <Grid container className={classes.main}>
-        <img src={logo} className={classes.logo} alt="" />
-        <Grid item lg={6} md={6} className={classes.leftgrid}>
-          <Box style={{ display: "flex", flexDirection: "column" }}>
-            <Box className={classes.text}>
-              Decentralized biometrics for a secure, private and delightful
-              customer experience
+      <div className={classes.gradiant}>
+        <Grid container className={classes.main}>
+          <img src={logo} className={classes.logo} alt="" />
+          <Grid item lg={6} md={6} className={classes.leftgrid}>
+            <Box style={{ display: "flex", flexDirection: "column" }}>
+              <Box className={classes.text}>
+                Decentralized biometrics for a secure, private and delightful
+                customer experience
+              </Box>
+              <IconButton className={classes.iconbtn}>
+                <PlayCircleFilledIcon className={classes.playbtn} /> Watch Video
+              </IconButton>
             </Box>
-            <IconButton className={classes.iconbtn}>
-              <PlayCircleFilledIcon className={classes.playbtn} /> Watch Video
-            </IconButton>
-          </Box>
+          </Grid>
+          <Grid item lg={6} md={4} className={classes.rightgrid}>
+            <img src={img} className={classes.img} alt="" />
+          </Grid>
         </Grid>
-        <Grid item lg={6} md={4} className={classes.rightgrid}>
-          <img src={img} className={classes.img} alt="" />
-        </Grid>
-      </Grid>
+      </div>
     </div>
   );
 }

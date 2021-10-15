@@ -1,101 +1,26 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Grid, Box, IconButton } from "@material-ui/core";
-import Table1 from "./table1";
-import Table2 from "./table2";
-import Table3 from "./table3";
-import img from "../../assets/tableimg.png";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
+import { useTheme } from "@material-ui/core/styles";
+import DecenterlizedPad from "./tab";
+import DecenterlizedWeb from "./web";
+import ConsumptionTab from "./tab";
+import ConsumptionWeb from "./web";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    height: "100%",
-    background: "#464646",
-    [theme.breakpoints.up("lg")]: {
-      height: 600,
-    },
-  },
-  main: {
-    maxWidth: 1280,
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  heading: {
-    width: 603,
-    height: 76,
-    fontFamily: "Axiforma",
-    fontStyle: "normal",
-    fontWeight: 300,
-    fontSize: 40,
-    lineHeight: "131.5%",
-    /* or 53px */
-
-    color: "#FFFFFF",
-  },
-  img: {
-    // height: 319,
-  },
-  btnbox: {
-    width: 432,
-    display: "flex",
-    justifyContent: "flex-end",
-    marginTop: 20,
-  },
-  btn: {
-    width: 173,
-    height: 42,
-    background: "#383838",
-    borderRadius: 0,
-    fontFamily: "Axiforma",
-    fontStyle: "normal",
-    fontWeight: 300,
-    fontSize: 14,
-    lineHeight: "120%",
-    /* identical to box height, or 17px */
-
-    color: "#FFFFFF",
   },
 }));
 
 export default function Consumption() {
   const classes = useStyles();
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
     <div className={classes.root}>
-      <Grid container className={classes.main}>
-        <Grid
-          item
-          md={6}
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "flex-end",
-          }}
-        >
-          <Table2 />
-          <Table3 />
-          <Box className={classes.btnbox}>
-            <IconButton className={classes.btn}>
-              Click here for details.
-            </IconButton>
-          </Box>
-        </Grid>
-        <Grid
-          item
-          md={6}
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "flex-end",
-          }}
-        >
-          <img src={img} className={classes.img} alt="" />
-        </Grid>
-      </Grid>
+      {isMobile ? <ConsumptionTab /> : <ConsumptionWeb />}
     </div>
   );
 }

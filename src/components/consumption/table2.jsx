@@ -14,14 +14,21 @@ const StyledTableCell = withStyles((theme) => ({
     backgroundColor: "#FFFFFF",
     // color: "black",
     fontSize: 12,
+
     fontFamily: "Axiforma",
     fontWeight: 600,
     backgroundColor: theme.palette.action.hover,
+    [theme.breakpoints.only("xs")]: {
+      fontSize: 10,
+    },
   },
   body: {
     fontSize: 12,
     fontFamily: "Axiforma",
     fontWeight: 600,
+    [theme.breakpoints.only("xs")]: {
+      fontSize: 10,
+    },
   },
 }))(TableCell);
 
@@ -39,17 +46,23 @@ function createData(description, request) {
 }
 
 const rows = [
-  createData("Metadata Storage / Month", "$0.00100"),
-  createData("Remote Onboarding / KYC", "$0.00080"),
+  createData("Enhanced Amazon Connect® Customer Profile Merge", "$0.20"),
+  createData("Augmented Amazon Connect® Customer Profile Merge", "$0.35"),
 ];
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
     marginBottom: 5,
   },
   table: {
     width: 548,
     background: "white",
+    [theme.breakpoints.only("md")]: {
+      width: 435,
+    },
+    [theme.breakpoints.only("xs")]: {
+      width: 330,
+    },
   },
   headingbox: {
     width: 548,
@@ -59,18 +72,32 @@ const useStyles = makeStyles({
     justifyContent: "space-between",
     alignItems: "center",
     marginBottom: 5,
+    [theme.breakpoints.only("md")]: {
+      width: 435,
+    },
+    [theme.breakpoints.only("xs")]: {
+      width: 330,
+    },
   },
   heading: {
-    width: 260,
+    width: 410,
     height: 14,
     fontFamily: "Axiforma",
     fontStyle: "normal",
-    fontWeight: 800,
+    fontWeight: 300,
     fontSize: 14,
     lineHeight: "131.5%",
     /* or 18px */
 
     color: "#FFFFFF",
+    [theme.breakpoints.only("md")]: {
+      width: 300,
+      fontSize: 14,
+    },
+    [theme.breakpoints.only("xs")]: {
+      width: 330,
+      fontSize: 12,
+    },
   },
   rate: {
     width: 280,
@@ -84,10 +111,21 @@ const useStyles = makeStyles({
 
     color: "#FFFFFF",
   },
+
   row: {
-    height: 37,
+    width: 250,
+    [theme.breakpoints.only("md")]: {
+      width: 400,
+    },
   },
-});
+  row1: {
+    width: 250,
+    paddingLeft: 100,
+    [theme.breakpoints.only("md")]: {
+      paddingLeft: 20,
+    },
+  },
+}));
 
 export default function Table2() {
   const classes = useStyles();
@@ -95,21 +133,20 @@ export default function Table2() {
   return (
     <div className={classes.root}>
       <Box className={classes.headingbox}>
-        <Box className={classes.heading}>FACE & VOICE AUTHENTICATION </Box>
-        <Box className={classes.rate}>$US</Box>
+        <Box className={classes.heading}>
+          CUSTOMER PROFILE MERGE FOR AMAZON CONNECT®
+        </Box>
       </Box>
       <Table className={classes.table} aria-label="customized table">
-        <TableHead>
-          <TableRow className={classes.row}>
-            <StyledTableCell align="left">Request (Each)</StyledTableCell>
-            <StyledTableCell align="left">Request</StyledTableCell>
-          </TableRow>
-        </TableHead>
         <TableBody>
           {rows.map((row) => (
-            <StyledTableRow key={row.name} className={classes.row}>
-              <StyledTableCell align="left">{row.description}</StyledTableCell>
-              <StyledTableCell align="left">{row.request}</StyledTableCell>
+            <StyledTableRow key={row.name}>
+              <StyledTableCell align="left" className={classes.row}>
+                {row.description}
+              </StyledTableCell>
+              <StyledTableCell align="center" className={classes.row1}>
+                {row.request}
+              </StyledTableCell>
             </StyledTableRow>
           ))}
         </TableBody>

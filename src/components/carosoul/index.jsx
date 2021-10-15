@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    height: "100vh",
+    height: 500,
   },
   dflex: {
     maxWidth: 934,
@@ -139,7 +139,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.only("sm")]: {
       marginTop: "-20rem",
-      marginLeft: "40rem",
+      marginLeft: "35rem",
       width: 41,
     },
     [theme.breakpoints.only("xs")]: {
@@ -172,7 +172,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.only("sm")]: {
       marginTop: "15rem",
-      marginLeft: "-40rem",
+      marginLeft: "-35rem",
       width: 41,
     },
     [theme.breakpoints.only("xs")]: {

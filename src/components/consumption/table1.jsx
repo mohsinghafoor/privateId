@@ -12,56 +12,74 @@ import Paper from "@material-ui/core/Paper";
 const StyledTableCell = withStyles((theme) => ({
   head: {
     backgroundColor: "#FFFFFF",
-    color: "black",
-    fontSize: 14,
+    // color: "black",
+    fontSize: 12,
     fontFamily: "Axiforma",
-    fontWeight: 300,
+    fontWeight: 600,
+    backgroundColor: theme.palette.action.hover,
+    [theme.breakpoints.only("xs")]: {
+      fontSize: 10,
+    },
   },
   body: {
-    fontSize: 14,
+    fontSize: 12,
+    fontFamily: "Axiforma",
+    fontWeight: 600,
+    [theme.breakpoints.only("xs")]: {
+      fontSize: 10,
+    },
   },
 }))(TableCell);
 
 const StyledTableRow = withStyles((theme) => ({
   root: {
     height: 37,
-    "&:nth-of-type(odd)": {
+    "&:nth-of-type(even)": {
       backgroundColor: theme.palette.action.hover,
     },
   },
 }))(TableRow);
 
-function createData(tier, description, request) {
-  return { tier, description, request };
+function createData(description, request) {
+  return { description, request };
 }
 
 const rows = [
-  createData(1, "Up to 1M Requests / Month", "$0.00100"),
-  createData(2, "1M to 10M Requests / Month", "$0.00080"),
-  createData(3, "10M to 100M Requests / Month", "$0.00060"),
-  createData(4, "Greater than 100M Requests / Month", "$0.00040"),
-  createData(5, "Metadata Storage /  Month", "$0.00010"),
+  createData("Metadata Storage /User /Month", "$0.00100"),
+  createData("Remote Onboarding / KYC", "$0.15"),
 ];
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
-    marginRight: 20,
+    marginBottom: 5,
   },
   table: {
-    width: 432,
+    width: 548,
     background: "white",
+    [theme.breakpoints.only("md")]: {
+      width: 435,
+    },
+    [theme.breakpoints.only("xs")]: {
+      width: 330,
+    },
   },
   headingbox: {
-    width: 432,
+    width: 548,
     height: 47,
     background: "#000000",
     display: "flex",
-    justifyContent: "center",
+    justifyContent: "space-between",
     alignItems: "center",
     marginBottom: 5,
+    [theme.breakpoints.only("md")]: {
+      width: 435,
+    },
+    [theme.breakpoints.only("xs")]: {
+      width: 330,
+    },
   },
   heading: {
-    width: 165,
+    width: 410,
     height: 14,
     fontFamily: "Axiforma",
     fontStyle: "normal",
@@ -71,11 +89,37 @@ const useStyles = makeStyles({
     /* or 18px */
 
     color: "#FFFFFF",
+    [theme.breakpoints.only("md")]: {
+      width: 300,
+      fontSize: 14,
+    },
+    [theme.breakpoints.only("xs")]: {
+      width: 330,
+      fontSize: 12,
+    },
+  },
+  rate: {
+    width: 280,
+    height: 14,
+    fontFamily: "Axiforma",
+    fontStyle: "normal",
+    fontWeight: 800,
+    fontSize: 14,
+    lineHeight: "131.5%",
+    /* or 18px */
+
+    color: "#FFFFFF",
   },
   row: {
     height: 37,
   },
-});
+  request: {
+    paddingLeft: 50,
+    [theme.breakpoints.only("md")]: {
+      paddingLeft: 0,
+    },
+  },
+}));
 
 export default function Table1() {
   const classes = useStyles();
@@ -83,22 +127,18 @@ export default function Table1() {
   return (
     <div className={classes.root}>
       <Box className={classes.headingbox}>
-        <Box className={classes.heading}>FACE AND VOICE AUTH</Box>
+        <Box className={classes.heading}>FACE & VOICE AUTHENTICATION </Box>
       </Box>
       <Table className={classes.table} aria-label="customized table">
         <TableHead>
           <TableRow className={classes.row}>
-            <StyledTableCell>Tier</StyledTableCell>
-            <StyledTableCell align="left">Description</StyledTableCell>
-            <StyledTableCell align="left">Request</StyledTableCell>
+            <StyledTableCell align="left">Each Request</StyledTableCell>
+            <StyledTableCell align="left">$0.001</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {rows.map((row) => (
             <StyledTableRow key={row.name} className={classes.row}>
-              <StyledTableCell component="th" scope="row">
-                {row.tier}
-              </StyledTableCell>
               <StyledTableCell align="left">{row.description}</StyledTableCell>
               <StyledTableCell align="left">{row.request}</StyledTableCell>
             </StyledTableRow>

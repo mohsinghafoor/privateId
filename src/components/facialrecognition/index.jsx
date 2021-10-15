@@ -14,6 +14,15 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("lg")]: {
       height: 630,
     },
+    [theme.breakpoints.only("md")]: {
+      height: 400,
+    },
+    [theme.breakpoints.only("sm")]: {
+      height: 800,
+    },
+    [theme.breakpoints.up("xs")]: {
+      height: 830,
+    },
   },
   main: {
     display: "flex",
@@ -29,16 +38,28 @@ const useStyles = makeStyles((theme) => ({
     background:
       "linear-gradient(117.06deg, #C9C9C9 -9.15%, rgba(201, 201, 201, 0) 70.04%)",
     borderRadius: 267.5,
+    [theme.breakpoints.only("xs")]: {
+      width: 330,
+      height: 333,
+    },
   },
   img: {
     position: "absolute",
     height: 453,
+    [theme.breakpoints.only("xs")]: {
+      width: 190,
+      height: 353,
+    },
   },
   cardbox: {
     display: "flex",
     justifyContent: "space-between",
-    width: 440,
+    width: 445,
     marginTop: 10,
+    [theme.breakpoints.only("xs")]: {
+      width: 330,
+      height: 50,
+    },
   },
   sqr: {
     width: 216,
@@ -47,6 +68,10 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     // justifyContent: "center",
     alignItems: "center",
+    [theme.breakpoints.only("xs")]: {
+      width: 155,
+      height: 50,
+    },
   },
   text: {
     maxWidth: 170,
@@ -60,6 +85,11 @@ const useStyles = makeStyles((theme) => ({
     /* or 18px */
     textAlign: "left",
     color: "#FFFFFF",
+    [theme.breakpoints.only("xs")]: {
+      fontSize: 12,
+      maxWidth: 140,
+      marginLeft: 10,
+    },
   },
 }));
 
@@ -89,7 +119,7 @@ export default function FacialRecognition() {
           <Box>
             <Box className={classes.cardbox}>
               <Box className={classes.sqr}>
-                <Box className={classes.text}>1:n Face & Voice Recognition</Box>
+                <Box className={classes.text}>#Unbiased AI</Box>
               </Box>
               <Box className={classes.sqr}>
                 <Box className={classes.text}>
@@ -100,9 +130,7 @@ export default function FacialRecognition() {
 
             <Box className={classes.cardbox}>
               <Box className={classes.sqr}>
-                <Box className={classes.text}>
-                  Continuous Auth Every 3 Seconds
-                </Box>
+                <Box className={classes.text}>#Continuous Auth</Box>
               </Box>
               <Box className={classes.sqr}>
                 <Box className={classes.text}>
@@ -113,7 +141,7 @@ export default function FacialRecognition() {
 
             <Box className={classes.cardbox}>
               <Box className={classes.sqr}>
-                <Box className={classes.text}>Passive Liveness</Box>
+                <Box className={classes.text}>#Passive Liveness</Box>
               </Box>
               <Box className={classes.sqr}>
                 <Box className={classes.text}>
@@ -124,7 +152,7 @@ export default function FacialRecognition() {
 
             <Box className={classes.cardbox}>
               <Box className={classes.sqr}>
-                <Box className={classes.text}>99.80% Accurate</Box>
+                <Box className={classes.text}>#Touchless UI</Box>
               </Box>
               <Box className={classes.sqr}>
                 <Box className={classes.text}>WebAssembly / C++</Box>
@@ -133,10 +161,10 @@ export default function FacialRecognition() {
 
             <Box className={classes.cardbox}>
               <Box className={classes.sqr}>
-                <Box className={classes.text}>Fair, EthicalUnbiased AI</Box>
+                <Box className={classes.text}>#Unlimited Users</Box>
               </Box>
               <Box className={classes.sqr}>
-                <Box className={classes.text}>UNLIMITED User Base</Box>
+                <Box className={classes.text}>NFC Encrypted Read/Write</Box>
               </Box>
             </Box>
           </Box>

@@ -20,6 +20,13 @@ const useStyles = makeStyles((theme) => ({
   },
   main: {
     maxWidth: 1280,
+
+    [theme.breakpoints.down("sm")]: {
+      height: 600,
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+    },
   },
   textbox: {
     // marginTop: "-15rem",
@@ -33,8 +40,16 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 40,
     lineHeight: "131.5%",
     /* identical to box height, or 53px */
-
+    marginTop: 40,
     color: "#FFFFFF",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 24,
+      height: 33,
+      marginTop: 80,
+    },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 24,
+    },
   },
   text: {
     width: 233,
@@ -47,9 +62,25 @@ const useStyles = makeStyles((theme) => ({
     /* or 29px */
 
     color: "#FFFFFF",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 18,
+    },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 16,
+    },
   },
   img: {
     height: 184,
+    [theme.breakpoints.down("sm")]: {
+      width: 310,
+      height: 208,
+      marginTop: "-25rem",
+      marginLeft: "1rem",
+    },
+    [theme.breakpoints.down("xs")]: {
+      marginLeft: "0rem",
+      width: 250,
+    },
   },
   form: {
     display: "flex",
@@ -61,10 +92,30 @@ const useStyles = makeStyles((theme) => ({
     background: "#FFFFFF",
     borderRadius: 14,
     marginLeft: "1rem",
-    // marginTop: "3rem",
+    [theme.breakpoints.only("md")]: {
+      width: 327,
+      height: 331,
+    },
+    [theme.breakpoints.only("sm")]: {
+      position: "absolute",
+      width: 488,
+      height: 331,
+      marginTop: "3rem",
+      marginLeft: "-19rem",
+    },
+    [theme.breakpoints.only("xs")]: {
+      position: "absolute",
+      width: 330,
+      height: 331,
+      marginTop: "3rem",
+      marginLeft: "-15.5rem",
+    },
   },
   inputbox: {
     height: 60,
+    [theme.breakpoints.down("md")]: {
+      height: 50,
+    },
   },
   input: {
     width: 326,
@@ -76,7 +127,20 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: "0px 15px 9px -6px rgba(199, 199, 199, 0.25)",
     borderRadius: 8,
     paddingLeft: 10,
+    [theme.breakpoints.only("md")]: {
+      width: 285,
+      height: 33,
+    },
+    [theme.breakpoints.only("sm")]: {
+      width: 425,
+      height: 33,
+    },
+    [theme.breakpoints.only("xs")]: {
+      width: 300,
+      height: 33,
+    },
   },
+
   msg: {
     width: 326,
     height: 103,
@@ -87,6 +151,18 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: "0px 15px 9px -6px rgba(199, 199, 199, 0.25)",
     borderRadius: 8,
     paddingLeft: 10,
+    [theme.breakpoints.only("md")]: {
+      width: 285,
+      height: 93,
+    },
+    [theme.breakpoints.only("sm")]: {
+      width: 425,
+      height: 93,
+    },
+    [theme.breakpoints.only("xs")]: {
+      width: 300,
+      height: 93,
+    },
   },
   btn: {
     width: 148,
@@ -102,6 +178,24 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 20,
     color: "#FFFFFF",
   },
+  leftgrid: {
+    display: "flex",
+    justifyContent: "flex-end",
+    alignItems: "flex-start",
+    [theme.breakpoints.down("sm")]: {
+      justifyContent: "center",
+      alignItems: "center",
+    },
+  },
+  rightgrid: {
+    display: "flex",
+    alignItems: "flex-start",
+    justifyContent: "flex-start",
+    [theme.breakpoints.down("sm")]: {
+      justifyContent: "center",
+      alignItems: "center",
+    },
+  },
 }));
 
 export default function LetsTalk() {
@@ -114,26 +208,10 @@ export default function LetsTalk() {
         <Box className={classes.text}>Start a conversation.</Box>
       </Box>
       <Grid container className={classes.main}>
-        <Grid
-          item
-          lg={6}
-          style={{
-            display: "flex",
-            justifyContent: "flex-end",
-            alignItems: "flex-start",
-          }}
-        >
+        <Grid item lg={6} md={6} className={classes.leftgrid}>
           <img src={img} className={classes.img} alt="" />
         </Grid>
-        <Grid
-          item
-          lg={5}
-          style={{
-            display: "flex",
-            alignItems: "flex-start",
-            justifyContent: "flex-start",
-          }}
-        >
+        <Grid item lg={5} md={6} className={classes.rightgrid}>
           <form className={classes.form}>
             <Box className={classes.inputbox}>
               <input type="text" className={classes.input} placeholder="Name" />
