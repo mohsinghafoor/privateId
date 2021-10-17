@@ -186,7 +186,7 @@ export default function VoiceAuthenticationTab() {
 
         <Box className={classes.sqr}>
           <img src={badge} className={classes.badge} alt="" />
-          <Box className={classes.headingbox}>
+          <Box>
             <Box className={classes.heading}>
               Voice <span className={classes.span}>Search</span> for Amazon
               Connect®
@@ -200,7 +200,7 @@ export default function VoiceAuthenticationTab() {
 
         <Box className={classes.sqr}>
           <img src={badge} className={classes.badge} alt="" />
-          <Box className={classes.headingbox}>
+          <Box>
             <Box className={classes.heading}>
               Voice <span className={classes.span}>Pop</span> for Amazon
               Connect®
@@ -214,7 +214,7 @@ export default function VoiceAuthenticationTab() {
 
         <Box className={classes.sqr}>
           <img src={badge} className={classes.badge} alt="" />
-          <Box className={classes.headingbox}>
+          <Box>
             <Box className={classes.heading}>
               Enhanced <span className={classes.span}>Merge</span> for Amazon
               Connect®
@@ -228,7 +228,7 @@ export default function VoiceAuthenticationTab() {
 
         <Box className={classes.sqr}>
           <img src={badge} className={classes.badge} alt="" />
-          <Box className={classes.headingbox}>
+          <Box>
             <Box className={classes.heading}>
               Augmented <span className={classes.span}>Merge</span> for Amazon
               Connect®

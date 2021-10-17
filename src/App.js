@@ -63,7 +63,6 @@ function App() {
       <Easy />
       <Exempt />
       <Carosoul />
-
       <FacialRecognition />
       <VoiceAuthentication />
       <Face />
