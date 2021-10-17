@@ -70,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   img: {
-    height: 600,
+    height: 595,
     [theme.breakpoints.only("md")]: {
       width: 490,
       height: 481,

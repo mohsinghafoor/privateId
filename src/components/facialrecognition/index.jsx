@@ -6,7 +6,7 @@ import img from "../../assets/mobile.png";
 const useStyles = makeStyles((theme) => ({
   root: {
     background: "#525252",
-    marginTop: -40,
+
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
       height: 400,
     },
     [theme.breakpoints.only("sm")]: {
-      height: 800,
+      height: 850,
     },
     [theme.breakpoints.up("xs")]: {
       height: 830,

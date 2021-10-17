@@ -13,7 +13,6 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     height: "100%",
     backgroundSize: "100% 100%",
-    marginTop: -22,
   },
   gradiant: {
     display: "flex",

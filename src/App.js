@@ -48,13 +48,30 @@ function App() {
       <Easy />
       <Exempt />
       <Carosoul />
+      <VoiceAuthentication />
       <FacialRecognition />
+      <Face /> 
       <Protects />
       <Engineered />
       <Consumption />
       <LetsTalk />
-      <Footer /> */}
+      <Footer />
+      */}
+      <Decenterlized />
+      <Order />
+      <Fast />
+      <Easy />
+      <Exempt />
+      <Carosoul />
+
+      <FacialRecognition />
+      <VoiceAuthentication />
       <Face />
+      <Protects />
+      <Engineered />
+      <Consumption />
+      <LetsTalk />
+      <Footer />
       {/*      
       <VoiceAuthentication />
       <Face />

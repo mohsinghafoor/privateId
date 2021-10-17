@@ -30,8 +30,8 @@ const useStyles = makeStyles((theme) => ({
     height: 416,
 
     [theme.breakpoints.only("xs")]: {
-      width: 360,
-      height: 260,
+      width: 370,
+      height: 280,
     },
   },
   bottombox: {
