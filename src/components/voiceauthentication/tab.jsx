@@ -24,7 +24,16 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: -4,
     [theme.breakpoints.only("xs")]: {
       width: 330,
-      height: 340,
+      height: 320,
+    },
+  },
+  headingbox: {
+    display: "flex",
+    alignItems: "flex-start",
+    justifyContent: "flex-start",
+    width: 600,
+    [theme.breakpoints.only("xs")]: {
+      width: 340,
     },
   },
   mainheading: {
@@ -41,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
 
     color: "#FFFFFF",
     [theme.breakpoints.only("xs")]: {
-      width: 220,
+      width: 250,
       fontSize: 18,
     },
   },
@@ -57,77 +66,63 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "column",
-    paddingTop: 20,
+    paddingTop: 30,
   },
 
   sqr: {
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-    alignItems: "center",
+    alignItems: "flex-start",
     // alignItems: "center",
     width: 503,
     height: 94,
     marginBottom: 10,
     background: "#434242",
     [theme.breakpoints.only("xs")]: {
-      width: 320,
-      height: 70,
+      width: 330,
+      height: 90,
     },
   },
   badge: {
+    position: "absolute",
     width: 59,
     height: 27,
-  },
-  headingbox: {
-    width: 470,
-    height: 80,
-    alignItems: "center",
-    display: "flex",
-    justifyContent: "space-between",
+    marginLeft: "26.4rem",
+    marginTop: "-1.4rem",
     [theme.breakpoints.only("xs")]: {
-      width: 300,
-      marginTop: 5,
-      height: 50,
+      width: 50,
+      height: 24,
+      marginLeft: "17rem",
+      marginTop: "-1.4rem",
     },
   },
+
   heading: {
-    width: 330,
-    height: 26,
+    width: 465,
+    height: 30,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
     fontSize: 16,
+    textAlign: "left",
     lineHeight: "131.5%",
     /* or 21px */
-
+    marginTop: 0,
     color: "#FFFFFF",
+    marginLeft: 20,
     [theme.breakpoints.only("xs")]: {
       width: 250,
       fontSize: 12,
+      height: 25,
+      marginTop: 0,
     },
   },
-  augheading: {
-    width: 330,
-    height: 26,
-    fontFamily: "Axiforma",
-    fontStyle: "normal",
-    fontWeight: 300,
-    fontSize: 16,
-    lineHeight: "131.5%",
-    /* or 21px */
-    textAlign: "left",
-    color: "#FFFFFF",
-    [theme.breakpoints.only("xs")]: {
-      width: 290,
-      fontSize: 12,
-      height: 30,
-    },
-  },
+
   text: {
     maxWidth: 465,
-    height: 89,
-    marginLeft: 10,
+    height: 35,
+    marginLeft: 20,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
@@ -137,7 +132,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     color: "#FFFFFF",
     [theme.breakpoints.only("xs")]: {
-      width: 310,
+      width: 300,
       fontSize: 10,
     },
   },
@@ -150,6 +145,11 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   gradiant: {
+    width: "100%",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
     background:
       "linear-gradient(85.54deg, rgba(0, 0, 0, 0) -8.44%, rgba(44, 44, 44, 0.9) 38.88%)",
   },
@@ -162,8 +162,10 @@ export default function VoiceAuthenticationTab() {
     <div className={classes.root}>
       <Box className={classes.upperbox}>
         <Box className={classes.gradiant}>
-          <Box className={classes.mainheading}>
-            VOICE SOLUTIONS FOR AMAZON CONNECT
+          <Box className={classes.headingbox}>
+            <Box className={classes.mainheading}>
+              VOICE SOLUTIONS FOR AMAZON CONNECT
+            </Box>
           </Box>
           <img src={img} className={classes.img} alt="voice image" />
         </Box>
@@ -171,42 +173,39 @@ export default function VoiceAuthenticationTab() {
 
       <Box className={classes.lowerbox}>
         <Box className={classes.sqr}>
-          <Box className={classes.headingbox}>
-            <Box className={classes.heading} style={{ marginLeft: -25 }}>
-              Voice <span className={classes.span}>Auth</span> for Amazon
-              Connect®
-            </Box>
-            <img src={badge} className={classes.badge} alt="" />
-          </Box>
+          <img src={badge} className={classes.badge} alt="" />
 
+          <Box className={classes.heading}>
+            Voice <span className={classes.span}>Auth</span> for Amazon Connect®
+          </Box>
           <Box className={classes.text}>
             Continuously authenticate an unlimited number of callers every 3
             seconds in IVR or live calls using 1:n speaker recognition.
           </Box>
         </Box>
+
         <Box className={classes.sqr}>
+          <img src={badge} className={classes.badge} alt="" />
           <Box className={classes.headingbox}>
-            <Box className={classes.heading} style={{ marginLeft: -20 }}>
+            <Box className={classes.heading}>
               Voice <span className={classes.span}>Search</span> for Amazon
               Connect®
             </Box>
-            <img src={badge} className={classes.badge} alt="" />
           </Box>
-
           <Box className={classes.text}>
             Search and review an unlimited number of Recorded Calls using 1:n
             speaker identification.
           </Box>
         </Box>
+
         <Box className={classes.sqr}>
+          <img src={badge} className={classes.badge} alt="" />
           <Box className={classes.headingbox}>
-            <Box className={classes.heading} style={{ marginLeft: -26 }}>
-              Voice <span className={classes.span}>POP</span> for Amazon
+            <Box className={classes.heading}>
+              Voice <span className={classes.span}>Pop</span> for Amazon
               Connect®
             </Box>
-            <img src={badge} className={classes.badge} alt="" />
           </Box>
-
           <Box className={classes.text}>
             Instantly open a caller’s unified Customer Profile using 1:n speaker
             recognition with one second of the caller’s voice.
@@ -214,31 +213,30 @@ export default function VoiceAuthenticationTab() {
         </Box>
 
         <Box className={classes.sqr}>
+          <img src={badge} className={classes.badge} alt="" />
           <Box className={classes.headingbox}>
             <Box className={classes.heading}>
               Enhanced <span className={classes.span}>Merge</span> for Amazon
               Connect®
             </Box>
-            <img src={badge} className={classes.badge} alt="" />
           </Box>
-
           <Box className={classes.text}>
             Automatically find and intelligently merge duplicate Customer
             Profiles using 1:n speaker recognition with 3rd party data.
           </Box>
         </Box>
+
         <Box className={classes.sqr}>
+          <img src={badge} className={classes.badge} alt="" />
           <Box className={classes.headingbox}>
-            <Box className={classes.augheading}>
+            <Box className={classes.heading}>
               Augmented <span className={classes.span}>Merge</span> for Amazon
               Connect®
             </Box>
-            <img src={badge} className={classes.badge} alt="" />
           </Box>
-
           <Box className={classes.text}>
-            Instantly open a caller’s unified Customer Profile using 1:n speaker
-            recognition with one second of the caller’s voice.
+            Enhanced Merge, plus appends additional profile information for
+            greater personalization, fraud avoidance and targeted marketing.
           </Box>
         </Box>
       </Box>

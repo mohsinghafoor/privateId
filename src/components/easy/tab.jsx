@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     height: 632,
     [theme.breakpoints.only("xs")]: {
-      height: 390,
+      height: 450,
     },
   },
   imgbox: {
@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
     background: "#000000",
     [theme.breakpoints.only("xs")]: {
-      height: 205,
+      height: 260,
     },
   },
   img: {
@@ -30,8 +30,8 @@ const useStyles = makeStyles((theme) => ({
     height: 416,
 
     [theme.breakpoints.only("xs")]: {
-      width: 330,
-      height: 205,
+      width: 360,
+      height: 260,
     },
   },
   bottombox: {

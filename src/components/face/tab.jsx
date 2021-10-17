@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Box } from "@material-ui/core";
-import background from "../../assets/faceback.png";
+import background from "../../assets/voicebackground.png";
 import img from "../../assets/faceimg.png";
 import badge from "../../assets/voicebadge.png";
 
@@ -24,11 +24,20 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: -4,
     [theme.breakpoints.only("xs")]: {
       width: 330,
-      height: 340,
+      height: 320,
+    },
+  },
+  headingbox: {
+    display: "flex",
+    alignItems: "flex-start",
+    justifyContent: "flex-start",
+    width: 600,
+    [theme.breakpoints.only("xs")]: {
+      width: 370,
     },
   },
   mainheading: {
-    width: 515,
+    width: 514,
     height: 41,
     fontFamily: "Axiforma",
     fontStyle: "normal",
@@ -41,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
 
     color: "#FFFFFF",
     [theme.breakpoints.only("xs")]: {
-      width: 220,
+      width: 300,
       fontSize: 18,
     },
   },
@@ -49,6 +58,9 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     backgroundImage: `url(${background})`,
     backgroundSize: "100% 100%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
   },
   lowerbox: {
     background: "#353535",
@@ -57,77 +69,64 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "column",
-    paddingTop: 20,
+    paddingTop: 30,
+    paddingBottom: 30,
   },
 
   sqr: {
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-    alignItems: "center",
+    alignItems: "flex-start",
     // alignItems: "center",
     width: 503,
     height: 94,
     marginBottom: 10,
     background: "#434242",
     [theme.breakpoints.only("xs")]: {
-      width: 320,
-      height: 70,
+      width: 330,
+      height: 80,
     },
   },
   badge: {
+    position: "absolute",
     width: 59,
     height: 27,
-  },
-  headingbox: {
-    width: 470,
-    height: 80,
-    alignItems: "center",
-    display: "flex",
-    justifyContent: "space-between",
+    marginLeft: "26.4rem",
+    marginTop: "-1.4rem",
     [theme.breakpoints.only("xs")]: {
-      width: 300,
-      marginTop: 5,
-      height: 50,
+      width: 50,
+      height: 24,
+      marginLeft: "17rem",
+      marginTop: "-1.4rem",
     },
   },
+
   heading: {
     width: 359,
-    height: 26,
+    height: 30,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 800,
     fontSize: 16,
+    textAlign: "left",
     lineHeight: "131.5%",
     /* or 21px */
-
+    marginTop: 0,
     color: "#FFFFFF",
+    marginLeft: 20,
     [theme.breakpoints.only("xs")]: {
       width: 250,
       fontSize: 12,
+      height: 20,
+      marginTop: 0,
     },
   },
-  augheading: {
-    width: 330,
-    height: 26,
-    fontFamily: "Axiforma",
-    fontStyle: "normal",
-    fontWeight: 300,
-    fontSize: 16,
-    lineHeight: "131.5%",
-    /* or 21px */
-    textAlign: "left",
-    color: "#FFFFFF",
-    [theme.breakpoints.only("xs")]: {
-      width: 290,
-      fontSize: 12,
-      height: 30,
-    },
-  },
+
   text: {
     maxWidth: 465,
-    height: 89,
-    marginLeft: 10,
+    height: 35,
+    marginLeft: 20,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
@@ -137,20 +136,26 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     color: "#FFFFFF",
     [theme.breakpoints.only("xs")]: {
-      width: 310,
+      width: 300,
       fontSize: 10,
     },
   },
-  span: {
+  span1: {
     fontSize: 14,
-    fontWeight: "bold",
+    fontWeight: 300,
     marginLeft: 3,
     [theme.breakpoints.only("xs")]: {
-      fontSize: 12,
+      fontSize: 10,
     },
   },
   gradiant: {
-    background: "rgba(23, 23, 23, 0.8)",
+    width: "100%",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    background:
+      "linear-gradient(85.54deg, rgba(0, 0, 0, 0) -8.44%, rgba(44, 44, 44, 0.9) 38.88%)",
   },
 }));
 
@@ -161,8 +166,10 @@ export default function FaceTab() {
     <div className={classes.root}>
       <Box className={classes.upperbox}>
         <Box className={classes.gradiant}>
-          <Box className={classes.mainheading}>
-            FACE + VOICE AUTHENTICATION SOLUTIONS
+          <Box className={classes.headingbox}>
+            <Box className={classes.mainheading}>
+              FACE + VOICE AUTHENTICATION SOLUTIONS
+            </Box>
           </Box>
           <img src={img} className={classes.img} alt="voice image" />
         </Box>
@@ -170,75 +177,72 @@ export default function FaceTab() {
 
       <Box className={classes.lowerbox}>
         <Box className={classes.sqr}>
-          <Box className={classes.headingbox}>
-            <Box className={classes.heading}>Phone Unlock</Box>
-            <img src={badge} className={classes.badge} alt="" />
-          </Box>
+          <img src={badge} className={classes.badge} alt="" />
 
+          <Box className={classes.heading}>Phone Auth</Box>
           <Box className={classes.text}>
-            Continuously authenticate an unlimited number of callers every 3
-            seconds in IVR or live calls using 1:n speaker recognition.
+            Unlock devices and provide MFA for an unlimited number of user
+            accounts with continuous decentralized biometric authentication.
           </Box>
         </Box>
+
         <Box className={classes.sqr}>
-          <Box className={classes.headingbox}>
+          <img src={badge} className={classes.badge} alt="" />
+          <Box>
             <Box className={classes.heading}>CONTINUOUS AUTHENTICATION</Box>
-            <img src={badge} className={classes.badge} alt="" />
           </Box>
-
           <Box className={classes.text}>
-            Search and review an unlimited number of Recorded Calls using 1:n
-            speaker identification.
+            1:N Identify, 1:1 verify and authenticate using face (with facemask)
+            and voice recognition.
           </Box>
         </Box>
+
         <Box className={classes.sqr}>
-          <Box className={classes.headingbox}>
+          <img src={badge} className={classes.badge} alt="" />
+          <Box>
             <Box className={classes.heading}>ACCOUNT RECOVERY</Box>
-            <img src={badge} className={classes.badge} alt="" />
           </Box>
-
           <Box className={classes.text}>
-            Instantly open a caller’s unified Customer Profile using 1:n speaker
-            recognition with one second of the caller’s voice.
+            Protect an unlimited number of user accounts and eliminate password
+            resets with biometric account recovery.
           </Box>
         </Box>
 
         <Box className={classes.sqr}>
-          <Box className={classes.headingbox}>
+          <img src={badge} className={classes.badge} alt="" />
+          <Box>
             <Box className={classes.heading}>FACE CAPTCHA</Box>
-            <img src={badge} className={classes.badge} alt="" />
           </Box>
-
           <Box className={classes.text}>
-            Automatically find and intelligently merge duplicate Customer
-            Profiles using 1:n speaker recognition with 3rd party data.
+            Determines if a live human face is in front of the camera in 10ms.
+            Run instantly on any browser with no installation.
           </Box>
         </Box>
+
         <Box className={classes.sqr}>
-          <Box className={classes.headingbox}>
+          <img src={badge} className={classes.badge} alt="" />
+          <Box>
             <Box className={classes.heading}>VOICE CAPTCHA</Box>
-            <img src={badge} className={classes.badge} alt="" />
           </Box>
-
           <Box className={classes.text}>
-            Instantly open a caller’s unified Customer Profile using 1:n speaker
-            recognition with one second of the caller’s voice.
+            Determines if a live human is speaking in the microphone in 10ms.
+            Runs instantly on browsers without installation.
           </Box>
         </Box>
+
         <Box className={classes.sqr}>
-          <Box className={classes.headingbox}>
+          <img src={badge} className={classes.badge} alt="" />
+          <Box>
             <Box className={classes.heading}>
               VERIFIED IDENTITY{" "}
-              <span className={classes.span}>
+              <span className={classes.span1}>
                 for Identity Providers (IdPs)
               </span>
             </Box>
-            <img src={badge} className={classes.badge} alt="" />
           </Box>
-
           <Box className={classes.text}>
-            Instantly open a caller’s unified Customer Profile using 1:n speaker
-            recognition with one second of the caller’s voice.
+            Compare two or more face images (with or without a mask) with
+            passive liveness in 100ms without PII. Built for identity providers.
           </Box>
         </Box>
       </Box>
