@@ -6,7 +6,7 @@ import img from "../../assets/mobile.png";
 const useStyles = makeStyles((theme) => ({
   root: {
     background: "#525252",
-
+    marginTop: -15,
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
