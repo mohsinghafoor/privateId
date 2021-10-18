@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/privateId/static/css/main.86aad699.chunk.css",
-    "main.js": "/privateId/static/js/main.8494ab2a.chunk.js",
-    "main.js.map": "/privateId/static/js/main.8494ab2a.chunk.js.map",
+    "main.js": "/privateId/static/js/main.2155655b.chunk.js",
+    "main.js.map": "/privateId/static/js/main.2155655b.chunk.js.map",
     "runtime-main.js": "/privateId/static/js/runtime-main.4533e5de.js",
     "runtime-main.js.map": "/privateId/static/js/runtime-main.4533e5de.js.map",
     "static/js/2.60f267a4.chunk.js": "/privateId/static/js/2.60f267a4.chunk.js",
@@ -36,7 +36,6 @@
     "static/media/voicebackground.70684682.png": "/privateId/static/media/voicebackground.70684682.png",
     "static/media/voicebackgroundmd.4ec5f3e9.png": "/privateId/static/media/voicebackgroundmd.4ec5f3e9.png",
     "static/media/voicebackgroundsm.abcb731e.png": "/privateId/static/media/voicebackgroundsm.abcb731e.png",
-    "static/media/voiceimg.5655e897.png": "/privateId/static/media/voiceimg.5655e897.png",
     "static/media/voiceimg1.8ac64042.png": "/privateId/static/media/voiceimg1.8ac64042.png",
     "static/media/voiceimgmd.afc91296.png": "/privateId/static/media/voiceimgmd.afc91296.png",
     "static/media/watch.c8c4b286.png": "/privateId/static/media/watch.c8c4b286.png",
@@ -46,6 +45,6 @@
     "static/js/runtime-main.4533e5de.js",
     "static/js/2.60f267a4.chunk.js",
     "static/css/main.86aad699.chunk.css",
-    "static/js/main.8494ab2a.chunk.js"
+    "static/js/main.2155655b.chunk.js"
   ]
 }
