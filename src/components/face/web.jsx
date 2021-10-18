@@ -113,7 +113,7 @@ const useStyles = makeStyles((theme) => ({
 
   subheading: {
     maxWidth: 174,
-    marginTop: -15,
+    marginTop: -10,
     marginLeft: 10,
     fontFamily: "Axiforma",
     fontStyle: "normal",

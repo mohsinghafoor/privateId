@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   details: {
-    height: 49,
+    height: 39,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
@@ -42,6 +42,7 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "13px",
     textAlign: "left",
     color: "#FFFFFF",
+    marginTop: -20,
     [theme.breakpoints.down("xs")]: {
       width: 330,
       height: 50,
@@ -92,6 +93,10 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     color: "#FFFFFF",
   },
+  detailsbox: {
+    height: 130,
+    marginTop: -30,
+  },
 }));
 
 export default function FooterAccordion(props) {
@@ -118,7 +123,7 @@ export default function FooterAccordion(props) {
             </Box>
           </AccordionSummary>
           <AccordionDetails className={classes.summary}>
-            <Box ml={5}>
+            <Box ml={5} className={classes.detailsbox}>
               <Box className={classes.dflex} mt={2}>
                 <Box className={classes.bulletPoint} />
                 <Box className={classes.service} ml={1}>
@@ -170,7 +175,7 @@ export default function FooterAccordion(props) {
             </Box>
           </AccordionSummary>
           <AccordionDetails className={classes.summary}>
-            <Box ml={6}>
+            <Box ml={6} className={classes.detailsbox}>
               <Box className={classes.dflex} mt={2}>
                 <Box className={classes.bulletPoint} />
                 <Box className={classes.service} ml={1}>

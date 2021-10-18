@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Box } from "@material-ui/core";
 import background from "../../assets/voicebackground.png";
-import img from "../../assets/voiceimg.png";
+import img from "../../assets/voiceimgmd.png";
 import badge from "../../assets/voicebadge.png";
 
 const useStyles = makeStyles((theme) => ({
@@ -97,7 +97,7 @@ const useStyles = makeStyles((theme) => ({
   },
   text: {
     maxWidth: 174,
-    height: 89,
+    height: 105,
     marginLeft: 10,
     fontFamily: "Axiforma",
     fontStyle: "normal",
@@ -152,7 +152,7 @@ export default function VoiceAuthenticationWeb() {
                   Voice <span className={classes.span}>Auth</span> <br /> for
                   Amazon Connect®
                 </Box>
-                <Box className={classes.line} />
+
                 <Box className={classes.text}>
                   Continuously authenticate an unlimited number of callers every
                   3 seconds in IVR or live calls using 1:n speaker recognition.
@@ -164,7 +164,7 @@ export default function VoiceAuthenticationWeb() {
                   Voice <span className={classes.span}>Search</span> <br /> for
                   Amazon Connect®
                 </Box>
-                <Box className={classes.line} />
+
                 <Box className={classes.text}>
                   Search and review an unlimited number of Recorded Calls using
                   1:n speaker identification.
@@ -176,7 +176,7 @@ export default function VoiceAuthenticationWeb() {
                   Voice <span className={classes.span}>POP</span> <br /> for
                   Amazon Connect®
                 </Box>
-                <Box className={classes.line} />
+
                 <Box className={classes.text}>
                   Instantly open a caller’s unified Customer Profile using 1:n
                   speaker recognition with one second of the caller’s voice.
@@ -190,7 +190,7 @@ export default function VoiceAuthenticationWeb() {
                   Enhanced <span className={classes.span}>Merge</span> <br />{" "}
                   for Amazon Connect®
                 </Box>
-                <Box className={classes.line} />
+
                 <Box className={classes.text}>
                   Automatically find and intelligently merge duplicate Customer
                   Profiles using 1:n speaker recognition with 3rd party data.
@@ -202,7 +202,7 @@ export default function VoiceAuthenticationWeb() {
                   Augmented <span className={classes.span}>Merge</span> <br />{" "}
                   for Amazon Connect®
                 </Box>
-                <Box className={classes.line} />
+
                 <Box className={classes.text}>
                   Enhanced Merge, plus appends additional profile information
                   for greater personalization, fraud avoidance and targeted
