@@ -6,6 +6,7 @@ import DecenterlizedPad from "./tab";
 import DecenterlizedWeb from "./web";
 import FaceTab from "./tab";
 import FaceWeb from "./web";
+import FaceIpad from "./ipad";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -16,9 +17,12 @@ const useStyles = makeStyles((theme) => ({
 export default function Face() {
   const classes = useStyles();
   const theme = useTheme();
+  const isPad = useMediaQuery(theme.breakpoints.down("md"));
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
-    <div className={classes.root}>{isMobile ? <FaceTab /> : <FaceWeb />}</div>
+    <div className={classes.root}>
+      {isMobile ? <FaceTab /> : isPad ? <FaceIpad /> : <FaceWeb />}
+    </div>
   );
 }

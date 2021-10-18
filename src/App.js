@@ -17,7 +17,6 @@ import Order from "./components/order";
 import Consumption from "./components/consumption";
 import ExemptTab from "./components/exempt/tab";
 import Exempt from "./components/exempt";
-
 import FastTab from "./components/fast/tab";
 import Fast from "./components/fast";
 import EasyTab from "./components/easy/tab";
@@ -25,6 +24,9 @@ import Easy from "./components/easy";
 import Engineered from "./components/engineered";
 import VoiceAuthentication from "./components/voiceauthentication";
 import Face from "./components/face";
+import FaceIpad from "./components/face/ipad";
+import FaceWeb from "./components/face/web";
+import VoiceAuthenticationIpad from "./components/voiceauthentication/ipad";
 
 function App() {
   return (
@@ -57,6 +59,7 @@ function App() {
       <LetsTalk />
       <Footer />
       */}
+
       <Decenterlized />
       <Order />
       <Fast />

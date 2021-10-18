@@ -8,15 +8,11 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 const useStyles = makeStyles((theme) => ({
   root: {
     // width: "100%",
-    display: "flex",
-    justifyContent: "center",
-    flexDirection: "column",
-    alignItems: "flex-start",
+
     background: "#656565",
-    paddingLeft: 30,
   },
   heading: {
-    width: 108,
+    width: 120,
     height: 29,
     fontFamily: "Axiforma",
     fontStyle: "normal",
@@ -38,7 +34,6 @@ const useStyles = makeStyles((theme) => ({
   },
 
   details: {
-    width: 518,
     height: 49,
     fontFamily: "Axiforma",
     fontStyle: "normal",
@@ -53,9 +48,9 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 10,
     },
   },
-  parent: {
-    width: 150,
-  },
+  // parent: {
+  //   width: 150,
+  // },
   expandedPanel: {
     color: "#BLAck",
   },
@@ -73,6 +68,10 @@ const useStyles = makeStyles((theme) => ({
     height: 23,
     marginTop: -10,
     color: "white",
+    marginLeft: "-73rem",
+    [theme.breakpoints.down("xs")]: {
+      marginLeft: "-26rem",
+    },
   },
   dflex: {
     display: "flex",
@@ -117,7 +116,9 @@ export default function FooterAccordion(props) {
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
-            <Box className={classes.heading}>COMPANY</Box>
+            <Box className={classes.heading} pl={1}>
+              COMPANY
+            </Box>
           </AccordionSummary>
           <AccordionDetails className={classes.summary}>
             <Box ml={5}>
@@ -167,7 +168,9 @@ export default function FooterAccordion(props) {
             aria-controls="panel2a-content"
             id="panel2a-header"
           >
-            <Box className={classes.heading}>SUPPORT</Box>
+            <Box className={classes.heading} pl={1}>
+              SUPPORT
+            </Box>
           </AccordionSummary>
           <AccordionDetails className={classes.summary}>
             <Box ml={6}>
@@ -211,10 +214,12 @@ export default function FooterAccordion(props) {
             aria-controls="panel2a-content"
             id="panel2a-header"
           >
-            <Box className={classes.heading}>SMALL PRINT</Box>
+            <Box className={classes.heading} pl={2}>
+              SMALL PRINT
+            </Box>
           </AccordionSummary>
           <AccordionDetails className={classes.summary}>
-            <Box className={classes.details}>
+            <Box className={classes.details} ml={3}>
               © 2021 Private Identity LLC All Rights Reserved. Private ID and
               Private Identity are registered trademarks of Private Identity.
               All other trademarks, service marks, trade names, trade dress,

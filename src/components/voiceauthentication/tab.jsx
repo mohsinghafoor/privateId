@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Box } from "@material-ui/core";
-import background from "../../assets/voicebackground.png";
+import background from "../../assets/voicebackgroundsm.png";
 import img from "../../assets/voiceimg1.png";
 import badge from "../../assets/voicebadge.png";
 

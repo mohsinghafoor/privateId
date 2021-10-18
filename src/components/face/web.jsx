@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    height: "100%",
+    height: 552,
     backgroundSize: "100% 100%",
   },
   gradiant: {
@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center",
     width: "100%",
+    height: "100%",
     background:
       "linear-gradient(90.61deg, rgba(23, 23, 23, 0.9) 58.83%, rgba(0, 0, 0, 0) 127.48%)",
   },
@@ -28,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 1280,
   },
   mainheading: {
-    width: 461,
+    width: 685,
     height: 39,
     fontFamily: "Axiforma",
     fontStyle: "normal",
@@ -41,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFFFFF",
   },
   headingbox: {
-    width: 600,
+    width: 810,
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -76,7 +77,7 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: 5,
   },
   heading: {
-    maxWidth: 100,
+    maxWidth: 90,
     height: 44,
     marginLeft: 10,
     fontFamily: "Axiforma",
@@ -112,7 +113,7 @@ const useStyles = makeStyles((theme) => ({
 
   subheading: {
     maxWidth: 174,
-    marginTop: -10,
+    marginTop: -15,
     marginLeft: 10,
     fontFamily: "Axiforma",
     fontStyle: "normal",
@@ -122,9 +123,12 @@ const useStyles = makeStyles((theme) => ({
     /* or 16px */
     textAlign: "left",
     color: "#FFFFFF",
+    height: 25,
   },
   img: {
-    height: 606,
+    width: 497,
+    height: 529,
+    marginBottom: -23,
   },
   blackline: {
     position: "absolute",
@@ -174,46 +178,57 @@ export default function FaceWeb() {
           >
             <Box className={classes.headingbox}>
               <Box className={classes.mainheading}>
-                AUTHENTICATION SOLUTIONS
+                FACE + VOICE AUTHENTICATION SOLUTIONS
               </Box>
             </Box>
             <Box className={classes.cardbox}>
               <Box className={classes.sqr}>
                 <img src={badge} className={classes.badge} alt="" />
-                <Box className={classes.heading}>1:N FACE RECOGNITION</Box>
-                <Box className={classes.line} />
+                <Box className={classes.heading}>PHONE UNLOCK</Box>
+
                 <Box className={classes.text}>
-                  Identify, 1:1 verify and authenticate using face recognition
-                  with face mask in 300ms without PII.
+                  Unlock devices and provide MFA for an unlimited number of user
+                  accounts with continuous decentralized biometric
+                  authentication.
+                </Box>
+              </Box>
+              <Box className={classes.sqr}>
+                <img src={badge} className={classes.badge} alt="" />
+                <Box className={classes.heading}>CONTINUOUS AUTHENTICATION</Box>
+
+                <Box className={classes.text}>
+                  1:N Identify, 1:1 verify and authenticate using face (with
+                  facemask) and voice recognition.
                 </Box>
               </Box>
               <Box className={classes.sqr}>
                 <img src={badge} className={classes.badge} alt="" />
                 <Box className={classes.heading}>ACCOUNT RECOVERY</Box>
-                <Box className={classes.line} />
-                <Box className={classes.text}>
-                  Protect an unlimited number of user accounts and eliminate
-                  password resets with automated biometric account recovery.
-                </Box>
-              </Box>
-              <Box className={classes.sqr}>
-                <img src={badge} className={classes.badge} alt="" />
-                <Box className={classes.heading}>ACCOUNT RECOVERY</Box>
-                <Box className={classes.line} />
+
                 <Box className={classes.text}>
                   Protect an unlimited number of user accounts and eliminate
                   password resets with automated biometric account recovery.
                 </Box>
               </Box>
             </Box>
-            <Box className={classes.cardbox1}>
+            <Box className={classes.cardbox}>
               <Box className={classes.sqr}>
                 <img src={badge} className={classes.badge} alt="" />
                 <Box className={classes.heading}>FACE CAPTCHA</Box>
-                <Box className={classes.line} />
+
                 <Box className={classes.text}>
                   Determines if a live human face is in front of the camera in
                   10ms. Run instantly on any browser with no installation.
+                </Box>
+              </Box>
+
+              <Box className={classes.sqr}>
+                <img src={badge} className={classes.badge} alt="" />
+                <Box className={classes.heading}>VOICE CAPTCHA</Box>
+
+                <Box className={classes.text}>
+                  Determines if a live human is speaking in the microphone in
+                  10ms. Runs instantly on browsers without installation.
                 </Box>
               </Box>
               <Box className={classes.sqr}>
@@ -227,7 +242,7 @@ export default function FaceWeb() {
                 <Box className={classes.subheading}>
                   for Identity Providers (IdPs)
                 </Box>
-                <Box className={classes.line} />
+
                 <Box className={classes.text}>
                   Compare two or more face images (with or without a mask) with
                   passive liveness in 100ms without PII. Built for identity
