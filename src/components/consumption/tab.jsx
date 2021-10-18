@@ -40,6 +40,8 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFFFFF",
   },
   img: {
+    width: 252,
+    height: 116,
     marginTop: 30,
     marginBottom: 40,
     [theme.breakpoints.only("xs")]: {

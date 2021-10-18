@@ -16,11 +16,13 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("lg")]: {
       height: 630,
     },
+    [theme.breakpoints.up("md")]: {
+      height: 630,
+    },
     backgroundSize: "100% 100%",
   },
   main: {
     maxWidth: 1280,
-
     [theme.breakpoints.down("sm")]: {
       height: 600,
       display: "flex",
@@ -63,7 +65,8 @@ const useStyles = makeStyles((theme) => ({
 
     color: "#FFFFFF",
     [theme.breakpoints.down("sm")]: {
-      fontSize: 18,
+      fontSize: 16,
+      width: 210,
     },
     [theme.breakpoints.down("xs")]: {
       fontSize: 16,
@@ -71,6 +74,10 @@ const useStyles = makeStyles((theme) => ({
   },
   img: {
     height: 184,
+    [theme.breakpoints.down("md")]: {
+      width: 180,
+      height: 130,
+    },
     [theme.breakpoints.down("sm")]: {
       width: 310,
       height: 208,
@@ -80,6 +87,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       marginLeft: "0rem",
       width: 250,
+      height: 164,
     },
   },
   form: {

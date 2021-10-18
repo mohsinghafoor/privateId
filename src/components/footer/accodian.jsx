@@ -68,10 +68,7 @@ const useStyles = makeStyles((theme) => ({
     height: 23,
     marginTop: -10,
     color: "white",
-    marginLeft: "-73rem",
-    [theme.breakpoints.down("xs")]: {
-      marginLeft: "-26rem",
-    },
+    float: "left",
   },
   dflex: {
     display: "flex",

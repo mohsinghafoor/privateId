@@ -111,6 +111,7 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "131.5%",
     /* or 16px */
     textAlign: "left",
+    marginBottom: 10,
     color: "#FFFFFF",
   },
   img: {

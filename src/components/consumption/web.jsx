@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Box, IconButton } from "@material-ui/core";
 import Table1 from "./table1";
 import Table2 from "./table2";
-import img from "../../assets/tableimg.png";
+import img from "../../assets/tableimglg.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -39,7 +39,12 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFFFFF",
   },
   img: {
-    // height: 319,
+    width: 438,
+    height: 230,
+    [theme.breakpoints.only("md")]: {
+      width: 375,
+      height: 197,
+    },
   },
   btnbox: {
     width: 548,

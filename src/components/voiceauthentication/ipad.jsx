@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Box } from "@material-ui/core";
 import background from "../../assets/voicebackgroundmd.png";
-import img from "../../assets/voiceimg.png";
+import img from "../../assets/voiceimgmd.png";
 import badge from "../../assets/voicebadge.png";
 
 const useStyles = makeStyles((theme) => ({
@@ -31,8 +31,8 @@ const useStyles = makeStyles((theme) => ({
   },
   img: {
     width: 433,
-    height: 573,
-    marginBottom: -190,
+    height: 473,
+    marginBottom: -290,
   },
   mainheading: {
     width: 650,

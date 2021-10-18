@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Box } from "@material-ui/core";
 import background from "../../assets/voicebackground.png";
-import img from "../../assets/faceimg.png";
+import img from "../../assets/faceimgsm.png";
 import badge from "../../assets/voicebadge.png";
 
 const useStyles = makeStyles((theme) => ({
@@ -19,8 +19,8 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 1280,
   },
   img: {
-    height: 411,
-    width: 439,
+    height: 439,
+    width: 411,
     marginBottom: -4,
     [theme.breakpoints.only("xs")]: {
       width: 330,

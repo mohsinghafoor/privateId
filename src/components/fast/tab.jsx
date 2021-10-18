@@ -94,6 +94,9 @@ const useStyles = makeStyles((theme) => ({
       height: 25,
     },
   },
+  gradiant: {
+    background: "rgba(0, 0, 0, 0.55)",
+  },
 }));
 
 export default function FastTab() {
@@ -102,7 +105,9 @@ export default function FastTab() {
   return (
     <div className={classes.root}>
       <Box className={classes.imgbox}>
-        <img src={img} alt="Girl with mask on" className={classes.img} />
+        <div className={classes.gradiant}>
+          <img src={img} alt="Girl with mask on" className={classes.img} />
+        </div>
       </Box>
 
       <Box className={classes.rightbox}>

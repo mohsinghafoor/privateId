@@ -72,9 +72,12 @@ const useStyles = makeStyles((theme) => ({
   img: {
     height: 595,
     [theme.breakpoints.only("md")]: {
-      width: 490,
-      height: 481,
+      width: 420,
+      height: 487,
     },
+  },
+  span: {
+    fontWeight: 800,
   },
 }));
 
@@ -97,7 +100,8 @@ export default function ExemptWeb() {
         >
           <Box>
             <Box className={classes.heading}>
-              “EXEMPT FROM GDPR, CCPA, BIPA AND HIPPA”
+              “<span className={classes.span}>EXEMPT </span> FROM GDPR, CCPA,
+              BIPA AND HIPPA”
             </Box>
             <Box className={classes.text}>
               One-way fully homomorphic encryption (FHE) for private identity

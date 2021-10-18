@@ -19,14 +19,14 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     justifyContent: "flex-start",
-    width: "90%",
+    width: "95%",
     height: 215,
     [theme.breakpoints.up("xs")]: {
       marginBottom: 30,
     },
   },
   heading: {
-    maxWidth: 548,
+    maxWidth: 573,
     height: 52,
     fontFamily: "Axiforma",
     fontStyle: "normal",
@@ -43,6 +43,10 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 20,
     },
   },
+  span: {
+    fontWeight: 800,
+    marginRight: 5,
+  },
   text: {
     width: 550,
     height: 87,
@@ -54,6 +58,7 @@ const useStyles = makeStyles((theme) => ({
     /* or 24px */
     color: "#FFFFFF",
     textAlign: "left",
+    marginLeft: 7,
     [theme.breakpoints.only("xs")]: {
       width: 330,
       height: 138,
@@ -67,6 +72,7 @@ const useStyles = makeStyles((theme) => ({
     fontStyle: "normal",
     fontWeight: 300,
     fontSize: 16,
+    marginLeft: 5,
     lineHeight: "120%",
     /* or 22px */
     color: "#FFFFFF",
@@ -80,6 +86,8 @@ const useStyles = makeStyles((theme) => ({
   imgbox: {
     width: "100%",
     height: "100%",
+    display: "flex",
+    justifyContent: "flex-end",
     background:
       "radial-gradient(71.13% 327.64% at -2.5% 28.87%, #404040 16.46%, #252525 100%)",
     [theme.breakpoints.only("xs")]: {
@@ -89,7 +97,7 @@ const useStyles = makeStyles((theme) => ({
   img: {
     height: 548,
     height: 486,
-    marginBottom: -3,
+
     [theme.breakpoints.only("xs")]: {
       width: 330,
       height: 330,
@@ -108,7 +116,8 @@ export default function ExemptTab() {
       </Box>
       <Box className={classes.bottombox}>
         <Box className={classes.heading}>
-          “EXEMPT FROM GDPR, CCPA, BIPA AND HIPPA”
+          “ <span className={classes.span}>EXEMPT </span> FROM GDPR, CCPA, BIPA
+          AND HIPPA”
         </Box>
         <Box className={classes.text}>
           One-way fully homomorphic encryption (FHE) for private identity

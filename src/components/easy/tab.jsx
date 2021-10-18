@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Box, Grid, IconButton } from "@material-ui/core";
-import img from "../../assets/watch.png";
+import img from "../../assets/watchsm.png";
 import docimg from "../../assets/docimg.png";
 import PlayCircleFilledIcon from "@material-ui/icons/PlayCircleFilled";
 
@@ -19,15 +19,15 @@ const useStyles = makeStyles((theme) => ({
   },
   imgbox: {
     width: "100%",
-    height: "100%",
+    height: 425,
     background: "#000000",
     [theme.breakpoints.only("xs")]: {
       height: 260,
     },
   },
   img: {
-    width: 600,
-    height: 416,
+    width: 603,
+    height: 425,
 
     [theme.breakpoints.only("xs")]: {
       width: 370,
@@ -70,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
   },
   text: {
     width: 405,
-    height: 80,
+    height: 85,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
@@ -98,6 +98,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 20,
     display: "flex",
     justifyContent: "space-between",
+    marginTop: 5,
     marginBottom: 20,
     [theme.breakpoints.only("xs")]: {
       width: 320,

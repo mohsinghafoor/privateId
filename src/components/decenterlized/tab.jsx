@@ -1,10 +1,10 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Box, IconButton } from "@material-ui/core";
-import background from "../../assets/decenterlizedback.png";
+import background from "../../assets/decenterlizedbacksm.png";
 import PlayCircleFilledIcon from "@material-ui/icons/PlayCircleFilled";
 import img from "../../assets/decenterlizedimg.png";
-import logo from "../../assets/logo 2.png";
+import logo from "../../assets/logo 1.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {

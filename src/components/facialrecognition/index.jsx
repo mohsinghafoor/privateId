@@ -10,17 +10,16 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    height: "100%",
     [theme.breakpoints.up("lg")]: {
       height: 630,
     },
     [theme.breakpoints.only("md")]: {
-      height: 400,
+      height: 500,
     },
     [theme.breakpoints.only("sm")]: {
-      height: 850,
+      height: 870,
     },
-    [theme.breakpoints.up("xs")]: {
+    [theme.breakpoints.only("xs")]: {
       height: 830,
     },
   },
@@ -38,6 +37,9 @@ const useStyles = makeStyles((theme) => ({
     background:
       "linear-gradient(117.06deg, #C9C9C9 -9.15%, rgba(201, 201, 201, 0) 70.04%)",
     borderRadius: 267.5,
+    [theme.breakpoints.only("md")]: {
+      height: 435,
+    },
     [theme.breakpoints.only("xs")]: {
       width: 330,
       height: 333,
@@ -46,8 +48,11 @@ const useStyles = makeStyles((theme) => ({
   img: {
     position: "absolute",
     height: 453,
+    [theme.breakpoints.only("md")]: {
+      height: 435,
+      width: 238,
+    },
     [theme.breakpoints.only("xs")]: {
-      width: 190,
       height: 353,
     },
   },
@@ -85,6 +90,11 @@ const useStyles = makeStyles((theme) => ({
     /* or 18px */
     textAlign: "left",
     color: "#FFFFFF",
+    [theme.breakpoints.only("sm")]: {
+      fontSize: 16,
+      maxWidth: 170,
+      lineHeight: "21px",
+    },
     [theme.breakpoints.only("xs")]: {
       fontSize: 12,
       maxWidth: 140,
@@ -116,7 +126,7 @@ export default function FacialRecognition() {
           lg={5}
           style={{ display: "flex", justifyContent: "flex-start" }}
         >
-          <Box>
+          <Box style={{ marginBottom: 20 }}>
             <Box className={classes.cardbox}>
               <Box className={classes.sqr}>
                 <Box className={classes.text}>#Unbiased AI</Box>

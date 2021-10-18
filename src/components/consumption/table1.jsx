@@ -11,12 +11,11 @@ import Paper from "@material-ui/core/Paper";
 
 const StyledTableCell = withStyles((theme) => ({
   head: {
-    backgroundColor: "#FFFFFF",
     // color: "black",
     fontSize: 12,
     fontFamily: "Axiforma",
     fontWeight: 600,
-    backgroundColor: theme.palette.action.hover,
+    backgroundColor: "#CBCBCB",
     [theme.breakpoints.only("xs")]: {
       fontSize: 10,
     },
@@ -35,7 +34,7 @@ const StyledTableRow = withStyles((theme) => ({
   root: {
     height: 37,
     "&:nth-of-type(even)": {
-      backgroundColor: theme.palette.action.hover,
+      backgroundColor: "#CBCBCB",
     },
   },
 }))(TableRow);
@@ -45,7 +44,7 @@ function createData(description, request) {
 }
 
 const rows = [
-  createData("Metadata Storage /User /Month", "$0.00100"),
+  createData("Metadata Storage /User /Month", "$0.001"),
   createData("Remote Onboarding / KYC", "$0.15"),
 ];
 
@@ -79,7 +78,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   heading: {
-    width: 410,
+    width: 265,
     height: 14,
     fontFamily: "Axiforma",
     fontStyle: "normal",
@@ -90,7 +89,7 @@ const useStyles = makeStyles((theme) => ({
 
     color: "#FFFFFF",
     [theme.breakpoints.only("md")]: {
-      width: 300,
+      width: 260,
       fontSize: 14,
     },
     [theme.breakpoints.only("xs")]: {
