@@ -189,7 +189,8 @@ export default function Carosoul() {
   const classes = useStyles();
   return (
     <Carousel
-      autoPlay={true}
+      style={{ background: "transparent !important" }}
+      autoPlay={false}
       afterChange={onChange}
       indicatorIconButtonProps={{
         style: {

@@ -99,7 +99,7 @@ const useStyles = makeStyles((theme) => ({
     height: 486,
 
     [theme.breakpoints.only("xs")]: {
-      width: 330,
+      width: 300,
       height: 330,
       marginLeft: 0,
     },
