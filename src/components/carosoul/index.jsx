@@ -3,7 +3,8 @@ import Carousel from "react-material-ui-carousel";
 import { makeStyles } from "@material-ui/core/styles";
 import { Box, Grid } from "@material-ui/core";
 import FormatQuoteIcon from "@material-ui/icons/FormatQuote";
-
+import ArrowLeftIcon from "@material-ui/icons/ArrowLeft";
+import ArrowRightIcon from "@material-ui/icons/ArrowRight";
 function onChange(a, b, c) {
   console.log(a, b, c);
 }
@@ -191,6 +192,18 @@ export default function Carosoul() {
     <Carousel
       autoPlay={false}
       afterChange={onChange}
+      NextIcon={<ArrowRightIcon />}
+      PrevIcon={<ArrowLeftIcon />}
+      activeIndicatorIconButtonProps={{
+        style: {
+          color: "black", // 2
+        },
+      }}
+      navButtonsProps={{
+        style: {
+          backgroundColor: "black",
+        },
+      }}
       indicatorIconButtonProps={{
         style: {
           padding: "8px", // 1
