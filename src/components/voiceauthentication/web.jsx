@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Box } from "@material-ui/core";
 import background from "../../assets/voicebackground.png";
-import img from "../../assets/voiceimgmd.png";
+import img from "../../assets/voiceimg1.png";
 import badge from "../../assets/voicebadge.png";
 
 const useStyles = makeStyles((theme) => ({
@@ -149,8 +149,8 @@ export default function VoiceAuthenticationWeb() {
               <Box className={classes.sqr}>
                 <img src={badge} className={classes.badge} alt="" />
                 <Box className={classes.heading}>
-                  Voice <span className={classes.span}>Auth</span> <br /> for
-                  Amazon Connect®
+                  Voice<span className={classes.span}>Auth</span>
+                  <br /> for Amazon Connect®
                 </Box>
 
                 <Box className={classes.text}>
@@ -161,25 +161,24 @@ export default function VoiceAuthenticationWeb() {
               <Box className={classes.sqr}>
                 <img src={badge} className={classes.badge} alt="" />
                 <Box className={classes.heading}>
-                  Voice <span className={classes.span}>Search</span> <br /> for
-                  Amazon Connect®
+                  Voice<span className={classes.span}>Search</span>
+                  <br /> for Amazon Connect®
                 </Box>
 
                 <Box className={classes.text}>
-                  Search and review an unlimited number of Recorded Calls using
-                  1:n speaker identification.
+                  Search and review an unlimited number of Recorded Calls.
                 </Box>
               </Box>
               <Box className={classes.sqr}>
                 <img src={badge} className={classes.badge} alt="" />
                 <Box className={classes.heading}>
-                  Voice <span className={classes.span}>POP</span> <br /> for
-                  Amazon Connect®
+                  Voice<span className={classes.span}>POP</span>
+                  <br /> for Amazon Connect®
                 </Box>
 
                 <Box className={classes.text}>
-                  Instantly open a caller’s unified Customer Profile using 1:n
-                  speaker recognition with one second of the caller’s voice.
+                  Instantly open a caller’s unified Customer Profile with one
+                  second of the caller’s voice.
                 </Box>
               </Box>
             </Box>
@@ -187,8 +186,8 @@ export default function VoiceAuthenticationWeb() {
               <Box className={classes.sqr}>
                 <img src={badge} className={classes.badge} alt="" />
                 <Box className={classes.heading}>
-                  Enhanced <span className={classes.span}>Merge</span> <br />{" "}
-                  for Amazon Connect®
+                  Enhanced<span className={classes.span}>Merge</span>
+                  <br /> for Amazon Connect®
                 </Box>
 
                 <Box className={classes.text}>
@@ -199,8 +198,8 @@ export default function VoiceAuthenticationWeb() {
               <Box className={classes.sqr}>
                 <img src={badge} className={classes.badge} alt="" />
                 <Box className={classes.heading}>
-                  Augmented <span className={classes.span}>Merge</span> <br />{" "}
-                  for Amazon Connect®
+                  Augmented<span className={classes.span}>Merge</span>
+                  <br /> for Amazon Connect®
                 </Box>
 
                 <Box className={classes.text}>

@@ -71,6 +71,12 @@ const useStyles = makeStyles((theme) => ({
       marginTop: 30,
     },
   },
+  span: {
+    fontSize: 22,
+    color: "darkgray",
+    marginLeft: 2,
+    marginTop: -10,
+  },
   text: {
     fontFamily: "Axiforma",
     fontStyle: " normal",
@@ -110,7 +116,9 @@ export default function EngineeredTab() {
       </Box>
 
       <Box className={classes.bottombox}>
-        <Box className={classes.heading}>ENGINEERED BY PRIVATE IDENTITY®</Box>
+        <Box className={classes.heading}>
+          ENGINEERED BY PRIVATE IDENTITY<span className={classes.span}>®</span>
+        </Box>
         <Box className={classes.text}>
           Private Identity LLC is a Washington DC-based software company. Our
           small team of top computer scientists, cryptologists and ML engineers

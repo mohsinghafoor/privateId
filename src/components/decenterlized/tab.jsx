@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    // height: "100%",
+    // minHeight: "100%",
     backgroundSize: "100% 100%",
   },
   main: {
@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
     /* or 36px */
     textAlign: "left",
     color: "#D1D1D1",
-
+    marginLeft: 30,
     [theme.breakpoints.down("xs")]: {
       fontSize: 18,
       maxWidth: 340,
@@ -65,7 +65,7 @@ const useStyles = makeStyles((theme) => ({
     /* or 26px */
     color: "#FFFFFF",
     marginBottom: 30,
-
+    marginLeft: 30,
     [theme.breakpoints.down("xs")]: {
       fontSize: 16,
       width: 160,
@@ -90,7 +90,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-    alignItems: "center",
+    alignItems: "flex-start",
     background: "#2A2A2A",
     width: "100%",
   },

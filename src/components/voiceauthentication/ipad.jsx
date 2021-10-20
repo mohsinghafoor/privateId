@@ -149,8 +149,8 @@ export default function VoiceAuthenticationIpad() {
               <Box className={classes.sqr}>
                 <img src={badge} className={classes.badge} alt="" />
                 <Box className={classes.heading}>
-                  Voice <span className={classes.span}>Auth</span> <br /> for
-                  Amazon Connect®
+                  Voice<span className={classes.span}>Auth</span>
+                  <br /> for Amazon Connect®
                 </Box>
                 <Box className={classes.line} />
                 <Box className={classes.text}>
@@ -161,13 +161,12 @@ export default function VoiceAuthenticationIpad() {
               <Box className={classes.sqr}>
                 <img src={badge} className={classes.badge} alt="" />
                 <Box className={classes.heading}>
-                  Voice <span className={classes.span}>Search</span> <br /> for
+                  Voice<span className={classes.span}>Search</span> <br /> for
                   Amazon Connect®
                 </Box>
                 <Box className={classes.line} />
                 <Box className={classes.text}>
-                  Search and review an unlimited number of Recorded Calls using
-                  1:n speaker identification.
+                  Search and review an unlimited number of Recorded Calls.
                 </Box>
               </Box>
             </Box>
@@ -175,20 +174,20 @@ export default function VoiceAuthenticationIpad() {
               <Box className={classes.sqr}>
                 <img src={badge} className={classes.badge} alt="" />
                 <Box className={classes.heading}>
-                  Voice <span className={classes.span}>POP</span> <br /> for
+                  Voice<span className={classes.span}>POP</span> <br /> for
                   Amazon Connect®
                 </Box>
                 <Box className={classes.line} />
                 <Box className={classes.text}>
-                  Instantly open a caller’s unified Customer Profile using 1:n
-                  speaker recognition with one second of the caller’s voice.
+                  Instantly open a caller’s unified Customer Profile with one
+                  second of the caller’s voice.
                 </Box>
               </Box>
               <Box className={classes.sqr}>
                 <img src={badge} className={classes.badge} alt="" />
                 <Box className={classes.heading}>
-                  Enhanced <span className={classes.span}>Merge</span> <br />{" "}
-                  for Amazon Connect®
+                  Enhanced<span className={classes.span}>Merge</span> <br /> for
+                  Amazon Connect®
                 </Box>
                 <Box className={classes.line} />
                 <Box className={classes.text}>
@@ -202,7 +201,7 @@ export default function VoiceAuthenticationIpad() {
               <Box className={classes.sqr}>
                 <img src={badge} className={classes.badge} alt="" />
                 <Box className={classes.heading}>
-                  Augmented <span className={classes.span}>Merge</span> <br />{" "}
+                  Augmented<span className={classes.span}>Merge</span> <br />{" "}
                   for Amazon Connect®
                 </Box>
                 <Box className={classes.line} />

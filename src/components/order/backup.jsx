@@ -31,15 +31,15 @@ const useStyles = makeStyles((theme) => ({
   },
   sqr: {
     position: "absolute",
-    marginLeft: "1rem",
-    marginTop: "-18rem",
+    marginLeft: "14rem",
+    marginTop: "-32rem",
     width: 145,
     height: 139,
     border: "3px solid rgba(248, 248, 248, 0.25)",
     boxSizing: "border-box",
     [theme.breakpoints.down("xs")]: {
-      marginLeft: "2rem",
-      marginTop: "-9.5rem",
+      marginLeft: "8.6rem",
+      marginTop: "-19.5rem",
       width: 90,
       height: 85,
     },
@@ -154,12 +154,6 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 5,
     marginRight: 5,
   },
-  upperbox: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-  },
 }));
 
 export default function OrderTab() {
@@ -168,10 +162,9 @@ export default function OrderTab() {
   return (
     <div className={classes.root}>
       <div className={classes.main}>
-        <Box className={classes.upperbox}>
-          <img src={img} alt="Girl Picture" className={classes.img} />
-          <Box className={classes.sqr} />
-        </Box>
+        <img src={img} alt="Girl Picture" className={classes.img} />
+        <Box className={classes.sqr} />
+
         <Box className={classes.heading}>Order Private ID ®</Box>
         <Box className={classes.text}>
           Private ID® is currently available to a limited number of

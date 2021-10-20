@@ -235,7 +235,7 @@ export default function LetsTalk() {
               <input
                 type="text"
                 className={classes.input}
-                placeholder="Mobile Number"
+                placeholder="Telephone"
               />
             </Box>
             <Box>

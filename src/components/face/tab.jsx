@@ -157,6 +157,21 @@ const useStyles = makeStyles((theme) => ({
     background:
       "linear-gradient(85.54deg, rgba(0, 0, 0, 0) -8.44%, rgba(44, 44, 44, 0.9) 38.88%)",
   },
+  box: {
+    position: "absolute",
+    marginLeft: "1rem",
+    marginTop: "5rem",
+    width: 145,
+    height: 145,
+    border: "2px solid rgba(248, 248, 248, 0.25)",
+    boxSizing: "border-box",
+    [theme.breakpoints.down("xs")]: {
+      marginLeft: "0rem",
+      marginTop: "5rem",
+      width: 120,
+      height: 120,
+    },
+  },
 }));
 
 export default function FaceTab() {
@@ -172,6 +187,7 @@ export default function FaceTab() {
             </Box>
           </Box>
           <img src={img} className={classes.img} alt="voice image" />
+          <Box className={classes.box} />
         </Box>
       </Box>
 
@@ -215,7 +231,7 @@ export default function FaceTab() {
           </Box>
           <Box className={classes.text}>
             Determines if a live human face is in front of the camera in 10ms.
-            Run instantly on any browser with no installation.
+            Run instantly on browser without installation.
           </Box>
         </Box>
 
@@ -241,7 +257,7 @@ export default function FaceTab() {
             </Box>
           </Box>
           <Box className={classes.text}>
-            Compare two or more face images (with or without a mask) with
+            Compare two or more face images (with or without a facemask) with
             passive liveness in 100ms without PII. Built for identity providers.
           </Box>
         </Box>

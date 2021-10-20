@@ -83,6 +83,21 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 16,
     },
   },
+  sqr: {
+    position: "absolute",
+    marginBottom: "14rem",
+    marginLeft: "-3rem",
+    width: 135,
+    height: 130,
+    border: "3px solid rgba(248, 248, 248, 0.25)",
+    boxSizing: "border-box",
+    [theme.breakpoints.only("md")]: {
+      marginBottom: "10rem",
+      width: 115,
+      height: 115,
+      marginRight: "-0.5rem",
+    },
+  },
   img: {
     height: 538,
     width: 464,
@@ -144,27 +159,29 @@ export default function FastWeb() {
             }}
           >
             <img src={img} alt="Girl with mask on" className={classes.img} />
+            <Box className={classes.sqr} />
           </Grid>
           <Grid item md={6} className={classes.rightgrid}>
             <Box className={classes.rightbox}>
               <Box className={classes.heading}>Face + Voice Recognition</Box>
               <Box className={classes.itembox}>
                 <ArrowForwardIcon className={classes.icon} />
+                <Box className={classes.text}>No Biometric Templates</Box>
+              </Box>
+              <Box className={classes.itembox}>
+                <ArrowForwardIcon className={classes.icon} />
                 <Box className={classes.text}>
-                  Local, Cloud and Continuous Auth
+                  {" "}
+                  Face Recognition with Facemask
                 </Box>
               </Box>
               <Box className={classes.itembox}>
                 <ArrowForwardIcon className={classes.icon} />
-                <Box className={classes.text}>Touchless + Facemask</Box>
+                <Box className={classes.text}>Extreme Accuracy</Box>
               </Box>
               <Box className={classes.itembox}>
                 <ArrowForwardIcon className={classes.icon} />
-                <Box className={classes.text}> Extreme Accuracy</Box>
-              </Box>
-              <Box className={classes.itembox}>
-                <ArrowForwardIcon className={classes.icon} />
-                <Box className={classes.text}>Guaranteed User Privacy</Box>
+                <Box className={classes.text}>Guaranteed Privacy</Box>
               </Box>
               <Box className={classes.itembox}>
                 <ArrowForwardIcon className={classes.icon} />

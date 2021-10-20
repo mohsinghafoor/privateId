@@ -64,6 +64,11 @@ const useStyles = makeStyles((theme) => ({
       height: 66,
     },
   },
+  span: {
+    fontSize: 35,
+    color: "darkgray",
+    marginBottom: 30,
+  },
   text: {
     width: 513,
     height: 80,
@@ -127,7 +132,8 @@ export default function EngineeredWeb() {
         >
           <Box>
             <Box className={classes.heading}>
-              ENGINEERED BY PRIVATE IDENTITY®
+              ENGINEERED BY PRIVATE IDENTITY
+              <span className={classes.span}>®</span>
             </Box>
             <Box className={classes.text}>
               Private Identity LLC is a Washington DC-based software company.

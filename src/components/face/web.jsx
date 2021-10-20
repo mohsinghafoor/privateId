@@ -158,6 +158,15 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 50,
     marginRight: 70,
   },
+  box: {
+    position: "absolute",
+    marginRight: "9rem",
+    marginBottom: "11rem",
+    width: 175,
+    height: 175,
+    border: "2px solid rgba(248, 248, 248, 0.25)",
+    boxSizing: "border-box",
+  },
 }));
 
 export default function FaceWeb() {
@@ -218,7 +227,7 @@ export default function FaceWeb() {
 
                 <Box className={classes.text}>
                   Determines if a live human face is in front of the camera in
-                  10ms. Run instantly on any browser with no installation.
+                  10ms. Run instantly on browser without installation.
                 </Box>
               </Box>
 
@@ -244,8 +253,8 @@ export default function FaceWeb() {
                 </Box>
 
                 <Box className={classes.text}>
-                  Compare two or more face images (with or without a mask) with
-                  passive liveness in 100ms without PII. Built for identity
+                  Compare two or more face images (with or without a facemask)
+                  with passive liveness in 100ms without PII. Built for identity
                   providers.
                 </Box>
               </Box>
@@ -263,6 +272,7 @@ export default function FaceWeb() {
             }}
           >
             <img src={img} className={classes.img} alt="" />
+            <Box className={classes.box} />
           </Grid>
         </Grid>
       </div>

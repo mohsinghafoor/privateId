@@ -31,28 +31,16 @@ import VoiceAuthenticationIpad from "./components/voiceauthentication/ipad";
 function App() {
   return (
     <div className="App">
-      {/* Approved by Ali
-      <Decenterlized />
-      <Order /> 
-      <Fast />
-      <Easy />
-      <Exempt />
-      <Carosoul />
-      <FacialRecognition />
-      <Protects />
-      <Engineered />
-      <Consumption />
-      <LetsTalk />*/}
       {/* Resposinve on all screens
       <Decenterlized />
-      <Order />
       <Fast />
+      <Face />
+      <VoiceAuthentication />
+      <Order />
       <Easy />
       <Exempt />
       <Carosoul />
-      <VoiceAuthentication />
       <FacialRecognition />
-      <Face /> 
       <Protects />
       <Engineered />
       <Consumption />
@@ -61,23 +49,26 @@ function App() {
       */}
 
       <Decenterlized />
-      <Order />
       <Fast />
+      <Face />
+      <VoiceAuthentication />
+      <Order />
       <Easy />
       <Exempt />
       <Carosoul />
       <FacialRecognition />
-      <VoiceAuthentication />
-      <Face />
       <Protects />
       <Engineered />
       <Consumption />
       <LetsTalk />
       <Footer />
-      {/*      
-      <VoiceAuthentication />
-      <Face />
-       */}
+      {/* 
+      
+      
+      
+      
+      
+      */}
     </div>
   );
 }

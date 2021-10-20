@@ -23,6 +23,7 @@ const useStyles = makeStyles((theme) => ({
     height: 215,
     [theme.breakpoints.up("xs")]: {
       marginBottom: 30,
+      height: 260,
     },
   },
   heading: {
@@ -45,11 +46,11 @@ const useStyles = makeStyles((theme) => ({
   },
   span: {
     fontWeight: 800,
-    marginRight: 5,
+    marginRight: 0,
   },
   text: {
     width: 550,
-    height: 87,
+    height: 105,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
@@ -60,8 +61,8 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     marginLeft: 7,
     [theme.breakpoints.only("xs")]: {
-      width: 330,
-      height: 138,
+      width: 340,
+      height: 178,
       fontSize: 14,
     },
   },
@@ -116,7 +117,7 @@ export default function ExemptTab() {
       </Box>
       <Box className={classes.bottombox}>
         <Box className={classes.heading}>
-          “ <span className={classes.span}>EXEMPT </span> FROM GDPR, CCPA, BIPA
+          “<span className={classes.span}>EXEMPT </span> FROM GDPR, CCPA, BIPA
           AND HIPPA”
         </Box>
         <Box className={classes.text}>

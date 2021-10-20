@@ -76,6 +76,21 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: "100% 100%",
     width: "100%",
   },
+  sqr: {
+    position: "absolute",
+    marginLeft: "-2.5rem",
+    marginTop: "-6rem",
+    width: 135,
+    height: 129,
+    border: "3px solid rgba(248, 248, 248, 0.25)",
+    boxSizing: "border-box",
+    [theme.breakpoints.down("xs")]: {
+      marginLeft: "-1.8rem",
+      marginTop: "-4.5rem",
+      width: 110,
+      height: 115,
+    },
+  },
   img: {
     width: 394,
     height: 457,
@@ -97,6 +112,12 @@ const useStyles = makeStyles((theme) => ({
   gradiant: {
     background: "rgba(0, 0, 0, 0.55)",
   },
+  upperbox: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+  },
 }));
 
 export default function FastTab() {
@@ -106,7 +127,10 @@ export default function FastTab() {
     <div className={classes.root}>
       <Box className={classes.imgbox}>
         <div className={classes.gradiant}>
-          <img src={img} alt="Girl with mask on" className={classes.img} />
+          <Box className={classes.upperbox}>
+            <img src={img} alt="Girl with mask on" className={classes.img} />
+            <Box className={classes.sqr} />
+          </Box>
         </div>
       </Box>
 
@@ -114,25 +138,19 @@ export default function FastTab() {
         <Box className={classes.heading}>Face + Voice Recognition</Box>
         <Box className={classes.itembox}>
           <ArrowForwardIcon className={classes.icon} />
-          <Box className={classes.text}>Local, Cloud and Continuous Auth</Box>
+          <Box className={classes.text}>No Biometric Templates</Box>
         </Box>
         <Box className={classes.itembox}>
           <ArrowForwardIcon className={classes.icon} />
-          <Box className={classes.text}>Touchless + Facemask</Box>
+          <Box className={classes.text}> Face Recognition with Facemask</Box>
         </Box>
         <Box className={classes.itembox}>
           <ArrowForwardIcon className={classes.icon} />
-          <Box className={classes.text}> Extreme Accuracy</Box>
+          <Box className={classes.text}>Extreme Accuracy</Box>
         </Box>
         <Box className={classes.itembox}>
           <ArrowForwardIcon className={classes.icon} />
-          <Box className={classes.text}>Guaranteed User Privacy</Box>
-        </Box>
-        <Box className={classes.itembox}>
-          <ArrowForwardIcon className={classes.icon} />
-          <Box className={classes.text}>
-            Runs on Browsers, Phones and Clouds
-          </Box>
+          <Box className={classes.text}>Guaranteed Privacy</Box>
         </Box>
       </Box>
     </div>

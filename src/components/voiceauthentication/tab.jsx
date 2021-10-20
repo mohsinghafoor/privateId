@@ -193,8 +193,7 @@ export default function VoiceAuthenticationTab() {
             </Box>
           </Box>
           <Box className={classes.text}>
-            Search and review an unlimited number of Recorded Calls using 1:n
-            speaker identification.
+            Search and review an unlimited number of Recorded Calls.
           </Box>
         </Box>
 
@@ -207,8 +206,8 @@ export default function VoiceAuthenticationTab() {
             </Box>
           </Box>
           <Box className={classes.text}>
-            Instantly open a caller’s unified Customer Profile using 1:n speaker
-            recognition with one second of the caller’s voice.
+            Instantly open a caller’s unified Customer Profile one second of the
+            caller’s voice.
           </Box>
         </Box>
 
@@ -230,7 +229,7 @@ export default function VoiceAuthenticationTab() {
           <img src={badge} className={classes.badge} alt="" />
           <Box>
             <Box className={classes.heading}>
-              Augmented <span className={classes.span}>Merge</span> for Amazon
+              Augmented<span className={classes.span}>Merge</span> for Amazon
               Connect®
             </Box>
           </Box>

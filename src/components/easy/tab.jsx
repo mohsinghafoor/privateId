@@ -173,7 +173,7 @@ export default function EasyTab() {
         {" "}
         <Box className={classes.heading}>Easy to Integrate</Box>
         <Box className={classes.text}>
-          Includes everything you need to get started. First 5,000 requests are
+          Includes everything you need to get started. First 50,000 requests are
           free.
         </Box>
         <Box className={classes.btnbox}>
