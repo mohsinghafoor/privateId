@@ -27,11 +27,12 @@ import Face from "./components/face";
 import FaceIpad from "./components/face/ipad";
 import FaceWeb from "./components/face/web";
 import VoiceAuthenticationIpad from "./components/voiceauthentication/ipad";
+import DecenterlizedPadFull from "./decenterlizedfull/tabfullheight";
+import DecenterlizedFull from "./decenterlizedfull";
 
 function App() {
   return (
     <div className="App">
-      {/* Resposinve on all screens
       <Decenterlized />
       <Fast />
       <Face />
@@ -46,41 +47,6 @@ function App() {
       <Consumption />
       <LetsTalk />
       <Footer />
-      */}
-      {/* <Decenterlized />
-      <Fast /> 
-      <Face />
-      */}
-      <Decenterlized />
-      <Fast />
-      <Face />
-      <VoiceAuthentication />
-      <Order />
-      <Easy />
-      <Exempt />
-      <Carosoul />
-      <FacialRecognition />
-      <Protects />
-      <Engineered />
-      <Consumption />
-      <LetsTalk />
-      <Footer />
-      {/* 
-      
-      <
-      
-      
-      
-      
-      
-       */}
-      {/* 
-      
-      
-      
-      
-      
-      */}
     </div>
   );
 }

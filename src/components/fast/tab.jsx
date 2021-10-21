@@ -151,6 +151,12 @@ export default function FastTab() {
           <ArrowForwardIcon className={classes.icon} />
           <Box className={classes.text}>Guaranteed Privacy</Box>
         </Box>
+        <Box className={classes.itembox}>
+          <ArrowForwardIcon className={classes.icon} />
+          <Box className={classes.text}>
+            Runs on Browsers, Phones and Clouds
+          </Box>
+        </Box>
       </Box>
     </div>
   );

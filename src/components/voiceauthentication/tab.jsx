@@ -213,8 +213,8 @@ export default function VoiceAuthenticationTab() {
             <img src={badge} className={classes.badge} alt="" />
           </Box>
           <Box className={classes.text}>
-            Instantly open a caller’s unified Customer Profile one second of the
-            caller’s voice.
+            Instantly open a caller’s unified Customer Profile with one second
+            of the caller’s voice.
           </Box>
         </Box>
 

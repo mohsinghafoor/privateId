@@ -193,7 +193,7 @@ export default function FaceWeb() {
             <Box className={classes.cardbox}>
               <Box className={classes.sqr}>
                 <img src={badge} className={classes.badge} alt="" />
-                <Box className={classes.heading}>PHONE UNLOCK</Box>
+                <Box className={classes.heading}>Phone Unlock</Box>
 
                 <Box className={classes.text}>
                   Unlock devices and provide MFA for an unlimited number of user
