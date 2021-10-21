@@ -31,20 +31,13 @@ const useStyles = makeStyles((theme) => ({
   img: {
     height: 450,
     marginBottom: -4,
-    [theme.breakpoints.up("lg")]: {
-      marginBottom: -4,
-    },
-    [theme.breakpoints.only("md")]: {
-      width: 399,
-      height: 468,
-    },
     [theme.breakpoints.only("sm")]: {
       width: 416,
       height: 488,
     },
     [theme.breakpoints.only("xs")]: {
-      width: 330,
-      height: 400,
+      width: 270,
+      height: 300,
     },
   },
   heading: {
@@ -65,10 +58,11 @@ const useStyles = makeStyles((theme) => ({
       marginTop: 40,
     },
     [theme.breakpoints.only("xs")]: {
-      width: 230,
-      fontSize: 20,
+      width: "70%",
+      fontSize: 18,
       height: 66,
       marginTop: 30,
+      marginLeft: 20,
     },
   },
   span: {
@@ -96,13 +90,14 @@ const useStyles = makeStyles((theme) => ({
       marginBottom: 30,
     },
     [theme.breakpoints.only("xs")]: {
-      width: 330,
-      fontSize: 14,
+      width: "90%",
+      fontSize: 10,
       marginBottom: 50,
+      marginLeft: 20,
     },
   },
   bottombox: {
-    height: 270,
+    height: 250,
   },
 }));
 

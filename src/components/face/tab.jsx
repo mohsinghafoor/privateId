@@ -23,8 +23,9 @@ const useStyles = makeStyles((theme) => ({
     width: 411,
     marginBottom: -4,
     [theme.breakpoints.only("xs")]: {
-      width: 330,
-      height: 320,
+      width: 260,
+      height: 260,
+      marginBottom: 0,
     },
   },
   headingbox: {
@@ -33,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "flex-start",
     width: 600,
     [theme.breakpoints.only("xs")]: {
-      width: 370,
+      width: "100%",
     },
   },
   mainheading: {
@@ -50,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
 
     color: "#FFFFFF",
     [theme.breakpoints.only("xs")]: {
-      width: 300,
+      width: "100%",
       fontSize: 18,
     },
   },
@@ -84,26 +85,38 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: 10,
     background: "#434242",
     [theme.breakpoints.only("xs")]: {
-      width: 330,
+      width: "90%",
       height: 80,
     },
   },
+  sqr1: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "flex-start",
+    // alignItems: "center",
+    width: 503,
+    height: 94,
+    marginBottom: 10,
+    background: "#434242",
+    [theme.breakpoints.only("xs")]: {
+      width: "90%",
+      height: 90,
+    },
+  },
   badge: {
-    position: "absolute",
     width: 59,
     height: 27,
-    marginLeft: "26.4rem",
-    marginTop: "-1.4rem",
+
     [theme.breakpoints.only("xs")]: {
       width: 50,
       height: 24,
-      marginLeft: "17rem",
-      marginTop: "-1.4rem",
+      marginRight: 5,
     },
   },
 
   heading: {
-    width: 359,
+    width: "80%",
     height: 30,
     fontFamily: "Axiforma",
     fontStyle: "normal",
@@ -116,13 +129,39 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFFFFF",
     marginLeft: 20,
     [theme.breakpoints.only("xs")]: {
-      width: 250,
-      fontSize: 12,
+      width: "80%",
+      fontSize: 10,
       height: 20,
+      marginLeft: 10,
       marginTop: 0,
     },
   },
-
+  heading1: {
+    width: "80%",
+    height: 30,
+    fontFamily: "Axiforma",
+    fontStyle: "normal",
+    fontWeight: 800,
+    fontSize: 16,
+    textAlign: "left",
+    lineHeight: "131.5%",
+    /* or 21px */
+    marginTop: 0,
+    color: "#FFFFFF",
+    marginLeft: 20,
+    [theme.breakpoints.only("xs")]: {
+      width: "80%",
+      fontSize: 10,
+      height: 30,
+      marginLeft: 10,
+      marginTop: 0,
+    },
+  },
+  headingbadgebox: {
+    width: "100%",
+    display: "flex",
+    alignItems: "center",
+  },
   text: {
     maxWidth: 465,
     height: 35,
@@ -136,8 +175,9 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     color: "#FFFFFF",
     [theme.breakpoints.only("xs")]: {
-      width: 300,
+      width: "95%",
       fontSize: 10,
+      marginLeft: 10,
     },
   },
   span1: {
@@ -145,7 +185,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 300,
     marginLeft: 3,
     [theme.breakpoints.only("xs")]: {
-      fontSize: 10,
+      fontSize: 8,
     },
   },
   gradiant: {
@@ -166,10 +206,10 @@ const useStyles = makeStyles((theme) => ({
     border: "2px solid rgba(248, 248, 248, 0.25)",
     boxSizing: "border-box",
     [theme.breakpoints.down("xs")]: {
-      marginLeft: "0rem",
+      marginLeft: "0.5rem",
       marginTop: "5rem",
-      width: 120,
-      height: 120,
+      width: 100,
+      height: 100,
     },
   },
 }));
@@ -193,9 +233,10 @@ export default function FaceTab() {
 
       <Box className={classes.lowerbox}>
         <Box className={classes.sqr}>
-          <img src={badge} className={classes.badge} alt="" />
-
-          <Box className={classes.heading}>Phone Auth</Box>
+          <Box className={classes.headingbadgebox}>
+            <Box className={classes.heading}>Phone Auth</Box>
+            <img src={badge} className={classes.badge} alt="" />
+          </Box>
           <Box className={classes.text}>
             Unlock devices and provide MFA for an unlimited number of user
             accounts with continuous decentralized biometric authentication.
@@ -203,9 +244,9 @@ export default function FaceTab() {
         </Box>
 
         <Box className={classes.sqr}>
-          <img src={badge} className={classes.badge} alt="" />
-          <Box>
+          <Box className={classes.headingbadgebox}>
             <Box className={classes.heading}>CONTINUOUS AUTHENTICATION</Box>
+            <img src={badge} className={classes.badge} alt="" />
           </Box>
           <Box className={classes.text}>
             1:N Identify, 1:1 verify and authenticate using face (with facemask)
@@ -214,9 +255,9 @@ export default function FaceTab() {
         </Box>
 
         <Box className={classes.sqr}>
-          <img src={badge} className={classes.badge} alt="" />
-          <Box>
+          <Box className={classes.headingbadgebox}>
             <Box className={classes.heading}>ACCOUNT RECOVERY</Box>
+            <img src={badge} className={classes.badge} alt="" />
           </Box>
           <Box className={classes.text}>
             Protect an unlimited number of user accounts and eliminate password
@@ -225,9 +266,9 @@ export default function FaceTab() {
         </Box>
 
         <Box className={classes.sqr}>
-          <img src={badge} className={classes.badge} alt="" />
-          <Box>
+          <Box className={classes.headingbadgebox}>
             <Box className={classes.heading}>FACE CAPTCHA</Box>
+            <img src={badge} className={classes.badge} alt="" />
           </Box>
           <Box className={classes.text}>
             Determines if a live human face is in front of the camera in 10ms.
@@ -236,9 +277,9 @@ export default function FaceTab() {
         </Box>
 
         <Box className={classes.sqr}>
-          <img src={badge} className={classes.badge} alt="" />
-          <Box>
+          <Box className={classes.headingbadgebox}>
             <Box className={classes.heading}>VOICE CAPTCHA</Box>
+            <img src={badge} className={classes.badge} alt="" />
           </Box>
           <Box className={classes.text}>
             Determines if a live human is speaking in the microphone in 10ms.
@@ -246,15 +287,15 @@ export default function FaceTab() {
           </Box>
         </Box>
 
-        <Box className={classes.sqr}>
-          <img src={badge} className={classes.badge} alt="" />
-          <Box>
-            <Box className={classes.heading}>
+        <Box className={classes.sqr1}>
+          <Box className={classes.headingbadgebox}>
+            <Box className={classes.heading1}>
               VERIFIED IDENTITY{" "}
               <span className={classes.span1}>
                 for Identity Providers (IdPs)
               </span>
             </Box>
+            <img src={badge} className={classes.badge} alt="" />
           </Box>
           <Box className={classes.text}>
             Compare two or more face images (with or without a facemask) with

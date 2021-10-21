@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
       width: 435,
     },
     [theme.breakpoints.only("xs")]: {
-      width: 330,
+      width: "100%",
     },
   },
   headingbox: {
@@ -74,7 +74,7 @@ const useStyles = makeStyles((theme) => ({
       width: 435,
     },
     [theme.breakpoints.only("xs")]: {
-      width: 330,
+      width: "100%",
     },
   },
   heading: {
@@ -93,8 +93,8 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 14,
     },
     [theme.breakpoints.only("xs")]: {
-      width: 330,
-      fontSize: 12,
+      width: "100%",
+      fontSize: 10,
     },
   },
   rate: {

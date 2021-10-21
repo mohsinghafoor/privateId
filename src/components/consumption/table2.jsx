@@ -61,7 +61,7 @@ const useStyles = makeStyles((theme) => ({
       width: 435,
     },
     [theme.breakpoints.only("xs")]: {
-      width: 330,
+      width: "100%",
     },
   },
   headingbox: {
@@ -76,7 +76,7 @@ const useStyles = makeStyles((theme) => ({
       width: 435,
     },
     [theme.breakpoints.only("xs")]: {
-      width: 330,
+      width: "100%",
     },
   },
   heading: {
@@ -95,8 +95,8 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 14,
     },
     [theme.breakpoints.only("xs")]: {
-      width: 330,
-      fontSize: 12,
+      width: "90%",
+      fontSize: 10,
     },
   },
   rate: {
@@ -117,12 +117,19 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.only("md")]: {
       width: 420,
     },
+    [theme.breakpoints.only("xs")]: {
+      width: 80,
+    },
   },
   row1: {
     width: 250,
     paddingLeft: 100,
     [theme.breakpoints.only("md")]: {
       paddingLeft: 70,
+    },
+    [theme.breakpoints.only("xs")]: {
+      width: 20,
+      paddingLeft: 0,
     },
   },
 }));

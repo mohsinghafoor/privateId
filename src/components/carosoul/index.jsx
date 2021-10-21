@@ -45,9 +45,10 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 16,
     },
     [theme.breakpoints.only("xs")]: {
-      maxWidth: 330,
-      height: 136,
-      fontSize: 12,
+      width: 260,
+      height: 116,
+      fontSize: 10,
+      marginLeft: 5,
     },
   },
   author: {
@@ -71,9 +72,9 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 16,
     },
     [theme.breakpoints.only("xs")]: {
-      maxWidth: 230,
+      maxWidth: 200,
       height: 66,
-      fontSize: 12,
+      fontSize: 10,
     },
   },
 
@@ -94,9 +95,9 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 16,
     },
     [theme.breakpoints.only("xs")]: {
-      maxWidth: 160,
+      width: 100,
       height: 20,
-      fontSize: 12,
+      fontSize: 10,
     },
   },
   designation: {
@@ -116,9 +117,9 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 16,
     },
     [theme.breakpoints.only("xs")]: {
-      maxWidth: 160,
+      width: 100,
       height: 20,
-      fontSize: 12,
+      fontSize: 10,
     },
   },
   upprquote: {
@@ -146,7 +147,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.only("xs")]: {
       marginTop: "-15rem",
-      marginLeft: "20rem",
+      marginLeft: "15rem",
       fontSize: 90,
       width: 31,
     },
@@ -179,7 +180,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.only("xs")]: {
       marginTop: "11rem",
-      marginLeft: "-20rem",
+      marginLeft: "-15rem",
 
       width: 31,
     },

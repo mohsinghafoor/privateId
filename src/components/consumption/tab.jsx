@@ -45,8 +45,8 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 30,
     marginBottom: 40,
     [theme.breakpoints.only("xs")]: {
-      width: 300,
-      height: 150,
+      width: 250,
+      height: 120,
     },
   },
   btnbox: {
@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "flex-end",
     marginTop: 20,
     [theme.breakpoints.only("xs")]: {
-      width: 330,
+      width: "100%",
       marginTop: 10,
     },
   },

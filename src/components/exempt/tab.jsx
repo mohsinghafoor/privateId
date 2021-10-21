@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
     height: 215,
     [theme.breakpoints.up("xs")]: {
       marginBottom: 30,
-      height: 260,
+      height: 270,
     },
   },
   heading: {
@@ -39,9 +39,9 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFFFFF",
     textAlign: "left",
     [theme.breakpoints.only("xs")]: {
-      width: 330,
-      height: 62,
-      fontSize: 20,
+      width: "100%",
+      height: 73,
+      fontSize: 18,
     },
   },
   span: {
@@ -61,9 +61,9 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     marginLeft: 7,
     [theme.breakpoints.only("xs")]: {
-      width: 340,
-      height: 178,
-      fontSize: 14,
+      width: "95%",
+      height: 158,
+      fontSize: 12,
     },
   },
   privacy: {
@@ -79,9 +79,9 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFFFFF",
     textAlign: "left",
     [theme.breakpoints.only("xs")]: {
-      width: 330,
+      width: " 95%",
       height: 44,
-      fontSize: 14,
+      fontSize: 10,
     },
   },
   imgbox: {
@@ -92,7 +92,7 @@ const useStyles = makeStyles((theme) => ({
     background:
       "radial-gradient(71.13% 327.64% at -2.5% 28.87%, #404040 16.46%, #252525 100%)",
     [theme.breakpoints.only("xs")]: {
-      height: 330,
+      height: 270,
     },
   },
   img: {
@@ -100,8 +100,8 @@ const useStyles = makeStyles((theme) => ({
     height: 486,
 
     [theme.breakpoints.only("xs")]: {
-      width: 300,
-      height: 330,
+      width: 250,
+      height: 270,
       marginLeft: 0,
     },
   },

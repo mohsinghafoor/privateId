@@ -23,10 +23,9 @@ const useStyles = makeStyles((theme) => ({
     height: 620,
     filter: "drop-shadow(22px -15px 21px rgba(0, 0, 0, 0.25))",
     [theme.breakpoints.down("xs")]: {
-      width: 290,
-      height: 374,
+      width: 210,
+      height: 260,
       marginBottom: -4,
-      marginLeft: 20,
     },
   },
   sqr: {
@@ -35,13 +34,13 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "-18rem",
     width: 145,
     height: 139,
-    border: "3px solid rgba(248, 248, 248, 0.25)",
+    border: "2px solid rgba(248, 248, 248, 0.25)",
     boxSizing: "border-box",
     [theme.breakpoints.down("xs")]: {
-      marginLeft: "2rem",
-      marginTop: "-9.5rem",
-      width: 90,
-      height: 85,
+      marginLeft: "0.3rem",
+      marginTop: "-7.5rem",
+      width: 70,
+      height: 70,
     },
   },
   heading: {
@@ -54,12 +53,14 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: "underline",
     lineHeight: "37px",
     color: "#FFFFFF",
+    textAlign: "left",
     marginTop: 30,
     [theme.breakpoints.down("xs")]: {
-      width: 187,
+      width: "90%",
       height: 50,
-      fontSize: 20,
+      fontSize: 18,
       marginTop: 30,
+      marginLeft: 20,
     },
   },
   text: {
@@ -74,9 +75,11 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     color: "#FFFFFF",
     [theme.breakpoints.down("xs")]: {
-      maxWidth: 330,
-      height: 139,
-      marginLeft: 5,
+      width: "90%",
+      height: 119,
+      lineHeight: "22px",
+      marginLeft: 20,
+      fontSize: 10,
     },
   },
   mailbox: {
@@ -86,8 +89,8 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: 30,
     marginLeft: 20,
     [theme.breakpoints.down("xs")]: {
-      maxWidth: 330,
-      marginLeft: 5,
+      width: "90%",
+      marginLeft: 20,
     },
   },
   input: {
@@ -107,7 +110,7 @@ const useStyles = makeStyles((theme) => ({
 
     color: "#999999",
     [theme.breakpoints.down("xs")]: {
-      maxWidth: 230,
+      width: "65%",
     },
   },
   btn: {
@@ -124,7 +127,7 @@ const useStyles = makeStyles((theme) => ({
     textTransform: "capitalize",
     color: "#FFFFFF",
     [theme.breakpoints.down("xs")]: {
-      maxWidth: 80,
+      width: "30%",
       fontSize: 10,
     },
   },
@@ -142,9 +145,9 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFFFFF",
     marginBottom: 30,
     [theme.breakpoints.down("xs")]: {
-      maxWidth: 330,
-      fontSize: 12,
-      marginLeft: 5,
+      maxWidth: "90%",
+      fontSize: 10,
+      marginLeft: 20,
       marginBottom: 20,
     },
   },

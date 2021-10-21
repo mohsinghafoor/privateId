@@ -39,8 +39,9 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 30,
     [theme.breakpoints.down("xs")]: {
       fontSize: 18,
-      maxWidth: 340,
+      width: "90%",
       height: 90,
+      marginLeft: 20,
     },
   },
   btnbox: {
@@ -48,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "flex-start",
     [theme.breakpoints.down("xs")]: {
-      width: 374,
+      width: "90%",
     },
   },
   iconbtn: {
@@ -60,16 +61,17 @@ const useStyles = makeStyles((theme) => ({
     fontStyle: "normal",
     fontWeight: 300,
     fontSize: 22,
-    marginLeft: 20,
+    marginLeft: 30,
     lineHeight: "120%",
     /* or 26px */
     color: "#FFFFFF",
     marginBottom: 30,
-    marginLeft: 30,
+
     [theme.breakpoints.down("xs")]: {
-      fontSize: 16,
-      width: 160,
-      height: 45,
+      fontSize: 14,
+      width: 150,
+      height: 40,
+      marginLeft: 20,
     },
     "&:hover": {
       background: "#383838",
@@ -82,22 +84,21 @@ const useStyles = makeStyles((theme) => ({
     marginRight: 5,
     marginTop: -5,
     [theme.breakpoints.down("xs")]: {
-      width: 28,
-      height: 28,
+      width: 25,
+      height: 25,
     },
   },
   textbox: {
+    width: "100%",
     display: "flex",
     flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "flex-start",
+    justifyContent: "flex-start",
     background: "#2A2A2A",
-    width: "100%",
   },
   img: {
     [theme.breakpoints.down("xs")]: {
-      height: 350,
-      width: 330,
+      height: 270,
+      width: 270,
     },
   },
   logo: {

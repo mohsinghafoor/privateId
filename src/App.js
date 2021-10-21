@@ -47,7 +47,10 @@ function App() {
       <LetsTalk />
       <Footer />
       */}
-
+      {/* <Decenterlized />
+      <Fast /> 
+      <Face />
+      */}
       <Decenterlized />
       <Fast />
       <Face />
@@ -62,6 +65,15 @@ function App() {
       <Consumption />
       <LetsTalk />
       <Footer />
+      {/* 
+      
+      <
+      
+      
+      
+      
+      
+       */}
       {/* 
       
       

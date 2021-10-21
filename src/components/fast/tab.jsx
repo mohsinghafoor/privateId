@@ -45,9 +45,9 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     marginTop: 40,
     [theme.breakpoints.only("xs")]: {
-      width: 330,
+      width: "100%",
       height: 49,
-      fontSize: 22,
+      fontSize: 20,
     },
   },
   itembox: {
@@ -66,9 +66,8 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     color: "#FFFFFF",
     [theme.breakpoints.only("xs")]: {
-      width: 330,
-
-      fontSize: 16,
+      width: "95%",
+      fontSize: 14,
     },
   },
   imgbox: {
@@ -87,8 +86,8 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       marginLeft: "-1.8rem",
       marginTop: "-4.5rem",
-      width: 110,
-      height: 115,
+      width: 90,
+      height: 90,
     },
   },
   img: {
@@ -96,9 +95,9 @@ const useStyles = makeStyles((theme) => ({
     height: 457,
     marginBottom: -20,
     [theme.breakpoints.only("xs")]: {
-      width: 330,
+      width: 270,
       marginBottom: -20,
-      height: 380,
+      height: 300,
     },
   },
   icon: {

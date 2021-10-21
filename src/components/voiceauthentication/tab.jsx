@@ -23,8 +23,8 @@ const useStyles = makeStyles((theme) => ({
     width: 482,
     marginBottom: -4,
     [theme.breakpoints.only("xs")]: {
-      width: 330,
-      height: 320,
+      width: 260,
+      height: 260,
     },
   },
   headingbox: {
@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "flex-start",
     width: 600,
     [theme.breakpoints.only("xs")]: {
-      width: 340,
+      width: "100%",
     },
   },
   mainheading: {
@@ -80,21 +80,23 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: 10,
     background: "#434242",
     [theme.breakpoints.only("xs")]: {
-      width: 330,
+      width: "90%",
       height: 90,
     },
   },
+  headingbadgebox: {
+    width: "100%",
+    display: "flex",
+    alignItems: "flex-start",
+  },
   badge: {
-    position: "absolute",
     width: 59,
     height: 27,
-    marginLeft: "26.4rem",
-    marginTop: "-1.4rem",
+    marginRight: 10,
     [theme.breakpoints.only("xs")]: {
       width: 50,
       height: 24,
-      marginLeft: "17rem",
-      marginTop: "-1.4rem",
+      marginRight: 5,
     },
   },
 
@@ -112,9 +114,11 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFFFFF",
     marginLeft: 20,
     [theme.breakpoints.only("xs")]: {
-      width: 250,
+      width: "90%",
       fontSize: 12,
       height: 25,
+      height: 35,
+      marginLeft: 10,
       marginTop: 0,
     },
   },
@@ -132,8 +136,9 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     color: "#FFFFFF",
     [theme.breakpoints.only("xs")]: {
-      width: 300,
+      width: "95%",
       fontSize: 10,
+      marginLeft: 10,
     },
   },
   span: {
@@ -173,10 +178,12 @@ export default function VoiceAuthenticationTab() {
 
       <Box className={classes.lowerbox}>
         <Box className={classes.sqr}>
-          <img src={badge} className={classes.badge} alt="" />
-
-          <Box className={classes.heading}>
-            Voice <span className={classes.span}>Auth</span> for Amazon Connect®
+          <Box className={classes.headingbadgebox}>
+            <Box className={classes.heading}>
+              Voice <span className={classes.span}>Auth</span> for Amazon
+              Connect®
+            </Box>
+            <img src={badge} className={classes.badge} alt="" />
           </Box>
           <Box className={classes.text}>
             Continuously authenticate an unlimited number of callers every 3
@@ -185,12 +192,12 @@ export default function VoiceAuthenticationTab() {
         </Box>
 
         <Box className={classes.sqr}>
-          <img src={badge} className={classes.badge} alt="" />
-          <Box>
+          <Box className={classes.headingbadgebox}>
             <Box className={classes.heading}>
               Voice <span className={classes.span}>Search</span> for Amazon
               Connect®
             </Box>
+            <img src={badge} className={classes.badge} alt="" />
           </Box>
           <Box className={classes.text}>
             Search and review an unlimited number of Recorded Calls.
@@ -198,12 +205,12 @@ export default function VoiceAuthenticationTab() {
         </Box>
 
         <Box className={classes.sqr}>
-          <img src={badge} className={classes.badge} alt="" />
-          <Box>
+          <Box className={classes.headingbadgebox}>
             <Box className={classes.heading}>
               Voice <span className={classes.span}>Pop</span> for Amazon
               Connect®
             </Box>
+            <img src={badge} className={classes.badge} alt="" />
           </Box>
           <Box className={classes.text}>
             Instantly open a caller’s unified Customer Profile one second of the
@@ -212,12 +219,12 @@ export default function VoiceAuthenticationTab() {
         </Box>
 
         <Box className={classes.sqr}>
-          <img src={badge} className={classes.badge} alt="" />
-          <Box>
+          <Box className={classes.headingbadgebox}>
             <Box className={classes.heading}>
               Enhanced <span className={classes.span}>Merge</span> for Amazon
               Connect®
             </Box>
+            <img src={badge} className={classes.badge} alt="" />
           </Box>
           <Box className={classes.text}>
             Automatically find and intelligently merge duplicate Customer
@@ -226,12 +233,12 @@ export default function VoiceAuthenticationTab() {
         </Box>
 
         <Box className={classes.sqr}>
-          <img src={badge} className={classes.badge} alt="" />
-          <Box>
+          <Box className={classes.headingbadgebox}>
             <Box className={classes.heading}>
               Augmented<span className={classes.span}>Merge</span> for Amazon
               Connect®
             </Box>
+            <img src={badge} className={classes.badge} alt="" />
           </Box>
           <Box className={classes.text}>
             Enhanced Merge, plus appends additional profile information for

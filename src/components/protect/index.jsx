@@ -58,9 +58,10 @@ const useStyles = makeStyles((theme) => ({
       height: 80,
     },
     [theme.breakpoints.only("xs")]: {
-      width: 280,
-      fontSize: 20,
-      height: 70,
+      width: "90%",
+      fontSize: 18,
+      height: 60,
+      marginLeft: 20,
     },
   },
   text: {
@@ -80,9 +81,11 @@ const useStyles = makeStyles((theme) => ({
       height: 70,
     },
     [theme.breakpoints.only("xs")]: {
-      width: 333,
-      fontSize: 14,
-      height: 60,
+      width: "90%",
+      fontSize: 12,
+      height: 50,
+      marginLeft: 20,
+      lineHeight: "20px",
     },
   },
   btn: {
@@ -104,9 +107,10 @@ const useStyles = makeStyles((theme) => ({
       height: 48,
     },
     [theme.breakpoints.only("xs")]: {
-      width: 130,
-      fontSize: 12,
-      height: 35,
+      width: 100,
+      fontSize: 10,
+      height: 30,
+      marginLeft: 20,
     },
   },
 }));

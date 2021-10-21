@@ -19,6 +19,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("md")]: {
       height: 630,
     },
+    [theme.breakpoints.up("xs")]: {
+      height: 700,
+    },
     backgroundSize: "100% 100%",
   },
   main: {
@@ -86,8 +89,8 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down("xs")]: {
       marginLeft: "0rem",
-      width: 250,
-      height: 164,
+      width: 200,
+      height: 144,
     },
   },
   form: {
@@ -113,16 +116,25 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.only("xs")]: {
       position: "absolute",
-      width: 330,
+      width: "85%",
       height: 331,
       marginTop: "3rem",
-      marginLeft: "-15.5rem",
+      marginLeft: "-12.2rem",
     },
   },
   inputbox: {
     height: 60,
+
     [theme.breakpoints.down("md")]: {
       height: 50,
+    },
+    [theme.breakpoints.only("xs")]: {
+      width: "80%",
+    },
+  },
+  msginput: {
+    [theme.breakpoints.only("xs")]: {
+      width: "80%",
     },
   },
   input: {
@@ -144,7 +156,7 @@ const useStyles = makeStyles((theme) => ({
       height: 33,
     },
     [theme.breakpoints.only("xs")]: {
-      width: 300,
+      width: "100%",
       height: 33,
     },
   },
@@ -168,7 +180,7 @@ const useStyles = makeStyles((theme) => ({
       height: 93,
     },
     [theme.breakpoints.only("xs")]: {
-      width: 300,
+      width: "100%",
       height: 93,
     },
   },
@@ -238,7 +250,7 @@ export default function LetsTalk() {
                 placeholder="Telephone"
               />
             </Box>
-            <Box>
+            <Box className={classes.msginput}>
               {" "}
               <input
                 type="text"
