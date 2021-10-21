@@ -61,7 +61,7 @@ const useStyles = makeStyles((theme) => ({
       height: 35,
       fontSize: 20,
       marginTop: 30,
-      marginLeft: 20,
+      marginLeft: 15,
     },
   },
   text: {
@@ -86,7 +86,7 @@ const useStyles = makeStyles((theme) => ({
       width: "90%",
       height: 45,
       fontSize: 13,
-      marginLeft: 20,
+      marginLeft: 15,
     },
   },
   btnbox: {
@@ -96,7 +96,7 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: 20,
     [theme.breakpoints.only("xs")]: {
       width: "90%",
-      marginLeft: 20,
+      marginLeft: 15,
     },
   },
   iconbtn: {

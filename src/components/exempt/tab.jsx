@@ -39,9 +39,10 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFFFFF",
     textAlign: "left",
     [theme.breakpoints.only("xs")]: {
-      width: "100%",
+      width: "90%",
       height: 73,
       fontSize: 18,
+      marginLeft: 15,
     },
   },
   span: {
@@ -61,9 +62,10 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     marginLeft: 7,
     [theme.breakpoints.only("xs")]: {
-      width: "95%",
+      width: "90%",
       height: 158,
       fontSize: 12,
+      marginLeft: 15,
     },
   },
   privacy: {
@@ -82,6 +84,7 @@ const useStyles = makeStyles((theme) => ({
       width: " 95%",
       height: 44,
       fontSize: 10,
+      marginLeft: 15,
     },
   },
   imgbox: {
