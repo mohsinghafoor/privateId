@@ -10,16 +10,16 @@ const useStyles = makeStyles((theme) => ({
   root: {
     backgroundImage: `url(${background})`,
     display: "flex",
-    alignItems: "flex-end",
+    alignItems: "flex-start",
     justifyContent: "center",
     minHeight: "100vh",
-
     backgroundSize: "100% 100%",
   },
   gradiant: {
     display: "flex",
-    alignItems: "flex-end",
+    alignItems: "center",
     justifyContent: "center",
+    flexDirection: "column",
     width: "100%",
     minHeight: "100vh",
     background:
@@ -44,6 +44,9 @@ const useStyles = makeStyles((theme) => ({
     /* or 36px */
     textAlign: "left",
     color: "#D1D1D1",
+    [theme.breakpoints.only("md")]: {
+      width: 500,
+    },
   },
   btnbox: {
     width: 225,
@@ -77,7 +80,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     height: "100vh",
-    // justifyContent: "flex-start",
+    justifyContent: "center",
     // flexDirection: "column",
     // alignItems: "center",
   },
@@ -87,6 +90,9 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     alignItems: "center",
     height: "100vh",
+    [theme.breakpoints.only("md")]: {
+      alignItems: "flex-start",
+    },
   },
   img: {
     height: 515,
@@ -97,13 +103,18 @@ const useStyles = makeStyles((theme) => ({
       width: 555,
     },
   },
+  logobox: {
+    display: "flex",
+    justifyContent: "center",
+    // alignItems: "center",
+    width: "100%",
+  },
   logo: {
     position: "absolute",
-    marginTop: "-14rem",
-    marginLeft: "-29.8rem",
+    marginTop: 30,
+    marginLeft: "-30rem",
     [theme.breakpoints.only("md")]: {
-      marginLeft: "-19.5rem",
-      marginTop: "-12rem",
+      marginLeft: "-22rem",
     },
   },
 }));
@@ -114,8 +125,10 @@ export default function DecenterlizedFullHeight() {
   return (
     <div className={classes.root}>
       <div className={classes.gradiant}>
-        <Grid container className={classes.main}>
+        <Box className={classes.logobox}>
           <img src={logo} className={classes.logo} alt="" />
+        </Box>
+        <Grid container className={classes.main}>
           <Grid item lg={6} md={6} className={classes.leftgrid}>
             <Box style={{ display: "flex", flexDirection: "column" }}>
               <Box className={classes.text}>
