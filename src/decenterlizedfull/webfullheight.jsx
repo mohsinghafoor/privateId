@@ -99,7 +99,6 @@ const useStyles = makeStyles((theme) => ({
     // width: 552,
 
     [theme.breakpoints.only("md")]: {
-      marginLeft: "-10rem",
       width: 555,
     },
   },
