@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
   },
   heading: {
     width: 372,
-    height: 39,
+    height: 69,
     fontSize: 24,
     fontFamily: "Axiforma",
     fontStyle: "normal",
@@ -134,27 +134,23 @@ export default function FastTab() {
       </Box>
 
       <Box className={classes.rightbox}>
-        <Box className={classes.heading}>Face + Voice Recognition</Box>
+        <Box className={classes.heading}>
+          Face + Voice + Fingerprint Recognition
+        </Box>
         <Box className={classes.itembox}>
           <ArrowForwardIcon className={classes.icon} />
           <Box className={classes.text}>No Biometric Templates</Box>
         </Box>
+
         <Box className={classes.itembox}>
           <ArrowForwardIcon className={classes.icon} />
-          <Box className={classes.text}> Face Recognition with Facemask</Box>
+          <Box className={classes.text}>Extreme Accuracy & Speed</Box>
         </Box>
-        <Box className={classes.itembox}>
-          <ArrowForwardIcon className={classes.icon} />
-          <Box className={classes.text}>Extreme Accuracy</Box>
-        </Box>
-        <Box className={classes.itembox}>
-          <ArrowForwardIcon className={classes.icon} />
-          <Box className={classes.text}>Guaranteed Privacy</Box>
-        </Box>
+
         <Box className={classes.itembox}>
           <ArrowForwardIcon className={classes.icon} />
           <Box className={classes.text}>
-            Runs on Browsers, Phones and Clouds
+            Runs on Browsers, Phones, Platforms & Clouds
           </Box>
         </Box>
       </Box>

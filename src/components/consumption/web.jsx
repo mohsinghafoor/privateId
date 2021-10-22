@@ -39,8 +39,8 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFFFFF",
   },
   img: {
-    width: 438,
-    height: 230,
+    width: 400,
+    height: 210,
     [theme.breakpoints.only("md")]: {
       width: 375,
       height: 197,
@@ -70,6 +70,25 @@ const useStyles = makeStyles((theme) => ({
 
     color: "#FFFFFF",
   },
+  leftgrid: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "flex-start",
+    [theme.breakpoints.only("md")]: {
+      justifyContent: "center",
+      alignItems: "center",
+    },
+  },
+  rightgrid: {
+    display: "flex",
+    justifyContent: "flex-end",
+    alignItems: "flex-end",
+    [theme.breakpoints.only("md")]: {
+      justifyContent: "center",
+      alignItems: "center",
+    },
+  },
 }));
 
 export default function ConsumptionWeb() {
@@ -78,16 +97,7 @@ export default function ConsumptionWeb() {
   return (
     <div className={classes.root}>
       <Grid container className={classes.main}>
-        <Grid
-          item
-          md={6}
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+        <Grid item md={6} className={classes.leftgrid}>
           <Table1 />
           <Table2 />
           <Box className={classes.btnbox}>
@@ -96,15 +106,7 @@ export default function ConsumptionWeb() {
             </IconButton>
           </Box>
         </Grid>
-        <Grid
-          item
-          md={6}
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "flex-end",
-          }}
-        >
+        <Grid item md={6} className={classes.rightgrid}>
           <img src={img} className={classes.img} alt="" />
         </Grid>
       </Grid>

@@ -261,7 +261,7 @@ export default function FaceTab() {
           </Box>
           <Box className={classes.text}>
             Protect an unlimited number of user accounts and eliminate password
-            resets with biometric account recovery.
+            resets.
           </Box>
         </Box>
 
@@ -271,8 +271,8 @@ export default function FaceTab() {
             <img src={badge} className={classes.badge} alt="" />
           </Box>
           <Box className={classes.text}>
-            Determines if a live human face is in front of the camera in 10ms.
-            Run instantly on browser without installation.
+            Determine if a live human face is in front of the camera in 10ms.
+            Runs instantly on browser without installation.
           </Box>
         </Box>
 
@@ -282,7 +282,7 @@ export default function FaceTab() {
             <img src={badge} className={classes.badge} alt="" />
           </Box>
           <Box className={classes.text}>
-            Determines if a live human is speaking in the microphone in 10ms.
+            Determine if a live human is speaking in the microphone in 10ms.
             Runs instantly on browsers without installation.
           </Box>
         </Box>

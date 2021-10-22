@@ -1,7 +1,7 @@
 import React from "react";
-import Carousel from "react-material-ui-carousel";
+import Carousel from "./carosoullibrary";
 import { makeStyles } from "@material-ui/core/styles";
-import { Box, Grid } from "@material-ui/core";
+import { Box } from "@material-ui/core";
 import FormatQuoteIcon from "@material-ui/icons/FormatQuote";
 import ArrowLeftIcon from "@material-ui/icons/ArrowLeft";
 import ArrowRightIcon from "@material-ui/icons/ArrowRight";
@@ -185,6 +185,16 @@ const useStyles = makeStyles((theme) => ({
       width: 31,
     },
   },
+  btnwrapper: {
+    backgroundColor: "black",
+    "&:hover": {
+      "& $button": {
+        backgroundColor: "black",
+        filter: "brightness(120%)",
+        opacity: "0.4",
+      },
+    },
+  },
 }));
 
 export default function Carosoul() {
@@ -192,6 +202,7 @@ export default function Carosoul() {
   return (
     <Carousel
       autoPlay={false}
+      className={{ opacity: 1 }}
       afterChange={onChange}
       NextIcon={<ArrowRightIcon />}
       PrevIcon={<ArrowLeftIcon />}
@@ -219,6 +230,21 @@ export default function Carosoul() {
         <FormatQuoteIcon className={classes.upprquote} />
         <Box className={classes.dflex}>
           <Box className={classes.text}>
+            PLLAY and Private Identity provide players with continuous,
+            frictionless high-security authentication with the right technology
+            right now. There is no other authentication experience like this
+            with no UI and no learning curve. Fantastic.
+          </Box>
+          <Box className={classes.author1}>Shawn Gunn, CEO</Box>
+          <Box className={classes.designation}> PLLAY Labs</Box>
+        </Box>
+        <FormatQuoteIcon className={classes.lwrquote} />
+      </div>
+
+      <div className={classes.main}>
+        <FormatQuoteIcon className={classes.upprquote} />
+        <Box className={classes.dflex}>
+          <Box className={classes.text}>
             “Private ID is the best-in-class biometric authentication
             technology. It is pioneering in that it preserves user privacy and
             is an efficient implementation of homomorphic encryption. The
@@ -233,20 +259,7 @@ export default function Carosoul() {
         </Box>
         <FormatQuoteIcon className={classes.lwrquote} />
       </div>
-      <div className={classes.main}>
-        <FormatQuoteIcon className={classes.upprquote} />
-        <Box className={classes.dflex}>
-          <Box className={classes.text}>
-            PLLAY and Private Identity provide players with continuous,
-            frictionless high-security authentication with the right technology
-            right now. There is no other authentication experience like this
-            with no UI and no learning curve. Fantastic.
-          </Box>
-          <Box className={classes.author1}>Shawn Gunn, CEO</Box>
-          <Box className={classes.designation}> PLLAY Labs</Box>
-        </Box>
-        <FormatQuoteIcon className={classes.lwrquote} />
-      </div>
+
       <div className={classes.main}>
         <FormatQuoteIcon className={classes.upprquote} />
         <Box className={classes.dflex}>

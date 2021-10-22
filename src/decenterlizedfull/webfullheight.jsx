@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Box, IconButton } from "@material-ui/core";
 import background from "../assets/decenterlizedback.png";
 import PlayCircleFilledIcon from "@material-ui/icons/PlayCircleFilled";
-import img from "../assets/decenterlizedimg.png";
+import img from "../assets/34.png";
 import logo from "../assets/logo 2.png";
 
 const useStyles = makeStyles((theme) => ({
@@ -75,7 +75,7 @@ const useStyles = makeStyles((theme) => ({
   },
   rightgrid: {
     display: "flex",
-    alignItems: "flex-end",
+    alignItems: "center",
     height: "100vh",
     // justifyContent: "flex-start",
     // flexDirection: "column",
@@ -100,7 +100,7 @@ const useStyles = makeStyles((theme) => ({
   logo: {
     position: "absolute",
     marginTop: "-14rem",
-    marginLeft: "-28.8rem",
+    marginLeft: "-29.8rem",
     [theme.breakpoints.only("md")]: {
       marginLeft: "-19.5rem",
       marginTop: "-12rem",

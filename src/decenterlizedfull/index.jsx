@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/core/styles";
 import DecenterlizedPadFull from "./tabfullheight";
-import DecenterlizedFullHeight from "./fullheight";
+import DecenterlizedFullHeight from "./webfullheight";
 
 const useStyles = makeStyles((theme) => ({
   root: {

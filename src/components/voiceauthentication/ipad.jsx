@@ -155,7 +155,7 @@ export default function VoiceAuthenticationIpad() {
                 <Box className={classes.line} />
                 <Box className={classes.text}>
                   Continuously authenticate an unlimited number of callers every
-                  3 seconds in IVR or live calls using 1:n speaker recognition.
+                  3 seconds in IVR and live calls using 1:n speaker recognition.
                 </Box>
               </Box>
               <Box className={classes.sqr}>

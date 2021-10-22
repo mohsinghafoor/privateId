@@ -34,7 +34,6 @@ const StyledTableCell = withStyles((theme) => ({
 
 const StyledTableRow = withStyles((theme) => ({
   root: {
-    height: 37,
     "&:nth-of-type(odd)": {
       backgroundColor: "#CBCBCB",
     },
@@ -116,6 +115,7 @@ const useStyles = makeStyles((theme) => ({
     width: 250,
     [theme.breakpoints.only("md")]: {
       width: 420,
+      height: 20,
     },
     [theme.breakpoints.only("xs")]: {
       width: 80,
@@ -126,6 +126,7 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft: 100,
     [theme.breakpoints.only("md")]: {
       paddingLeft: 70,
+      height: 20,
     },
     [theme.breakpoints.only("xs")]: {
       width: 20,

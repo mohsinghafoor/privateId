@@ -207,7 +207,7 @@ export default function FaceIpad() {
 
                 <Box className={classes.text}>
                   Protect an unlimited number of user accounts and eliminate
-                  password resets with automated biometric account recovery.
+                  password resets.
                 </Box>
               </Box>
 
@@ -216,8 +216,8 @@ export default function FaceIpad() {
                 <Box className={classes.heading}>FACE CAPTCHA</Box>
 
                 <Box className={classes.text}>
-                  Determines if a live human face is in front of the camera in
-                  10ms. Run instantly on browser without installation.
+                  Determine if a live human face is in front of the camera in
+                  10ms. Runs instantly on browser without installation.
                 </Box>
               </Box>
             </Box>
@@ -227,7 +227,7 @@ export default function FaceIpad() {
                 <Box className={classes.heading}>VOICE CAPTCHA</Box>
 
                 <Box className={classes.text}>
-                  Determines if a live human is speaking in the microphone in
+                  Determine if a live human is speaking in the microphone in
                   10ms. Runs instantly on browsers without installation.
                 </Box>
               </Box>

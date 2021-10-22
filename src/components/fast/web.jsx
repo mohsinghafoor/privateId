@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
   },
   heading: {
     width: 602,
-    height: 75,
+    height: 110,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
@@ -47,8 +47,9 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFFFFF",
     textAlign: "left",
     [theme.breakpoints.only("md")]: {
-      width: 372,
-      height: 115,
+      width: 432,
+      height: 105,
+      fontSize: 36,
       marginTop: 40,
     },
     [theme.breakpoints.only("sm")]: {
@@ -163,30 +164,23 @@ export default function FastWeb() {
           </Grid>
           <Grid item md={6} className={classes.rightgrid}>
             <Box className={classes.rightbox}>
-              <Box className={classes.heading}>Face + Voice Recognition</Box>
+              <Box className={classes.heading}>
+                Face + Voice + Fingerprint Recognition
+              </Box>
               <Box className={classes.itembox}>
                 <ArrowForwardIcon className={classes.icon} />
                 <Box className={classes.text}>No Biometric Templates</Box>
               </Box>
+
+              <Box className={classes.itembox}>
+                <ArrowForwardIcon className={classes.icon} />
+                <Box className={classes.text}>Extreme Accuracy & Speed</Box>
+              </Box>
+
               <Box className={classes.itembox}>
                 <ArrowForwardIcon className={classes.icon} />
                 <Box className={classes.text}>
-                  {" "}
-                  Face Recognition with Facemask
-                </Box>
-              </Box>
-              <Box className={classes.itembox}>
-                <ArrowForwardIcon className={classes.icon} />
-                <Box className={classes.text}>Extreme Accuracy</Box>
-              </Box>
-              <Box className={classes.itembox}>
-                <ArrowForwardIcon className={classes.icon} />
-                <Box className={classes.text}>Guaranteed Privacy</Box>
-              </Box>
-              <Box className={classes.itembox}>
-                <ArrowForwardIcon className={classes.icon} />
-                <Box className={classes.text}>
-                  Runs on Browsers, Phones and Clouds
+                  Runs on Browsers, Phones, Platforms & Clouds
                 </Box>
               </Box>
             </Box>
