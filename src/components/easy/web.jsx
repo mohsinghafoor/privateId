@@ -185,14 +185,14 @@ export default function EasyWeb() {
             Includes everything you need to get started. First 50,000 requests
             are free.
           </Box>
-          <Box className={classes.btnbox}>
+          {/* <Box className={classes.btnbox}>
             <IconButton className={classes.iconbtn}>
               <PlayCircleFilledIcon className={classes.playbtn} /> Watch Video
             </IconButton>
             <IconButton className={classes.iconbtn}>
               <img src={docimg} className={classes.docimg} alt="" /> Read Docs
             </IconButton>
-          </Box>
+          </Box> */}
         </Grid>
       </Grid>
     </div>

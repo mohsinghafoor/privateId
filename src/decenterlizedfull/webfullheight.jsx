@@ -127,7 +127,7 @@ export default function DecenterlizedFullHeight() {
                 Decentralized biometrics for a secure, private and delightful
                 customer experience
               </Box>
-              <a
+              {/* <a
                 className={classes.a}
                 target="_blank"
                 href="https://www.youtube.com/watch?v=5iYEhEiOlrI"
@@ -136,7 +136,7 @@ export default function DecenterlizedFullHeight() {
                   <PlayCircleFilledIcon className={classes.playbtn} /> Watch
                   Video
                 </IconButton>
-              </a>
+              </a> */}
             </Box>
           </Grid>
           <Grid item lg={6} md={4} className={classes.rightgrid}>

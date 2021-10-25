@@ -114,7 +114,7 @@ const useStyles = makeStyles((theme) => ({
   centerbox: {
     height: "40vh",
     display: "flex",
-    alignItems: "flex-end",
+    alignItems: "center",
   },
   bottombox: {
     height: "50vh",
@@ -141,7 +141,7 @@ export default function DecenterlizedPadFull() {
               Decentralized biometrics for a secure, private and delightful
               customer experience
             </Box>
-            <Box className={classes.btnbox}>
+            {/* <Box className={classes.btnbox}>
               <a
                 style={{ textDecoration: "none" }}
                 target="_blank"
@@ -152,7 +152,7 @@ export default function DecenterlizedPadFull() {
                   Video
                 </IconButton>
               </a>
-            </Box>
+            </Box> */}
           </Box>
         </Box>
         <Box className={classes.bottombox}>
