@@ -11,13 +11,14 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    height: 819,
+    minHeight: "100vh",
     backgroundSize: "100% 100%",
   },
   gradiant: {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    minHeight: "100vh",
     width: "100%",
     height: "100%",
     background:
@@ -29,7 +30,10 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 1280,
   },
   mainheading: {
-    width: 695,
+    position: "absolute",
+    marginTop: "8rem",
+    marginRight: "10rem",
+    width: 700,
     height: 65,
     fontFamily: "Axiforma",
     fontStyle: "normal",
@@ -115,9 +119,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFFFFF",
   },
   img: {
-    width: 411,
-    height: 438,
-    marginBottom: "-4.8rem",
+    height: 600,
   },
   blackline: {
     position: "absolute",
@@ -149,12 +151,26 @@ const useStyles = makeStyles((theme) => ({
   },
   box: {
     position: "absolute",
-    marginRight: "8rem",
-    marginBottom: "5rem",
-    width: 145,
-    height: 145,
+    marginRight: "11rem",
+    marginBottom: "14rem",
+    width: 200,
+    height: 200,
     border: "2px solid rgba(248, 248, 248, 0.25)",
     boxSizing: "border-box",
+  },
+  leftgrid: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "flex-end",
+    flexDirection: "column",
+    minHeight: "100vh",
+  },
+  rightgrid: {
+    display: "flex",
+    justifyContent: "flex-end",
+    alignItems: "flex-end",
+    flexDirection: "column",
+    minHeight: "100vh",
   },
 }));
 
@@ -168,16 +184,7 @@ export default function FaceIpad() {
           <Box className={classes.mainheading}>
             FACE + VOICE AUTHENTICATION SOLUTIONS
           </Box>
-          <Grid
-            item
-            md={7}
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "flex-end",
-              flexDirection: "column",
-            }}
-          >
+          <Grid item md={6} className={classes.leftgrid}>
             <Box className={classes.cardbox}>
               <Box className={classes.sqr}>
                 <img src={badge} className={classes.badge} alt="" />
@@ -252,16 +259,7 @@ export default function FaceIpad() {
             </Box>
           </Grid>
 
-          <Grid
-            item
-            md={5}
-            style={{
-              display: "flex",
-              justifyContent: "flex-end",
-              alignItems: "flex-end",
-              flexDirection: "column",
-            }}
-          >
+          <Grid item md={6} className={classes.rightgrid}>
             <img src={img} className={classes.img} alt="" />
             <Box className={classes.box} />
           </Grid>

@@ -92,7 +92,7 @@ const useStyles = makeStyles((theme) => ({
     height: 800,
     [theme.breakpoints.only("lg")]: {
       marginLeft: "-7rem",
-      height: 700,
+      height: 650,
     },
     [theme.breakpoints.only("md")]: {
       marginLeft: "-20rem",
@@ -102,6 +102,7 @@ const useStyles = makeStyles((theme) => ({
   logo: {
     position: "absolute",
     marginTop: 40,
+    marginLeft: 20,
     [theme.breakpoints.only("md")]: { marginLeft: 40 },
   },
 }));

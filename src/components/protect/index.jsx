@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    height: "100%",
+    minHeight: "100vh",
     backgroundSize: "100% 100%",
   },
   gradiant: {
@@ -17,25 +17,13 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center",
     width: "100%",
+    minHeight: "100vh",
     background:
       "linear-gradient(89.59deg, #000000 6.3%, rgba(0, 0, 0, 0) 79.12%)",
   },
   main: {
     flexGrow: 1,
     maxWidth: 1280,
-
-    [theme.breakpoints.up("lg")]: {
-      height: 550,
-    },
-    [theme.breakpoints.only("md")]: {
-      height: 427,
-    },
-    [theme.breakpoints.only("sm")]: {
-      height: 269,
-    },
-    [theme.breakpoints.only("xs")]: {
-      height: 240,
-    },
   },
   box: {
     display: "flex",

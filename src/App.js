@@ -17,6 +17,18 @@ import DecenterlizedFull from "./decenterlizedfull";
 function App() {
   return (
     <div className="App">
+      {/* 
+      
+      
+      
+      
+      
+      
+      <Engineered />
+      <Consumption />
+      <LetsTalk />
+      <Footer /> */}
+
       <DecenterlizedFull />
       <Fast />
       <Face />
@@ -31,7 +43,6 @@ function App() {
       <Consumption />
       <LetsTalk />
       <Footer />
-      {/* <DecenterlizedFull /> */}
     </div>
   );
 }

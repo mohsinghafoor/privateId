@@ -4,7 +4,6 @@ import { Box, Grid } from "@material-ui/core";
 import background from "../../assets/fastbackweb.png";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import img from "../../assets/fastimg.png";
-
 const useStyles = makeStyles((theme) => ({
   root: {
     backgroundImage: `url(${background})`,
@@ -12,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-
+    minHeight: "100vh",
     [theme.breakpoints.up("md")]: {
       height: 553,
     },
@@ -23,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center",
     background: "rgba(0, 0, 0, 0.55)",
-    height: "100%",
+    minHeight: "100vh",
   },
   main: {
     maxWidth: 1280,
@@ -80,39 +79,38 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFFFFF",
     [theme.breakpoints.only("xs")]: {
       width: 330,
-
       fontSize: 16,
     },
   },
   sqr: {
     position: "absolute",
-    marginBottom: "14rem",
-    marginLeft: "-3rem",
-    width: 135,
-    height: 130,
+    marginBottom: "17rem",
+    marginLeft: "-4rem",
+    width: 215,
+    height: 215,
     border: "3px solid rgba(248, 248, 248, 0.25)",
     boxSizing: "border-box",
+    [theme.breakpoints.only("lg")]: {
+      marginBottom: "17rem",
+      marginLeft: "-4rem",
+      width: 160,
+      height: 160,
+    },
     [theme.breakpoints.only("md")]: {
-      marginBottom: "10rem",
-      width: 115,
-      height: 115,
-      marginRight: "-0.5rem",
+      marginBottom: "23rem",
+      width: 200,
+      height: 200,
+      marginRight: "-9.5rem",
     },
   },
   img: {
-    height: 538,
-    width: 464,
+    height: 600,
     filter: " drop-shadow(17px 4px 11px rgba(0, 0, 0, 0.2))",
-    marginBottom: -43,
+    marginBottom: -15,
     [theme.breakpoints.only("md")]: {
-      width: 394,
-      height: 455,
-      marginBottom: -61,
-    },
-    [theme.breakpoints.only("xs")]: {
-      width: 330,
-      marginBottom: 20,
-      height: 400,
+      height: 760,
+      marginBottom: -21,
+      marginLeft: "9rem",
     },
   },
   icon: {
@@ -128,10 +126,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "flex-end",
-    [theme.breakpoints.only("md")]: {
-      width: 394,
-      height: 457,
-    },
+    minHeight: "100vh",
   },
   rightgrid: {
     display: "flex",

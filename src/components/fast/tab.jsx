@@ -12,10 +12,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center",
     flexDirection: "column",
-    height: "100%",
-    [theme.breakpoints.up("lg")]: {
-      height: 600,
-    },
+    minHeight: "100vh",
   },
   main: {
     maxWidth: 1280,
@@ -26,8 +23,9 @@ const useStyles = makeStyles((theme) => ({
     width: "90%",
     display: "flex",
     flexDirection: "column",
-    justifyContent: "flex-start",
+    justifyContent: "center",
     background: "#2A2A2A",
+    minHeight: "40vh",
     [theme.breakpoints.down("sm")]: {
       marginBottom: 70,
     },
@@ -74,6 +72,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundImage: `url(${background})`,
     backgroundSize: "100% 100%",
     width: "100%",
+    minHeight: "40vh",
   },
   sqr: {
     position: "absolute",
@@ -86,18 +85,16 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       marginLeft: "-1.8rem",
       marginTop: "-4.5rem",
-      width: 90,
-      height: 90,
+      width: 100,
+      height: 100,
     },
   },
   img: {
-    width: 394,
-    height: 457,
+    height: 557,
     marginBottom: -20,
     [theme.breakpoints.only("xs")]: {
-      width: 270,
-      marginBottom: -20,
-      height: 300,
+      marginBottom: -25,
+      height: 420,
     },
   },
   icon: {
@@ -110,6 +107,7 @@ const useStyles = makeStyles((theme) => ({
   },
   gradiant: {
     background: "rgba(0, 0, 0, 0.55)",
+    minHeight: "50vh",
   },
   upperbox: {
     display: "flex",

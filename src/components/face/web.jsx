@@ -11,15 +11,15 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    height: 552,
     backgroundSize: "100% 100%",
+    minHeight: "100vh",
   },
   gradiant: {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
     width: "100%",
-    height: "100%",
+    minHeight: "100vh",
     background:
       "linear-gradient(90.61deg, rgba(23, 23, 23, 0.9) 58.83%, rgba(0, 0, 0, 0) 127.48%)",
   },
@@ -27,9 +27,13 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     maxWidth: 1280,
+    minHeight: "100vh",
+    [theme.breakpoints.up("xl")]: {
+      maxWidth: 1600,
+    },
   },
   mainheading: {
-    width: 685,
+    width: 660,
     height: 39,
     fontFamily: "Axiforma",
     fontStyle: "normal",
@@ -42,7 +46,8 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFFFFF",
   },
   headingbox: {
-    width: 810,
+    width: 900,
+    marginLeft: 70,
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -126,9 +131,10 @@ const useStyles = makeStyles((theme) => ({
     height: 25,
   },
   img: {
-    width: 497,
-    height: 529,
-    marginBottom: -23,
+    height: 600,
+    [theme.breakpoints.up("xl")]: {
+      height: 900,
+    },
   },
   blackline: {
     position: "absolute",
@@ -160,12 +166,18 @@ const useStyles = makeStyles((theme) => ({
   },
   box: {
     position: "absolute",
-    marginRight: "9rem",
-    marginBottom: "11rem",
-    width: 175,
-    height: 175,
+    marginRight: "11rem",
+    marginBottom: "14rem",
+    width: 195,
+    height: 195,
     border: "2px solid rgba(248, 248, 248, 0.25)",
     boxSizing: "border-box",
+    [theme.breakpoints.up("xl")]: {
+      marginRight: "17rem",
+      marginBottom: "22rem",
+      width: 275,
+      height: 275,
+    },
   },
 }));
 
@@ -183,6 +195,7 @@ export default function FaceWeb() {
               display: "flex",
               justifyContent: "center",
               flexDirection: "column",
+              alignItems: "center",
             }}
           >
             <Box className={classes.headingbox}>

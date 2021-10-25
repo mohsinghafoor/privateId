@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     background:
       "radial-gradient(55.01% 307.1% at 88.52% 16.49%, #545454 0%, #292929 80.76%)",
-    height: "100%",
+    minHeight: "100vh",
     [theme.breakpoints.up("lg")]: {
       height: 604,
     },

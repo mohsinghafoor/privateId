@@ -5,26 +5,20 @@ import img from "../../assets/exempt.png";
 const useStyles = makeStyles((theme) => ({
   root: {
     background: "#2A2A2A",
-    height: "100%",
+    minHeight: "100vh",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "column",
-    [theme.breakpoints.up("lg")]: {
-      height: 600,
-    },
   },
   bottombox: {
     background: "#2A2A2A",
     display: "flex",
     flexDirection: "column",
-    justifyContent: "flex-start",
+
+    justifyContent: "center",
     width: "95%",
-    height: 215,
-    [theme.breakpoints.up("xs")]: {
-      marginBottom: 30,
-      height: 270,
-    },
+    minHeight: "50vh",
   },
   heading: {
     maxWidth: 573,
@@ -63,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 7,
     [theme.breakpoints.only("xs")]: {
       width: "90%",
-      height: 158,
+      height: 138,
       fontSize: 12,
       marginLeft: 15,
     },
@@ -91,20 +85,18 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     height: "100%",
     display: "flex",
+    alignItems: "flex-end",
     justifyContent: "flex-end",
+    minHeight: "50vh",
     background:
       "radial-gradient(71.13% 327.64% at -2.5% 28.87%, #404040 16.46%, #252525 100%)",
-    [theme.breakpoints.only("xs")]: {
-      height: 270,
-    },
+    [theme.breakpoints.only("xs")]: {},
   },
   img: {
     height: 548,
     height: 486,
-
     [theme.breakpoints.only("xs")]: {
-      width: 250,
-      height: 270,
+      height: 400,
       marginLeft: 0,
     },
   },

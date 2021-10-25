@@ -11,17 +11,14 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    height: "100%",
-
-    [theme.breakpoints.up("lg")]: {
-      height: 546,
-    },
+    minHeight: "100vh",
     backgroundSize: "100% 100%",
   },
   gradiant: {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    minHeight: "100vh",
     background:
       "  linear-gradient(85.54deg, rgba(0, 0, 0, 0) -8.44%, rgba(44, 44, 44, 0.9) 38.88%)",
     width: "100%",
@@ -128,6 +125,8 @@ export default function VoiceAuthenticationWeb() {
             style={{
               display: "flex",
               justifyContent: "flex-start",
+              alignItems: "flex-end",
+              minHeight: "100vh",
             }}
           >
             <img src={img} className={classes.img} alt="voice image" />

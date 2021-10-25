@@ -15,8 +15,8 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    height: 500,
-    marginBottom: -30,
+    minHeight: "100vh",
+    marginBottom: -40,
   },
   dflex: {
     maxWidth: 934,

@@ -7,35 +7,29 @@ import PlayCircleFilledIcon from "@material-ui/icons/PlayCircleFilled";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    background: "#2A2A2A",
+    background: "#000000",
     display: "flex",
     alignItems: "center",
     flexDirection: "column",
     justifyContent: "center",
-    height: 632,
-    [theme.breakpoints.only("xs")]: {
-      height: 370,
-    },
+    minHeight: "100vh",
   },
   imgbox: {
     width: "100%",
-    height: 425,
+
     background: "#000000",
     [theme.breakpoints.only("xs")]: {
       height: 260,
     },
   },
   img: {
-    width: 603,
-    height: 425,
-
+    height: 420,
     [theme.breakpoints.only("xs")]: {
-      width: 270,
-      height: 220,
+      height: 260,
     },
   },
   bottombox: {
-    background: "#2A2A2A",
+    background: "#000000",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",

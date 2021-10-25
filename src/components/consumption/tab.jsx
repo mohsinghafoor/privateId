@@ -11,11 +11,8 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    height: "100%",
+    minHeight: "100vh",
     background: "#464646",
-    [theme.breakpoints.up("lg")]: {
-      height: 600,
-    },
   },
   main: {
     maxWidth: 1280,

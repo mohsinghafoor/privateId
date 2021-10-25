@@ -11,9 +11,8 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    height: 763,
-
     backgroundSize: "100% 100%",
+    minHeight: "100vh",
   },
   gradiant: {
     display: "flex",
@@ -22,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     background:
       "  linear-gradient(85.54deg, rgba(0, 0, 0, 0) -8.44%, rgba(44, 44, 44, 0.9) 38.88%)",
     width: "100%",
-    height: "100%",
+    minHeight: "100vh",
   },
   main: {
     display: "flex",
@@ -30,11 +29,10 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 1280,
   },
   img: {
-    width: 433,
-    height: 473,
-    marginBottom: -290,
+    height: 700,
   },
   mainheading: {
+    position: "absolute",
     width: 650,
     height: 51,
     fontFamily: "Axiforma",
@@ -43,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 30,
     lineHeight: "131.5%",
     /* or 39px */
-
+    marginTop: "-45rem",
     color: "#FFFFFF",
   },
   cardbox: {
@@ -128,6 +126,8 @@ export default function VoiceAuthenticationIpad() {
             style={{
               display: "flex",
               justifyContent: "flex-start",
+              alignItems: "flex-end",
+              minHeight: "100vh",
             }}
           >
             <img src={img} className={classes.img} alt="voice image" />
@@ -140,6 +140,7 @@ export default function VoiceAuthenticationIpad() {
               justifyContent: "center",
               flexDirection: "column",
               alignItems: "flex-end",
+              minHeight: "100vh",
             }}
           >
             <Box className={classes.mainheading}>

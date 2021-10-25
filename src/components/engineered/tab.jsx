@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     flexDirection: "column",
     background: "#353535",
-    height: "100%",
+    minHeight: "100vh",
     [theme.breakpoints.up("lg")]: {},
   },
   main: {
@@ -25,19 +25,16 @@ const useStyles = makeStyles((theme) => ({
   },
   imgbox: {
     width: "100%",
-    height: "100%",
+    minHeight: "50vh",
     background: "#292929",
+    display: "flex",
+    alignItems: "flex-end",
+    justifyContent: "center",
   },
   img: {
-    height: 450,
-    marginBottom: -4,
-    [theme.breakpoints.only("sm")]: {
-      width: 416,
-      height: 488,
-    },
+    height: 500,
     [theme.breakpoints.only("xs")]: {
-      width: 270,
-      height: 300,
+      height: 400,
     },
   },
   heading: {
@@ -97,7 +94,10 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   bottombox: {
-    height: 250,
+    minHeight: "50vh",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
   },
 }));
 

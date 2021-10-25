@@ -11,22 +11,17 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    height: 600,
-    [theme.breakpoints.only("md")]: {
-      height: 506,
-    },
+    minHeight: "100vh",
   },
   main: {
     maxWidth: 1280,
   },
   img: {
-    height: 600,
-    width: 859,
+    height: 630,
     [theme.breakpoints.only("md")]: {
       width: 651,
       height: 490,
       marginRight: "-8rem",
-      marginBottom: -13,
     },
     [theme.breakpoints.only("sm")]: {
       width: 605,

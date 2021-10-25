@@ -6,28 +6,18 @@ import img from "../../assets/mobile.png";
 const useStyles = makeStyles((theme) => ({
   root: {
     background: "#525252",
-    marginTop: -15,
+
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    [theme.breakpoints.up("lg")]: {
-      height: 630,
-    },
-    [theme.breakpoints.only("md")]: {
-      height: 500,
-    },
-    [theme.breakpoints.only("sm")]: {
-      height: 870,
-    },
-    [theme.breakpoints.only("xs")]: {
-      height: 650,
-    },
+    minHeight: "100vh",
   },
   main: {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     maxWidth: 1280,
+    minHeight: "100vh",
     // background:
     //   "linear-gradient(89.45deg, rgba(0, 0, 0, 0) 23.65%, rgba(0, 0, 0, 0.9) 52.99%)",
   },

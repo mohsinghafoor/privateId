@@ -10,13 +10,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     background:
       "radial-gradient(55.01% 307.1% at 88.52% 16.49%, #545454 0%, #292929 80.76%)",
-    height: "100%",
-    [theme.breakpoints.up("lg")]: {
-      height: 555,
-    },
-    [theme.breakpoints.only("md")]: {
-      height: 555,
-    },
+    minHeight: "100vh",
     width: "100%",
   },
   main: {
@@ -26,33 +20,27 @@ const useStyles = makeStyles((theme) => ({
     // alignItems: "center",
   },
   img: {
-    height: 521,
+    height: 621,
     // marginLeft: 50,
-    [theme.breakpoints.up("lg")]: {
-      marginBottom: -34,
-    },
     filter: "drop-shadow(22px -15px 21px rgba(0, 0, 0, 0.25))",
     // width: 552,
     [theme.breakpoints.only("md")]: {
-      marginLeft: "0rem",
-      width: 353,
-      height: 474,
-      marginBottom: -80,
+      height: 700,
     },
   },
   sqr: {
     position: "absolute",
-    marginTop: "5.8rem",
+    marginBottom: "23.8rem",
     marginLeft: 15,
-    width: 120,
-    height: 110,
+    width: 140,
+    height: 140,
     border: "3px solid rgba(248, 248, 248, 0.25)",
     boxSizing: "border-box",
     [theme.breakpoints.only("md")]: {
-      marginTop: "5.2rem",
-      width: 113,
-      height: 105,
-      marginRight: "7.1rem",
+      marginBottom: "27.2rem",
+      width: 160,
+      height: 170,
+      marginRight: "10.9rem",
     },
   },
   heading: {
@@ -149,10 +137,9 @@ const useStyles = makeStyles((theme) => ({
   },
   rightgrid: {
     display: "flex",
-    alignItems: "flex-start",
+    alignItems: "flex-end",
     justifyContent: "center",
-    // flexDirection: "column",
-    // alignItems: "center",
+    minHeight: "100vh",
     [theme.breakpoints.only("md")]: {
       justifyContent: "flex-end",
     },

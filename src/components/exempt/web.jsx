@@ -6,13 +6,11 @@ const useStyles = makeStyles((theme) => ({
   root: {
     background:
       "radial-gradient(71.13% 327.64% at -2.5% 28.87%, #404040 16.46%, #252525 100%)",
-    height: "100%",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    [theme.breakpoints.up("lg")]: {
-      height: 600,
-    },
+
+    minHeight: "100vh",
   },
   main: {
     maxWidth: 1280,
@@ -70,11 +68,9 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   img: {
-    height: 600,
-
+    height: 620,
     [theme.breakpoints.only("md")]: {
-      width: 420,
-      height: 487,
+      height: 787,
     },
   },
   span: {
@@ -122,6 +118,7 @@ export default function ExemptWeb() {
             display: "flex",
             justifyContent: "flex-end",
             alignItems: "flex-end",
+            minHeight: "100vh",
           }}
         >
           <img src={img} alt="" className={classes.img} />

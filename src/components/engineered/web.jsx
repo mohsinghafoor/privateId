@@ -9,8 +9,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center",
     background: "#353535",
-    height: "100%",
-    [theme.breakpoints.up("lg")]: {},
+    minHeight: "100vh",
   },
   main: {
     flexGrow: 1,
@@ -23,22 +22,10 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   img: {
-    height: 450,
-    marginBottom: -4,
-    [theme.breakpoints.up("lg")]: {
-      marginBottom: -4,
-    },
-    [theme.breakpoints.only("md")]: {
-      width: 399,
-      height: 468,
-    },
-    [theme.breakpoints.only("sm")]: {
-      width: 416,
-      height: 488,
-    },
-    [theme.breakpoints.only("xs")]: {
-      width: 330,
-      height: 400,
+    height: 850,
+    [theme.breakpoints.only("lg")]: {
+      height: 600,
+      marginBottom: -3,
     },
   },
   heading: {
@@ -109,10 +96,11 @@ export default function EngineeredWeb() {
           md={6}
           style={{
             display: "flex",
-            alignItems: "flex-end",
+            alignItems: "center",
             flexDirection: "column",
-            justifyContent: "center",
+            justifyContent: "flex-end",
             // background: "#292929",
+            minHeight: "100vh",
           }}
         >
           <Box className={classes.imgbox}>

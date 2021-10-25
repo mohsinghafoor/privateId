@@ -12,16 +12,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     flexDirection: "column",
     alignItems: "center",
-    height: "100%",
-    [theme.breakpoints.up("lg")]: {
-      height: 630,
-    },
-    [theme.breakpoints.up("md")]: {
-      height: 630,
-    },
-    [theme.breakpoints.up("xs")]: {
-      height: 700,
-    },
+    minHeight: "100vh",
     backgroundSize: "100% 100%",
   },
   main: {
