@@ -142,9 +142,16 @@ export default function DecenterlizedPadFull() {
               customer experience
             </Box>
             <Box className={classes.btnbox}>
-              <IconButton className={classes.iconbtn}>
-                <PlayCircleFilledIcon className={classes.playbtn} /> Watch Video
-              </IconButton>
+              <a
+                style={{ textDecoration: "none" }}
+                target="_blank"
+                href="https://www.youtube.com/watch?v=5iYEhEiOlrI"
+              >
+                <IconButton className={classes.iconbtn}>
+                  <PlayCircleFilledIcon className={classes.playbtn} /> Watch
+                  Video
+                </IconButton>
+              </a>
             </Box>
           </Box>
         </Box>

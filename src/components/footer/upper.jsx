@@ -83,36 +83,56 @@ export default function FooterFields() {
             <Box className={classes.parent}>
               <Box className={classes.title}>COMPANY</Box>
               <Box ml={5}>
-                <Box className={classes.dflex} mt={2}>
-                  <Box className={classes.bulletPoint} />
-                  <Box className={classes.service} ml={1}>
-                    About Us
+                <a style={{ textDecoration: "none" }} href="#" target="_blank">
+                  {" "}
+                  <Box className={classes.dflex} mt={2}>
+                    <Box className={classes.bulletPoint} />
+                    <Box className={classes.service} ml={1}>
+                      About Us
+                    </Box>
                   </Box>
-                </Box>
-                <Box className={classes.dflex} mt={2}>
-                  <Box className={classes.bulletPoint}></Box>
-                  <Box className={classes.service} ml={1}>
-                    Privacy Policy
+                </a>
+                <a
+                  style={{ textDecoration: "none" }}
+                  href="https://github.com/openinfer/PrivateIdentity/blob/master/RELEASE%20NOTES.md"
+                  target="_blank"
+                >
+                  <Box className={classes.dflex} mt={2}>
+                    <Box className={classes.bulletPoint}></Box>
+                    <Box className={classes.service} ml={1}>
+                      Privacy Policy
+                    </Box>
                   </Box>
-                </Box>
-                <Box className={classes.dflex} mt={2}>
-                  <Box className={classes.bulletPoint}></Box>
-                  <Box className={classes.service} ml={1}>
-                    Terms of Use
+                </a>
+                <a
+                  style={{ textDecoration: "none" }}
+                  href="https://github.com/openinfer/PrivateIdentity/wiki/Terms-of-Use"
+                  target="_blank"
+                >
+                  <Box className={classes.dflex} mt={2}>
+                    <Box className={classes.bulletPoint}></Box>
+                    <Box className={classes.service} ml={1}>
+                      Terms of Use
+                    </Box>
                   </Box>
-                </Box>
-                <Box className={classes.dflex} mt={2}>
-                  <Box className={classes.bulletPoint}></Box>
-                  <Box className={classes.service} ml={1}>
-                    Intellectual Property
+                </a>
+                <a style={{ textDecoration: "none" }} href="#" target="_blank">
+                  {" "}
+                  <Box className={classes.dflex} mt={2}>
+                    <Box className={classes.bulletPoint}></Box>
+                    <Box className={classes.service} ml={1}>
+                      Intellectual Property
+                    </Box>
                   </Box>
-                </Box>
-                <Box className={classes.dflex} mt={2}>
-                  <Box className={classes.bulletPoint}></Box>
-                  <Box className={classes.service} ml={1}>
-                    sales@private.id
+                </a>
+                <a style={{ textDecoration: "none" }} href="#" target="_blank">
+                  <Box className={classes.dflex} mt={2}>
+                    <Box className={classes.bulletPoint}></Box>
+                    <Box className={classes.service} ml={1}>
+                      sales@private.id
+                    </Box>
                   </Box>
-                </Box>
+                </a>
               </Box>
             </Box>
           </Grid>
@@ -121,30 +141,55 @@ export default function FooterFields() {
             <Box className={classes.parent}>
               <Box className={classes.title}>SUPPORT</Box>
               <Box ml={6}>
-                <Box className={classes.dflex} mt={2}>
-                  <Box className={classes.bulletPoint} />
-                  <Box className={classes.service} ml={1}>
-                    API Docs
+                <a
+                  style={{ textDecoration: "none" }}
+                  href="https://github.com/openinfer/PrivateIdentity/blob/master/RELEASE%20NOTES.md"
+                  target="_blank"
+                >
+                  <Box className={classes.dflex} mt={2}>
+                    <Box className={classes.bulletPoint} />
+                    <Box className={classes.service} ml={1}>
+                      API Docs
+                    </Box>
                   </Box>
-                </Box>
-                <Box className={classes.dflex} mt={2}>
-                  <Box className={classes.bulletPoint}></Box>
-                  <Box className={classes.service} ml={1}>
-                    Issue Tracker
+                </a>
+                <a
+                  style={{ textDecoration: "none" }}
+                  href="https://github.com/openinfer/PrivateIdentity/issues"
+                  target="_blank"
+                >
+                  <Box className={classes.dflex} mt={2}>
+                    <Box className={classes.bulletPoint}></Box>
+                    <Box className={classes.service} ml={1}>
+                      Issue Tracker
+                    </Box>
                   </Box>
-                </Box>
-                <Box className={classes.dflex} mt={2}>
-                  <Box className={classes.bulletPoint}></Box>
-                  <Box className={classes.service} ml={1}>
-                    Stack Overflow
+                </a>
+                <a
+                  style={{ textDecoration: "none" }}
+                  href="https://stackoverflow.com/questions/tagged/privateid?tab=Newest"
+                  target="_blank"
+                >
+                  <Box className={classes.dflex} mt={2}>
+                    <Box className={classes.bulletPoint}></Box>
+                    <Box className={classes.service} ml={1}>
+                      Stack Overflow
+                    </Box>
                   </Box>
-                </Box>
-                <Box className={classes.dflex} mt={2}>
-                  <Box className={classes.bulletPoint}></Box>
-                  <Box className={classes.service} ml={1}>
-                    support@private.id
+                </a>
+                <a
+                  style={{ textDecoration: "none" }}
+                  href="https://mail.google.com/mail/u/0/?ogbl#inbox?compose=new"
+                  target="_blank"
+                >
+                  {" "}
+                  <Box className={classes.dflex} mt={2}>
+                    <Box className={classes.bulletPoint}></Box>
+                    <Box className={classes.service} ml={1}>
+                      support@private.id
+                    </Box>
                   </Box>
-                </Box>
+                </a>
               </Box>
             </Box>
           </Grid>

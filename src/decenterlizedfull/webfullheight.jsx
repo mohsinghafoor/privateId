@@ -105,6 +105,10 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 20,
     [theme.breakpoints.only("md")]: { marginLeft: 40 },
   },
+  a: {
+    textDecoration: "none",
+    width: 100,
+  },
 }));
 
 export default function DecenterlizedFullHeight() {
@@ -123,9 +127,16 @@ export default function DecenterlizedFullHeight() {
                 Decentralized biometrics for a secure, private and delightful
                 customer experience
               </Box>
-              <IconButton className={classes.iconbtn}>
-                <PlayCircleFilledIcon className={classes.playbtn} /> Watch Video
-              </IconButton>
+              <a
+                className={classes.a}
+                target="_blank"
+                href="https://www.youtube.com/watch?v=5iYEhEiOlrI"
+              >
+                <IconButton className={classes.iconbtn}>
+                  <PlayCircleFilledIcon className={classes.playbtn} /> Watch
+                  Video
+                </IconButton>
+              </a>
             </Box>
           </Grid>
           <Grid item lg={6} md={4} className={classes.rightgrid}>
