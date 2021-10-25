@@ -85,16 +85,18 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       marginLeft: "-1.8rem",
       marginTop: "-4.5rem",
-      width: 100,
+      width: 110,
       height: 100,
     },
   },
   img: {
-    height: 557,
-    marginBottom: -20,
+    [theme.breakpoints.only("sm")]: {
+      height: 557,
+      marginBottom: -20,
+    },
     [theme.breakpoints.only("xs")]: {
       marginBottom: -25,
-      height: 420,
+      width: "100%",
     },
   },
   icon: {

@@ -19,12 +19,11 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 1280,
   },
   img: {
-    height: 473,
+    // height: 473,
     width: 482,
     marginBottom: -4,
     [theme.breakpoints.only("xs")]: {
-      width: 260,
-      height: 260,
+      width: "100%",
     },
   },
   headingbox: {

@@ -23,9 +23,9 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   img: {
-    height: 420,
+    width: "100%",
     [theme.breakpoints.only("xs")]: {
-      height: 260,
+      width: "100%",
     },
   },
   bottombox: {
@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-    alignItems: "center",
+    alignItems: "flex-start",
     width: "100%",
     height: 220,
   },
@@ -49,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFFFFF",
     textAlign: "left",
     marginTop: 30,
-
+    marginLeft: 20,
     [theme.breakpoints.only("xs")]: {
       width: "90%",
       height: 35,
@@ -69,12 +69,13 @@ const useStyles = makeStyles((theme) => ({
     /* or 22px */
     color: "#FFFFFF",
     textAlign: "left",
+
     [theme.breakpoints.only("sm")]: {
       width: 553,
       height: 53,
       fontSize: 16,
       lineHeight: "24px",
-      marginLeft: 0,
+      marginLeft: 20,
     },
     [theme.breakpoints.only("xs")]: {
       width: "90%",
@@ -88,6 +89,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     marginTop: 5,
     marginBottom: 20,
+    marginLeft: 20,
     [theme.breakpoints.only("xs")]: {
       width: "90%",
       marginLeft: 15,
@@ -106,6 +108,7 @@ const useStyles = makeStyles((theme) => ({
     /* or 26px */
     color: "#FFFFFF",
     marginRight: 20,
+
     [theme.breakpoints.only("xs")]: {
       width: 115,
       height: 35,

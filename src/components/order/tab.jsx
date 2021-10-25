@@ -20,11 +20,11 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 1280,
   },
   img: {
-    height: 620,
+    width: "100%",
     filter: "drop-shadow(22px -15px 21px rgba(0, 0, 0, 0.25))",
     [theme.breakpoints.down("xs")]: {
-      width: 210,
-      height: 260,
+      width: "100%",
+      // height: 260,
       marginBottom: -4,
     },
   },
