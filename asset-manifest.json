@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/privateId/static/css/main.86aad699.chunk.css",
-    "main.js": "/privateId/static/js/main.92c6f1b1.chunk.js",
-    "main.js.map": "/privateId/static/js/main.92c6f1b1.chunk.js.map",
+    "main.js": "/privateId/static/js/main.97dddcba.chunk.js",
+    "main.js.map": "/privateId/static/js/main.97dddcba.chunk.js.map",
     "runtime-main.js": "/privateId/static/js/runtime-main.ba1fbcc7.js",
     "runtime-main.js.map": "/privateId/static/js/runtime-main.ba1fbcc7.js.map",
     "static/js/2.93c22811.chunk.js": "/privateId/static/js/2.93c22811.chunk.js",
@@ -12,7 +12,6 @@
     "index.html": "/privateId/index.html",
     "static/css/main.86aad699.chunk.css.map": "/privateId/static/css/main.86aad699.chunk.css.map",
     "static/js/2.93c22811.chunk.js.LICENSE.txt": "/privateId/static/js/2.93c22811.chunk.js.LICENSE.txt",
-    "static/media/34.00a40f3e.png": "/privateId/static/media/34.00a40f3e.png",
     "static/media/index.css": "/privateId/static/media/FontsFree-Net-Axiforma2woff2.d33b50e9.ttf",
     "static/media/decenterlizedback.e771cea1.png": "/privateId/static/media/decenterlizedback.e771cea1.png",
     "static/media/decenterlizedbacksm.c7eb9eab.png": "/privateId/static/media/decenterlizedbacksm.c7eb9eab.png",
@@ -45,6 +44,6 @@
     "static/js/runtime-main.ba1fbcc7.js",
     "static/js/2.93c22811.chunk.js",
     "static/css/main.86aad699.chunk.css",
-    "static/js/main.92c6f1b1.chunk.js"
+    "static/js/main.97dddcba.chunk.js"
   ]
 }
