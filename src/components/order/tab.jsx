@@ -31,16 +31,16 @@ const useStyles = makeStyles((theme) => ({
   sqr: {
     position: "absolute",
     marginLeft: "1rem",
-    marginTop: "-18rem",
-    width: 145,
-    height: 139,
+    marginTop: "-21rem",
+    width: 170,
+    height: 155,
     border: "2px solid rgba(248, 248, 248, 0.25)",
     boxSizing: "border-box",
     [theme.breakpoints.down("xs")]: {
-      marginLeft: "0.3rem",
-      marginTop: "-7.5rem",
-      width: 70,
-      height: 70,
+      marginLeft: "0.5rem",
+      marginTop: "-12.5rem",
+      width: "30%",
+      height: "14%",
     },
   },
   heading: {
