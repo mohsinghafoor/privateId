@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Box, IconButton } from "@material-ui/core";
 import background from "../assets/decenterlizedbacksm.png";
 import PlayCircleFilledIcon from "@material-ui/icons/PlayCircleFilled";
-import img from "../assets/34.png";
+import img from "../assets/decenterlizedimg.png";
 import logo from "../assets/logo 1.png";
 
 const useStyles = makeStyles((theme) => ({
@@ -20,13 +20,13 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    width: "100%",
     minHeight: "100vh",
+    width: "100%",
     background:
       "linear-gradient(180.17deg, #181818 -5.4%, rgba(0, 0, 0, 0) 89.76%)",
   },
   text: {
-    maxWidth: 550,
+    maxWidth: "90%",
     height: 78,
     marginTop: 40,
     fontFamily: "Axiforma",
@@ -97,22 +97,32 @@ const useStyles = makeStyles((theme) => ({
     // background: "#2A2A2A",
   },
   img: {
-    height: 570,
-    width: 570,
+    height: 550,
     [theme.breakpoints.down("xs")]: {
-      height: 270,
-      width: 270,
-      marginBottom: 30,
+      height: 300,
     },
   },
   logo: {
     // position: "absolute",
-    marginBottom: "4rem",
+    marginTop: "1rem",
     height: 43,
-    [theme.breakpoints.down("xs")]: {
-      marginTop: "-4rem",
-    },
     // marginLeft: "-29rem",
+  },
+  logobox: {
+    height: "10vh",
+  },
+  centerbox: {
+    height: "40vh",
+    display: "flex",
+    alignItems: "flex-end",
+  },
+  bottombox: {
+    height: "50vh",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "flex-end",
+    alignItems: "center",
+    width: "100%",
   },
 }));
 
@@ -122,19 +132,25 @@ export default function DecenterlizedPadFull() {
   return (
     <div className={classes.root}>
       <div className={classes.main}>
-        <img src={logo} className={classes.logo} alt="" />
-
-        <img src={img} className={classes.img} alt="" />
-        <Box className={classes.textbox}>
-          <Box className={classes.text}>
-            Decentralized biometrics for a secure, private and delightful
-            customer experience
+        <Box className={classes.logobox}>
+          <img src={logo} className={classes.logo} alt="" />
+        </Box>
+        <Box className={classes.centerbox}>
+          <Box className={classes.textbox}>
+            <Box className={classes.text}>
+              Decentralized biometrics for a secure, private and delightful
+              customer experience
+            </Box>
+            <Box className={classes.btnbox}>
+              <IconButton className={classes.iconbtn}>
+                <PlayCircleFilledIcon className={classes.playbtn} /> Watch Video
+              </IconButton>
+            </Box>
           </Box>
-          <Box className={classes.btnbox}>
-            <IconButton className={classes.iconbtn}>
-              <PlayCircleFilledIcon className={classes.playbtn} /> Watch Video
-            </IconButton>
-          </Box>
+        </Box>
+        <Box className={classes.bottombox}>
+          {" "}
+          <img src={img} className={classes.img} alt="" />
         </Box>
       </div>
     </div>

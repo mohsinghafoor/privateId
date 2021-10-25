@@ -3,25 +3,25 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Box, IconButton } from "@material-ui/core";
 import background from "../assets/decenterlizedback.png";
 import PlayCircleFilledIcon from "@material-ui/icons/PlayCircleFilled";
-import img from "../assets/34.png";
+import img from "../assets/decenterlizedimg.png";
 import logo from "../assets/logo 2.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     backgroundImage: `url(${background})`,
     display: "flex",
-    alignItems: "flex-start",
+    alignItems: "center",
     justifyContent: "center",
-    minHeight: "100vh",
+    height: "100vh",
+
     backgroundSize: "100% 100%",
   },
   gradiant: {
     display: "flex",
-    alignItems: "center",
+    alignItems: "flex-start",
     justifyContent: "center",
-    flexDirection: "column",
     width: "100%",
-    minHeight: "100vh",
+    height: "100vh",
     background:
       "linear-gradient(90.51deg, #181818 17.05%, rgba(0, 0, 0, 0) 89.3%)",
   },
@@ -44,9 +44,6 @@ const useStyles = makeStyles((theme) => ({
     /* or 36px */
     textAlign: "left",
     color: "#D1D1D1",
-    [theme.breakpoints.only("md")]: {
-      width: 500,
-    },
   },
   btnbox: {
     width: 225,
@@ -78,11 +75,11 @@ const useStyles = makeStyles((theme) => ({
   },
   rightgrid: {
     display: "flex",
-    alignItems: "center",
-    height: "100vh",
-    justifyContent: "center",
+    alignItems: "flex-end",
+    // justifyContent: "flex-start",
     // flexDirection: "column",
     // alignItems: "center",
+    height: "100vh",
   },
   leftgrid: {
     display: "flex",
@@ -90,31 +87,22 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     alignItems: "center",
     height: "100vh",
-    [theme.breakpoints.only("md")]: {
-      alignItems: "flex-start",
-    },
   },
   img: {
-    height: 515,
-    // width: 552,
-
-    [theme.breakpoints.only("md")]: {
-      width: 555,
+    height: 800,
+    [theme.breakpoints.only("lg")]: {
+      marginLeft: "-7rem",
+      height: 700,
     },
-  },
-  logobox: {
-    display: "flex",
-    justifyContent: "center",
-    // alignItems: "center",
-    width: "100%",
+    [theme.breakpoints.only("md")]: {
+      marginLeft: "-20rem",
+      height: 670,
+    },
   },
   logo: {
     position: "absolute",
-    marginTop: 30,
-    marginLeft: "-30rem",
-    [theme.breakpoints.only("md")]: {
-      marginLeft: "-22rem",
-    },
+    marginTop: 40,
+    [theme.breakpoints.only("md")]: { marginLeft: 40 },
   },
 }));
 
