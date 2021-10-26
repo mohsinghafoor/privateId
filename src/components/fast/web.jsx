@@ -89,8 +89,8 @@ const useStyles = makeStyles((theme) => ({
     position: "absolute",
     marginBottom: "29rem",
     marginLeft: "-4rem",
-    width: "7%",
-    height: "18%",
+    width: 220,
+    height: 220,
     border: "3px solid rgba(248, 248, 248, 0.25)",
     boxSizing: "border-box",
     [theme.breakpoints.only("lg")]: {
