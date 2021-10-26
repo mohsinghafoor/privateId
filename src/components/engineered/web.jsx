@@ -23,6 +23,7 @@ const useStyles = makeStyles((theme) => ({
   },
   img: {
     height: 850,
+    marginBottom: -3,
     [theme.breakpoints.only("lg")]: {
       height: 600,
       marginBottom: -3,
