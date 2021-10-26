@@ -94,10 +94,10 @@ const useStyles = makeStyles((theme) => ({
     border: "3px solid rgba(248, 248, 248, 0.25)",
     boxSizing: "border-box",
     [theme.breakpoints.only("lg")]: {
-      marginBottom: "18rem",
-      marginLeft: "-3rem",
-      width: 135,
-      height: 135,
+      marginBottom: "22rem",
+      marginLeft: "-4rem",
+      width: 185,
+      height: 185,
     },
     [theme.breakpoints.only("md")]: {
       marginBottom: "23rem",

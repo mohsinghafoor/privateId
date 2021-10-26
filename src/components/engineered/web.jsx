@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center",
     background: "#353535",
-    minHeight: "100vh",
+    height: "100vh",
   },
   main: {
     flexGrow: 1,
@@ -28,6 +28,10 @@ const useStyles = makeStyles((theme) => ({
       height: 600,
       marginBottom: -3,
     },
+    [theme.breakpoints.only("md")]: {
+      height: 800,
+      marginBottom: -3,
+    },
   },
   heading: {
     width: 445,
@@ -40,10 +44,10 @@ const useStyles = makeStyles((theme) => ({
     /* or 53px */
     textAlign: "left",
     color: "#FFFFFF",
-    [theme.breakpoints.only("sm")]: {
-      width: 454,
-      height: 46,
-      fontSize: 24,
+    [theme.breakpoints.only("md")]: {
+      width: 600,
+      height: 110,
+      fontSize: 40,
       marginTop: 30,
     },
     [theme.breakpoints.only("xs")]: {
@@ -68,8 +72,9 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     color: "#FFFFFF",
     [theme.breakpoints.only("md")]: {
-      width: 388,
+      width: 500,
       height: 200,
+      fontSize: 24,
     },
     [theme.breakpoints.only("sm")]: {
       width: 458,
@@ -81,6 +86,12 @@ const useStyles = makeStyles((theme) => ({
       width: 330,
       fontSize: 14,
       marginBottom: 50,
+    },
+  },
+  rightbox: {
+    [theme.breakpoints.only("md")]: {
+      height: "80vh",
+      marginLeft: -100,
     },
   },
 }));
@@ -119,7 +130,7 @@ export default function EngineeredWeb() {
             alignItems: "center",
           }}
         >
-          <Box>
+          <Box className={classes.rightbox}>
             <Box className={classes.heading}>
               ENGINEERED BY PRIVATE IDENTITY
               <span className={classes.span}>®</span>

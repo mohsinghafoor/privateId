@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
   img: {
     width: "100%",
     [theme.breakpoints.only("xs")]: {
-      width: "100%",
+      width: "95%",
     },
   },
   bottombox: {

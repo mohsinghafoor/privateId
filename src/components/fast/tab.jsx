@@ -156,6 +156,10 @@ export default function FastTab() {
         </Box>
         <Box className={classes.itembox}>
           <ArrowForwardIcon className={classes.icon} />
+          <Box className={classes.text}>Local, Cloud & Continuous Auth</Box>
+        </Box>
+        <Box className={classes.itembox}>
+          <ArrowForwardIcon className={classes.icon} />
           <Box className={classes.text}>No Biometric Templates</Box>
         </Box>
 

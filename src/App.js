@@ -28,9 +28,22 @@ function App() {
       <FacialRecognition />
       <Protects />
       <Engineered />
-      <Consumption />
       <LetsTalk />
       <Footer />
+      {/* <DecenterlizedFull />
+      <Fast />
+      <Face />
+      <VoiceAuthentication />
+      <Order />
+      <Easy />
+      <Exempt />
+      <Carosoul />
+      <FacialRecognition />
+      <Protects />
+      <Engineered />
+      <Consumption />
+      <LetsTalk />
+      <Footer /> */}
     </div>
   );
 }

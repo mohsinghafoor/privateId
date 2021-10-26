@@ -32,9 +32,8 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
   },
   img: {
-    height: 500,
     [theme.breakpoints.only("xs")]: {
-      height: 400,
+      width: "90%",
     },
   },
   heading: {
