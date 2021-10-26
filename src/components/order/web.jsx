@@ -20,22 +20,31 @@ const useStyles = makeStyles((theme) => ({
     // alignItems: "center",
   },
   img: {
-    height: 621,
+    height: 700,
     // marginLeft: 50,
     filter: "drop-shadow(22px -15px 21px rgba(0, 0, 0, 0.25))",
     // width: 552,
+    [theme.breakpoints.up("xl")]: {
+      height: 1000,
+    },
     [theme.breakpoints.only("md")]: {
       height: 700,
     },
   },
   sqr: {
     position: "absolute",
-    marginBottom: "23.8rem",
-    marginLeft: 15,
-    width: 140,
-    height: 140,
+    marginBottom: "26.8rem",
+    marginLeft: 20,
+    width: 155,
+    height: 150,
     border: "3px solid rgba(248, 248, 248, 0.25)",
     boxSizing: "border-box",
+    [theme.breakpoints.up("xl")]: {
+      width: 220,
+      height: 210,
+      marginBottom: "38rem",
+      marginLeft: 25,
+    },
     [theme.breakpoints.only("md")]: {
       marginBottom: "27.2rem",
       width: 160,
@@ -52,6 +61,11 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 30,
     lineHeight: "47px",
     color: "#FFFFFF",
+    [theme.breakpoints.up("xl")]: {
+      width: 350,
+      fontSize: 40,
+      height: 90,
+    },
     [theme.breakpoints.only("md")]: {
       height: 77,
       maxWidth: 255,
@@ -67,6 +81,12 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "25px",
     textAlign: "left",
     color: "#FFFFFF",
+    [theme.breakpoints.up("xl")]: {
+      width: 650,
+      fontSize: 26,
+      height: 160,
+      lineHeight: "27px",
+    },
     [theme.breakpoints.only("md")]: {
       height: 116,
     },
@@ -74,6 +94,7 @@ const useStyles = makeStyles((theme) => ({
   mailbox: {
     display: "flex",
     height: 70,
+
     [theme.breakpoints.only("md")]: {
       height: 50,
     },
@@ -94,6 +115,10 @@ const useStyles = makeStyles((theme) => ({
     /* identical to box height, or 19px */
 
     color: "#999999",
+    [theme.breakpoints.up("xl")]: {
+      width: 440,
+      height: 35,
+    },
     [theme.breakpoints.only("md")]: {
       width: 316,
     },
@@ -111,6 +136,11 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 0,
     marginLeft: 10,
     color: "#FFFFFF",
+    [theme.breakpoints.up("xl")]: {
+      width: 160,
+      height: 35,
+      fontSize: 14,
+    },
     [theme.breakpoints.only("md")]: {
       width: 137,
       height: 25,
@@ -128,6 +158,11 @@ const useStyles = makeStyles((theme) => ({
     /* or 17px */
     textAlign: "left",
     color: "#FFFFFF",
+    [theme.breakpoints.up("xl")]: {
+      width: 600,
+      fontSize: 18,
+      height: 60,
+    },
   },
   span: {
     textDecoration: "underline",
@@ -188,7 +223,7 @@ export default function OrderWeb() {
             </Box>
           </Box>
         </Grid>
-        <Grid item lg={5} md={5} className={classes.rightgrid}>
+        <Grid item xl={6} lg={5} md={5} className={classes.rightgrid}>
           <img src={img} alt="Girl Picture" className={classes.img} />
           <Box className={classes.sqr} />
         </Grid>

@@ -44,6 +44,14 @@ const useStyles = makeStyles((theme) => ({
     /* or 36px */
     textAlign: "left",
     color: "#D1D1D1",
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 45,
+      width: 705,
+    },
+    [theme.breakpoints.up("md")]: {
+      fontSize: 35,
+      width: 555,
+    },
   },
   btnbox: {
     width: 225,
@@ -89,7 +97,7 @@ const useStyles = makeStyles((theme) => ({
     height: "100vh",
   },
   img: {
-    height: 800,
+    height: 900,
     [theme.breakpoints.only("lg")]: {
       marginLeft: "-7rem",
       height: 650,
@@ -103,6 +111,10 @@ const useStyles = makeStyles((theme) => ({
     position: "absolute",
     marginTop: 40,
     marginLeft: 20,
+    [theme.breakpoints.up("xl")]: {
+      marginTop: 60,
+      marginLeft: -100,
+    },
     [theme.breakpoints.only("md")]: { marginLeft: 40 },
   },
   a: {

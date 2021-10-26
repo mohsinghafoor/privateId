@@ -25,15 +25,18 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "center",
     background: "#2A2A2A",
-    minHeight: "40vh",
+    minHeight: "30vh",
     [theme.breakpoints.down("sm")]: {
       marginBottom: 70,
     },
+    [theme.breakpoints.down("xs")]: {
+      minHeight: "50vh",
+    },
   },
   heading: {
-    width: 372,
-    height: 69,
-    fontSize: 24,
+    width: 550,
+    height: 115,
+    fontSize: 40,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
@@ -44,42 +47,48 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 40,
     [theme.breakpoints.only("xs")]: {
       width: "100%",
-      height: 49,
-      fontSize: 20,
+      height: 95,
+      fontSize: 24,
     },
   },
   itembox: {
     display: "flex",
     alignItems: "center",
-    height: 35,
+    height: 45,
+    [theme.breakpoints.only("xs")]: {
+      height: 45,
+    },
   },
   text: {
-    width: 400,
+    width: 650,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 18,
+    fontSize: 28,
     lineHeight: "120%",
     /* or 22px */
     textAlign: "left",
     color: "#FFFFFF",
     [theme.breakpoints.only("xs")]: {
-      width: "95%",
-      fontSize: 14,
+      width: "100%",
+      fontSize: 16,
     },
   },
   imgbox: {
     backgroundImage: `url(${background})`,
     backgroundSize: "100% 100%",
     width: "100%",
-    minHeight: "40vh",
+    minHeight: "70vh",
+    [theme.breakpoints.down("xs")]: {
+      minHeight: "50vh",
+    },
   },
   sqr: {
     position: "absolute",
-    marginLeft: "-2.5rem",
-    marginTop: "-6rem",
-    width: 135,
-    height: 129,
+    marginLeft: "-5.5rem",
+    marginTop: "-12rem",
+    width: 250,
+    height: 250,
     border: "3px solid rgba(248, 248, 248, 0.25)",
     boxSizing: "border-box",
     [theme.breakpoints.down("xs")]: {
@@ -90,8 +99,12 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   img: {
+    [theme.breakpoints.only("md")]: {
+      height: 1000,
+      marginBottom: -25,
+    },
     [theme.breakpoints.only("sm")]: {
-      height: 557,
+      height: 750,
       marginBottom: -20,
     },
     [theme.breakpoints.only("xs")]: {
@@ -102,6 +115,8 @@ const useStyles = makeStyles((theme) => ({
   icon: {
     color: "#FFFFFF",
     marginRight: 5,
+    width: 35,
+    height: 35,
     [theme.breakpoints.only("xs")]: {
       width: 25,
       height: 25,
@@ -109,7 +124,10 @@ const useStyles = makeStyles((theme) => ({
   },
   gradiant: {
     background: "rgba(0, 0, 0, 0.55)",
-    minHeight: "50vh",
+    minHeight: "70vh",
+    [theme.breakpoints.down("xs")]: {
+      minHeight: "50vh",
+    },
   },
   upperbox: {
     display: "flex",
@@ -132,7 +150,6 @@ export default function FastTab() {
           </Box>
         </div>
       </Box>
-
       <Box className={classes.rightbox}>
         <Box className={classes.heading}>
           Face + Voice + Fingerprint Recognition

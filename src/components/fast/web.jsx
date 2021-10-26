@@ -30,13 +30,14 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
   },
   rightbox: {
-    [theme.breakpoints.down("sm")]: {
-      marginBottom: 30,
+    [theme.breakpoints.only("md")]: {
+      marginTop: "-21rem",
+      marginLeft: "-11rem",
     },
   },
   heading: {
-    width: 602,
-    height: 110,
+    width: 552,
+    height: 130,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
@@ -45,56 +46,58 @@ const useStyles = makeStyles((theme) => ({
     /* or 48px */
     color: "#FFFFFF",
     textAlign: "left",
+    [theme.breakpoints.up("xl")]: {
+      width: 770,
+      fontSize: 55,
+      height: 145,
+    },
     [theme.breakpoints.only("md")]: {
       width: 432,
       height: 105,
       fontSize: 36,
       marginTop: 40,
     },
-    [theme.breakpoints.only("sm")]: {
-      width: 372,
-      height: 49,
-      fontSize: 24,
-    },
-    [theme.breakpoints.only("xs")]: {
-      width: 330,
-      height: 49,
-      fontSize: 22,
-    },
   },
   itembox: {
     display: "flex",
     alignItems: "center",
-    height: 40,
+    height: 45,
+    [theme.breakpoints.up("xl")]: {
+      height: 60,
+    },
   },
   text: {
-    width: 400,
+    width: 555,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 18,
+    fontSize: 22,
     lineHeight: "120%",
     /* or 22px */
     textAlign: "left",
     color: "#FFFFFF",
-    [theme.breakpoints.only("xs")]: {
-      width: 330,
-      fontSize: 16,
+    [theme.breakpoints.up("xl")]: {
+      width: 900,
+      fontSize: 40,
+    },
+    [theme.breakpoints.only("md")]: {
+      width: 640,
+      fontSize: 28,
     },
   },
   sqr: {
     position: "absolute",
-    marginBottom: "17rem",
+    marginBottom: "29rem",
     marginLeft: "-4rem",
-    width: 215,
-    height: 215,
+    width: "7%",
+    height: "18%",
     border: "3px solid rgba(248, 248, 248, 0.25)",
     boxSizing: "border-box",
     [theme.breakpoints.only("lg")]: {
-      marginBottom: "17rem",
-      marginLeft: "-4rem",
-      width: 160,
-      height: 160,
+      marginBottom: "18rem",
+      marginLeft: "-3rem",
+      width: 135,
+      height: 135,
     },
     [theme.breakpoints.only("md")]: {
       marginBottom: "23rem",
@@ -104,11 +107,15 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   img: {
-    height: 600,
+    height: 1000,
     filter: " drop-shadow(17px 4px 11px rgba(0, 0, 0, 0.2))",
-    marginBottom: -15,
+    marginBottom: -27,
+    [theme.breakpoints.only("lg")]: {
+      height: "95%",
+      marginBottom: -20,
+    },
     [theme.breakpoints.only("md")]: {
-      height: 760,
+      height: 800,
       marginBottom: -21,
       marginLeft: "9rem",
     },
@@ -127,6 +134,9 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "flex-end",
     minHeight: "100vh",
+    [theme.breakpoints.up("xl")]: {
+      justifyContent: "center",
+    },
   },
   rightgrid: {
     display: "flex",
@@ -161,6 +171,12 @@ export default function FastWeb() {
             <Box className={classes.rightbox}>
               <Box className={classes.heading}>
                 Face + Voice + Fingerprint Recognition
+              </Box>
+              <Box className={classes.itembox}>
+                <ArrowForwardIcon className={classes.icon} />
+                <Box className={classes.text}>
+                  Local, Cloud & Continuous Auth
+                </Box>
               </Box>
               <Box className={classes.itembox}>
                 <ArrowForwardIcon className={classes.icon} />

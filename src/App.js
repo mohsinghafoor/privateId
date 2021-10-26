@@ -27,17 +27,10 @@ function App() {
       <Carosoul />
       <FacialRecognition />
       <Protects />
-      <LetsTalk />
-      <Footer />
-      {/* 
-      <Exempt />
-      <Carosoul />
-      <FacialRecognition />
-      <Protects />
       <Engineered />
       <Consumption />
       <LetsTalk />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }

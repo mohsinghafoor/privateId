@@ -44,6 +44,10 @@ const useStyles = makeStyles((theme) => ({
     textTransform: "uppercase",
 
     color: "#FFFFFF",
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 36,
+      width: 900,
+    },
   },
   headingbox: {
     width: 900,
@@ -51,6 +55,12 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    [theme.breakpoints.up("xl")]: {
+      justifyContent: "flex-start",
+      alignItems: "flex-start",
+      width: 1040,
+      marginBottom: 30,
+    },
   },
   cardbox: {
     display: "flex",
@@ -58,6 +68,10 @@ const useStyles = makeStyles((theme) => ({
     width: 660,
     marginTop: 20,
     marginLeft: 80,
+    [theme.breakpoints.up("xl")]: {
+      width: 800,
+      marginLeft: -50,
+    },
   },
   cardbox1: {
     display: "flex",
@@ -73,6 +87,10 @@ const useStyles = makeStyles((theme) => ({
     width: 209,
     height: 190,
     background: "#434242",
+    [theme.breakpoints.up("xl")]: {
+      width: 255,
+      height: 230,
+    },
   },
   badge: {
     width: 69,
@@ -80,6 +98,11 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 5,
     marginTop: 10,
     marginBottom: 5,
+    [theme.breakpoints.up("xl")]: {
+      width: 80,
+      height: 40,
+      marginTop: 0,
+    },
   },
   heading: {
     maxWidth: 90,
@@ -93,14 +116,10 @@ const useStyles = makeStyles((theme) => ({
     /* or 18px */
     textAlign: "left",
     color: "#FFFFFF",
-  },
-  line: {
-    width: 75,
-    height: 2,
-    marginLeft: 10,
-    marginLeft: 10,
-    background: "#C4C4C4",
-    marginBottom: 10,
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 20,
+      height: 64,
+    },
   },
   text: {
     maxWidth: 174,
@@ -114,8 +133,29 @@ const useStyles = makeStyles((theme) => ({
     /* or 16px */
     textAlign: "left",
     color: "#FFFFFF",
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 16,
+      height: 110,
+      maxWidth: 230,
+    },
   },
-
+  heading1: {
+    maxWidth: 90,
+    height: 44,
+    marginLeft: 10,
+    fontFamily: "Axiforma",
+    fontStyle: "normal",
+    fontWeight: 800,
+    fontSize: 14,
+    lineHeight: "131.5%",
+    /* or 18px */
+    textAlign: "left",
+    color: "#FFFFFF",
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 20,
+      height: 74,
+    },
+  },
   subheading: {
     maxWidth: 174,
     marginTop: -10,
@@ -129,41 +169,18 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     color: "#FFFFFF",
     height: 25,
+    [theme.breakpoints.up("xl")]: {
+      position: "absolute",
+      marginTop: 3,
+    },
   },
   img: {
     height: 600,
     [theme.breakpoints.up("xl")]: {
-      height: 900,
+      height: 1000,
     },
   },
-  blackline: {
-    position: "absolute",
-    width: 1076,
-    height: 145,
-    background: "#000000",
-    borderRadius: 204,
-    marginLeft: "-37rem",
-    marginTop: "10rem",
-    display: "flex",
-    justifyContent: "flex-end",
-    alignItems: "center",
-  },
-  linetext: {
-    width: 233,
-    height: 117,
-    fontFamily: "Axiforma",
-    fontStyle: "normal",
-    fontWeight: 300,
-    fontSize: 30,
-    lineHeight: "131.5%",
-    /* or 39px */
-    textAlign: "left",
-    textTransform: "uppercase",
 
-    color: "#FFFFFF",
-    marginTop: 50,
-    marginRight: 70,
-  },
   box: {
     position: "absolute",
     marginRight: "11rem",
@@ -173,10 +190,10 @@ const useStyles = makeStyles((theme) => ({
     border: "2px solid rgba(248, 248, 248, 0.25)",
     boxSizing: "border-box",
     [theme.breakpoints.up("xl")]: {
-      marginRight: "17rem",
-      marginBottom: "22rem",
-      width: 275,
-      height: 275,
+      marginRight: "19rem",
+      marginBottom: "24rem",
+      width: 285,
+      height: 285,
     },
   },
 }));
@@ -206,7 +223,7 @@ export default function FaceWeb() {
             <Box className={classes.cardbox}>
               <Box className={classes.sqr}>
                 <img src={badge} className={classes.badge} alt="" />
-                <Box className={classes.heading}>Phone Unlock</Box>
+                <Box className={classes.heading}>PHONE UNLOCK</Box>
 
                 <Box className={classes.text}>
                   Unlock devices and provide MFA for an unlimited number of user
@@ -255,12 +272,7 @@ export default function FaceWeb() {
               </Box>
               <Box className={classes.sqr}>
                 <img src={badge} className={classes.badge} alt="" />
-                <Box
-                  className={classes.heading}
-                  style={{ maxWidth: 167, height: 30 }}
-                >
-                  VERIFIED IDENTITY
-                </Box>
+                <Box className={classes.heading1}>VERIFIED IDENTITY</Box>
                 <Box className={classes.subheading}>
                   for Identity Providers (IdPs)
                 </Box>

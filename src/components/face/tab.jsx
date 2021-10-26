@@ -232,7 +232,7 @@ export default function FaceTab() {
       <Box className={classes.lowerbox}>
         <Box className={classes.sqr}>
           <Box className={classes.headingbadgebox}>
-            <Box className={classes.heading}>Phone Unlock</Box>
+            <Box className={classes.heading}>PHONE UNLOCK</Box>
             <img src={badge} className={classes.badge} alt="" />
           </Box>
           <Box className={classes.text}>

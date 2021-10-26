@@ -32,14 +32,14 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 22,
+    fontSize: 30,
     lineHeight: "120%",
     /* or 36px */
     textAlign: "left",
     color: "#D1D1D1",
     marginLeft: 30,
     [theme.breakpoints.down("xs")]: {
-      fontSize: 18,
+      fontSize: 26,
       width: "90%",
       height: 90,
       marginLeft: 20,
@@ -97,7 +97,7 @@ const useStyles = makeStyles((theme) => ({
     // background: "#2A2A2A",
   },
   img: {
-    width: "75%",
+    width: "100%",
     [theme.breakpoints.down("xs")]: {
       width: "100%",
     },
@@ -109,20 +109,30 @@ const useStyles = makeStyles((theme) => ({
     // marginLeft: "-29rem",
   },
   logobox: {
-    height: "10vh",
+    height: "15vh",
+    [theme.breakpoints.down("xs")]: {
+      height: "10vh",
+    },
   },
   centerbox: {
-    height: "40vh",
+    height: "35vh",
     display: "flex",
-    alignItems: "center",
+    alignItems: "flex-end",
+    [theme.breakpoints.only("sm")]: {
+      alignItems: "flex-start",
+      height: "30vh",
+    },
   },
   bottombox: {
-    height: "50vh",
+    height: "55vh",
     display: "flex",
     flexDirection: "column",
     justifyContent: "flex-end",
     alignItems: "center",
     width: "100%",
+    [theme.breakpoints.only("sm")]: {
+      height: "55vh",
+    },
   },
 }));
 

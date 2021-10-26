@@ -30,12 +30,18 @@ const useStyles = makeStyles((theme) => ({
   },
   sqr: {
     position: "absolute",
-    marginLeft: "1rem",
-    marginTop: "-21rem",
-    width: 170,
-    height: 155,
-    border: "2px solid rgba(248, 248, 248, 0.25)",
+    marginLeft: "2rem",
+    marginTop: "-34rem",
+    width: 290,
+    height: 270,
+    border: "3px solid rgba(248, 248, 248, 0.25)",
     boxSizing: "border-box",
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: "1.5rem",
+      marginTop: "-27.5rem",
+      width: "30%",
+      height: "23%",
+    },
     [theme.breakpoints.down("xs")]: {
       marginLeft: "0.5rem",
       marginTop: "-12.5rem",
@@ -44,17 +50,25 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   heading: {
-    width: 237,
+    width: 600,
     height: 70,
+    fontSize: 32,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 24,
+
     textDecoration: "underline",
     lineHeight: "37px",
     color: "#FFFFFF",
     textAlign: "left",
     marginTop: 30,
+    [theme.breakpoints.only("sm")]: {
+      maxWidth: 500,
+      height: 50,
+      fontSize: 32,
+      marginTop: 30,
+      marginLeft: 20,
+    },
     [theme.breakpoints.down("xs")]: {
       width: "90%",
       height: 50,
@@ -64,16 +78,23 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   text: {
-    maxWidth: 555,
+    maxWidth: 950,
     height: 120,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 16,
+    fontSize: 24,
     marginLeft: 20,
-    lineHeight: "25px",
+    lineHeight: "27px",
     textAlign: "left",
     color: "#FFFFFF",
+    [theme.breakpoints.only("sm")]: {
+      maxWidth: 740,
+      height: 100,
+      fontSize: 20,
+      marginTop: 30,
+      marginLeft: 20,
+    },
     [theme.breakpoints.down("xs")]: {
       width: "90%",
       height: 119,
@@ -85,7 +106,7 @@ const useStyles = makeStyles((theme) => ({
   mailbox: {
     display: "flex",
     justifyContent: "space-between",
-    maxWidth: 550,
+    width: "90%",
     marginBottom: 30,
     marginLeft: 20,
     [theme.breakpoints.down("xs")]: {
@@ -94,7 +115,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   input: {
-    width: 387,
+    width: 650,
     height: 30,
     background: "none",
     border: 0,
@@ -104,40 +125,51 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 16,
+    fontSize: 22,
     lineHeight: "138.5%",
     /* identical to box height, or 19px */
 
     color: "#999999",
+    [theme.breakpoints.only("sm")]: {
+      width: 450,
+
+      fontSize: 18,
+    },
     [theme.breakpoints.down("xs")]: {
       width: "65%",
     },
   },
   btn: {
-    width: 143,
-    height: 34,
+    width: 200,
+    height: 40,
     background: "#383838",
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 12,
+    fontSize: 16,
     lineHeight: "120%",
     /* or 14px */
     borderRadius: 0,
+    marginLeft: 10,
     textTransform: "capitalize",
     color: "#FFFFFF",
+    [theme.breakpoints.only("sm")]: {
+      width: 140,
+
+      fontSize: 14,
+    },
     [theme.breakpoints.down("xs")]: {
       width: "30%",
       fontSize: 10,
     },
   },
   btmtext: {
-    maxWidth: 555,
+    maxWidth: 900,
     height: 53,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 16,
+    fontSize: 22,
     marginLeft: 20,
     lineHeight: "138.5%",
     /* or 17px */
@@ -163,6 +195,12 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center",
   },
+  lowerbox: {
+    width: "100%",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "flex-start",
+  },
 }));
 
 export default function OrderTab() {
@@ -175,31 +213,33 @@ export default function OrderTab() {
           <img src={img} alt="Girl Picture" className={classes.img} />
           <Box className={classes.sqr} />
         </Box>
-        <Box className={classes.heading}>Order Private ID ®</Box>
-        <Box className={classes.text}>
-          Private ID® is currently available to a limited number of
-          organizations per geographic area. Orders will be fulfilled on a
-          first-come, first-served basis.
-        </Box>
-        <form className={classes.mailbox}>
-          {/* <Box className={classes.label}>Enter Email:</Box> */}
-          <input
-            type="text"
-            className={classes.input}
-            placeholder="Enter Email"
-          />
-          <Button className={classes.btn}>Join the Waitlist</Button>
-        </form>
-        <Box className={classes.btmtext}>
-          By pressing Join, I agree to receive communications from Private
-          Identity and to the
-          <a href="#" className={classes.span}>
-            Privacy Policy
-          </a>
-          and
-          <a href="#" className={classes.span}>
-            Terms of Service.
-          </a>
+        <Box className={classes.lowerbox}>
+          <Box className={classes.heading}>Order Private ID ®</Box>
+          <Box className={classes.text}>
+            Private ID® is currently available to a limited number of
+            organizations per geographic area. Orders will be fulfilled on a
+            first-come, first-served basis.
+          </Box>
+          <form className={classes.mailbox}>
+            {/* <Box className={classes.label}>Enter Email:</Box> */}
+            <input
+              type="text"
+              className={classes.input}
+              placeholder="Enter Email"
+            />
+            <Button className={classes.btn}>Join the Waitlist</Button>
+          </form>
+          <Box className={classes.btmtext}>
+            By pressing Join, I agree to receive communications from Private
+            Identity and to the
+            <a href="#" className={classes.span}>
+              Privacy Policy
+            </a>
+            and
+            <a href="#" className={classes.span}>
+              Terms of Service.
+            </a>
+          </Box>
         </Box>
       </div>
     </div>

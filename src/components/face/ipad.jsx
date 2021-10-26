@@ -49,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
   cardbox: {
     display: "flex",
     justifyContent: "space-between",
-    width: 430,
+    width: 490,
     marginTop: 10,
     marginLeft: 80,
   },
@@ -58,13 +58,13 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-    width: 209,
-    height: 190,
+    width: 239,
+    height: 220,
     background: "#434242",
   },
   badge: {
-    width: 69,
-    height: 32,
+    width: 80,
+    height: 40,
     marginLeft: 5,
     marginTop: 10,
     marginBottom: 5,
@@ -76,28 +76,21 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 800,
-    fontSize: 14,
+    fontSize: 18,
     lineHeight: "131.5%",
     /* or 18px */
     textAlign: "left",
     color: "#FFFFFF",
   },
-  line: {
-    width: 75,
-    height: 2,
-    marginLeft: 10,
-    marginLeft: 10,
-    background: "#C4C4C4",
-    marginBottom: 10,
-  },
+
   text: {
-    maxWidth: 174,
+    maxWidth: 224,
     height: 100,
     marginLeft: 10,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 12,
+    fontSize: 14,
     lineHeight: "131.5%",
     /* or 16px */
     textAlign: "left",
@@ -106,12 +99,12 @@ const useStyles = makeStyles((theme) => ({
 
   subheading: {
     maxWidth: 174,
-    marginTop: -10,
+    marginTop: -5,
     marginLeft: 10,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 12,
+    fontSize: 14,
     lineHeight: "131.5%",
     /* or 16px */
     textAlign: "left",
@@ -119,40 +112,13 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFFFFF",
   },
   img: {
-    height: 600,
+    height: 650,
   },
-  blackline: {
-    position: "absolute",
-    width: 1076,
-    height: 145,
-    background: "#000000",
-    borderRadius: 204,
-    marginLeft: "-37rem",
-    marginTop: "10rem",
-    display: "flex",
-    justifyContent: "flex-end",
-    alignItems: "center",
-  },
-  linetext: {
-    width: 233,
-    height: 117,
-    fontFamily: "Axiforma",
-    fontStyle: "normal",
-    fontWeight: 300,
-    fontSize: 30,
-    lineHeight: "131.5%",
-    /* or 39px */
-    textAlign: "left",
-    textTransform: "uppercase",
 
-    color: "#FFFFFF",
-    marginTop: 50,
-    marginRight: 70,
-  },
   box: {
     position: "absolute",
-    marginRight: "11rem",
-    marginBottom: "14rem",
+    marginRight: "12rem",
+    marginBottom: "15rem",
     width: 200,
     height: 200,
     border: "2px solid rgba(248, 248, 248, 0.25)",
@@ -161,9 +127,9 @@ const useStyles = makeStyles((theme) => ({
   leftgrid: {
     display: "flex",
     justifyContent: "center",
-    alignItems: "flex-end",
+    alignItems: "center",
     flexDirection: "column",
-    minHeight: "100vh",
+    height: "80vh",
   },
   rightgrid: {
     display: "flex",
@@ -188,7 +154,7 @@ export default function FaceIpad() {
             <Box className={classes.cardbox}>
               <Box className={classes.sqr}>
                 <img src={badge} className={classes.badge} alt="" />
-                <Box className={classes.heading}>Phone Unlock</Box>
+                <Box className={classes.heading}>PHONE UNLOCK</Box>
 
                 <Box className={classes.text}>
                   Unlock devices and provide MFA for an unlimited number of user
