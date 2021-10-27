@@ -85,16 +85,16 @@ const useStyles = makeStyles((theme) => ({
   },
   sqr: {
     position: "absolute",
-    marginLeft: "-4.5rem",
-    marginTop: "-11rem",
-    width: 180,
-    height: 180,
+    marginLeft: "-3rem",
+    marginTop: "-8rem",
+    width: 160,
+    height: 160,
     border: "3px solid rgba(248, 248, 248, 0.25)",
     boxSizing: "border-box",
     [theme.breakpoints.only("md")]: {
-      marginBottom: "1rem",
-      width: 250,
-      height: 250,
+      marginBottom: "3rem",
+      width: 220,
+      height: 220,
       marginLeft: "-5.5rem",
     },
     [theme.breakpoints.down("xs")]: {

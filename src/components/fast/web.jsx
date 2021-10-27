@@ -92,7 +92,7 @@ const useStyles = makeStyles((theme) => ({
     border: "3px solid rgba(248, 248, 248, 0.25)",
     boxSizing: "border-box",
     [theme.breakpoints.only("lg")]: {
-      marginBottom: "25rem",
+      marginBottom: "23rem",
       marginLeft: "22rem",
       width: 180,
       height: 180,
