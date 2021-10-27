@@ -100,6 +100,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     [theme.breakpoints.down("xs")]: {
       width: "100%",
+      // height: 600,
     },
   },
   logo: {
@@ -109,22 +110,22 @@ const useStyles = makeStyles((theme) => ({
     // marginLeft: "-29rem",
   },
   logobox: {
-    height: "15vh",
-    [theme.breakpoints.down("xs")]: {
-      height: "10vh",
+    height: "10vh",
+    [theme.breakpoints.only("sm")]: {
+      height: "15vh",
     },
   },
   centerbox: {
-    height: "35vh",
+    height: "20vh",
     display: "flex",
-    alignItems: "flex-end",
+    alignItems: "center",
     [theme.breakpoints.only("sm")]: {
       alignItems: "flex-start",
       height: "30vh",
     },
   },
   bottombox: {
-    height: "55vh",
+    height: "70vh",
     display: "flex",
     flexDirection: "column",
     justifyContent: "flex-end",

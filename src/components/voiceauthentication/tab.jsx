@@ -20,8 +20,12 @@ const useStyles = makeStyles((theme) => ({
   },
   img: {
     // height: 473,
-    width: 482,
-    marginBottom: -4,
+    width: "80%",
+
+    [theme.breakpoints.only("sm")]: {
+      width: 482,
+      marginBottom: -4,
+    },
     [theme.breakpoints.only("xs")]: {
       width: "100%",
     },
@@ -30,24 +34,31 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "flex-start",
     justifyContent: "flex-start",
-    width: 600,
+    width: "90%",
+    [theme.breakpoints.only("sm")]: {
+      width: 600,
+    },
     [theme.breakpoints.only("xs")]: {
       width: "100%",
     },
   },
   mainheading: {
-    width: 307,
+    width: 600,
     height: 41,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 800,
-    fontSize: 24,
+    fontSize: 40,
     lineHeight: "131.5%",
     /* or 39px */
     textAlign: "left",
     padding: "50px 30px 20px 30px",
 
     color: "#FFFFFF",
+    [theme.breakpoints.only("sm")]: {
+      width: 307,
+      fontSize: 24,
+    },
     [theme.breakpoints.only("xs")]: {
       width: 250,
       fontSize: 18,
@@ -74,24 +85,37 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "flex-start",
     // alignItems: "center",
-    width: 503,
-    height: 94,
+    width: "90%",
+    height: 114,
     marginBottom: 10,
     background: "#434242",
+    [theme.breakpoints.only("sm")]: {
+      width: "90%",
+      height: 114,
+    },
     [theme.breakpoints.only("xs")]: {
       width: "90%",
       height: 90,
     },
   },
   headingbadgebox: {
-    width: "100%",
+    width: "95%",
     display: "flex",
     alignItems: "flex-start",
+    justifyContent: "space-between",
+    [theme.breakpoints.only("md")]: {
+      justifyContent: "space-between",
+    },
   },
   badge: {
-    width: 59,
-    height: 27,
+    width: 90,
+    height: 43,
     marginRight: 10,
+    [theme.breakpoints.only("sm")]: {
+      width: 59,
+      height: 27,
+      marginRight: 10,
+    },
     [theme.breakpoints.only("xs")]: {
       width: 50,
       height: 24,
@@ -100,18 +124,26 @@ const useStyles = makeStyles((theme) => ({
   },
 
   heading: {
-    width: 465,
+    width: 485,
     height: 30,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 16,
+    fontSize: 24,
     textAlign: "left",
     lineHeight: "131.5%",
     /* or 21px */
     marginTop: 0,
     color: "#FFFFFF",
     marginLeft: 20,
+    [theme.breakpoints.only("sm")]: {
+      width: 465,
+      fontSize: 16,
+      height: 30,
+      height: 35,
+      marginLeft: 20,
+      marginTop: 0,
+    },
     [theme.breakpoints.only("xs")]: {
       width: "90%",
       fontSize: 12,
@@ -123,17 +155,23 @@ const useStyles = makeStyles((theme) => ({
   },
 
   text: {
-    maxWidth: 465,
+    maxWidth: "95%",
     height: 35,
     marginLeft: 20,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 12,
+    fontSize: 18,
     lineHeight: "131.5%",
     /* or 16px */
     textAlign: "left",
     color: "#FFFFFF",
+    [theme.breakpoints.only("sm")]: {
+      width: "95%",
+      fontSize: 14,
+      marginLeft: 20,
+      height: 35,
+    },
     [theme.breakpoints.only("xs")]: {
       width: "95%",
       fontSize: 10,
@@ -141,9 +179,12 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   span: {
-    fontSize: 14,
+    fontSize: 24,
     fontWeight: "bold",
-    marginLeft: 3,
+
+    [theme.breakpoints.only("sm")]: {
+      fontSize: 14,
+    },
     [theme.breakpoints.only("xs")]: {
       fontSize: 12,
     },
@@ -234,7 +275,7 @@ export default function VoiceAuthenticationTab() {
         <Box className={classes.sqr}>
           <Box className={classes.headingbadgebox}>
             <Box className={classes.heading}>
-              Augmented<span className={classes.span}>Merge</span> for Amazon
+              Augmented <span className={classes.span}>Merge</span> for Amazon
               Connect®
             </Box>
             <img src={badge} className={classes.badge} alt="" />

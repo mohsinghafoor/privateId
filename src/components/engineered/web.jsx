@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
   },
   main: {
     flexGrow: 1,
-    maxWidth: 1280,
+    maxWidth: 1920,
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -22,10 +22,10 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   img: {
-    height: 850,
+    height: 1000,
     marginBottom: -3,
     [theme.breakpoints.only("lg")]: {
-      height: 600,
+      height: 700,
       marginBottom: -3,
     },
     [theme.breakpoints.only("md")]: {
@@ -44,6 +44,11 @@ const useStyles = makeStyles((theme) => ({
     /* or 53px */
     textAlign: "left",
     color: "#FFFFFF",
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 50,
+      height: 141,
+      width: 545,
+    },
     [theme.breakpoints.only("md")]: {
       width: 600,
       height: 110,
@@ -71,6 +76,11 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "131.5%",
     textAlign: "left",
     color: "#FFFFFF",
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 28,
+      height: 111,
+      width: 700,
+    },
     [theme.breakpoints.only("md")]: {
       width: 500,
       height: 200,

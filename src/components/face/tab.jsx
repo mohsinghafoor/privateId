@@ -19,8 +19,12 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 1280,
   },
   img: {
-    width: 411,
+    width: 600,
     marginBottom: -4,
+    [theme.breakpoints.only("sm")]: {
+      width: 451,
+      marginBottom: -4,
+    },
     [theme.breakpoints.only("xs")]: {
       width: "100%",
       marginBottom: 0,
@@ -30,24 +34,33 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "flex-start",
     justifyContent: "flex-start",
-    width: 600,
+    width: 900,
+    marginTop: 30,
+    [theme.breakpoints.only("sm")]: {
+      width: 600,
+    },
     [theme.breakpoints.only("xs")]: {
       width: "100%",
     },
   },
   mainheading: {
-    width: 514,
-    height: 41,
+    width: 850,
+    height: 81,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 800,
-    fontSize: 24,
+    fontSize: 40,
     lineHeight: "131.5%",
     /* or 39px */
     textAlign: "left",
     padding: "50px 30px 20px 30px",
 
     color: "#FFFFFF",
+    [theme.breakpoints.only("sm")]: {
+      width: 514,
+      height: 41,
+      fontSize: 24,
+    },
     [theme.breakpoints.only("xs")]: {
       width: "100%",
       fontSize: 18,
@@ -68,7 +81,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "column",
-    paddingTop: 30,
+    paddingTop: 50,
     paddingBottom: 30,
   },
 
@@ -78,10 +91,14 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "flex-start",
     // alignItems: "center",
-    width: 503,
-    height: 94,
+    width: "90%",
+    height: 114,
     marginBottom: 10,
     background: "#434242",
+    [theme.breakpoints.only("sm")]: {
+      width: "90%",
+      height: 94,
+    },
     [theme.breakpoints.only("xs")]: {
       width: "90%",
       height: 80,
@@ -93,19 +110,26 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "flex-start",
     // alignItems: "center",
-    width: 503,
-    height: 94,
+    width: "90%",
+    height: 114,
     marginBottom: 10,
     background: "#434242",
+    [theme.breakpoints.only("sm")]: {
+      width: "90%",
+      height: 94,
+    },
     [theme.breakpoints.only("xs")]: {
       width: "90%",
       height: 90,
     },
   },
   badge: {
-    width: 59,
-    height: 27,
-
+    width: 70,
+    height: 37,
+    [theme.breakpoints.only("sm")]: {
+      width: 59,
+      height: 27,
+    },
     [theme.breakpoints.only("xs")]: {
       width: 50,
       height: 24,
@@ -115,17 +139,24 @@ const useStyles = makeStyles((theme) => ({
 
   heading: {
     width: "80%",
-    height: 30,
+    height: 40,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 800,
-    fontSize: 16,
+    fontSize: 24,
     textAlign: "left",
     lineHeight: "131.5%",
     /* or 21px */
     marginTop: 0,
     color: "#FFFFFF",
     marginLeft: 20,
+    [theme.breakpoints.only("sm")]: {
+      width: "80%",
+      fontSize: 18,
+      height: 30,
+      marginLeft: 20,
+      marginTop: 10,
+    },
     [theme.breakpoints.only("xs")]: {
       width: "80%",
       fontSize: 10,
@@ -136,17 +167,24 @@ const useStyles = makeStyles((theme) => ({
   },
   heading1: {
     width: "80%",
-    height: 30,
+    height: 40,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 800,
-    fontSize: 16,
+    fontSize: 24,
     textAlign: "left",
     lineHeight: "131.5%",
     /* or 21px */
     marginTop: 0,
     color: "#FFFFFF",
     marginLeft: 20,
+    [theme.breakpoints.only("sm")]: {
+      width: "80%",
+      fontSize: 18,
+      height: 30,
+      marginLeft: 20,
+      marginTop: 10,
+    },
     [theme.breakpoints.only("xs")]: {
       width: "80%",
       fontSize: 10,
@@ -161,17 +199,22 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
   },
   text: {
-    maxWidth: 465,
-    height: 35,
+    maxWidth: "95%",
+    height: 45,
     marginLeft: 20,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 12,
+    fontSize: 18,
     lineHeight: "131.5%",
     /* or 16px */
     textAlign: "left",
     color: "#FFFFFF",
+    [theme.breakpoints.only("sm")]: {
+      maxWidth: 565,
+      fontSize: 14,
+      marginLeft: 20,
+    },
     [theme.breakpoints.only("xs")]: {
       width: "95%",
       fontSize: 10,
@@ -191,6 +234,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
+
     justifyContent: "center",
     background:
       "linear-gradient(85.54deg, rgba(0, 0, 0, 0) -8.44%, rgba(44, 44, 44, 0.9) 38.88%)",
@@ -198,16 +242,22 @@ const useStyles = makeStyles((theme) => ({
   box: {
     position: "absolute",
     marginLeft: "1rem",
-    marginTop: "5rem",
-    width: 145,
-    height: 145,
-    border: "2px solid rgba(248, 248, 248, 0.25)",
+    marginTop: "9rem",
+    width: 200,
+    height: 200,
+    border: "3px solid rgba(248, 248, 248, 0.25)",
     boxSizing: "border-box",
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: "0.5rem",
+      marginTop: "6rem",
+      width: 150,
+      height: 150,
+    },
     [theme.breakpoints.down("xs")]: {
       marginLeft: "0.5rem",
-      marginTop: "5rem",
-      width: "35%",
-      height: "17%",
+      marginTop: "9rem",
+      width: 120,
+      height: 120,
     },
   },
 }));

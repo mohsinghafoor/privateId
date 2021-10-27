@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
   main: {
     display: "flex",
     alignItems: "center",
-    maxWidth: 1280,
+    maxWidth: 1920,
   },
   img: {
     height: 620,
@@ -68,7 +68,7 @@ const useStyles = makeStyles((theme) => ({
     width: 720,
     marginTop: 20,
     [theme.breakpoints.up("xl")]: {
-      width: 870,
+      width: 1030,
     },
   },
   lowercardbox: {
@@ -77,7 +77,7 @@ const useStyles = makeStyles((theme) => ({
     width: 475,
     marginTop: 20,
     [theme.breakpoints.up("xl")]: {
-      width: 575,
+      width: 680,
     },
   },
   sqr: {
@@ -89,8 +89,8 @@ const useStyles = makeStyles((theme) => ({
     height: 219,
     background: "#434242",
     [theme.breakpoints.up("xl")]: {
-      width: 280,
-      height: 270,
+      width: 330,
+      height: 310,
     },
   },
   badge: {
@@ -99,8 +99,8 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 10,
     marginBottom: 5,
     [theme.breakpoints.up("xl")]: {
-      width: 80,
-      height: 40,
+      width: 100,
+      height: 50,
     },
   },
   heading: {
@@ -116,8 +116,8 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     color: "#FFFFFF",
     [theme.breakpoints.up("xl")]: {
-      fontSize: 22,
-      maxWidth: 240,
+      fontSize: 24,
+      maxWidth: 260,
       height: 70,
     },
   },
@@ -135,8 +135,8 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     color: "#FFFFFF",
     [theme.breakpoints.up("xl")]: {
-      fontSize: 16,
-      maxWidth: 240,
+      fontSize: 18,
+      maxWidth: 260,
       height: 120,
     },
   },
@@ -155,7 +155,7 @@ export default function VoiceAuthenticationWeb() {
         <Grid container className={classes.main}>
           <Grid
             item
-            lg={6}
+            lg={5}
             style={{
               display: "flex",
               justifyContent: "flex-start",
@@ -167,12 +167,12 @@ export default function VoiceAuthenticationWeb() {
           </Grid>
           <Grid
             item
-            lg={6}
+            lg={7}
             style={{
               display: "flex",
               justifyContent: "center",
               flexDirection: "column",
-              alignItems: "flex-end",
+              alignItems: "center",
             }}
           >
             <Box className={classes.mainheading}>

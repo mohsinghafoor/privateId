@@ -26,10 +26,10 @@ const useStyles = makeStyles((theme) => ({
   main: {
     display: "flex",
     justifyContent: "center",
-    maxWidth: 1280,
+    maxWidth: 1920,
     minHeight: "100vh",
     [theme.breakpoints.up("xl")]: {
-      maxWidth: 1600,
+      maxWidth: 1920,
     },
   },
   mainheading: {
@@ -69,16 +69,9 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 20,
     marginLeft: 80,
     [theme.breakpoints.up("xl")]: {
-      width: 800,
+      width: 1030,
       marginLeft: -50,
     },
-  },
-  cardbox1: {
-    display: "flex",
-    justifyContent: "space-between",
-    width: 435,
-    marginTop: 20,
-    marginLeft: 80,
   },
   sqr: {
     display: "flex",
@@ -88,8 +81,8 @@ const useStyles = makeStyles((theme) => ({
     height: 190,
     background: "#434242",
     [theme.breakpoints.up("xl")]: {
-      width: 255,
-      height: 230,
+      width: 330,
+      height: 310,
     },
   },
   badge: {
@@ -99,8 +92,8 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 10,
     marginBottom: 5,
     [theme.breakpoints.up("xl")]: {
-      width: 80,
-      height: 40,
+      width: 100,
+      height: 50,
       marginTop: 0,
     },
   },
@@ -117,8 +110,9 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     color: "#FFFFFF",
     [theme.breakpoints.up("xl")]: {
-      fontSize: 20,
-      height: 64,
+      fontSize: 24,
+      height: 74,
+      maxWidth: 100,
     },
   },
   text: {
@@ -134,8 +128,8 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     color: "#FFFFFF",
     [theme.breakpoints.up("xl")]: {
-      fontSize: 16,
-      height: 110,
+      fontSize: 18,
+      height: 130,
       maxWidth: 230,
     },
   },
@@ -152,13 +146,13 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     color: "#FFFFFF",
     [theme.breakpoints.up("xl")]: {
-      fontSize: 20,
-      height: 74,
+      fontSize: 24,
+      height: 94,
     },
   },
   subheading: {
     maxWidth: 174,
-    marginTop: -10,
+    marginTop: 0,
     marginLeft: 10,
     fontFamily: "Axiforma",
     fontStyle: "normal",
@@ -171,11 +165,14 @@ const useStyles = makeStyles((theme) => ({
     height: 25,
     [theme.breakpoints.up("xl")]: {
       position: "absolute",
-      marginTop: 3,
+      marginTop: 7,
+      fontSize: 16,
+      maxWidth: 224,
+      marginBottom: 10,
     },
   },
   img: {
-    height: 600,
+    height: 700,
     [theme.breakpoints.up("xl")]: {
       height: 1000,
     },
@@ -183,10 +180,10 @@ const useStyles = makeStyles((theme) => ({
 
   box: {
     position: "absolute",
-    marginRight: "11rem",
-    marginBottom: "14rem",
-    width: 195,
-    height: 195,
+    marginRight: "12rem",
+    marginBottom: "16rem",
+    width: 235,
+    height: 215,
     border: "2px solid rgba(248, 248, 248, 0.25)",
     boxSizing: "border-box",
     [theme.breakpoints.up("xl")]: {
@@ -207,7 +204,7 @@ export default function FaceWeb() {
         <Grid container className={classes.main}>
           <Grid
             item
-            md={6}
+            md={7}
             style={{
               display: "flex",
               justifyContent: "center",
@@ -288,7 +285,7 @@ export default function FaceWeb() {
 
           <Grid
             item
-            md={6}
+            md={5}
             style={{
               display: "flex",
               justifyContent: "flex-end",

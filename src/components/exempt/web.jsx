@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     minHeight: "100vh",
   },
   main: {
-    maxWidth: 1280,
+    maxWidth: 1920,
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -34,6 +34,11 @@ const useStyles = makeStyles((theme) => ({
       width: 529,
       height: 122,
     },
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 48,
+      height: 132,
+      maxWidth: 600,
+    },
   },
   text: {
     width: 625,
@@ -49,6 +54,11 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.only("md")]: {
       width: 487,
       height: 108,
+    },
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 28,
+      height: 182,
+      maxWidth: 840,
     },
   },
   privacy: {
@@ -66,9 +76,17 @@ const useStyles = makeStyles((theme) => ({
       width: 431,
       height: 44,
     },
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 28,
+      height: 42,
+      maxWidth: 740,
+    },
   },
   img: {
-    height: 620,
+    height: 750,
+    [theme.breakpoints.up("xl")]: {
+      height: 1000,
+    },
     [theme.breakpoints.only("md")]: {
       height: 787,
     },

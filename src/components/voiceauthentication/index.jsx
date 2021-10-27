@@ -18,17 +18,11 @@ export default function VoiceAuthentication() {
   const classes = useStyles();
   const theme = useTheme();
   const isPad = useMediaQuery(theme.breakpoints.down("md"));
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
     <div className={classes.root}>
-      {isMobile ? (
-        <VoiceAuthenticationTab />
-      ) : isPad ? (
-        <VoiceAuthenticationIpad />
-      ) : (
-        <VoiceAuthenticationWeb />
-      )}
+      {isMobile ? <VoiceAuthenticationTab /> : <VoiceAuthenticationWeb />}
     </div>
   );
 }

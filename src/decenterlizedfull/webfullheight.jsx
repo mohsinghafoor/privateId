@@ -13,7 +13,6 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center",
     height: "100vh",
-
     backgroundSize: "100% 100%",
   },
   gradiant: {
@@ -30,7 +29,16 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    maxWidth: 1280,
+    maxWidth: 1920,
+    height: "100vh",
+  },
+  textbox: {
+    [theme.breakpoints.only("md")]: {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      width: "100%",
+    },
   },
   text: {
     width: 505,
@@ -48,16 +56,12 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 45,
       width: 705,
     },
-    [theme.breakpoints.up("md")]: {
-      fontSize: 35,
-      width: 555,
+    [theme.breakpoints.only("md")]: {
+      fontSize: 44,
+      width: "95%",
     },
   },
-  btnbox: {
-    width: 225,
-    display: "flex",
-    justifyContent: "flex-start",
-  },
+
   iconbtn: {
     width: 225,
     height: 57,
@@ -88,23 +92,34 @@ const useStyles = makeStyles((theme) => ({
     // flexDirection: "column",
     // alignItems: "center",
     height: "100vh",
+    [theme.breakpoints.only("md")]: {
+      // marginLeft: "-30rem",
+      height: "60%",
+      justifyContent: "center",
+      alignItems: "flex-end",
+    },
   },
   leftgrid: {
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
     alignItems: "center",
-    height: "100vh",
+    // height: "100vh",
+    [theme.breakpoints.only("md")]: {
+      // marginLeft: "-30rem",
+      height: "40%",
+    },
   },
   img: {
     height: 900,
     [theme.breakpoints.only("lg")]: {
       marginLeft: "-7rem",
-      height: 650,
+      height: 700,
     },
     [theme.breakpoints.only("md")]: {
-      marginLeft: "-20rem",
-      height: 670,
+      // marginLeft: "-30rem",
+      height: "auto",
+      width: "85%",
     },
   },
   logo: {
@@ -133,8 +148,8 @@ export default function DecenterlizedFullHeight() {
           <img src={logo} className={classes.logo} alt="" />
         </Box>
         <Grid container className={classes.main}>
-          <Grid item lg={6} md={6} className={classes.leftgrid}>
-            <Box style={{ display: "flex", flexDirection: "column" }}>
+          <Grid item lg={6} md={12} className={classes.leftgrid}>
+            <Box className={classes.textbox}>
               <Box className={classes.text}>
                 Decentralized biometrics for a secure, private and delightful
                 customer experience
@@ -151,7 +166,7 @@ export default function DecenterlizedFullHeight() {
               </a> */}
             </Box>
           </Grid>
-          <Grid item lg={6} md={4} className={classes.rightgrid}>
+          <Grid item lg={6} md={12} className={classes.rightgrid}>
             <img src={img} className={classes.img} alt="" />
           </Grid>
         </Grid>

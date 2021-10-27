@@ -30,20 +30,18 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 1280,
   },
   mainheading: {
-    position: "absolute",
-    marginTop: "8rem",
-    marginRight: "10rem",
     width: 700,
-    height: 65,
+    height: 15,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
     fontSize: 30,
-    lineHeight: "131.5%",
-    /* or 39px */
     textTransform: "uppercase",
     textAlign: "left",
     color: "#FFFFFF",
+    marginTop: 100,
+    marginLeft: -150,
+    marginBottom: -100,
   },
 
   cardbox: {
@@ -146,11 +144,11 @@ export default function FaceIpad() {
   return (
     <div className={classes.root}>
       <div className={classes.gradiant}>
-        <Grid container className={classes.main}>
+        <Box className={classes.main}>
           <Box className={classes.mainheading}>
             FACE + VOICE AUTHENTICATION SOLUTIONS
           </Box>
-          <Grid item md={6} className={classes.leftgrid}>
+          <Grid className={classes.leftgrid}>
             <Box className={classes.cardbox}>
               <Box className={classes.sqr}>
                 <img src={badge} className={classes.badge} alt="" />
@@ -225,11 +223,11 @@ export default function FaceIpad() {
             </Box>
           </Grid>
 
-          <Grid item md={6} className={classes.rightgrid}>
+          <Box className={classes.rightgrid}>
             <img src={img} className={classes.img} alt="" />
             <Box className={classes.box} />
-          </Grid>
-        </Grid>
+          </Box>
+        </Box>
       </div>
     </div>
   );

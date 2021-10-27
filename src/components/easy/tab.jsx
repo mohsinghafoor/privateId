@@ -39,11 +39,11 @@ const useStyles = makeStyles((theme) => ({
   },
   heading: {
     width: 553,
-    height: 45,
+    height: 65,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 24,
+    fontSize: 40,
     lineHeight: "120%",
     /* or 48px */
     color: "#FFFFFF",
@@ -59,24 +59,19 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   text: {
-    width: 405,
-    height: 85,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 18,
+    fontSize: 26,
     lineHeight: "120%",
     /* or 22px */
     color: "#FFFFFF",
     textAlign: "left",
+    maxWidth: 700,
+    height: 73,
+    lineHeight: "30px",
+    marginLeft: 20,
 
-    [theme.breakpoints.only("sm")]: {
-      width: 553,
-      height: 53,
-      fontSize: 16,
-      lineHeight: "24px",
-      marginLeft: 20,
-    },
     [theme.breakpoints.only("xs")]: {
       width: "90%",
       height: 45,

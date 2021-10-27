@@ -85,17 +85,23 @@ const useStyles = makeStyles((theme) => ({
   },
   sqr: {
     position: "absolute",
-    marginLeft: "-5.5rem",
-    marginTop: "-12rem",
-    width: 250,
-    height: 250,
+    marginLeft: "-4.5rem",
+    marginTop: "-11rem",
+    width: 180,
+    height: 180,
     border: "3px solid rgba(248, 248, 248, 0.25)",
     boxSizing: "border-box",
+    [theme.breakpoints.only("md")]: {
+      marginBottom: "1rem",
+      width: 250,
+      height: 250,
+      marginLeft: "-5.5rem",
+    },
     [theme.breakpoints.down("xs")]: {
       marginLeft: "-1.8rem",
       marginTop: "-4.5rem",
-      width: 110,
-      height: 100,
+      width: 90,
+      height: 90,
     },
   },
   img: {
@@ -104,7 +110,7 @@ const useStyles = makeStyles((theme) => ({
       marginBottom: -27,
     },
     [theme.breakpoints.only("sm")]: {
-      height: 750,
+      height: 650,
       marginBottom: -20,
     },
     [theme.breakpoints.only("xs")]: {
@@ -125,6 +131,9 @@ const useStyles = makeStyles((theme) => ({
   gradiant: {
     background: "rgba(0, 0, 0, 0.55)",
     minHeight: "70vh",
+    display: "flex",
+    alignItems: "flex-end",
+    justifyContent: "center",
     [theme.breakpoints.down("xs")]: {
       minHeight: "50vh",
     },

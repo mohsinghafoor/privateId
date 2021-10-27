@@ -14,10 +14,10 @@ const useStyles = makeStyles((theme) => ({
     minHeight: "100vh",
   },
   main: {
-    maxWidth: 1280,
+    maxWidth: 1920,
   },
   img: {
-    height: 630,
+    height: 790,
     [theme.breakpoints.only("md")]: {
       width: 651,
       height: 490,
@@ -43,12 +43,10 @@ const useStyles = makeStyles((theme) => ({
     /* or 48px */
     color: "#FFFFFF",
     textAlign: "left",
-    [theme.breakpoints.only("sm")]: {
-      width: 409,
-      height: 45,
-      fontSize: 24,
-      marginLeft: 20,
-      marginTop: 30,
+    [theme.breakpoints.only("lg")]: {
+      width: 475,
+      height: 65,
+      fontSize: 44,
     },
     [theme.breakpoints.only("xs")]: {
       width: 330,
@@ -69,12 +67,11 @@ const useStyles = makeStyles((theme) => ({
     /* or 22px */
     color: "#FFFFFF",
     textAlign: "left",
-    [theme.breakpoints.only("sm")]: {
-      width: 553,
+    [theme.breakpoints.only("lg")]: {
+      width: 453,
       height: 53,
-      fontSize: 16,
-      lineHeight: "24px",
-      marginLeft: 20,
+      fontSize: 24,
+      lineHeight: "28px",
     },
     [theme.breakpoints.only("xs")]: {
       width: 330,
@@ -159,20 +156,18 @@ export default function EasyWeb() {
       <Grid container className={classes.main}>
         <Grid
           item
-          lg={7}
-          md={6}
+          lg={8}
           style={{
             display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
+            alignItems: "flex-end",
+            justifyContent: "flex-start",
           }}
         >
           <img src={img} alt="Man using laptop" className={classes.img} />
         </Grid>
         <Grid
           item
-          lg={5}
-          md={6}
+          lg={4}
           style={{
             display: "flex",
             justifyContent: "center",

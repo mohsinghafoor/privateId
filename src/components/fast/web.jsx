@@ -25,16 +25,14 @@ const useStyles = makeStyles((theme) => ({
     minHeight: "100vh",
   },
   main: {
-    maxWidth: 1280,
+    maxWidth: 1580,
     display: "flex",
     justifyContent: "center",
-  },
-  rightbox: {
-    [theme.breakpoints.only("md")]: {
-      marginTop: "-21rem",
-      marginLeft: "-11rem",
+    [theme.breakpoints.up("xl")]: {
+      maxWidth: 1920,
     },
   },
+
   heading: {
     width: 552,
     height: 130,
@@ -87,37 +85,26 @@ const useStyles = makeStyles((theme) => ({
   },
   sqr: {
     position: "absolute",
-    marginBottom: "29rem",
-    marginLeft: "-4rem",
-    width: 220,
-    height: 220,
+    marginBottom: "5rem",
+    marginRight: "27rem",
+    width: 280,
+    height: 280,
     border: "3px solid rgba(248, 248, 248, 0.25)",
     boxSizing: "border-box",
     [theme.breakpoints.only("lg")]: {
-      marginBottom: "22rem",
-      marginLeft: "-4rem",
-      width: 185,
-      height: 185,
-    },
-    [theme.breakpoints.only("md")]: {
-      marginBottom: "23rem",
-      width: 200,
-      height: 200,
-      marginRight: "-9.5rem",
+      marginBottom: "25rem",
+      marginLeft: "22rem",
+      width: 180,
+      height: 180,
     },
   },
   img: {
-    height: 1000,
+    height: 1200,
     filter: " drop-shadow(17px 4px 11px rgba(0, 0, 0, 0.2))",
-    marginBottom: -27,
+    marginBottom: -172,
     [theme.breakpoints.only("lg")]: {
-      height: "95%",
-      marginBottom: -20,
-    },
-    [theme.breakpoints.only("md")]: {
-      height: 800,
-      marginBottom: -21,
-      marginLeft: "9rem",
+      height: 1000,
+      marginBottom: -22,
     },
   },
   icon: {
@@ -133,9 +120,10 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "flex-end",
-    minHeight: "100vh",
+    height: "100vh",
     [theme.breakpoints.up("xl")]: {
       justifyContent: "center",
+      alignItems: "flex-end",
     },
   },
   rightgrid: {
@@ -143,6 +131,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     flexDirection: "column",
     alignItems: "flex-start",
+    height: "100vh",
   },
 }));
 
@@ -153,46 +142,32 @@ export default function FastWeb() {
     <div className={classes.root}>
       <div className={classes.gradiant}>
         <Grid container className={classes.main}>
-          <Grid
-            item
-            md={6}
-            className={classes.leftgrid}
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "flex-end",
-            }}
-          >
+          <Grid item lg={6} className={classes.leftgrid}>
             <img src={img} alt="Girl with mask on" className={classes.img} />
             <Box className={classes.sqr} />
           </Grid>
-          <Grid item md={6} className={classes.rightgrid}>
-            <Box className={classes.rightbox}>
-              <Box className={classes.heading}>
-                Face + Voice + Fingerprint Recognition
-              </Box>
-              <Box className={classes.itembox}>
-                <ArrowForwardIcon className={classes.icon} />
-                <Box className={classes.text}>
-                  Local, Cloud & Continuous Auth
-                </Box>
-              </Box>
-              <Box className={classes.itembox}>
-                <ArrowForwardIcon className={classes.icon} />
-                <Box className={classes.text}>No Biometric Templates</Box>
-              </Box>
+          <Grid item lg={6} className={classes.rightgrid}>
+            <Box className={classes.heading}>
+              Face + Voice + Fingerprint Recognition
+            </Box>
+            <Box className={classes.itembox}>
+              <ArrowForwardIcon className={classes.icon} />
+              <Box className={classes.text}>Local, Cloud & Continuous Auth</Box>
+            </Box>
+            <Box className={classes.itembox}>
+              <ArrowForwardIcon className={classes.icon} />
+              <Box className={classes.text}>No Biometric Templates</Box>
+            </Box>
 
-              <Box className={classes.itembox}>
-                <ArrowForwardIcon className={classes.icon} />
-                <Box className={classes.text}>Extreme Accuracy & Speed</Box>
-              </Box>
+            <Box className={classes.itembox}>
+              <ArrowForwardIcon className={classes.icon} />
+              <Box className={classes.text}>Extreme Accuracy & Speed</Box>
+            </Box>
 
-              <Box className={classes.itembox}>
-                <ArrowForwardIcon className={classes.icon} />
-                <Box className={classes.text}>
-                  Runs on Browsers, Phones, Platforms & Clouds
-                </Box>
+            <Box className={classes.itembox}>
+              <ArrowForwardIcon className={classes.icon} />
+              <Box className={classes.text}>
+                Runs on Browsers, Phones, Platforms & Clouds
               </Box>
             </Box>
           </Grid>

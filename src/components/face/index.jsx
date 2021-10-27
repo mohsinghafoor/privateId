@@ -18,11 +18,9 @@ export default function Face() {
   const classes = useStyles();
   const theme = useTheme();
   const isPad = useMediaQuery(theme.breakpoints.down("md"));
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <div className={classes.root}>
-      {isMobile ? <FaceTab /> : isPad ? <FaceIpad /> : <FaceWeb />}
-    </div>
+    <div className={classes.root}>{isMobile ? <FaceTab /> : <FaceWeb />}</div>
   );
 }
