@@ -1,5 +1,5 @@
 import "./App.css";
-import Carosoul from "./components/carosoul";
+import Testimonies from "./components/testimonies";
 import FacialRecognition from "./components/facialrecognition";
 import Protects from "./components/protect";
 import LetsTalk from "./components/letstalk";
@@ -23,7 +23,7 @@ function App() {
       <Order />
       <Easy />
       <Exempt />
-      <Carosoul />
+      <Testimonies />
       <FacialRecognition />
       <Protects />
       <Engineered />

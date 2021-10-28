@@ -197,7 +197,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Carosoul() {
+export default function Testimonies() {
   const classes = useStyles();
   return (
     <Carousel
