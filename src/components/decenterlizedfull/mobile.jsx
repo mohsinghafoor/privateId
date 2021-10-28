@@ -1,10 +1,10 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Box, IconButton } from "@material-ui/core";
-import background from "../assets/decenterlizedbacksm.png";
+import background from "../../assets/decenterlizedbacksm.png";
 import PlayCircleFilledIcon from "@material-ui/icons/PlayCircleFilled";
-import img from "../assets/decenterlizedimg.png";
-import logo from "../assets/logo 1.png";
+import img from "../../assets/decsm.png";
+import logo from "../../assets/logo 1.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -79,8 +79,6 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   playbtn: {
-    width: 38,
-    height: 38,
     color: "#C4C4C4",
     marginRight: 5,
     marginTop: -5,
@@ -97,7 +95,6 @@ const useStyles = makeStyles((theme) => ({
     // background: "#2A2A2A",
   },
   img: {
-    width: "100%",
     [theme.breakpoints.down("xs")]: {
       width: "100%",
       height: "90%",
@@ -111,18 +108,11 @@ const useStyles = makeStyles((theme) => ({
   },
   logobox: {
     height: "10vh",
-    [theme.breakpoints.only("sm")]: {
-      height: "15vh",
-    },
   },
   centerbox: {
     height: "20vh",
     display: "flex",
     alignItems: "center",
-    [theme.breakpoints.only("sm")]: {
-      alignItems: "flex-start",
-      height: "30vh",
-    },
   },
   bottombox: {
     height: "70vh",
@@ -131,13 +121,10 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "flex-end",
     alignItems: "center",
     width: "100%",
-    [theme.breakpoints.only("sm")]: {
-      height: "55vh",
-    },
   },
 }));
 
-export default function DecenterlizedPadFull() {
+export default function DecenterlizedMobile() {
   const classes = useStyles();
 
   return (

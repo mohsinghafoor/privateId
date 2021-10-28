@@ -1,10 +1,10 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Box, IconButton } from "@material-ui/core";
-import background from "../assets/decenterlizedback.png";
+import background from "../../assets/decenterlizedback.png";
 import PlayCircleFilledIcon from "@material-ui/icons/PlayCircleFilled";
-import img from "../assets/decenterlizedimg.png";
-import logo from "../assets/logo 2.png";
+import img from "../../assets/decenterlizedimg.png";
+import logo from "../../assets/logo 2.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -118,8 +118,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.only("md")]: {
       // marginLeft: "-30rem",
-      height: "auto",
-      width: "85%",
+      height: "100%",
     },
   },
   logo: {

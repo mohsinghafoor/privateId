@@ -29,7 +29,8 @@ const useStyles = makeStyles((theme) => ({
       marginBottom: -3,
     },
     [theme.breakpoints.only("md")]: {
-      height: 800,
+      height: 700,
+      // width: "100%",
       marginBottom: -3,
     },
   },

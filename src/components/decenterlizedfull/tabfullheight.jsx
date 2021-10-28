@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    // minHeight: "100%",
+    minHeight: "100vh",
     backgroundSize: "100% 100%",
   },
   main: {
@@ -20,25 +20,26 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
+    minHeight: "100vh",
     width: "100%",
     background:
       "linear-gradient(180.17deg, #181818 -5.4%, rgba(0, 0, 0, 0) 89.76%)",
   },
   text: {
-    maxWidth: 550,
+    maxWidth: "90%",
     height: 78,
     marginTop: 40,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 22,
+    fontSize: 30,
     lineHeight: "120%",
     /* or 36px */
     textAlign: "left",
     color: "#D1D1D1",
     marginLeft: 30,
     [theme.breakpoints.down("xs")]: {
-      fontSize: 18,
+      fontSize: 26,
       width: "90%",
       height: 90,
       marginLeft: 20,
@@ -93,12 +94,14 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     justifyContent: "flex-start",
-    background: "#2A2A2A",
+    // background: "#2A2A2A",
   },
   img: {
+    height: "95%",
+    width: "85%",
     [theme.breakpoints.down("xs")]: {
-      height: 270,
-      width: 270,
+      width: "100%",
+      height: "90%",
     },
   },
   logo: {
@@ -107,26 +110,66 @@ const useStyles = makeStyles((theme) => ({
     height: 43,
     // marginLeft: "-29rem",
   },
+  logobox: {
+    height: "10vh",
+    [theme.breakpoints.only("sm")]: {
+      height: "15vh",
+    },
+  },
+  centerbox: {
+    height: "20vh",
+    display: "flex",
+    alignItems: "center",
+    [theme.breakpoints.only("sm")]: {
+      alignItems: "flex-start",
+      height: "20vh",
+    },
+  },
+  bottombox: {
+    height: "70vh",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "flex-end",
+    alignItems: "center",
+    width: "100%",
+    [theme.breakpoints.only("sm")]: {
+      height: "65vh",
+    },
+  },
 }));
 
-export default function DecenterlizedPad() {
+export default function DecenterlizedPadFull() {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
       <div className={classes.main}>
-        <img src={logo} className={classes.logo} alt="" />
-        <img src={img} className={classes.img} alt="" />
-        <Box className={classes.textbox}>
-          <Box className={classes.text}>
-            Decentralized biometrics for a secure, private and delightful
-            customer experience
+        <Box className={classes.logobox}>
+          <img src={logo} className={classes.logo} alt="" />
+        </Box>
+        <Box className={classes.centerbox}>
+          <Box className={classes.textbox}>
+            <Box className={classes.text}>
+              Decentralized biometrics for a secure, private and delightful
+              customer experience
+            </Box>
+            {/* <Box className={classes.btnbox}>
+              <a
+                style={{ textDecoration: "none" }}
+                target="_blank"
+                href="https://www.youtube.com/watch?v=5iYEhEiOlrI"
+              >
+                <IconButton className={classes.iconbtn}>
+                  <PlayCircleFilledIcon className={classes.playbtn} /> Watch
+                  Video
+                </IconButton>
+              </a>
+            </Box> */}
           </Box>
-          <Box className={classes.btnbox}>
-            <IconButton className={classes.iconbtn}>
-              <PlayCircleFilledIcon className={classes.playbtn} /> Watch Video
-            </IconButton>
-          </Box>
+        </Box>
+        <Box className={classes.bottombox}>
+          {" "}
+          <img src={img} className={classes.img} alt="" />
         </Box>
       </div>
     </div>

@@ -4,7 +4,6 @@ import FacialRecognition from "./components/facialrecognition";
 import Protects from "./components/protect";
 import LetsTalk from "./components/letstalk";
 import Footer from "./components/footer";
-import Decenterlized from "./components/decenterlized";
 import Order from "./components/order";
 import Consumption from "./components/consumption";
 import Exempt from "./components/exempt";
@@ -13,7 +12,7 @@ import Easy from "./components/easy";
 import Engineered from "./components/engineered";
 import VoiceAuthentication from "./components/voiceauthentication";
 import Face from "./components/face";
-import DecenterlizedFull from "./decenterlizedfull";
+import DecenterlizedFull from "./components/decenterlizedfull";
 function App() {
   return (
     <div className="App">

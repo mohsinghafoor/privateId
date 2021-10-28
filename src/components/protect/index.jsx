@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Box, Button } from "@material-ui/core";
 import background from "../../assets/protectbackground.png";
+import background1 from "../../assets/engsm.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -11,6 +12,9 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     minHeight: "100vh",
     backgroundSize: "100% 100%",
+    [theme.breakpoints.down("sm")]: {
+      backgroundImage: `url(${background1})`,
+    },
   },
   gradiant: {
     display: "flex",

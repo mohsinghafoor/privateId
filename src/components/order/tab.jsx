@@ -28,22 +28,22 @@ const useStyles = makeStyles((theme) => ({
   sqr: {
     position: "absolute",
     marginLeft: "1.7rem",
-    marginTop: "-19rem",
-    width: 150,
-    height: 150,
+    marginTop: "8rem",
+    width: 170,
+    height: 170,
     border: "3px solid rgba(248, 248, 248, 0.25)",
     boxSizing: "border-box",
     [theme.breakpoints.down("sm")]: {
       marginLeft: "1.2rem",
-      marginTop: "-15.5rem",
-      width: "15%",
-      height: "12%",
+      marginTop: "7rem",
+      width: 160,
+      height: "14%",
     },
     [theme.breakpoints.down("xs")]: {
       marginLeft: "0.5rem",
-      marginTop: "-9.5rem",
-      width: "23%",
-      height: "10%",
+      marginTop: "4.5rem",
+      width: "28%",
+      height: "14%",
     },
   },
   heading: {
@@ -186,16 +186,25 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 5,
     marginRight: 5,
   },
-  upperbox: {
+  imgbox: {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    height: "50vh",
+    height: "70vh",
+    width: "100%",
+  },
+  upperbox: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "flex-start",
+    height: "60vh",
+    width: "100%",
   },
   lowerbox: {
     width: "100%",
-    height: "50vh",
+    height: "30vh",
     display: "flex",
     flexDirection: "column",
     alignItems: "flex-start",
@@ -208,9 +217,11 @@ export default function OrderTab() {
   return (
     <div className={classes.root}>
       <div className={classes.main}>
-        <Box className={classes.upperbox}>
-          <img src={img} alt="Girl Picture" className={classes.img} />
-          <Box className={classes.sqr} />
+        <Box className={classes.imgbox}>
+          <Box className={classes.upperbox}>
+            <img src={img} alt="Girl Picture" className={classes.img} />
+            <Box className={classes.sqr} />
+          </Box>
         </Box>
         <Box className={classes.lowerbox}>
           <Box className={classes.heading}>Order Private ID ®</Box>
