@@ -97,7 +97,7 @@ const useStyles = makeStyles((theme) => ({
     // background: "#2A2A2A",
   },
   img: {
-    height: "85%",
+    height: "80%",
     // width: "90%",
   },
   logo: {
