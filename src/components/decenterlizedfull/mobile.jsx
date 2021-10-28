@@ -97,7 +97,7 @@ const useStyles = makeStyles((theme) => ({
   img: {
     [theme.breakpoints.down("xs")]: {
       width: "100%",
-      height: "90%",
+      height: "80%",
     },
   },
   logo: {

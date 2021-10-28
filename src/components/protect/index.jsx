@@ -24,7 +24,12 @@ const useStyles = makeStyles((theme) => ({
     minHeight: "100vh",
     background:
       "linear-gradient(89.59deg, #000000 6.3%, rgba(0, 0, 0, 0) 79.12%)",
+    [theme.breakpoints.down("sm")]: {
+      background:
+        "linear-gradient(85.54deg, rgba(0, 0, 0, 0) -8.44%, rgba(44, 44, 44, 0.9) 88.88%)",
+    },
   },
+
   main: {
     flexGrow: 1,
     maxWidth: 1280,

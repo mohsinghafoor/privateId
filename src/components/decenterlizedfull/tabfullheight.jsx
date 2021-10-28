@@ -97,12 +97,8 @@ const useStyles = makeStyles((theme) => ({
     // background: "#2A2A2A",
   },
   img: {
-    height: "95%",
-    width: "85%",
-    [theme.breakpoints.down("xs")]: {
-      width: "100%",
-      height: "90%",
-    },
+    height: "85%",
+    width: "90%",
   },
   logo: {
     // position: "absolute",
@@ -112,29 +108,19 @@ const useStyles = makeStyles((theme) => ({
   },
   logobox: {
     height: "10vh",
-    [theme.breakpoints.only("sm")]: {
-      height: "15vh",
-    },
   },
   centerbox: {
-    height: "20vh",
+    height: "10vh",
     display: "flex",
-    alignItems: "center",
-    [theme.breakpoints.only("sm")]: {
-      alignItems: "flex-start",
-      height: "20vh",
-    },
+    alignItems: "flex-start",
   },
   bottombox: {
-    height: "70vh",
+    height: "80vh",
     display: "flex",
     flexDirection: "column",
     justifyContent: "flex-end",
     alignItems: "center",
     width: "100%",
-    [theme.breakpoints.only("sm")]: {
-      height: "65vh",
-    },
   },
 }));
 

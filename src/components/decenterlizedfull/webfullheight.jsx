@@ -127,7 +127,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 20,
     [theme.breakpoints.up("xl")]: {
       marginTop: 60,
-      marginLeft: -100,
+      marginLeft: 10,
     },
     [theme.breakpoints.only("md")]: { marginLeft: 40 },
   },
