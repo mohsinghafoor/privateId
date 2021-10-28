@@ -98,10 +98,10 @@ const useStyles = makeStyles((theme) => ({
       marginLeft: "-5.5rem",
     },
     [theme.breakpoints.down("xs")]: {
-      marginLeft: "-1.8rem",
+      marginLeft: "-2.2rem",
       marginTop: "-4.5rem",
-      width: 90,
-      height: 90,
+      width: 110,
+      height: 110,
     },
   },
   img: {
