@@ -207,6 +207,12 @@ const useStyles = makeStyles((theme) => ({
       alignItems: "center",
     },
   },
+  massage: {
+    fontFamily: "Axiforma",
+    fontStyle: "normal",
+    fontWeight: 300,
+    fontSize: 10,
+  },
 }));
 
 export default function LetsTalk() {
@@ -258,7 +264,7 @@ export default function LetsTalk() {
                 }}
               />
               {name.length > 0 && name.length < 3 && (
-                <Box className={classes.message}>
+                <Box className={classes.massage}>
                   Name must have minimum three characters
                 </Box>
               )}
@@ -275,7 +281,7 @@ export default function LetsTalk() {
                 }}
               />
               {email.length > 0 && !email.includes("@") && (
-                <Box className={classes.message}>Please enter valid email</Box>
+                <Box className={classes.massage}>Please enter valid email</Box>
               )}
             </Box>
             <Box className={classes.inputbox}>
@@ -290,7 +296,7 @@ export default function LetsTalk() {
                 }}
               />
               {phone.length > 0 && phone.length < 12 && (
-                <Box className={classes.message}>Please enter valid number</Box>
+                <Box className={classes.massage}>Please enter valid number</Box>
               )}
             </Box>
             <Box className={classes.msginput}>
