@@ -7,7 +7,7 @@ import Footer from "./components/footer";
 import Order from "./components/order";
 import Consumption from "./components/consumption";
 import Exempt from "./components/exempt";
-import Fast from "./components/fast";
+import Fast from "./components/faceandvoice";
 import Easy from "./components/easy";
 import Engineered from "./components/engineered";
 import VoiceAuthentication from "./components/voiceauthentication";
