@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Box } from "@material-ui/core";
+import emailjs from "emailjs-com";
 import background from "../../assets/letstalkback.png";
 import img from "../../assets/talkimg.png";
-
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -211,7 +211,29 @@ const useStyles = makeStyles((theme) => ({
 
 export default function LetsTalk() {
   const classes = useStyles();
-
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [msg, setMsg] = useState("");
+  const sendEmail = (e) => {
+    e.preventDefault();
+    alert("Form Submitted");
+    emailjs
+      .sendForm(
+        "service_bzsah6a",
+        "template_aqy5rrb",
+        e.target,
+        "user_ANsS2m1U6X5tLv44aTOIp"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <div className={classes.root}>
       <Box className={classes.textbox}>
@@ -223,30 +245,65 @@ export default function LetsTalk() {
           <img src={img} className={classes.img} alt="" />
         </Grid>
         <Grid item lg={5} md={6} className={classes.rightgrid}>
-          <form className={classes.form}>
+          <form className={classes.form} onSubmit={sendEmail}>
             <Box className={classes.inputbox}>
-              <input type="text" className={classes.input} placeholder="Name" />
+              <input
+                type="text"
+                name="name"
+                className={classes.input}
+                placeholder="Name"
+                value={name}
+                onChange={(e) => {
+                  setName(e.target.value);
+                }}
+              />
+              {name.length > 0 && name.length < 3 && (
+                <Box className={classes.message}>
+                  Name must have minimum three characters
+                </Box>
+              )}
             </Box>
             <Box className={classes.inputbox}>
               <input
                 type="email"
                 className={classes.input}
                 placeholder="Email"
+                name="email"
+                value={email}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
               />
+              {email.length > 0 && !email.includes("@") && (
+                <Box className={classes.message}>Please enter valid email</Box>
+              )}
             </Box>
             <Box className={classes.inputbox}>
               <input
                 type="text"
                 className={classes.input}
                 placeholder="Telephone"
+                name="phone"
+                value={phone}
+                onChange={(e) => {
+                  setPhone(e.target.value);
+                }}
               />
+              {phone.length > 0 && phone.length < 12 && (
+                <Box className={classes.message}>Please enter valid number</Box>
+              )}
             </Box>
             <Box className={classes.msginput}>
               {" "}
               <input
                 type="text"
                 placeholder="Message"
+                name="massage"
                 className={classes.msg}
+                value={msg}
+                onChange={(e) => {
+                  setMsg(e.target.value);
+                }}
               />
             </Box>
             <button type="submit" className={classes.btn}>
