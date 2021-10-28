@@ -20,7 +20,8 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
     filter: "drop-shadow(22px -15px 21px rgba(0, 0, 0, 0.25))",
     [theme.breakpoints.down("xs")]: {
-      height: "100%",
+      height: "90%",
+      width: "90%",
       // height: 260,
       marginBottom: -4,
     },
@@ -191,7 +192,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    height: "70vh",
+    height: "60vh",
     width: "100%",
   },
   upperbox: {
@@ -204,7 +205,7 @@ const useStyles = makeStyles((theme) => ({
   },
   lowerbox: {
     width: "100%",
-    height: "30vh",
+    height: "40vh",
     display: "flex",
     flexDirection: "column",
     alignItems: "flex-start",
