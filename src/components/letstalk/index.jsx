@@ -224,30 +224,33 @@ export default function LetsTalk() {
   const sendEmail = (e) => {
     e.preventDefault();
     alert("Form Submitted");
-    // emailjs
-    //   .sendForm(
-    //     "service_bzsah6a",
-    //     "template_aqy5rrb",
-    //     e.target,
-    //     "user_ANsS2m1U6X5tLv44aTOIp"
-    //   )
+    emailjs
+      .sendForm(
+        "service_bzsah6a",
+        "template_aqy5rrb",
+        e.target,
+        "user_ANsS2m1U6X5tLv44aTOIp"
+      )
+      .then((res) => {
+        alert(res);
+      });
 
-    fetch("https://apidevel.private.id/trueid/v1.1/contact_us", {
-      name: "Srie Raam",
-      email_address: "adnan1naeem@gmail.com",
-      phone_number: "+12066561175",
-      message:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      api_key: "00000000000000001962",
-    }).then(
-      (result) => {
-        alert(result);
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error);
-      }
-    );
+    // fetch("https://apidevel.private.id/trueid/v1.1/contact_us", {
+    //   name: "Srie Raam",
+    //   email_address: "adnan1naeem@gmail.com",
+    //   phone_number: "+12066561175",
+    //   message:
+    //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    //   api_key: "00000000000000001962",
+    //  }).then(
+    //   (result) => {
+    //     alert(result);
+    //     console.log(result.text);
+    //   },
+    //   (error) => {
+    //     console.log(error);
+    //   }
+    // );
   };
   return (
     <div className={classes.root}>
@@ -313,7 +316,7 @@ export default function LetsTalk() {
               <input
                 type="text"
                 placeholder="Message"
-                name="massage"
+                name="message"
                 className={classes.msg}
                 value={msg}
                 onChange={(e) => {
