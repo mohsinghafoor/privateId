@@ -97,17 +97,25 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   inputbox: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
     height: 65,
     width: "95%",
     [theme.breakpoints.only("xs")]: {
-      width: "80%",
-      height: 60,
+      width: "90%",
+      height: 50,
     },
   },
   msginput: {
     width: "95%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    height: 130,
     [theme.breakpoints.only("xs")]: {
-      width: "80%",
+      width: "90%",
+      height: 110,
     },
   },
   input: {
