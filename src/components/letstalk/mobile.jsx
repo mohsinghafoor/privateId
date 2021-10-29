@@ -181,7 +181,7 @@ export default function LetsTalkMobile() {
   const [msg, setMsg] = useState("");
   const sendEmail = (e) => {
     e.preventDefault();
-    alert("Form Submitted");
+
     emailjs
       .sendForm(
         "service_bzsah6a",
@@ -189,9 +189,7 @@ export default function LetsTalkMobile() {
         e.target,
         "user_ANsS2m1U6X5tLv44aTOIp"
       )
-      .then((res) => {
-        alert(res);
-      });
+      .then((res) => {});
 
     // fetch("https://apidevel.private.id/trueid/v1.1/contact_us", {
     //   name: "Srie Raam",
