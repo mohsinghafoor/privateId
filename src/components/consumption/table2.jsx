@@ -29,6 +29,9 @@ const StyledTableCell = withStyles((theme) => ({
     [theme.breakpoints.only("xs")]: {
       fontSize: 10,
     },
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 20,
+    },
   },
 }))(TableCell);
 
@@ -56,6 +59,9 @@ const useStyles = makeStyles((theme) => ({
   table: {
     width: 548,
     background: "white",
+    [theme.breakpoints.up("xl")]: {
+      width: 700,
+    },
     [theme.breakpoints.only("md")]: {
       width: 435,
     },
@@ -68,9 +74,12 @@ const useStyles = makeStyles((theme) => ({
     height: 47,
     background: "#000000",
     display: "flex",
-    justifyContent: "space-between",
+    justifyContent: "flex-start",
     alignItems: "center",
     marginBottom: 5,
+    [theme.breakpoints.up("xl")]: {
+      width: 700,
+    },
     [theme.breakpoints.only("md")]: {
       width: 435,
     },
@@ -89,6 +98,10 @@ const useStyles = makeStyles((theme) => ({
     /* or 18px */
 
     color: "#FFFFFF",
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 20,
+      width: 550,
+    },
     [theme.breakpoints.only("md")]: {
       width: 410,
       fontSize: 14,
@@ -113,6 +126,9 @@ const useStyles = makeStyles((theme) => ({
 
   row: {
     width: 250,
+    [theme.breakpoints.up("xl")]: {
+      width: 500,
+    },
     [theme.breakpoints.only("md")]: {
       width: 420,
       height: 20,

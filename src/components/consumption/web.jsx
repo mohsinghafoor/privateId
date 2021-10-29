@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     background: "#464646",
   },
   main: {
-    maxWidth: 1280,
+    maxWidth: 1920,
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -38,6 +38,10 @@ const useStyles = makeStyles((theme) => ({
   img: {
     width: 400,
     height: 210,
+    [theme.breakpoints.up("xl")]: {
+      height: 300,
+      width: 600,
+    },
     [theme.breakpoints.only("md")]: {
       width: 375,
       height: 197,

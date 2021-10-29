@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: "100% 100%",
   },
   main: {
-    maxWidth: 1280,
+    maxWidth: 1920,
     [theme.breakpoints.down("sm")]: {
       height: 600,
       display: "flex",
@@ -25,7 +25,9 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   textbox: {
-    // marginTop: "-15rem",
+    // [theme.breakpoints.up("xl")]: {
+    //   maxWidth: 500,
+    // },
   },
   heading: {
     width: 201,
@@ -38,6 +40,11 @@ const useStyles = makeStyles((theme) => ({
     /* identical to box height, or 53px */
     marginTop: 40,
     color: "#FFFFFF",
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 48,
+      height: 73,
+      width: 500,
+    },
     [theme.breakpoints.down("sm")]: {
       fontSize: 24,
       height: 33,
@@ -58,6 +65,11 @@ const useStyles = makeStyles((theme) => ({
     /* or 29px */
 
     color: "#FFFFFF",
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 34,
+      height: 60,
+      width: 500,
+    },
     [theme.breakpoints.down("sm")]: {
       fontSize: 16,
       width: 210,
@@ -68,6 +80,9 @@ const useStyles = makeStyles((theme) => ({
   },
   img: {
     height: 184,
+    [theme.breakpoints.up("xl")]: {
+      height: 250,
+    },
     [theme.breakpoints.down("md")]: {
       width: 180,
       height: 130,
@@ -94,6 +109,10 @@ const useStyles = makeStyles((theme) => ({
     background: "#FFFFFF",
     borderRadius: 14,
     marginLeft: "1rem",
+    [theme.breakpoints.up("xl")]: {
+      height: 450,
+      width: 450,
+    },
     [theme.breakpoints.only("md")]: {
       width: 327,
       height: 331,
@@ -115,7 +134,9 @@ const useStyles = makeStyles((theme) => ({
   },
   inputbox: {
     height: 60,
-
+    [theme.breakpoints.up("xl")]: {
+      height: 70,
+    },
     [theme.breakpoints.down("md")]: {
       height: 50,
     },
@@ -139,6 +160,10 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 8,
     fontFamily: "Axiforma",
     paddingLeft: 10,
+    [theme.breakpoints.up("xl")]: {
+      width: 400,
+      height: 50,
+    },
     [theme.breakpoints.only("md")]: {
       width: 285,
       height: 33,
@@ -164,6 +189,10 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: "0px 15px 9px -6px rgba(199, 199, 199, 0.25)",
     borderRadius: 8,
     paddingLeft: 10,
+    [theme.breakpoints.up("xl")]: {
+      width: 400,
+      height: 118,
+    },
     [theme.breakpoints.only("md")]: {
       width: 285,
       height: 93,
@@ -190,6 +219,11 @@ const useStyles = makeStyles((theme) => ({
     /* or 22px */
     marginTop: 20,
     color: "#FFFFFF",
+    [theme.breakpoints.up("xl")]: {
+      width: 180,
+      height: 47,
+      fontSize: 20,
+    },
   },
   leftgrid: {
     display: "flex",

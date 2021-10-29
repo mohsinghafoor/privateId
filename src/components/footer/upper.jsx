@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     // minHeight: 300,
   },
   main: {
-    maxWidth: 1280,
+    maxWidth: 1920,
   },
   parent: {
     display: "flex",
@@ -29,19 +29,30 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 20,
     lineHeight: "131.5%",
     /* identical to box height, or 24px */
-
     color: "#FFFFFF",
+    [theme.breakpoints.up("xl")]: {
+      maxWidth: 200,
+      fontSize: 30,
+      height: 40,
+    },
   },
   dflex: {
     display: "flex",
     alignItems: "center",
     height: 15,
+    [theme.breakpoints.up("xl")]: {
+      height: 25,
+    },
   },
   bulletPoint: {
     backgroundColor: "#545454",
     width: "8px",
     height: "8px",
     borderRadius: 20,
+    [theme.breakpoints.up("xl")]: {
+      width: "12px",
+      height: "12px",
+    },
   },
   service: {
     // width: 200,
@@ -53,6 +64,9 @@ const useStyles = makeStyles((theme) => ({
     /* or 18px */
 
     color: "#FFFFFF",
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 20,
+    },
   },
   text: {
     maxWidth: 314,
@@ -66,9 +80,18 @@ const useStyles = makeStyles((theme) => ({
     /* or 18px */
 
     color: "#FFFFFF",
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 18,
+      maxWidth: 450,
+      lineHeight: "22px",
+      paddingLeft: 10,
+    },
   },
   container: {
-    padding: "40px 100px",
+    padding: "40px 50px",
+    [theme.breakpoints.up("xl")]: {
+      padding: "40px 0px",
+    },
   },
 }));
 

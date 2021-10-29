@@ -16,6 +16,9 @@ const StyledTableCell = withStyles((theme) => ({
     fontFamily: "Axiforma",
     fontWeight: 600,
     backgroundColor: "#CBCBCB",
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 20,
+    },
     [theme.breakpoints.only("xs")]: {
       fontSize: 10,
     },
@@ -26,6 +29,9 @@ const StyledTableCell = withStyles((theme) => ({
     fontWeight: 600,
     [theme.breakpoints.only("xs")]: {
       fontSize: 10,
+    },
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 20,
     },
   },
 }))(TableCell);
@@ -55,6 +61,9 @@ const useStyles = makeStyles((theme) => ({
   table: {
     width: 548,
     background: "white",
+    [theme.breakpoints.up("xl")]: {
+      width: 700,
+    },
     [theme.breakpoints.only("md")]: {
       width: 435,
     },
@@ -70,6 +79,9 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "space-between",
     alignItems: "center",
     marginBottom: 5,
+    [theme.breakpoints.up("xl")]: {
+      width: 700,
+    },
     [theme.breakpoints.only("md")]: {
       width: 435,
     },
@@ -88,6 +100,10 @@ const useStyles = makeStyles((theme) => ({
     /* or 18px */
 
     color: "#FFFFFF",
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 20,
+      width: 340,
+    },
     [theme.breakpoints.only("md")]: {
       width: 260,
       fontSize: 14,
@@ -108,6 +124,9 @@ const useStyles = makeStyles((theme) => ({
     /* or 18px */
 
     color: "#FFFFFF",
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 20,
+    },
   },
   row: {
     height: 37,
