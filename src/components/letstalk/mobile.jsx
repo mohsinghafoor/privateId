@@ -100,6 +100,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    flexDirection: "column",
     height: 65,
     width: "95%",
     [theme.breakpoints.only("xs")]: {
@@ -112,6 +113,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    flexDirection: "column",
     height: 130,
     [theme.breakpoints.only("xs")]: {
       width: "90%",
@@ -177,7 +179,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 10,
+    fontSize: 8,
   },
 }));
 
