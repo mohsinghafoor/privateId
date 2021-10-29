@@ -23,26 +23,22 @@ const useStyles = makeStyles((theme) => ({
       height: 700,
     },
   },
-  imgbox: {
-    width: "100%",
-    minHeight: "50vh",
-    background: "#292929",
-    display: "flex",
-    alignItems: "flex-end",
-    justifyContent: "center",
-  },
+
   img: {
+    [theme.breakpoints.only("md")]: {
+      height: "90%",
+    },
     [theme.breakpoints.only("xs")]: {
       width: "90%",
     },
   },
   heading: {
-    width: 445,
-    height: 121,
+    maxWidth: 845,
+    height: 151,
     fontFamily: " Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 40,
+    fontSize: 50,
     lineHeight: "131.5%",
     /* or 53px */
     textAlign: "left",
@@ -66,19 +62,20 @@ const useStyles = makeStyles((theme) => ({
     color: "darkgray",
     marginLeft: 2,
     marginTop: -10,
+    [theme.breakpoints.only("md")]: {
+      fontSize: 40,
+    },
   },
   text: {
     fontFamily: "Axiforma",
     fontStyle: " normal",
     fontWeight: 300,
-
     lineHeight: "131.5%",
     textAlign: "left",
     color: "#FFFFFF",
-    [theme.breakpoints.only("md")]: {
-      width: 480,
-      height: 200,
-    },
+    fontSize: 26,
+    width: 880,
+    height: 200,
     [theme.breakpoints.only("sm")]: {
       width: 490,
       height: 115,
@@ -92,11 +89,25 @@ const useStyles = makeStyles((theme) => ({
       marginLeft: 20,
     },
   },
+  imgbox: {
+    width: "100%",
+    minHeight: "50vh",
+    background: "#292929",
+    display: "flex",
+    alignItems: "flex-end",
+    justifyContent: "center",
+    [theme.breakpoints.only("md")]: {
+      height: "70vh",
+    },
+  },
   bottombox: {
     minHeight: "50vh",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
+    [theme.breakpoints.only("md")]: {
+      height: "30vh",
+    },
   },
 }));
 

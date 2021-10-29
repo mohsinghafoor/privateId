@@ -109,12 +109,12 @@ const useStyles = makeStyles((theme) => ({
     height: "10vh",
   },
   centerbox: {
-    height: "20vh",
+    height: "30vh",
     display: "flex",
-    alignItems: "center",
+    alignItems: "flex-start",
   },
   bottombox: {
-    height: "70vh",
+    height: "60vh",
     display: "flex",
     flexDirection: "column",
     justifyContent: "flex-end",

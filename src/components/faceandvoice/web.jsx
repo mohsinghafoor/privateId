@@ -85,7 +85,7 @@ const useStyles = makeStyles((theme) => ({
   },
   sqr: {
     position: "absolute",
-    marginBottom: "5rem",
+    marginBottom: "35rem",
     marginRight: "27rem",
     width: 280,
     height: 280,
@@ -101,7 +101,7 @@ const useStyles = makeStyles((theme) => ({
   img: {
     height: 1200,
     filter: " drop-shadow(17px 4px 11px rgba(0, 0, 0, 0.2))",
-    marginBottom: -172,
+    marginBottom: -32,
     [theme.breakpoints.only("lg")]: {
       height: 1000,
       marginBottom: -22,
@@ -122,7 +122,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "flex-end",
     height: "100vh",
     [theme.breakpoints.up("xl")]: {
-      justifyContent: "center",
+      justifyContent: "flex-end",
       alignItems: "flex-end",
     },
   },

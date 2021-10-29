@@ -29,9 +29,10 @@ const useStyles = makeStyles((theme) => ({
       marginBottom: -3,
     },
     [theme.breakpoints.only("md")]: {
-      height: 700,
+      height: 680,
       // width: "100%",
       marginBottom: -3,
+      marginRight: -20,
     },
   },
   heading: {

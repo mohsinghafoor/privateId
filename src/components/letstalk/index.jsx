@@ -137,6 +137,7 @@ const useStyles = makeStyles((theme) => ({
     boxSizing: "border - box",
     boxShadow: "0px 15px 9px -6px rgba(199, 199, 199, 0.25)",
     borderRadius: 8,
+    fontFamily: "Axiforma",
     paddingLeft: 10,
     [theme.breakpoints.only("md")]: {
       width: 285,
@@ -159,6 +160,7 @@ const useStyles = makeStyles((theme) => ({
     background: "#FFFFFF",
     border: "1px solid #C9C9C9",
     boxSizing: "border - box",
+    fontFamily: "Axiforma",
     boxShadow: "0px 15px 9px -6px rgba(199, 199, 199, 0.25)",
     borderRadius: 8,
     paddingLeft: 10,
@@ -313,7 +315,7 @@ export default function LetsTalk() {
             </Box>
             <Box className={classes.msginput}>
               {" "}
-              <input
+              <textarea
                 type="text"
                 placeholder="Message"
                 name="message"
