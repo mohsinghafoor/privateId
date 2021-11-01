@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "8rem",
     width: "16%",
     height: "14%",
-    border: "3px solid rgba(248, 248, 248, 0.25)",
+    border: "2px solid rgba(248, 248, 248, 0.25)",
     boxSizing: "border-box",
     [theme.breakpoints.down("sm")]: {
       marginLeft: "1.2rem",
@@ -43,8 +43,8 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       marginLeft: "0.5rem",
       marginTop: "4.5rem",
-      width: "28%",
-      height: "14%",
+      width: "27%",
+      height: "13%",
     },
   },
   heading: {

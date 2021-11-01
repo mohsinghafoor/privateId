@@ -245,7 +245,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "9rem",
     width: 200,
     height: 200,
-    border: "3px solid rgba(248, 248, 248, 0.25)",
+    border: "2px solid rgba(248, 248, 248, 0.25)",
     boxSizing: "border-box",
     [theme.breakpoints.down("sm")]: {
       marginLeft: "0.5rem",
@@ -255,7 +255,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down("xs")]: {
       marginLeft: "0.5rem",
-      marginTop: "9rem",
+      marginTop: "10rem",
       width: 120,
       height: 120,
     },

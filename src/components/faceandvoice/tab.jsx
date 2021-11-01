@@ -89,7 +89,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "-8rem",
     width: 160,
     height: 160,
-    border: "3px solid rgba(248, 248, 248, 0.25)",
+    border: "2px solid rgba(248, 248, 248, 0.25)",
     boxSizing: "border-box",
     [theme.breakpoints.only("md")]: {
       marginBottom: "3rem",
@@ -100,8 +100,8 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       marginLeft: "-2.2rem",
       marginTop: "-4.5rem",
-      width: 110,
-      height: 110,
+      width: 100,
+      height: 100,
     },
   },
   img: {
