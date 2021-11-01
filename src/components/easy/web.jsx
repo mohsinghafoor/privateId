@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 1920,
   },
   img: {
-    height: 790,
+    height: 780,
     [theme.breakpoints.only("md")]: {
       width: 651,
       height: 490,
@@ -33,18 +33,18 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   heading: {
-    maxWidth: 475,
+    maxWidth: 575,
     height: 73,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 40,
+    fontSize: 50,
     lineHeight: "120%",
     /* or 48px */
     color: "#FFFFFF",
     textAlign: "left",
     [theme.breakpoints.only("lg")]: {
-      width: 475,
+      width: 455,
       height: 65,
       fontSize: 44,
     },
@@ -57,13 +57,13 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   text: {
-    width: 405,
-    height: 80,
+    width: 500,
+    height: 100,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 18,
-    lineHeight: "120%",
+    fontSize: 26,
+    lineHeight: "32px",
     /* or 22px */
     color: "#FFFFFF",
     textAlign: "left",
@@ -156,7 +156,7 @@ export default function EasyWeb() {
       <Grid container className={classes.main}>
         <Grid
           item
-          lg={8}
+          lg={7}
           style={{
             display: "flex",
             alignItems: "flex-end",

@@ -87,7 +87,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     color: "#FFFFFF",
     [theme.breakpoints.only("sm")]: {
-      maxWidth: 740,
+      maxWidth: "95%",
       height: 100,
       fontSize: 20,
       marginTop: 30,
@@ -129,8 +129,8 @@ const useStyles = makeStyles((theme) => ({
 
     color: "#999999",
     [theme.breakpoints.only("sm")]: {
-      width: 450,
-
+      width: 430,
+      height: 35,
       fontSize: 18,
     },
     [theme.breakpoints.down("xs")]: {
