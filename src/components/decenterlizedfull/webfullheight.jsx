@@ -57,7 +57,8 @@ const useStyles = makeStyles((theme) => ({
       width: 905,
     },
     [theme.breakpoints.only("md")]: {
-      fontSize: 44,
+      fontSize: 30,
+      height: 38,
       width: "95%",
     },
   },

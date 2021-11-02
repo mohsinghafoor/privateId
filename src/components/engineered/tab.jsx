@@ -33,16 +33,17 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   heading: {
-    maxWidth: 845,
-    height: 151,
+    maxWidth: "90%",
+    height: 60,
     fontFamily: " Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 50,
+    fontSize: 40,
     lineHeight: "131.5%",
     /* or 53px */
     textAlign: "left",
     color: "#FFFFFF",
+    marginTop: 30,
     [theme.breakpoints.only("sm")]: {
       width: 530,
       height: 46,

@@ -1,119 +1,154 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Grid, Box, TextField, Button } from "@material-ui/core";
+import { Box, Grid, Button } from "@material-ui/core";
+// import background from "../../assets/fastbackmobile.png";
+import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import img from "../../assets/girl.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    background: "#2A2A2A",
     display: "flex",
-    justifyContent: "center",
     alignItems: "center",
-    background:
-      "radial-gradient(55.01% 307.1% at 88.52% 16.49%, #545454 0%, #292929 80.76%)",
+    justifyContent: "center",
+    flexDirection: "column",
     minHeight: "100vh",
-    width: "100%",
   },
   main: {
     maxWidth: 1280,
+    display: "flex",
+    justifyContent: "center",
   },
-  img: {
-    height: "100%",
-    filter: "drop-shadow(22px -15px 21px rgba(0, 0, 0, 0.25))",
+  rightbox: {
+    width: "90%",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    background: "#2A2A2A",
+    minHeight: "30vh",
+    [theme.breakpoints.down("sm")]: {
+      marginBottom: 70,
+    },
     [theme.breakpoints.down("xs")]: {
-      height: "90%",
-      width: "90%",
-      // height: 260,
-      marginBottom: -4,
+      minHeight: "50vh",
+    },
+  },
+  heading: {
+    width: 550,
+    height: 55,
+    fontSize: 40,
+    fontFamily: "Axiforma",
+    fontStyle: "normal",
+    fontWeight: 300,
+    lineHeight: "120%",
+    /* or 48px */
+    color: "#FFFFFF",
+    textAlign: "left",
+    marginTop: 40,
+    [theme.breakpoints.only("xs")]: {
+      width: "100%",
+      height: 95,
+      fontSize: 24,
+    },
+  },
+
+  text: {
+    width: 650,
+    fontFamily: "Axiforma",
+    fontStyle: "normal",
+    fontWeight: 300,
+    fontSize: 28,
+    lineHeight: "120%",
+    /* or 22px */
+    textAlign: "left",
+    color: "#FFFFFF",
+    height: 90,
+    [theme.breakpoints.only("xs")]: {
+      width: "100%",
+      fontSize: 16,
+    },
+  },
+  imgbox: {
+    // backgroundImage: `url(${background})`,
+    backgroundSize: "100% 100%",
+    width: "100%",
+    minHeight: "70vh",
+    [theme.breakpoints.down("xs")]: {
+      minHeight: "50vh",
     },
   },
   sqr: {
     position: "absolute",
-    marginLeft: "1.7rem",
-    marginTop: "8rem",
-    width: "16%",
-    height: "14%",
+    marginRight: "-1rem",
+    marginTop: "-20rem",
+    width: 160,
+    height: 160,
     border: "2px solid rgba(248, 248, 248, 0.25)",
     boxSizing: "border-box",
-    [theme.breakpoints.down("sm")]: {
-      marginLeft: "1.2rem",
-      marginTop: "7rem",
-      width: 160,
-      height: "14%",
+    [theme.breakpoints.only("md")]: {
+      marginBottom: "3rem",
+      width: 220,
+      height: 220,
+      marginLeft: "-5.5rem",
     },
     [theme.breakpoints.down("xs")]: {
-      marginLeft: "0.5rem",
-      marginTop: "4.5rem",
-      width: "27%",
-      height: "13%",
-    },
-  },
-  heading: {
-    width: 600,
-    height: 70,
-    fontSize: 32,
-    fontFamily: "Axiforma",
-    fontStyle: "normal",
-    fontWeight: 300,
-
-    textDecoration: "underline",
-    lineHeight: "37px",
-    color: "#FFFFFF",
-    textAlign: "left",
-    marginTop: 30,
-    [theme.breakpoints.only("sm")]: {
-      maxWidth: 500,
-      height: 50,
-      fontSize: 32,
-      marginTop: 30,
-      marginLeft: 20,
-    },
-    [theme.breakpoints.down("xs")]: {
-      width: "90%",
-      height: 50,
-      fontSize: 18,
-      marginTop: 30,
-      marginLeft: 20,
-    },
-  },
-  text: {
-    maxWidth: 950,
-    height: 120,
-    fontFamily: "Axiforma",
-    fontStyle: "normal",
-    fontWeight: 300,
-    fontSize: 24,
-    marginLeft: 20,
-    lineHeight: "27px",
-    textAlign: "left",
-    color: "#FFFFFF",
-    [theme.breakpoints.only("sm")]: {
-      maxWidth: "95%",
+      marginLeft: "-2.2rem",
+      marginTop: "-4.5rem",
+      width: 100,
       height: 100,
-      fontSize: 20,
-      marginTop: 30,
-      marginLeft: 20,
     },
+  },
+  img: {
+    [theme.breakpoints.only("md")]: {
+      height: 1000,
+      marginBottom: -27,
+    },
+    [theme.breakpoints.only("sm")]: {
+      height: 650,
+      marginBottom: -20,
+    },
+    [theme.breakpoints.only("xs")]: {
+      marginBottom: -25,
+      width: "100%",
+    },
+  },
+
+  gradiant: {
+    background: "rgba(0, 0, 0, 0.55)",
+    minHeight: "70vh",
+    display: "flex",
+    alignItems: "flex-end",
+    justifyContent: "center",
     [theme.breakpoints.down("xs")]: {
-      width: "90%",
-      height: 119,
-      lineHeight: "22px",
-      marginLeft: 20,
-      fontSize: 10,
+      minHeight: "50vh",
     },
+  },
+  upperbox: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  btn: {
+    width: 120,
+    height: 30,
+    background: "#383838",
+    fontFamily: "Axiforma",
+    fontStyle: "normal",
+    fontWeight: 300,
+    fontSize: 10,
+    lineHeight: "120%",
+    /* or 14px */
+    borderRadius: 0,
+    marginLeft: 10,
+    color: "#FFFFFF",
   },
   mailbox: {
     display: "flex",
-    justifyContent: "space-between",
-    width: "90%",
-    marginBottom: 30,
-    marginLeft: 20,
-    [theme.breakpoints.down("xs")]: {
-      width: "90%",
-      marginLeft: 20,
-    },
+    height: 70,
   },
   input: {
-    width: 650,
+    width: 365,
     height: 30,
     background: "none",
     border: 0,
@@ -123,62 +158,27 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 22,
+    fontSize: 14,
     lineHeight: "138.5%",
     /* identical to box height, or 19px */
 
     color: "#999999",
-    [theme.breakpoints.only("sm")]: {
-      width: 430,
-      height: 35,
-      fontSize: 18,
-    },
-    [theme.breakpoints.down("xs")]: {
-      width: "65%",
-    },
-  },
-  btn: {
-    width: 200,
-    height: 40,
-    background: "#383838",
-    fontFamily: "Axiforma",
-    fontStyle: "normal",
-    fontWeight: 300,
-    fontSize: 16,
-    lineHeight: "120%",
-    /* or 14px */
-    borderRadius: 0,
-    marginLeft: 10,
-    textTransform: "capitalize",
-    color: "#FFFFFF",
-    [theme.breakpoints.only("sm")]: {
-      width: 140,
-
-      fontSize: 14,
-    },
-    [theme.breakpoints.down("xs")]: {
-      width: "30%",
-      fontSize: 10,
-    },
   },
   btmtext: {
-    maxWidth: 900,
+    width: "90%",
     height: 53,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 22,
-    marginLeft: 20,
+    fontSize: 20,
     lineHeight: "138.5%",
     /* or 17px */
     textAlign: "left",
     color: "#FFFFFF",
-    marginBottom: 30,
-    [theme.breakpoints.down("xs")]: {
-      maxWidth: "90%",
-      fontSize: 10,
-      marginLeft: 20,
-      marginBottom: 20,
+    [theme.breakpoints.up("xl")]: {
+      width: 750,
+      fontSize: 26,
+      height: 60,
     },
   },
   span: {
@@ -187,29 +187,6 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 5,
     marginRight: 5,
   },
-  imgbox: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    height: "60vh",
-    width: "100%",
-  },
-  upperbox: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "flex-start",
-    height: "60vh",
-    width: "100%",
-  },
-  lowerbox: {
-    width: "100%",
-    height: "40vh",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "flex-start",
-  },
 }));
 
 export default function OrderTab() {
@@ -217,42 +194,61 @@ export default function OrderTab() {
 
   return (
     <div className={classes.root}>
-      <div className={classes.main}>
-        <Box className={classes.imgbox}>
+      <Box className={classes.imgbox}>
+        <div className={classes.gradiant}>
           <Box className={classes.upperbox}>
-            <img src={img} alt="Girl Picture" className={classes.img} />
+            <img src={img} alt="Girl with mask on" className={classes.img} />
             <Box className={classes.sqr} />
           </Box>
+        </div>
+      </Box>
+      <Box className={classes.rightbox}>
+        <Box className={classes.heading}>Order Private ID®</Box>
+        <Box className={classes.text}>
+          Decentralized biometrics for a secure, private and delightful customer
+          experience
         </Box>
-        <Box className={classes.lowerbox}>
-          <Box className={classes.heading}>Order Private ID ®</Box>
+        <form className={classes.mailbox}>
+          {/* <Box className={classes.label}>Enter Email:</Box> */}
+          <input
+            type="text"
+            className={classes.input}
+            placeholder="Enter Email"
+          />
+          <Button className={classes.btn}>Join the Waitlist</Button>
+        </form>
+        <Box className={classes.btmtext}>
+          By pressing Join, I agree to receive communications from Private
+          Identity and to the
+          <a href="#" className={classes.span}>
+            Privacy Policy
+          </a>
+          and
+          <a href="#" className={classes.span}>
+            Terms of Service.
+          </a>
+        </Box>
+        {/* <Box className={classes.itembox}>
+          <ArrowForwardIcon className={classes.icon} />
+          <Box className={classes.text}>Local, Cloud & Continuous Auth</Box>
+        </Box>
+        <Box className={classes.itembox}>
+          <ArrowForwardIcon className={classes.icon} />
+          <Box className={classes.text}>No Biometric Templates</Box>
+        </Box>
+
+        <Box className={classes.itembox}>
+          <ArrowForwardIcon className={classes.icon} />
+          <Box className={classes.text}>Extreme Accuracy & Speed</Box>
+        </Box>
+
+        <Box className={classes.itembox}>
+          <ArrowForwardIcon className={classes.icon} />
           <Box className={classes.text}>
-            Private ID® is currently available to a limited number of
-            organizations per geographic area. Orders will be fulfilled on a
-            first-come, first-served basis.
+            Runs on Browsers, Phones, Platforms & Clouds
           </Box>
-          <form className={classes.mailbox}>
-            {/* <Box className={classes.label}>Enter Email:</Box> */}
-            <input
-              type="text"
-              className={classes.input}
-              placeholder="Enter Email"
-            />
-            <Button className={classes.btn}>Join the Waitlist</Button>
-          </form>
-          <Box className={classes.btmtext}>
-            By pressing Join, I agree to receive communications from Private
-            Identity and to the
-            <a href="#" className={classes.span}>
-              Privacy Policy
-            </a>
-            and
-            <a href="#" className={classes.span}>
-              Terms of Service.
-            </a>
-          </Box>
-        </Box>
-      </div>
+        </Box> */}
+      </Box>
     </div>
   );
 }

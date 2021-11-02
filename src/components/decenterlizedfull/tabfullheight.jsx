@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 30,
+    fontSize: 20,
     lineHeight: "120%",
     /* or 36px */
     textAlign: "left",
@@ -107,7 +107,10 @@ const useStyles = makeStyles((theme) => ({
     // marginLeft: "-29rem",
   },
   logobox: {
-    height: "10vh",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
   },
   centerbox: {
     height: "10vh",
@@ -132,8 +135,7 @@ export default function DecenterlizedPadFull() {
       <div className={classes.main}>
         <Box className={classes.logobox}>
           <img src={logo} className={classes.logo} alt="" />
-        </Box>
-        <Box className={classes.centerbox}>
+
           <Box className={classes.textbox}>
             <Box className={classes.text}>
               Decentralized biometrics for a secure, private and delightful
