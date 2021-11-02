@@ -68,7 +68,7 @@ const useStyles = makeStyles((theme) => ({
     width: 720,
     marginTop: 20,
     [theme.breakpoints.up("xl")]: {
-      width: 1030,
+      width: 1020,
     },
   },
   lowercardbox: {
@@ -77,7 +77,7 @@ const useStyles = makeStyles((theme) => ({
     width: 475,
     marginTop: 20,
     [theme.breakpoints.up("xl")]: {
-      width: 680,
+      width: 675,
     },
   },
   sqr: {
@@ -85,7 +85,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "center",
     // alignItems: "center",
-    width: 230,
+    width: 225,
     height: 219,
     background: "#434242",
     [theme.breakpoints.up("xl")]: {

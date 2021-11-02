@@ -16,7 +16,8 @@ import DecenterlizedFull from "./components/decenterlizedfull";
 function App() {
   return (
     <div className="App">
-      <DecenterlizedFull />
+      <VoiceAuthentication />
+      {/* <DecenterlizedFull />
       <Fast />
       <Face />
       <VoiceAuthentication />
@@ -29,7 +30,7 @@ function App() {
       <Engineered />
       <Consumption />
       <LetsTalk />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
