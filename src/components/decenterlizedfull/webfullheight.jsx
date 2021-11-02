@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    maxWidth: 1920,
+    maxWidth: 2180,
     height: "100vh",
   },
   textbox: {
@@ -53,8 +53,8 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     color: "#D1D1D1",
     [theme.breakpoints.up("xl")]: {
-      fontSize: 45,
-      width: 705,
+      fontSize: 55,
+      width: 905,
     },
     [theme.breakpoints.only("md")]: {
       fontSize: 44,
@@ -111,7 +111,10 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   img: {
-    height: 900,
+    [theme.breakpoints.up("xl")]: {
+      width: "100%",
+    },
+
     [theme.breakpoints.only("lg")]: {
       marginLeft: "-7rem",
       height: 700,
@@ -128,6 +131,8 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("xl")]: {
       marginTop: 60,
       marginLeft: 10,
+      width: 300,
+      height: 60,
     },
     [theme.breakpoints.only("md")]: { marginLeft: 40 },
   },
