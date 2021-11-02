@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     [theme.breakpoints.up("xl")]: {
       width: 553,
-      height: 53,
+      height: 73,
       fontSize: 50,
       lineHeight: "32px",
     },
@@ -80,7 +80,7 @@ const useStyles = makeStyles((theme) => ({
       width: 553,
       height: 83,
       fontSize: 30,
-      lineHeight: "36px",
+      lineHeight: "38px",
     },
     [theme.breakpoints.only("lg")]: {
       width: 453,
