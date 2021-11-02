@@ -14,10 +14,13 @@ const useStyles = makeStyles((theme) => ({
     minHeight: "100vh",
   },
   main: {
-    maxWidth: 1920,
+    maxWidth: 2180,
   },
   img: {
     height: 780,
+    [theme.breakpoints.up("xl")]: {
+      height: 1000,
+    },
     [theme.breakpoints.only("md")]: {
       width: 651,
       height: 490,
@@ -43,6 +46,12 @@ const useStyles = makeStyles((theme) => ({
     /* or 48px */
     color: "#FFFFFF",
     textAlign: "left",
+    [theme.breakpoints.up("xl")]: {
+      width: 553,
+      height: 53,
+      fontSize: 50,
+      lineHeight: "32px",
+    },
     [theme.breakpoints.only("lg")]: {
       width: 455,
       height: 65,
@@ -67,6 +76,12 @@ const useStyles = makeStyles((theme) => ({
     /* or 22px */
     color: "#FFFFFF",
     textAlign: "left",
+    [theme.breakpoints.up("xl")]: {
+      width: 553,
+      height: 83,
+      fontSize: 30,
+      lineHeight: "36px",
+    },
     [theme.breakpoints.only("lg")]: {
       width: 453,
       height: 53,

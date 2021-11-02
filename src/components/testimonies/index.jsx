@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: -40,
   },
   dflex: {
-    maxWidth: 934,
+    maxWidth: 1400,
     display: "flex",
     alignItems: "flex-end",
     flexDirection: "column",
@@ -35,6 +35,12 @@ const useStyles = makeStyles((theme) => ({
     /* or 35 */
     textAlign: "left",
     color: "#D3D3D3",
+    [theme.breakpoints.up("xl")]: {
+      maxWidth: 1400,
+      height: 286,
+      fontSize: 40,
+      lineHeight: "44px",
+    },
     [theme.breakpoints.only("md")]: {
       maxWidth: 782,
       height: 186,
@@ -62,6 +68,11 @@ const useStyles = makeStyles((theme) => ({
     /* or 29px */
     textAlign: "left",
     color: "#DADADA",
+    [theme.breakpoints.up("xl")]: {
+      maxWidth: 765,
+      height: 73,
+      fontSize: 24,
+    },
     [theme.breakpoints.only("md")]: {
       maxWidth: 565,
       height: 73,
@@ -89,6 +100,11 @@ const useStyles = makeStyles((theme) => ({
     /* or 29px */
     textAlign: "left",
     color: "#DADADA",
+    [theme.breakpoints.up("xl")]: {
+      width: 270,
+      height: 43,
+      fontSize: 24,
+    },
     [theme.breakpoints.only("sm")]: {
       maxWidth: 180,
       height: 30,
@@ -111,6 +127,11 @@ const useStyles = makeStyles((theme) => ({
     /* or 29px */
     textAlign: "left",
     color: "#DADADA",
+    [theme.breakpoints.up("xl")]: {
+      width: 268,
+      height: 73,
+      fontSize: 24,
+    },
     [theme.breakpoints.only("sm")]: {
       maxWidth: 180,
       height: 30,
@@ -135,6 +156,11 @@ const useStyles = makeStyles((theme) => ({
     /* or 287px */
     letterSpacing: "-0.085em",
     color: "#E4E4E4",
+    [theme.breakpoints.up("xl")]: {
+      marginTop: "-50rem",
+      marginLeft: "95rem",
+      width: 81,
+    },
     [theme.breakpoints.only("md")]: {
       marginTop: "-25rem",
       marginLeft: "55rem",
@@ -168,6 +194,11 @@ const useStyles = makeStyles((theme) => ({
 
     color: "#E4E4E4",
     transform: "rotate(180deg)",
+    [theme.breakpoints.up("xl")]: {
+      marginTop: "35rem",
+      marginLeft: "-95rem",
+      width: 81,
+    },
     [theme.breakpoints.only("md")]: {
       marginTop: "20rem",
       marginLeft: "-55rem",

@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
   },
   main: {
-    maxWidth: 1280,
+    maxWidth: 2180,
     display: "flex",
     justifyContent: "center",
     // alignItems: "center",
@@ -62,9 +62,9 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "47px",
     color: "#FFFFFF",
     [theme.breakpoints.up("xl")]: {
-      width: 350,
-      fontSize: 40,
-      height: 90,
+      width: 420,
+      fontSize: 50,
+      height: 100,
     },
     [theme.breakpoints.only("md")]: {
       height: 77,
@@ -82,10 +82,10 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     color: "#FFFFFF",
     [theme.breakpoints.up("xl")]: {
-      width: 650,
-      fontSize: 26,
-      height: 160,
-      lineHeight: "27px",
+      width: 750,
+      fontSize: 30,
+      height: 180,
+      lineHeight: "32px",
     },
     [theme.breakpoints.only("md")]: {
       height: 116,
@@ -94,9 +94,11 @@ const useStyles = makeStyles((theme) => ({
   mailbox: {
     display: "flex",
     height: 70,
-
     [theme.breakpoints.only("md")]: {
       height: 50,
+    },
+    [theme.breakpoints.up("xl")]: {
+      height: 90,
     },
   },
   input: {
@@ -118,6 +120,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("xl")]: {
       width: 440,
       height: 35,
+      fontSize: 18,
     },
     [theme.breakpoints.only("md")]: {
       width: 316,
@@ -137,9 +140,9 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 10,
     color: "#FFFFFF",
     [theme.breakpoints.up("xl")]: {
-      width: 160,
-      height: 35,
-      fontSize: 14,
+      width: 200,
+      height: 40,
+      fontSize: 18,
     },
     [theme.breakpoints.only("md")]: {
       width: 137,
@@ -159,8 +162,8 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     color: "#FFFFFF",
     [theme.breakpoints.up("xl")]: {
-      width: 600,
-      fontSize: 18,
+      width: 750,
+      fontSize: 26,
       height: 60,
     },
   },
