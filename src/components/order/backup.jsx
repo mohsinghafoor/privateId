@@ -203,7 +203,7 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: 40,
     [theme.breakpoints.only("xs")]: {
       width: "90%",
-      fontSize: 16,
+      fontSize: 12,
       height: 60,
     },
   },
