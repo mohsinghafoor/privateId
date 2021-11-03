@@ -300,7 +300,7 @@ export default function Testimonies() {
             to work with, our customers appreciate their advanced technology,
             and their solutions integrate easily in our architecture.”
           </Box>
-          <Box className={classes.author1}>Dave Coxe,CEO </Box>
+          <Box className={classes.author1}>Dave Coxe, CEO </Box>
           <Box className={classes.designation}>ID DataWeb</Box>
         </Box>
         <FormatQuoteIcon className={classes.lwrquote} />
