@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     background: "#353535",
     minHeight: "100vh",
+    marginTop: -13,
     [theme.breakpoints.up("lg")]: {},
   },
   main: {
