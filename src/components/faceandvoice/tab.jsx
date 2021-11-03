@@ -106,8 +106,8 @@ const useStyles = makeStyles((theme) => ({
   },
   img: {
     [theme.breakpoints.only("md")]: {
-      height: 1000,
-      marginBottom: -27,
+      height: 1100,
+      marginBottom: -30,
     },
     [theme.breakpoints.only("sm")]: {
       height: 650,
