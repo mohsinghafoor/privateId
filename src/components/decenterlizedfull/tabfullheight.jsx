@@ -11,19 +11,31 @@ const useStyles = makeStyles((theme) => ({
     backgroundImage: `url(${background})`,
     display: "flex",
     alignItems: "center",
-    justifyContent: "center",
-    minHeight: "100vh",
+    justifyContent: "flex-end",
     backgroundSize: "100% 100%",
+    height: 1320,
+    [theme.breakpoints.only("sm")]: {
+      height: 1024,
+    },
+    [theme.breakpoints.only("xs")]: {
+      height: "100vh",
+    },
   },
   main: {
     display: "flex",
     flexDirection: "column",
-    justifyContent: "center",
+    justifyContent: "flex-end",
     alignItems: "center",
-    minHeight: "100vh",
     width: "100%",
     background:
       "linear-gradient(180.17deg, #181818 -5.4%, rgba(0, 0, 0, 0) 89.76%)",
+    height: 1320,
+    [theme.breakpoints.only("sm")]: {
+      height: 1024,
+    },
+    [theme.breakpoints.only("xs")]: {
+      height: "100vh",
+    },
   },
   textbox: {
     position: "absolute",
@@ -109,7 +121,15 @@ const useStyles = makeStyles((theme) => ({
   },
 
   img: {
-    height: "100%",
+    [theme.breakpoints.only("md")]: {
+      height: 1100,
+    },
+    [theme.breakpoints.only("sm")]: {
+      height: 930,
+    },
+    [theme.breakpoints.down("xs")]: {
+      width: "100%",
+    },
   },
   logo: {
     [theme.breakpoints.only("xs")]: {
@@ -128,15 +148,17 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     alignItems: "flex-start",
     justifyContent: "flex-start",
-    height: "10vh",
     [theme.breakpoints.only("xs")]: {
       alignItems: "center",
       justifyContent: "center",
+      marginBottom: 180,
+    },
+    [theme.breakpoints.only("md")]: {
+      marginBottom: 100,
     },
   },
 
   bottombox: {
-    height: "90vh",
     display: "flex",
     flexDirection: "column",
     justifyContent: "flex-end",
@@ -145,7 +167,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function DecenterlizedPadFull() {
+export default function DecenterlizedPad() {
   const classes = useStyles();
 
   return (
@@ -153,19 +175,6 @@ export default function DecenterlizedPadFull() {
       <div className={classes.main}>
         <Box className={classes.logobox}>
           <img src={logo} className={classes.logo} alt="" />
-
-          {/* <Box className={classes.btnbox}>
-              <a
-                style={{ textDecoration: "none" }}
-                target="_blank"
-                href="https://www.youtube.com/watch?v=5iYEhEiOlrI"
-              >
-                <IconButton className={classes.iconbtn}>
-                  <PlayCircleFilledIcon className={classes.playbtn} /> Watch
-                  Video
-                </IconButton>
-              </a>
-            </Box> */}
         </Box>
         <Box className={classes.bottombox}>
           <Box className={classes.textbox}>

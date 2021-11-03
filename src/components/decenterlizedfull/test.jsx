@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Box, IconButton } from "@material-ui/core";
 import background from "../../assets/decenterlizedbacksm.png";
 import PlayCircleFilledIcon from "@material-ui/icons/PlayCircleFilled";
-import img from "../../assets/decxs.png";
+import img from "../../assets/decsm.png";
 import logo from "../../assets/logo 1.png";
 
 const useStyles = makeStyles((theme) => ({
@@ -11,38 +11,68 @@ const useStyles = makeStyles((theme) => ({
     backgroundImage: `url(${background})`,
     display: "flex",
     alignItems: "center",
-    justifyContent: "center",
-    minHeight: "100vh",
+    justifyContent: "flex-end",
     backgroundSize: "100% 100%",
+    height: 1320,
+    [theme.breakpoints.only("sm")]: {
+      height: 1024,
+    },
+    [theme.breakpoints.only("xs")]: {
+      height: "100vh",
+    },
   },
   main: {
     display: "flex",
     flexDirection: "column",
-    justifyContent: "center",
+    justifyContent: "flex-end",
     alignItems: "center",
-    minHeight: "100vh",
     width: "100%",
     background:
       "linear-gradient(180.17deg, #181818 -5.4%, rgba(0, 0, 0, 0) 89.76%)",
+    height: 1320,
+    [theme.breakpoints.only("sm")]: {
+      height: 1024,
+    },
+    [theme.breakpoints.only("xs")]: {
+      height: "100vh",
+    },
+  },
+  textbox: {
+    position: "absolute",
+    width: "100%",
+    display: "flex",
+    justifyContent: "center",
+    marginBottom: "7rem",
+    background: " rgba(0, 0, 0, 0.5)",
+    height: 150,
+    [theme.breakpoints.only("sm")]: {
+      height: 250,
+    },
+    [theme.breakpoints.only("xs")]: {
+      height: 130,
+      alignItems: "flex-start",
+      justifyContent: "flex-start",
+    },
   },
   text: {
-    maxWidth: "90%",
+    maxWidth: "80%",
     height: 78,
     marginTop: 40,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 30,
+    fontSize: 40,
     lineHeight: "120%",
     /* or 36px */
     textAlign: "left",
     color: "#D1D1D1",
     marginLeft: 30,
-    [theme.breakpoints.down("xs")]: {
-      fontSize: 26,
-      width: "90%",
-      height: 90,
-      marginLeft: 20,
+    [theme.breakpoints.only("md")]: {
+      fontSize: 35,
+    },
+    [theme.breakpoints.only("xs")]: {
+      fontSize: 18,
+      height: 48,
     },
   },
   btnbox: {
@@ -79,6 +109,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   playbtn: {
+    width: 38,
+    height: 38,
     color: "#C4C4C4",
     marginRight: 5,
     marginTop: -5,
@@ -87,43 +119,55 @@ const useStyles = makeStyles((theme) => ({
       height: 25,
     },
   },
-  textbox: {
-    width: "100%",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "flex-start",
-    // background: "#2A2A2A",
-  },
+
   img: {
+    [theme.breakpoints.only("md")]: {
+      height: 1100,
+    },
+    [theme.breakpoints.only("sm")]: {
+      height: 930,
+    },
     [theme.breakpoints.down("xs")]: {
       width: "100%",
     },
   },
   logo: {
-    // position: "absolute",
-    marginTop: "1rem",
-    height: 43,
+    [theme.breakpoints.only("xs")]: {
+      height: 30,
+    },
+    [theme.breakpoints.only("md")]: {
+      height: 70,
+    },
+    marginTop: "2rem",
+    height: 53,
     // marginLeft: "-29rem",
   },
   logobox: {
-    height: "10vh",
-  },
-  centerbox: {
-    height: "30vh",
+    width: "95%",
     display: "flex",
+    flexDirection: "column",
     alignItems: "flex-start",
+    justifyContent: "flex-start",
+    [theme.breakpoints.only("xs")]: {
+      alignItems: "center",
+      justifyContent: "center",
+      marginBottom: 180,
+    },
+    [theme.breakpoints.only("md")]: {
+      marginBottom: 100,
+    },
   },
+
   bottombox: {
-    height: "60vh",
     display: "flex",
     flexDirection: "column",
     justifyContent: "flex-end",
-    alignItems: "center",
+    alignItems: "flex-end",
     width: "100%",
   },
 }));
 
-export default function DecenterlizedMobile() {
+export default function Test() {
   const classes = useStyles();
 
   return (
@@ -132,28 +176,13 @@ export default function DecenterlizedMobile() {
         <Box className={classes.logobox}>
           <img src={logo} className={classes.logo} alt="" />
         </Box>
-        <Box className={classes.centerbox}>
+        <Box className={classes.bottombox}>
           <Box className={classes.textbox}>
             <Box className={classes.text}>
               Decentralized biometrics for a secure, private and delightful
               customer experience
             </Box>
-            {/* <Box className={classes.btnbox}>
-              <a
-                style={{ textDecoration: "none" }}
-                target="_blank"
-                href="https://www.youtube.com/watch?v=5iYEhEiOlrI"
-              >
-                <IconButton className={classes.iconbtn}>
-                  <PlayCircleFilledIcon className={classes.playbtn} /> Watch
-                  Video
-                </IconButton>
-              </a>
-            </Box> */}
           </Box>
-        </Box>
-        <Box className={classes.bottombox}>
-          {" "}
           <img src={img} className={classes.img} alt="" />
         </Box>
       </div>

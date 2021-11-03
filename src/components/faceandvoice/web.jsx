@@ -105,7 +105,7 @@ const useStyles = makeStyles((theme) => ({
     filter: " drop-shadow(17px 4px 11px rgba(0, 0, 0, 0.2))",
     marginBottom: -36,
     [theme.breakpoints.only("lg")]: {
-      height: 900,
+      height: 800,
       marginBottom: -28,
     },
   },

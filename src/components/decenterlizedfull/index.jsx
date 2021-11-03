@@ -4,7 +4,7 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/core/styles";
 import DecenterlizedPadFull from "./tabfullheight";
 import DecenterlizedFullHeight from "./webfullheight";
-import DecenterlizedMobile from "./mobile";
+import DecenterlizedPad from "./tabfullheight";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -23,7 +23,7 @@ export default function DecenterlizedFull() {
       {
         /* {isMobile ? (
         <DecenterlizedMobile />
-      ) : */ isPad ? <DecenterlizedPadFull /> : <DecenterlizedFullHeight />
+      ) : */ isPad ? <DecenterlizedPad /> : <DecenterlizedFullHeight />
       }
     </div>
   );
