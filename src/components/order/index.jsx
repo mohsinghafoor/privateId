@@ -4,6 +4,7 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/core/styles";
 import OrderTab from "./tab";
 import OrderWeb from "./web";
+import BackUp from "./backup";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -17,6 +18,6 @@ export default function Order() {
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <div className={classes.root}>{isMobile ? <OrderTab /> : <OrderWeb />}</div>
+    <div className={classes.root}>{isMobile ? <BackUp /> : <OrderWeb />}</div>
   );
 }

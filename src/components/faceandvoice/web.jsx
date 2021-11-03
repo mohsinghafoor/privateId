@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Box, Grid } from "@material-ui/core";
 import background from "../../assets/fastbackweb.png";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
-import img from "../../assets/fastimg.png";
+import img from "../../assets/fastimg1.png";
 const useStyles = makeStyles((theme) => ({
   root: {
     backgroundImage: `url(${background})`,
@@ -85,26 +85,28 @@ const useStyles = makeStyles((theme) => ({
   },
   sqr: {
     position: "absolute",
-    marginBottom: "35rem",
-    marginRight: "27rem",
+    marginTop: "-53rem",
+    marginLeft: "21rem",
     width: 280,
     height: 280,
-    border: "3px solid rgba(248, 248, 248, 0.25)",
+
+    border: "4px solid rgba(248, 248, 248, 0.25)",
     boxSizing: "border-box",
     [theme.breakpoints.only("lg")]: {
-      marginBottom: "23rem",
-      marginLeft: "22rem",
-      width: 180,
-      height: 180,
+      marginTop: "-40rem",
+      marginLeft: "15rem",
+      width: 220,
+      height: 220,
+      border: "3px solid rgba(248, 248, 248, 0.25)",
     },
   },
   img: {
     height: 1200,
     filter: " drop-shadow(17px 4px 11px rgba(0, 0, 0, 0.2))",
-    marginBottom: -32,
+    marginBottom: -36,
     [theme.breakpoints.only("lg")]: {
-      height: 1000,
-      marginBottom: -22,
+      height: 900,
+      marginBottom: -28,
     },
   },
   icon: {
@@ -117,21 +119,15 @@ const useStyles = makeStyles((theme) => ({
   },
   leftgrid: {
     display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
+    alignItems: "flex-end",
     justifyContent: "flex-end",
     height: "100vh",
-    [theme.breakpoints.up("xl")]: {
-      justifyContent: "flex-end",
-      alignItems: "flex-end",
-    },
   },
   rightgrid: {
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
     alignItems: "flex-start",
-    height: "100vh",
   },
 }));
 
@@ -143,8 +139,10 @@ export default function FastWeb() {
       <div className={classes.gradiant}>
         <Grid container className={classes.main}>
           <Grid item lg={6} className={classes.leftgrid}>
-            <img src={img} alt="Girl with mask on" className={classes.img} />
-            <Box className={classes.sqr} />
+            <Box className={classes.imgbox}>
+              <img src={img} alt="Girl with mask on" className={classes.img} />
+              {/* <Box className={classes.sqr} /> */}
+            </Box>
           </Grid>
           <Grid item lg={6} className={classes.rightgrid}>
             <Box className={classes.heading}>

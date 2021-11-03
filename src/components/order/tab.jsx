@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Box, Grid, Button } from "@material-ui/core";
 // import background from "../../assets/fastbackmobile.png";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
-import img from "../../assets/girl.png";
+import img from "../../assets/girl1.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -12,29 +12,31 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center",
     flexDirection: "column",
-    minHeight: "100vh",
+    height: "100vh",
   },
   main: {
     maxWidth: 1280,
     display: "flex",
     justifyContent: "center",
+    height: "100vh",
   },
-  rightbox: {
-    width: "90%",
+  lowerbox: {
+    width: "100%",
     display: "flex",
     flexDirection: "column",
-    justifyContent: "center",
+    justifyContent: "flex-start",
+    alignItems: "center",
     background: "#2A2A2A",
-    minHeight: "30vh",
-    [theme.breakpoints.down("sm")]: {
+    height: "30vh",
+    [theme.breakpoints.only("sm")]: {
       marginBottom: 70,
     },
     [theme.breakpoints.down("xs")]: {
-      minHeight: "50vh",
+      height: "40vh",
     },
   },
   heading: {
-    width: 550,
+    width: "90%",
     height: 55,
     fontSize: 40,
     fontFamily: "Axiforma",
@@ -46,35 +48,41 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     marginTop: 40,
     [theme.breakpoints.only("xs")]: {
-      width: "100%",
-      height: 95,
+      width: "90%",
+      height: 55,
       fontSize: 24,
+      // marginBottom: 20,
     },
   },
 
   text: {
-    width: 650,
+    width: "90%",
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 28,
+    fontSize: 26,
     lineHeight: "120%",
     /* or 22px */
     textAlign: "left",
     color: "#FFFFFF",
-    height: 90,
+    height: 120,
     [theme.breakpoints.only("xs")]: {
-      width: "100%",
+      width: "90%",
       fontSize: 16,
+      height: 100,
+      // marginBottom: 20,
     },
+  },
+  upperbox: {
+    width: "100%",
   },
   imgbox: {
     // backgroundImage: `url(${background})`,
     backgroundSize: "100% 100%",
     width: "100%",
-    minHeight: "70vh",
+    height: "70vh",
     [theme.breakpoints.down("xs")]: {
-      minHeight: "50vh",
+      height: "60vh",
     },
   },
   sqr: {
@@ -100,7 +108,7 @@ const useStyles = makeStyles((theme) => ({
   },
   img: {
     [theme.breakpoints.only("md")]: {
-      height: 1000,
+      width: "70%",
       marginBottom: -27,
     },
     [theme.breakpoints.only("sm")]: {
@@ -115,7 +123,7 @@ const useStyles = makeStyles((theme) => ({
 
   gradiant: {
     background: "rgba(0, 0, 0, 0.55)",
-    minHeight: "70vh",
+    height: "70vh",
     display: "flex",
     alignItems: "flex-end",
     justifyContent: "center",
@@ -123,12 +131,7 @@ const useStyles = makeStyles((theme) => ({
       minHeight: "50vh",
     },
   },
-  upperbox: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-  },
+
   btn: {
     width: 120,
     height: 30,
@@ -144,11 +147,12 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFFFFF",
   },
   mailbox: {
+    width: "90%",
     display: "flex",
-    height: 70,
+    height: 60,
   },
   input: {
-    width: 365,
+    width: "75%",
     height: 30,
     background: "none",
     border: 0,
@@ -175,9 +179,9 @@ const useStyles = makeStyles((theme) => ({
     /* or 17px */
     textAlign: "left",
     color: "#FFFFFF",
-    [theme.breakpoints.up("xl")]: {
-      width: 750,
-      fontSize: 26,
+    [theme.breakpoints.only("xs")]: {
+      width: "90%",
+      fontSize: 16,
       height: 60,
     },
   },
@@ -198,11 +202,10 @@ export default function OrderTab() {
         <div className={classes.gradiant}>
           <Box className={classes.upperbox}>
             <img src={img} alt="Girl with mask on" className={classes.img} />
-            <Box className={classes.sqr} />
           </Box>
         </div>
       </Box>
-      <Box className={classes.rightbox}>
+      <Box className={classes.lowerbox}>
         <Box className={classes.heading}>Order Private ID®</Box>
         <Box className={classes.text}>
           Decentralized biometrics for a secure, private and delightful customer

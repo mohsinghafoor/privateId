@@ -15,18 +15,16 @@ const useStyles = makeStyles((theme) => ({
 export default function DecenterlizedFull() {
   const classes = useStyles();
   const theme = useTheme();
-  const isPad = useMediaQuery(theme.breakpoints.down("sm"));
+  const isPad = useMediaQuery(theme.breakpoints.down("md"));
   const isMobile = useMediaQuery(theme.breakpoints.down("xs"));
 
   return (
     <div className={classes.root}>
-      {isMobile ? (
+      {
+        /* {isMobile ? (
         <DecenterlizedMobile />
-      ) : isPad ? (
-        <DecenterlizedPadFull />
-      ) : (
-        <DecenterlizedFullHeight />
-      )}
+      ) : */ isPad ? <DecenterlizedPadFull /> : <DecenterlizedFullHeight />
+      }
     </div>
   );
 }

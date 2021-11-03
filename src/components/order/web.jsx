@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Box, TextField, Button } from "@material-ui/core";
-import img from "../../assets/girl.png";
+import img from "../../assets/girl1.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -228,7 +228,7 @@ export default function OrderWeb() {
         </Grid>
         <Grid item xl={6} lg={5} md={5} className={classes.rightgrid}>
           <img src={img} alt="Girl Picture" className={classes.img} />
-          <Box className={classes.sqr} />
+          {/* <Box className={classes.sqr} /> */}
         </Grid>
       </Grid>
     </div>

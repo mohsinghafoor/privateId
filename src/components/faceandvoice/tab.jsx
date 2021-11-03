@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Box, Grid } from "@material-ui/core";
 import background from "../../assets/fastbackmobile.png";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
-import img from "../../assets/fastimg.png";
+import img from "../../assets/fastimg1.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -155,7 +155,7 @@ export default function FastTab() {
         <div className={classes.gradiant}>
           <Box className={classes.upperbox}>
             <img src={img} alt="Girl with mask on" className={classes.img} />
-            <Box className={classes.sqr} />
+            {/* <Box className={classes.sqr} /> */}
           </Box>
         </div>
       </Box>

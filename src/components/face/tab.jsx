@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Box } from "@material-ui/core";
 import background from "../../assets/voicebackground.png";
-import img from "../../assets/faceimgsm.png";
+import img from "../../assets/faceimg1.png";
 import badge from "../../assets/voicebadge.png";
 
 const useStyles = makeStyles((theme) => ({
@@ -256,8 +256,8 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       marginLeft: "0.5rem",
       marginTop: "10rem",
-      width: 120,
-      height: 120,
+      width: 160,
+      height: 160,
     },
   },
 }));
@@ -275,7 +275,7 @@ export default function FaceTab() {
             </Box>
           </Box>
           <img src={img} className={classes.img} alt="voice image" />
-          <Box className={classes.box} />
+          {/* <Box className={classes.box} /> */}
         </Box>
       </Box>
 

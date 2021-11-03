@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Box, Grid } from "@material-ui/core";
 import background from "../../assets/facebackmd.png";
-import img from "../../assets/faceimg.png";
+import img from "../../assets/faceimg1.png";
 import badge from "../../assets/voicebadge.png";
 
 const useStyles = makeStyles((theme) => ({
@@ -225,7 +225,7 @@ export default function FaceIpad() {
 
           <Box className={classes.rightgrid}>
             <img src={img} className={classes.img} alt="" />
-            <Box className={classes.box} />
+            {/* <Box className={classes.box} /> */}
           </Box>
         </Box>
       </div>
