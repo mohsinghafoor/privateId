@@ -13,6 +13,12 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     flexDirection: "column",
     // height: "100vh",
+    [theme.breakpoints.only("md")]: {
+      height: 1300,
+    },
+    [theme.breakpoints.only("sm")]: {
+      height: 1050,
+    },
   },
   main: {
     maxWidth: 1280,
@@ -128,6 +134,8 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "flex-end",
     justifyContent: "center",
+    background: "#2A2A2A",
+    marginBottom: 80,
     [theme.breakpoints.down("xs")]: {
       // minHeight: "50vh",
     },
@@ -146,11 +154,19 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 0,
     marginLeft: 10,
     color: "#FFFFFF",
+    [theme.breakpoints.only("md")]: {
+      fontSize: 16,
+      width: 180,
+      height: 45,
+    },
   },
   mailbox: {
     width: "90%",
     display: "flex",
     height: 60,
+    [theme.breakpoints.only("md")]: {
+      height: 85,
+    },
   },
   input: {
     width: "75%",
@@ -168,6 +184,10 @@ const useStyles = makeStyles((theme) => ({
     /* identical to box height, or 19px */
 
     color: "#999999",
+    [theme.breakpoints.only("md")]: {
+      fontSize: 24,
+      height: 40,
+    },
   },
   btmtext: {
     width: "90%",
