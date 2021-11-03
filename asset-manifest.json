@@ -1,23 +1,22 @@
 {
   "files": {
     "main.css": "/privateId/static/css/main.86aad699.chunk.css",
-    "main.js": "/privateId/static/js/main.2a6e001b.chunk.js",
-    "main.js.map": "/privateId/static/js/main.2a6e001b.chunk.js.map",
+    "main.js": "/privateId/static/js/main.7ab7250f.chunk.js",
+    "main.js.map": "/privateId/static/js/main.7ab7250f.chunk.js.map",
     "runtime-main.js": "/privateId/static/js/runtime-main.fb903f6d.js",
     "runtime-main.js.map": "/privateId/static/js/runtime-main.fb903f6d.js.map",
-    "static/js/2.87388507.chunk.js": "/privateId/static/js/2.87388507.chunk.js",
-    "static/js/2.87388507.chunk.js.map": "/privateId/static/js/2.87388507.chunk.js.map",
+    "static/js/2.0fc00ee7.chunk.js": "/privateId/static/js/2.0fc00ee7.chunk.js",
+    "static/js/2.0fc00ee7.chunk.js.map": "/privateId/static/js/2.0fc00ee7.chunk.js.map",
     "static/js/3.0802e485.chunk.js": "/privateId/static/js/3.0802e485.chunk.js",
     "static/js/3.0802e485.chunk.js.map": "/privateId/static/js/3.0802e485.chunk.js.map",
     "index.html": "/privateId/index.html",
     "static/css/main.86aad699.chunk.css.map": "/privateId/static/css/main.86aad699.chunk.css.map",
-    "static/js/2.87388507.chunk.js.LICENSE.txt": "/privateId/static/js/2.87388507.chunk.js.LICENSE.txt",
+    "static/js/2.0fc00ee7.chunk.js.LICENSE.txt": "/privateId/static/js/2.0fc00ee7.chunk.js.LICENSE.txt",
     "static/media/index.css": "/privateId/static/media/FontsFree-Net-Axiforma2woff2.d33b50e9.ttf",
     "static/media/decenterlizedback.e771cea1.png": "/privateId/static/media/decenterlizedback.e771cea1.png",
     "static/media/decenterlizedbacksm.c7eb9eab.png": "/privateId/static/media/decenterlizedbacksm.c7eb9eab.png",
     "static/media/decenterlizedimg.1ebadb28.png": "/privateId/static/media/decenterlizedimg.1ebadb28.png",
     "static/media/decsm.4dee6909.png": "/privateId/static/media/decsm.4dee6909.png",
-    "static/media/decxs.3821f15c.png": "/privateId/static/media/decxs.3821f15c.png",
     "static/media/devolpers.a04f3ef7.png": "/privateId/static/media/devolpers.a04f3ef7.png",
     "static/media/engsm.5a2e9df8.png": "/privateId/static/media/engsm.5a2e9df8.png",
     "static/media/exempt.b74d29c4.png": "/privateId/static/media/exempt.b74d29c4.png",
@@ -45,8 +44,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.fb903f6d.js",
-    "static/js/2.87388507.chunk.js",
+    "static/js/2.0fc00ee7.chunk.js",
     "static/css/main.86aad699.chunk.css",
-    "static/js/main.2a6e001b.chunk.js"
+    "static/js/main.7ab7250f.chunk.js"
   ]
 }
