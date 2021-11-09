@@ -63,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 20,
+    fontSize: 16,
     lineHeight: "26px",
     /* or 22px */
     textAlign: "left",
