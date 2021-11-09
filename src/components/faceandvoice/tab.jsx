@@ -30,12 +30,12 @@ const useStyles = makeStyles((theme) => ({
       marginBottom: 70,
     },
     [theme.breakpoints.down("xs")]: {
-      minHeight: "50vh",
+      minHeight: "25vh",
     },
   },
   heading: {
-    width: 550,
-    height: 115,
+    width: 860,
+    height: 65,
     fontSize: 40,
     fontFamily: "Axiforma",
     fontStyle: "normal",
@@ -45,10 +45,15 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFFFFF",
     textAlign: "left",
     marginTop: 40,
+    [theme.breakpoints.only("sm")]: {
+      width: "100%",
+      height: 65,
+      fontSize: 32,
+    },
     [theme.breakpoints.only("xs")]: {
       width: "100%",
-      height: 95,
-      fontSize: 24,
+      height: 45,
+      fontSize: 18,
     },
   },
   itembox: {
@@ -60,18 +65,27 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   text: {
-    width: 650,
+    width: 820,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 28,
-    lineHeight: "120%",
+    fontSize: 26,
+    lineHeight: "30px",
     /* or 22px */
     textAlign: "left",
     color: "#FFFFFF",
+    marginBottom: 40,
+    [theme.breakpoints.only("sm")]: {
+      width: "100%",
+      height: 65,
+      fontSize: 18,
+      lineHeight: "28px",
+    },
     [theme.breakpoints.only("xs")]: {
       width: "100%",
-      fontSize: 16,
+      fontSize: 12,
+      lineHeight: "20px",
+      marginBottom: 0,
     },
   },
   imgbox: {
@@ -80,7 +94,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     minHeight: "70vh",
     [theme.breakpoints.down("xs")]: {
-      minHeight: "50vh",
+      minHeight: "70vh",
     },
   },
   sqr: {
@@ -135,7 +149,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "flex-end",
     justifyContent: "center",
     [theme.breakpoints.down("xs")]: {
-      minHeight: "50vh",
+      minHeight: "70vh",
     },
   },
   upperbox: {
@@ -160,28 +174,12 @@ export default function FastTab() {
         </div>
       </Box>
       <Box className={classes.rightbox}>
-        <Box className={classes.heading}>
-          Face + Voice + Fingerprint Recognition
-        </Box>
-        <Box className={classes.itembox}>
-          <ArrowForwardIcon className={classes.icon} />
-          <Box className={classes.text}>Local, Cloud & Continuous Auth</Box>
-        </Box>
-        <Box className={classes.itembox}>
-          <ArrowForwardIcon className={classes.icon} />
-          <Box className={classes.text}>No Biometric Templates</Box>
-        </Box>
-
-        <Box className={classes.itembox}>
-          <ArrowForwardIcon className={classes.icon} />
-          <Box className={classes.text}>Extreme Accuracy & Speed</Box>
-        </Box>
-
-        <Box className={classes.itembox}>
-          <ArrowForwardIcon className={classes.icon} />
-          <Box className={classes.text}>
-            Runs on Browsers, Phones, Platforms & Clouds
-          </Box>
+        <Box className={classes.heading}>Local, Cloud and Continuous Auth</Box>
+        <Box className={classes.text}>
+          Using 1-way fully homomorphic encryption (FHE), Private ID provides
+          local authentication, cloud authentication and continuous
+          authentication services with no biometric template. Users authenticate
+          locally in 10ms and on the cloud in 300ms.
         </Box>
       </Box>
     </div>

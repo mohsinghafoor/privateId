@@ -34,20 +34,20 @@ const useStyles = makeStyles((theme) => ({
   },
 
   heading: {
-    width: 552,
-    height: 130,
+    width: 640,
+    height: 58,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 40,
+    fontSize: 38,
     lineHeight: "120%",
     /* or 48px */
     color: "#FFFFFF",
     textAlign: "left",
     [theme.breakpoints.up("xl")]: {
-      width: 770,
-      fontSize: 55,
-      height: 145,
+      width: 900,
+      fontSize: 52,
+      height: 85,
     },
     [theme.breakpoints.only("md")]: {
       width: 432,
@@ -56,31 +56,25 @@ const useStyles = makeStyles((theme) => ({
       marginTop: 40,
     },
   },
-  itembox: {
-    display: "flex",
-    alignItems: "center",
-    height: 45,
-    [theme.breakpoints.up("xl")]: {
-      height: 60,
-    },
-  },
+
   text: {
-    width: 555,
+    width: 635,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 22,
-    lineHeight: "120%",
+    fontSize: 20,
+    lineHeight: "26px",
     /* or 22px */
     textAlign: "left",
     color: "#FFFFFF",
     [theme.breakpoints.up("xl")]: {
       width: 900,
-      fontSize: 40,
+      fontSize: 30,
+      lineHeight: "34px",
     },
     [theme.breakpoints.only("md")]: {
       width: 640,
-      fontSize: 28,
+      fontSize: 22,
     },
   },
   sqr: {
@@ -146,27 +140,13 @@ export default function FastWeb() {
           </Grid>
           <Grid item lg={6} className={classes.rightgrid}>
             <Box className={classes.heading}>
-              Face + Voice + Fingerprint Recognition
+              Local, Cloud and Continuous Auth
             </Box>
-            <Box className={classes.itembox}>
-              <ArrowForwardIcon className={classes.icon} />
-              <Box className={classes.text}>Local, Cloud & Continuous Auth</Box>
-            </Box>
-            <Box className={classes.itembox}>
-              <ArrowForwardIcon className={classes.icon} />
-              <Box className={classes.text}>No Biometric Templates</Box>
-            </Box>
-
-            <Box className={classes.itembox}>
-              <ArrowForwardIcon className={classes.icon} />
-              <Box className={classes.text}>Extreme Accuracy & Speed</Box>
-            </Box>
-
-            <Box className={classes.itembox}>
-              <ArrowForwardIcon className={classes.icon} />
-              <Box className={classes.text}>
-                Runs on Browsers, Phones, Platforms & Clouds
-              </Box>
+            <Box className={classes.text}>
+              Using 1-way fully homomorphic encryption (FHE), Private ID
+              provides local authentication, cloud authentication and continuous
+              authentication services with no biometric template. Users
+              authenticate locally in 10ms and on the cloud in 300ms.
             </Box>
           </Grid>
         </Grid>

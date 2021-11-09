@@ -118,9 +118,9 @@ const useStyles = makeStyles((theme) => ({
 
     color: "#999999",
     [theme.breakpoints.up("xl")]: {
-      width: 440,
+      width: 500,
       height: 35,
-      fontSize: 18,
+      fontSize: 22,
     },
     [theme.breakpoints.only("md")]: {
       width: 316,
@@ -151,7 +151,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   btmtext: {
-    width: 377,
+    width: 507,
     height: 53,
     fontFamily: "Axiforma",
     fontStyle: "normal",
@@ -163,7 +163,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFFFFF",
     [theme.breakpoints.up("xl")]: {
       width: 750,
-      fontSize: 26,
+      fontSize: 18,
       height: 60,
     },
   },

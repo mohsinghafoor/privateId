@@ -25,7 +25,6 @@ function App() {
       <Easy />
       <Exempt />
       <Testimonies />
-      <FacialRecognition />
       <Protects />
       <Engineered />
       <Consumption />

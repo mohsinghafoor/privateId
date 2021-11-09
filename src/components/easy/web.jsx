@@ -192,8 +192,8 @@ export default function EasyWeb() {
         >
           <Box className={classes.heading}>Easy to Integrate</Box>
           <Box className={classes.text}>
-            Includes everything you need to get started. First 50,000 requests
-            are free.
+            Includes everything you need to get started. Your first 50,000
+            requests are free.
           </Box>
           {/* <Box className={classes.btnbox}>
             <IconButton className={classes.iconbtn}>

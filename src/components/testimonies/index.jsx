@@ -262,7 +262,7 @@ export default function Testimonies() {
         <Box className={classes.dflex}>
           <Box className={classes.text}>
             PLLAY and Private Identity provide players with continuous,
-            frictionless high-security authentication with the right technology
+            frictionless high-security authentication with the best technology
             right now. There is no other authentication experience like this
             with no UI and no learning curve. Fantastic.
           </Box>

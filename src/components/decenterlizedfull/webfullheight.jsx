@@ -33,6 +33,11 @@ const useStyles = makeStyles((theme) => ({
     height: "100vh",
   },
   textbox: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    width: "100%",
+    flexDirection: "column",
     [theme.breakpoints.only("md")]: {
       display: "flex",
       justifyContent: "center",
@@ -40,14 +45,14 @@ const useStyles = makeStyles((theme) => ({
       width: "100%",
     },
   },
-  text: {
-    width: 505,
-    height: 138,
+  heading: {
+    width: 605,
+    height: 100,
     // marginTop: 90,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 30,
+    fontSize: 36,
     lineHeight: "120%",
     /* or 36px */
     textAlign: "left",
@@ -55,11 +60,31 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("xl")]: {
       fontSize: 55,
       width: 905,
+      height: 140,
     },
     [theme.breakpoints.only("md")]: {
       fontSize: 30,
       height: 38,
       width: "95%",
+    },
+  },
+  text: {
+    width: 600,
+    height: 138,
+    // marginTop: 90,
+    fontFamily: "Axiforma",
+    fontStyle: "normal",
+    fontWeight: 300,
+    fontSize: 18,
+    lineHeight: "24px",
+    /* or 36px */
+    textAlign: "left",
+    color: "#D1D1D1",
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 28,
+      width: 900,
+      height: 140,
+      lineHeight: "34px",
     },
   },
 
@@ -155,9 +180,14 @@ export default function DecenterlizedFullHeight() {
         <Grid container className={classes.main}>
           <Grid item lg={6} md={12} className={classes.leftgrid}>
             <Box className={classes.textbox}>
+              <Box className={classes.heading}>
+                Decentralized biometrics using fully homomorphic encryption
+              </Box>
               <Box className={classes.text}>
-                Decentralized biometrics for a secure, private and delightful
-                customer experience
+                Private Identity® provides extremely fast, accurate and
+                efficient face, voice and fingerprint identity on browsers,
+                phones, platforms and clouds with guaranteed privacy. Orders are
+                fulfilled on a first-come, first-served basis.
               </Box>
               {/* <a
                 className={classes.a}

@@ -124,7 +124,11 @@ export default function FooterAccordion(props) {
           </AccordionSummary>
           <AccordionDetails className={classes.summary}>
             <Box ml={5} className={classes.detailsbox}>
-              <a style={{ textDecoration: "none" }} href="#" target="_blank">
+              <a
+                style={{ textDecoration: "none" }}
+                href=" https://github.com/openinfer/PrivateIdentity/wiki"
+                target="_blank"
+              >
                 <Box className={classes.dflex} mt={2}>
                   <Box className={classes.bulletPoint} />
                   <Box className={classes.service} ml={1}>
@@ -133,7 +137,7 @@ export default function FooterAccordion(props) {
                 </Box>
                 <a
                   style={{ textDecoration: "none" }}
-                  href="https://github.com/openinfer/PrivateIdentity/blob/master/RELEASE%20NOTES.md"
+                  href="https://github.com/openinfer/PrivateIdentity/wiki/Privacy-Policy"
                   target="_blank"
                 ></a>
                 <Box className={classes.dflex} mt={2}>
@@ -154,7 +158,11 @@ export default function FooterAccordion(props) {
                   </Box>
                 </Box>
               </a>
-              <a style={{ textDecoration: "none" }} href="#" target="_blank">
+              <a
+                style={{ textDecoration: "none" }}
+                href="https://github.com/openinfer/PrivateIdentity/wiki/Intellectual-Property"
+                target="_blank"
+              >
                 <Box className={classes.dflex} mt={2}>
                   <Box className={classes.bulletPoint}></Box>
                   <Box className={classes.service} ml={1}>
@@ -162,7 +170,11 @@ export default function FooterAccordion(props) {
                   </Box>
                 </Box>
               </a>
-              <a style={{ textDecoration: "none" }} href="#" target="_blank">
+              <a
+                style={{ textDecoration: "none" }}
+                href="https://mail.google.com/mail/u/0/?ogbl#inbox?compose=new"
+                target="_blank"
+              >
                 <Box className={classes.dflex} mt={2}>
                   <Box className={classes.bulletPoint}></Box>
                   <Box className={classes.service} ml={1}>

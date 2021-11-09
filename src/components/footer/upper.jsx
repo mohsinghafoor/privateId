@@ -106,7 +106,11 @@ export default function FooterFields() {
             <Box className={classes.parent}>
               <Box className={classes.title}>COMPANY</Box>
               <Box ml={5}>
-                <a style={{ textDecoration: "none" }} href="#" target="_blank">
+                <a
+                  style={{ textDecoration: "none" }}
+                  href=" https://github.com/openinfer/PrivateIdentity/wiki"
+                  target="_blank"
+                >
                   {" "}
                   <Box className={classes.dflex} mt={2}>
                     <Box className={classes.bulletPoint} />
@@ -117,7 +121,7 @@ export default function FooterFields() {
                 </a>
                 <a
                   style={{ textDecoration: "none" }}
-                  href="https://github.com/openinfer/PrivateIdentity/blob/master/RELEASE%20NOTES.md"
+                  href="https://github.com/openinfer/PrivateIdentity/wiki/Privacy-Policy"
                   target="_blank"
                 >
                   <Box className={classes.dflex} mt={2}>
@@ -139,7 +143,11 @@ export default function FooterFields() {
                     </Box>
                   </Box>
                 </a>
-                <a style={{ textDecoration: "none" }} href="#" target="_blank">
+                <a
+                  style={{ textDecoration: "none" }}
+                  href="https://github.com/openinfer/PrivateIdentity/wiki/Intellectual-Property"
+                  target="_blank"
+                >
                   {" "}
                   <Box className={classes.dflex} mt={2}>
                     <Box className={classes.bulletPoint}></Box>
@@ -148,7 +156,11 @@ export default function FooterFields() {
                     </Box>
                   </Box>
                 </a>
-                <a style={{ textDecoration: "none" }} href="#" target="_blank">
+                <a
+                  style={{ textDecoration: "none" }}
+                  href="https://mail.google.com/mail/u/0/?ogbl#inbox?compose=new"
+                  target="_blank"
+                >
                   <Box className={classes.dflex} mt={2}>
                     <Box className={classes.bulletPoint}></Box>
                     <Box className={classes.service} ml={1}>
