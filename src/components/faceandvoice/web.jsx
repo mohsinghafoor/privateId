@@ -44,6 +44,7 @@ const useStyles = makeStyles((theme) => ({
     /* or 48px */
     color: "#FFFFFF",
     textAlign: "left",
+    padding: "20px 5px 0px 20px",
     [theme.breakpoints.up("xl")]: {
       width: 900,
       fontSize: 52,
@@ -67,6 +68,7 @@ const useStyles = makeStyles((theme) => ({
     /* or 22px */
     textAlign: "left",
     color: "#FFFFFF",
+    padding: "0px 5px 10px 20px",
     [theme.breakpoints.up("xl")]: {
       width: 900,
       fontSize: 30,
@@ -121,7 +123,10 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
-    alignItems: "flex-start",
+    alignItems: "center",
+  },
+  textbox: {
+    background: "#2A2A2A",
   },
 }));
 
@@ -132,21 +137,23 @@ export default function FastWeb() {
     <div className={classes.root}>
       <div className={classes.gradiant}>
         <Grid container className={classes.main}>
-          <Grid item lg={6} className={classes.leftgrid}>
+          <Grid item xl={6} lg={5} className={classes.leftgrid}>
             <Box className={classes.imgbox}>
               <img src={img} alt="Girl with mask on" className={classes.img} />
               {/* <Box className={classes.sqr} /> */}
             </Box>
           </Grid>
-          <Grid item lg={6} className={classes.rightgrid}>
-            <Box className={classes.heading}>
-              Local, Cloud and Continuous Auth
-            </Box>
-            <Box className={classes.text}>
-              Using 1-way fully homomorphic encryption (FHE), Private ID
-              provides local authentication, cloud authentication and continuous
-              authentication services with no biometric template. Users
-              authenticate locally in 10ms and on the cloud in 300ms.
+          <Grid item xl={6} lg={7} className={classes.rightgrid}>
+            <Box className={classes.textbox}>
+              <Box className={classes.heading}>
+                Local, Cloud and Continuous Auth
+              </Box>
+              <Box className={classes.text}>
+                Using 1-way fully homomorphic encryption (FHE), Private ID
+                provides local authentication, cloud authentication and
+                continuous authentication services with no biometric template.
+                Users authenticate locally in 10ms and on the cloud in 300ms.
+              </Box>
             </Box>
           </Grid>
         </Grid>
