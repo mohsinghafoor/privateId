@@ -51,8 +51,8 @@ const useStyles = makeStyles((theme) => ({
     // marginTop: 90,
     fontFamily: "Axiforma",
     fontStyle: "normal",
-    fontWeight: 300,
-    fontSize: 36,
+    fontWeight: 600,
+    fontSize: 32,
     lineHeight: "120%",
     /* or 36px */
     textAlign: "left",
@@ -60,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("xl")]: {
       fontSize: 55,
       width: 905,
-      height: 140,
+      height: 150,
     },
     [theme.breakpoints.only("md")]: {
       fontSize: 30,
@@ -75,16 +75,16 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 18,
-    lineHeight: "24px",
+    fontSize: 12,
+    lineHeight: "18px",
     /* or 36px */
     textAlign: "left",
     color: "#D1D1D1",
     [theme.breakpoints.up("xl")]: {
-      fontSize: 28,
+      fontSize: 18,
       width: 900,
       height: 140,
-      lineHeight: "34px",
+      lineHeight: "26px",
     },
   },
 

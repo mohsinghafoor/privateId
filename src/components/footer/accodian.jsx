@@ -170,18 +170,13 @@ export default function FooterAccordion(props) {
                   </Box>
                 </Box>
               </a>
-              <a
-                style={{ textDecoration: "none" }}
-                href="https://mail.google.com/mail/u/0/?ogbl#inbox?compose=new"
-                target="_blank"
-              >
-                <Box className={classes.dflex} mt={2}>
-                  <Box className={classes.bulletPoint}></Box>
-                  <Box className={classes.service} ml={1}>
-                    sales@private.id
-                  </Box>
+
+              <Box className={classes.dflex} mt={2}>
+                <Box className={classes.bulletPoint}></Box>
+                <Box className={classes.service} ml={1}>
+                  sales@private.id
                 </Box>
-              </a>
+              </Box>
             </Box>
           </AccordionDetails>
         </Accordion>
@@ -204,15 +199,11 @@ export default function FooterAccordion(props) {
           </AccordionSummary>
           <AccordionDetails className={classes.summary}>
             <Box ml={6} className={classes.detailsbox}>
-              <a
-                style={{ textDecoration: "none" }}
-                href="https://github.com/openinfer/PrivateIdentity/blob/master/RELEASE%20NOTES.md"
-                target="_blank"
-              >
+              <a style={{ textDecoration: "none" }} href="#" target="_blank">
                 <Box className={classes.dflex} mt={2}>
                   <Box className={classes.bulletPoint} />
                   <Box className={classes.service} ml={1}>
-                    API Docs
+                    npm install
                   </Box>
                 </Box>
               </a>

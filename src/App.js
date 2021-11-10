@@ -1,6 +1,5 @@
 import "./App.css";
 import Testimonies from "./components/testimonies";
-import FacialRecognition from "./components/facialrecognition";
 import Protects from "./components/protect";
 import LetsTalk from "./components/letstalk";
 import Footer from "./components/footer";

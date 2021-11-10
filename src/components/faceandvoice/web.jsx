@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
     height: 58,
     fontFamily: "Axiforma",
     fontStyle: "normal",
-    fontWeight: 300,
+    fontWeight: 600,
     fontSize: 38,
     lineHeight: "120%",
     /* or 48px */
@@ -63,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 16,
+    fontSize: 14,
     lineHeight: "26px",
     /* or 22px */
     textAlign: "left",
@@ -71,7 +71,7 @@ const useStyles = makeStyles((theme) => ({
     padding: "0px 5px 10px 20px",
     [theme.breakpoints.up("xl")]: {
       width: 900,
-      fontSize: 30,
+      fontSize: 18,
       lineHeight: "34px",
     },
     [theme.breakpoints.only("md")]: {
@@ -125,9 +125,6 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     alignItems: "center",
   },
-  textbox: {
-    background: "#2A2A2A",
-  },
 }));
 
 export default function FastWeb() {
@@ -144,16 +141,14 @@ export default function FastWeb() {
             </Box>
           </Grid>
           <Grid item xl={6} lg={7} className={classes.rightgrid}>
-            <Box className={classes.textbox}>
-              <Box className={classes.heading}>
-                Local, Cloud and Continuous Auth
-              </Box>
-              <Box className={classes.text}>
-                Using 1-way fully homomorphic encryption (FHE), Private ID
-                provides local authentication, cloud authentication and
-                continuous authentication services with no biometric template.
-                Users authenticate locally in 10ms and on the cloud in 300ms.
-              </Box>
+            <Box className={classes.heading}>
+              Local, Cloud and Continuous Auth
+            </Box>
+            <Box className={classes.text}>
+              Using 1-way fully homomorphic encryption (FHE), Private ID
+              provides local authentication, cloud authentication and continuous
+              authentication services with no biometric template. Users
+              authenticate locally in 10ms and on the cloud in 300ms.
             </Box>
           </Grid>
         </Grid>

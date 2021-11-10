@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 40,
     fontFamily: "Axiforma",
     fontStyle: "normal",
-    fontWeight: 300,
+    fontWeight: 600,
     lineHeight: "120%",
     /* or 48px */
     color: "#FFFFFF",
@@ -69,7 +69,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 26,
+    fontSize: 18,
     lineHeight: "30px",
     /* or 22px */
     textAlign: "left",

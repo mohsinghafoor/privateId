@@ -93,12 +93,12 @@ const useStyles = makeStyles((theme) => ({
   },
   mailbox: {
     display: "flex",
-    height: 70,
+    height: 50,
     [theme.breakpoints.only("md")]: {
       height: 50,
     },
     [theme.breakpoints.up("xl")]: {
-      height: 90,
+      height: 60,
     },
   },
   input: {
@@ -156,14 +156,14 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 12,
-    lineHeight: "138.5%",
+    fontSize: 10,
+    lineHeight: "18px",
     /* or 17px */
     textAlign: "left",
     color: "#FFFFFF",
     [theme.breakpoints.up("xl")]: {
       width: 750,
-      fontSize: 18,
+      fontSize: 12,
       height: 60,
     },
   },
@@ -172,6 +172,10 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     marginLeft: 5,
     marginRight: 5,
+    fontSize: 12,
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 16,
+    },
   },
   rightgrid: {
     display: "flex",
@@ -201,8 +205,8 @@ export default function OrderWeb() {
             <Box className={classes.heading}>Order Private ID®</Box>
             <Box className={classes.text}>
               Private ID® is currently available to a limited number of
-              organizations per geographic area. Orders will be fulfilled on a
-              first-come, first-served basis.
+              organizations. Orders will be fulfilled on a first-come,
+              first-served basis.
             </Box>
             <form className={classes.mailbox}>
               {/* <Box className={classes.label}>Enter Email:</Box> */}

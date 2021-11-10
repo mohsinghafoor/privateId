@@ -58,12 +58,12 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   heading: {
-    maxWidth: "85%",
+    maxWidth: "90%",
     height: 95,
     marginTop: 30,
     fontFamily: "Axiforma",
     fontStyle: "normal",
-    fontWeight: 300,
+    fontWeight: 600,
     fontSize: 34,
     lineHeight: "120%",
     /* or 36px */
@@ -86,15 +86,15 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 300,
-    fontSize: 24,
+    fontSize: 18,
     lineHeight: "30px",
     /* or 36px */
     textAlign: "left",
     color: "#D1D1D1",
     marginLeft: 30,
     [theme.breakpoints.only("sm")]: {
-      fontSize: 20,
-      maxWidth: "85%",
+      fontSize: 16,
+      maxWidth: "90%",
       height: 100,
     },
     [theme.breakpoints.only("xs")]: {

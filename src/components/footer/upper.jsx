@@ -156,18 +156,13 @@ export default function FooterFields() {
                     </Box>
                   </Box>
                 </a>
-                <a
-                  style={{ textDecoration: "none" }}
-                  href="https://mail.google.com/mail/u/0/?ogbl#inbox?compose=new"
-                  target="_blank"
-                >
-                  <Box className={classes.dflex} mt={2}>
-                    <Box className={classes.bulletPoint}></Box>
-                    <Box className={classes.service} ml={1}>
-                      sales@private.id
-                    </Box>
+
+                <Box className={classes.dflex} mt={2}>
+                  <Box className={classes.bulletPoint}></Box>
+                  <Box className={classes.service} ml={1}>
+                    sales@private.id
                   </Box>
-                </a>
+                </Box>
               </Box>
             </Box>
           </Grid>
@@ -176,15 +171,11 @@ export default function FooterFields() {
             <Box className={classes.parent}>
               <Box className={classes.title}>SUPPORT</Box>
               <Box ml={6}>
-                <a
-                  style={{ textDecoration: "none" }}
-                  href="https://github.com/openinfer/PrivateIdentity/blob/master/RELEASE%20NOTES.md"
-                  target="_blank"
-                >
+                <a style={{ textDecoration: "none" }} href="#" target="_blank">
                   <Box className={classes.dflex} mt={2}>
                     <Box className={classes.bulletPoint} />
                     <Box className={classes.service} ml={1}>
-                      API Docs
+                      npm install
                     </Box>
                   </Box>
                 </a>
