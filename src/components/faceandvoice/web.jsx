@@ -35,11 +35,11 @@ const useStyles = makeStyles((theme) => ({
 
   heading: {
     width: 640,
-    height: 58,
+    height: 68,
     fontFamily: "Axiforma",
     fontStyle: "normal",
     fontWeight: 600,
-    fontSize: 38,
+    fontSize: 36,
     lineHeight: "120%",
     /* or 48px */
     color: "#FFFFFF",
