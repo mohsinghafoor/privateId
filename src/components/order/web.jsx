@@ -103,7 +103,7 @@ const useStyles = makeStyles((theme) => ({
   },
   input: {
     width: 365,
-    height: 30,
+    height: 26,
     background: "none",
     border: 0,
     borderBottom: "2px solid white",
