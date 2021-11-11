@@ -102,9 +102,15 @@ export default function ConsumptionWeb() {
           <Table1 />
           <Table2 />
           <Box className={classes.btnbox}>
-            <IconButton className={classes.btn}>
-              Click here for details.
-            </IconButton>
+            <a
+              href="https://github.com/openinfer/PrivateIdentity/wiki/Private-ID-Pricing"
+              target="_blank"
+              style={{ textDecoration: "none" }}
+            >
+              <IconButton className={classes.btn}>
+                Click here for details.
+              </IconButton>
+            </a>
           </Box>
         </Grid>
         <Grid item md={6} className={classes.rightgrid}>
